@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:simpleType name="audio_mimetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="audio/wav"/>
+			<xsd:enumeration value="audio/mpeg"/>
+			<xsd:enumeration value="audio/mpg"/>
+			<xsd:enumeration value="audio/mp3"/>
+			<xsd:enumeration value="audio/x-mpeg"/>
+			<xsd:enumeration value="audio/midi"/>
+			<xsd:enumeration value="audio/x-realaudio"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="compressiontype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Uncompressed"/>
+			<xsd:enumeration value="Linear PCM"/>
+			<xsd:enumeration value="MPEG-1 layer 1"/>
+			<xsd:enumeration value="MPEG-1 layer 2"/>
+			<xsd:enumeration value="MPEG-1 layer 3"/>
+			<xsd:enumeration value="AC3"/>
+			<xsd:enumeration value="Dolby"/>
+			<xsd:enumeration value="DTS"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="channelsconfigurationtype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Mono"/>
+			<xsd:enumeration value="Dual mono"/>
+			<xsd:enumeration value="Joint stereo"/>
+			<xsd:enumeration value="Stereo"/>
+			<xsd:enumeration value="2 ch"/>
+			<xsd:enumeration value="4 ch"/>
+			<xsd:enumeration value="5.1 ch"/>
+			<xsd:enumeration value="6.1 ch"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="samplingfrequencytype">
+		<xsd:annotation>
+			<xsd:documentation>espressa in KHz</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:float">
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="11.025"/>
+			<xsd:enumeration value="12"/>
+			<xsd:enumeration value="16"/>
+			<xsd:enumeration value="22.05"/>
+			<xsd:enumeration value="24"/>
+			<xsd:enumeration value="32"/>
+			<xsd:enumeration value="44.1"/>
+			<xsd:enumeration value="48"/>
+			<xsd:enumeration value="96"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="bitpersampletype">
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="16"/>
+			<xsd:enumeration value="24"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="bitratetype">
+		<xsd:annotation>
+			<xsd:documentation>espressa in Kbps</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="24"/>
+			<xsd:enumeration value="32"/>
+			<xsd:enumeration value="48"/>
+			<xsd:enumeration value="56"/>
+			<xsd:enumeration value="64"/>
+			<xsd:enumeration value="96"/>
+			<xsd:enumeration value="128"/>
+			<xsd:enumeration value="160"/>
+			<xsd:enumeration value="192"/>
+			<xsd:enumeration value="256"/>
+			<xsd:enumeration value="320"/>
+			<xsd:enumeration value="384"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="audio_transcriptionsummarytype">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element name="grouping" type="xsd:string"/>
+				<xsd:element name="transcriptionsummary" type="audio_transcriptionsummarytype" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:element name="data_description" type="xsd:string"/>
+				<xsd:element name="data_unit" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="data_value" type="xsd:float"/>
+			</xsd:sequence>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="audio_transcriptiondatatype">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element name="grouping" type="xsd:string"/>
+				<xsd:element name="transcriptiondata" type="audio_transcriptiondatatype" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:element name="data_description" type="xsd:string"/>
+				<xsd:element name="data_unit" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="interval" minOccurs="0">
+					<xsd:complexType>
+						<xsd:attribute name="start" type="xsd:time" use="required"/>
+						<xsd:attribute name="stop" type="xsd:time" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="data_value" type="xsd:float" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="audio_format">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="mime" type="audio_mimetype"/>
+			<xsd:element name="compression" type="compressiontype" minOccurs="0"/>
+			<xsd:element name="channel_configuration" type="channelsconfigurationtype" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="audio_creation">
+		<xsd:sequence>
+			<xsd:element name="sourcetype" type="xsd:string"/>
+			<xsd:element name="transcriptionagency" minOccurs="0"/>
+			<xsd:element name="transcriptiondate" type="xsd:dateTime" minOccurs="0"/>
+			<xsd:element name="devicesource" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="transcriptionchain" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="device_description">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="Type" type="xsd:string" use="required"/>
+										<xsd:attribute name="Unique_identifier" type="xsd:string" use="optional"/>
+										<xsd:attribute name="Comments" type="xsd:string" use="optional"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="device_manufacturer" type="xsd:string"/>
+						<xsd:element name="device_model">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="Model" type="xsd:string" use="required"/>
+										<xsd:attribute name="Serial_Number" type="xsd:string" use="optional"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="capture_software" type="xsd:string" minOccurs="0"/>
+						<xsd:element name="device_settings" type="xsd:string" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="transcriptionsummary" type="audio_transcriptionsummarytype" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="transcriptiondata" type="audio_transcriptiondatatype" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="audio_dimensions">
+		<xsd:sequence>
+			<xsd:element name="duration" type="xsd:time"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="audio_spatialmetrics">
+		<xsd:sequence>
+			<xsd:element name="samplingfrequency" type="samplingfrequencytype"/>
+			<xsd:choice>
+				<xsd:element name="bitpersample" type="bitpersampletype"/>
+				<xsd:element name="bitrate" type="bitratetype"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+</xsd:schema>

@@ -1,0 +1,14 @@
+aa = disegno architettonico
+ab = copertina del documento
+ac = sticker
+ad = poster
+ae = cartolina
+af = diglietto di auguri
+ag = diagramma
+ah = carte da gioco
+ai = flash card
+aj = ephemera
+an = calendario
+as = biglietti segnaposto
+au = santino
+vv = composito

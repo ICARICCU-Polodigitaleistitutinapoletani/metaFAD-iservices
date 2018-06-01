@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+>
+    <version>1.3.7</version>
+    <mapping destination="Digitale_idpreview" searchField="false" is4Fe="true" multiple="false" vistaShort="8" docAttribute="true" vistaEtichette="10000"/>
+    <mapping destination="Ecommerce" solrFieldname="ecommerce_nxs"  searchField="false" is4Fe="true" multiple="false" vistaShort="8" docAttribute="true" vistaEtichette="10000"/>
+    <mapping destination="Visibility" solrFieldname="visibility_nxs"  searchField="false" is4Fe="true" multiple="false" vistaShort="8" docAttribute="true" vistaEtichette="10000"/>
+
+</mappings>

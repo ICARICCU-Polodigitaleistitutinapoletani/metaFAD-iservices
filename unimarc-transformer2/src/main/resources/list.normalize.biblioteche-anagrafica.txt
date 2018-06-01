@@ -1,0 +1,5 @@
+biblioteche	CR	Biblioteca dell'Istituto italiano per gli studi storici - Napoli - IT-NA0120	CR
+biblioteche	SP	Biblioteca della Società napoletana di storia patria - Napoli - IT-NA0097	SP
+biblioteche	FC	Biblioteca pubblica comunale Benedetto Croce - Napoli - IT-NA0033	FC
+biblioteche	PM	Biblioteca del Pio Monte della Misericordia - Napoli - IT-NA0681	PM
+biblioteche	BK	Archivio del Tesoro di San Gennaro Biblioteca - Napoli - IT-NA0777	BK

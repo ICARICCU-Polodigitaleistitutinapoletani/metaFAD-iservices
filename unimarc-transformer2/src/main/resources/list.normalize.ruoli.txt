@@ -1,0 +1,127 @@
+360 	Acquafortista 		360 Etcher
+010 	Adattatore 	Scrittore che riscrive novelle o storie per filmati o altri mezzi audiovisivi. Per uno che rielabora una composizione musicale, usualmente per un diverso mezzo, utilizzare Arrangiatore (030). 	010 Adapter
+570 	Altro 	Usare quando una relazione o un codice di relazione in un formato nazionale non ha equivalente in UNIMARC. 	570 Other
+018 	Animatore 	Persona che utilizza tecnologie per dare alla propria opera d'arte l'illusione del movimento. 	018 Animator
+020 	Annotatore 	Scittore di annotazioni manoscritte in un libro a stampa. Per lo scrittore di un commentario o di note esplicative su un testo usare Commentatore di testo scritto (212). 	020 Annotator
+100 	Antecedente bibliografico 	Autore dell'opera su cui l'opera in esame nel record bibliografico � basata in tutto o in parte. Questo coedice pu� essere appropriato in registrazioni di adattamenti, indici, continuazioni e sequel di altri autori, concordanze, ecc. 	100 Bibliographic antecedent
+030 	Arrangiatore 	Chi trascrive una composizione musicale, in genere per uno strumento o un mezzo di esecuzione diverso dall'originale; in un arrangiamento la sostanza musicale rimane essenzialmente invariata. 	030 Arranger
+040 	Artista 	Pittore, scultore, etc., di un'opera. 	040 Artist
+050 	Assegnatario [Detentore dei diritti di pubblicazione] 	Persona o ente a cui la � stata trasferita una licenza di stampa o pubblicazione. 	050 Assignee
+005 	Attore 	Persona che principalmente esibisce capacit� di agire in una presentazione o intrattenimento musicale o drammatico. 	005 Actor
+070 	Autore 	Persona o ente principalmente responsabile della creazione del contenuto intellettuale o artistico di un'opera. Quando pi� di una persona o ente reca congiuntamente tale responsabilit�, questo codice pu� essere utilizzato con tante intestazioni quante necessarie. 	070 Author
+090 	Autore del dialogo [Autore della sceneggiatura] 	Autore di un dialogo o commento parlato per una sceneggiatura o registrazione sonora. 	090 Author of dialogue
+770 	Autore del fascicolo allegato 	Autore di materiale significativo che accompagna una registrazione sonora o altro materiale audiovisivo. 	770 Writer of accompanying material
+305 	Autore della dissertazione 	Persona che presenta una tesi per un esame universitario o di livello scolastico superiore. 	305 Dissertant
+075 	Autore della postfazione, colophon, ecc. 	Usare al posto di Autore dell'introduzione, ecc. (080) quando la natura della postfazione, ecc. � completamente diverso da quello dell'introduzione, ecc. 	075 Author of afterword, postface, colophon, etc.
+080 	Autore dell'introduzione, ecc. 	Autore di un'introduzione, prefazione, premessa, postfazione, note, altri materiali critici, ecc. ma che non � l'autore principale dell'opera. Cfr. anche Autore della postfazione (075) 	080 Author of introduction, etc.
+072 	Autore in citazioni o estratti 	Persona la cui opera � ampiamente citata o riassunta in opere alle quali non ha contribuito direttamente. Tali citazioni si trovano particolarmente in cataloghi di mostre, collezioni di fotografie, ecc. 	072 Author in quotations or text extracts
+330 	Autore incerto 	Chi ha ricevuto l'attribuzione di un'opera in modo dubbio o scorretto. 	330 Dubious author
+275 	Ballerino 	Persona che mostra principalmente abilit� nella danza in una presentazione o intrattenimento musicale o drammatico. 	275 Dancer
+065 	Banditore 	Persona o ente incaricato della stima e pubblica asta di beni, in particolare libri, opere d'arte, ecc. 	065 Auctioneer
+170 	Calligrafo 		170 Calligrapher
+721 	Cantante 	Persona che usa la propria voce con o senza accompagnamento musicale per produrre musica. L'esecuzione di una cantante puo includere vere parole o meno. 	721 Singer
+580 	Cartaro 		580 Papermaker
+180 	Cartografo 		180 Cartographer
+190 	Censore 	Censore, espurgatore, ecc., ufficiale o privato. 	190 Censor
+202 	Circense 	Persona che si esibisce in un circo. 	202 Circus performer
+205 	Collaboratore 	Usare solo quando non si pu� utilizzare una funzione pi� precisa, rappresentata da un altro codice. 	205 Collaborator
+207 	Comico 	Intrattenitore la cui esibizione ha lo scopo di indurre al riso. 	207 Comedian
+210 	Commentatore 	Chi fornisce l'interpretazione, l'analisi o una discussione del soggetto di una registrazione, filmato o altro audiovisivo. 	210 Commentator
+212 	Commentatore di testo scritto 	Chi scrive commenti o note esplicative su un testo. Per chi scrive annotazioni manoscritte i un libro a stampa usare Annotatore (020). 	212 Commentator for written text
+400 	Committente 	Persona o agenzia che ha fornito supporto finanziario per la produzione dell'opera. Per la persona o agenzia che ha stabilito il contratto per la produzione usare Sponsor (723). 	400 Funder
+220 	Compilatore 	Chi produce una raccolta selezionando e mettendo insieme materiale da opere di diverse personi o enti. Anche chi seleziona e mette insieme in una pubblicazione materiale dalle opere di una persona o ente. 	220 Compiler
+230 	Compositore 	Chi crea un'opera musicale, in genere un pezzo di musica in forma manoscritta o a stampa. 	230 Composer
+902 	Compositore della musica parafrasata 		
+245 	Consulente di progetto 	Professionista (persona o ente) impiegato specificamente per fornire una supervisione intellettuale di un compito strategico o operativo e di creare o proporre - attraverso analisi, specifiche o istruzioni - azioni o soluzioni con un corretto rapporto di costi e benefici. 	255 Consultant to a project
+695 	Consulente scientifico 	Persona che porta competenza scientifica, pedagigica o storica al concepimento o alla realizzazione di un'opera, paricolarmente nel caso di documenti audiovisivi.
+257 	Continuatore 	Persona che succede ad una'altra nella realizzazione di un'opera. 	257 Continuator
+700 	Copista, scriba - Scrittore 	Chi realizza facsimili a penna di materiale a stampa e anche amanuense o scriba di un manoscritto. 	700 Scribe
+200 	Coreografo 		200 Choreographer
+270 	Correttore 	Membro di uno scriptorium che ha corretto il lavoro di un amanuense. Per il materiale a stampa usare Revisore delle bozze (640). 	270 Corrector
+640 	Correttore delle bozze 	Correttore di solo materiale a stampa; per i manoscritti usare Correttore (270). 	640 Proof-reader
+340 	Curatore [Editor] 	Chi prepara per la pubblicazione un'opera non sua. Il lavoro editoriale pu� essere tecnico o intellettuale. 	340 Editor
+370 	Curatore del filmato 		370 Film editor
+273 	Curatore di una mostra 	Persona responsabile dell'ideazione e organizzazione di una mostra. 	273 Curator of an exhibition
+290 	Dedicante [Autore della dedica] 	L'autore di una dedica. La dedica pu� essere un'espressione formale o in forma epistolare o in versi. 	290 Dedicator
+280 	Dedicatario 	Persona o ente a cui � dedicato un libro o manoscritto (non chi lo riceve in dono). La dedica pu� essere formale (apparire nel documento) o informale (specifica dell'esemplare). In quest'ultimo caso il codice 280 avr� un sottocampo $5 per l'isitituzione che possiede l'esemplare. 	280 Dedicatee
+130 	Designer del libro 	Persona o ente responsabile dell'intero design grafico di un libro, inclusa la sistemazione del carattere e l'illustrazione, la scelta dei materiali e il procedimento da utilizzare. 	130 Book designer
+140 	Designer della copertina 		140 Bookjacket designer
+120 	Designer della legatura 		120 Binding designer
+150 	Designer delle tavole 		150 Bookplate designer
+660 	Destinatario 	Persona a cui una lettera � indirizzata. 	660 Recipient of letters
+587 	Detentore del brevetto 	La persona o ente che detiene il brevetto descritto nel record. 	587 Patentee
+673 	Direttore della ricerca 	Persona che ha diretto la ricerca o gestito il progetto riportato nel documento. 	673 Research Team Head
+195 	Direttore di coro 	Persona che dirige l'esecuzione di tutti i cantanti che costituiscono un coro. (era Usare direttore d'orchestra (259)) 	195 Choral conductor
+250 	Direttore d'orchestra 	Persona che dirige il gruppo che esegue un brano musicale. 	250 Conductor
+651 	Direttore editoriale 		651 Publishing director
+901 	Disegnatore 		
+740 	Disegnatore dei caratteri 	Persona che disegna il carattere tipografico utilizzato in un libro particolare. 	740 Type designer
+310 	Distributore 	Agente o agenzia che ha dirittti esclusivi o condivisi di commercio di un documento. 	310 Distributor
+320 	Donatore 	Donatore di un libro al possessore attuale. Un donatore a un possessore precedente � trattato come Possessore precedente (390). 	320 Donor
+650 	Editore 		650 Publisher
+595 	Ente di ricerca 	L'ente responsabile della ricerca riportata nel documento. 	595 Performer of research
+725 	Ente di standardizzazione 	Agenzia responsabile per la pubblicazione o mantenimento di standard. 	725 Standards body
+365 	Esperto 	Persona incaricata della descrizione e stima del valore di bene, in particolare oggetti rari, opere d'arte, ecc. 	365 Expert
+380 	Falsificatore 		380 Forger
+720 	Firmatario 	Usare per la firma che appare in un libro senza una presentazione o altra frase indicativa della provenienza. 	720 Signer
+450 	Firmatario della dedica 	Persona che firma una dedicatoria. 	450 Inscriber
+395 	Fondatore 	Persona che crea una serie, una rivista, un periodico o qualsiasi altro genere di risorsa continuativa. 	395 Founder
+600 	Fotografo 	(1) la persona che ha scattato una fotografia. Questo codice si pu� tilizzare in un record sia per la fotografia originale sia per una riproduzione con qualsiasi mezzo; oppure,
+295 	Garante del titolo accademico 	L'ente che rilascia il titolo per cui � stata presentata la tesi o dissertazione inclusa nel documento. 	295 Degree-grantor
+410 	Grafico 	Persona responsable della realizzazione del design in un mezzo attraverso il quale un'immagine (stampata, visualizzata, ecc.) pu� essere prodotta. Se la persona che concepisce il design (es. Illustratore (440)) lo realizza anche, si possono utilizzare se necessario i codici per entrambe le funzioni. 	410 Graphic technician
+245 	Ideatore 	Persona o ente responsabile dell'idea originale su cui un'opera � basata. Questo include l'autore scientifico di un documento audiovisivo e l'ideatore di una pubblicit� o uno slogan. 	245 Conceptor
+430 	Illuminatore 		430 Illuminator
+440 	Illustratore 	Persona che concepisce un disegno o illustrazione. 	440 Illustrator
+240 	Impaginatore 		240 Compositor
+903 	Impresario 		
+350 	Incisore 		350 Engraver
+760 	Incisore su legno 		760 Wood-engraver
+530 	Incisore su metallo 		530 Metal-engraver
+590 	Interprete 	Persona che agisce o esegue in altro modo in una presentazione o intrattenimento musicale o drammatico. Usare se non sono richiesti codici pi� specifici, es. attore, ballerino, musicista, cantante. 	590 Performer
+460 	Intervistato 		460 Interviewee
+470 	intervistatore 		470 Interviewer
+900 	Inventore 		
+584 	Inventore del brevetto 	La persona che ha inventato il dispositivo o processo coperto dal brevetto descritto nel record. 	584 Patent inventor
+110 	Legatore  Rilegatore 		110 Binder
+160 	Libraio - Venditore 		160 Bookseller
+480 	Librettista 	Autore del testo di un'opera lirica, oratorio, ecc. 	480 Librettist
+490 	Licenziatario 	Chi ha originariamene ricevuto il diritto di stampare o pubblicare. 	490 Licensee
+500 	Licenziatore 	Firmatario della licenza, imprimatur, ecc. 	500 Licensor
+510 	Litografo 	Persona che prepara la pietra o lastra liscia per la stampa litografica, compreso un artista grafico che crea un disegno originale lavorando direttamente sulla superficie da cui sar� realizzata la stampa. 	510 Lithographer
+637 	Manager di progetto 	Persona che gestisce un programma di lavoro verso un obiettivo predefinito. 	Project manager
+655 	Marionettista 	Esecutore che muove una marionetta o un burattino. 	655 Puppeteer
+677 	Membro del gruppo di ricerca 	Membro di un gruppo di ricerca responsabile della ricerca riportata nel documento. 	677 Research Team Member
+535 	Mimo 	Persona che interpreta mimando. 	535 Mime artist
+545 	Musicista 	Persona che esegue musica o contribuisce al contenuto musicale di un'opera. Da usare quando non � possibile o desiderabile identificare pi� precisamente la funzione della persona. 	545 Musician
+550 	Narratore 	oratore che riporta la narrazione in un filmato, registrazione sonora o altro genere di opera. 	550 Narrator
+060 	Nome associato 	Codice generico per un nome associato o trovato in un libro, che non pu� essere determinato come quello di un Possessore precedente (390) o altra relazione indicativa di provenienza. 	060 Associated name
+420 	Onorato 	Persona in memoria o onore della quale un libro � donato. 	420 Honoree
+555 	Oppositore (controrelatore?) 	Persona responsabile solo dell'opposizione a una tesi o dissertazione. 	555 Opponent
+557 	Organizzatore dell'incontro 	Persona o ente responsabile dell'organizzazione dell'incontro oggetto del documento. 	557 Organiser of meeting
+560 	Originatore 	Autore o agenzia che esegue l'opera, cio� il nome di una persona o ente associata con il contenuto intellettuale dell'opera. Comprende una persona nominata nell'opera come autore o principale autore di un'inchiesta. Questa categoria non comprende l'editore o un'appartenenza personale o uno sponsor, se non quando � anche l'autore collettivo. 	560 Originator
+540 	Osservatore 	Persona o organizzazione che supervisiona la conformit� con il contratto ed � responsabile della relazione e controlla la sua distribuzone. A volte definita autorit� garante o di controllo. 	540 Monitor
+520 	Paroliere [Autore del testo della musica] 	Autore del testo di una canzone. 	520 Lyricist
+633 	Personale di produzione 	Individui abili associati con la produzione (attrezzature, illuminazione, effetti speciali, ecc.) di una presentazione o intrattenimento musicale o drammatico. Include segretari di edizione. 	633 Production personnel
+390 	Possessore precedente 	Persona o ente che ha posseduto il documento in qualunque tempo nel passato. Include una persona o ente a cui il documento � stato donato, come attestato in una espressione scritta da un'altra persona o ente. La persona o ente che dona il documento al possessore attuale � definita Donatore (320). 	390 Former owner
+605 	Presentatore 	Persona che presenta e apparte in un programma televisivo o radiofonico, ecc. 	605 Presenter
+630 	Produttore 	Persona con la responsabilit� finale della realizzazione di un filmato, inclusi aspetti aziendali, di gestione delle produzioni, e del successo commerciale del film. 	630 Producer
+635 	Programmatore 	Persona o ente responsabile di documenti di programmazione per computer, del codice sorgente o di file digitali eseguibili e che della documentazione di supporto. 	635 Programmer
+675 	Recensore - Revisore 	Persona o ente responsabile della recensione di un libro, filmato, esecuzione, ecc. 	675 Reviewer
+710 	Redattore 	Redattore, o altra persona responsabile di esprimere i punti di vista di un ente, come responsabile del loro contenuto intellettuale. 	710 Secretary
+300 	Regista - Direttore 	Persona responsabile della direzione generale dell'opera o che ha gestito la produzione dell'esecuzione per la scena, lo schermo o la registrazione sonora. 	300 Director
+727 	Relatore 	Persona sotto la cui supervisione un candidato ad un esame sviluppa e presenta una tesi, memoria o testo di una dissertazione. 	727 Thesis advisor
+582 	Richiedente del brevetto 	Persona o ente che ha richiesto un brevetto descritto nel record. 	582 Patent applicant
+680 	Rubricatore 		680 Rubricator
+690 	Sceneggiatore 	Autore di una sceneggiatura. 	690 Scenarist
+632 	Scenografo 	Persona responsabile degli aspetti visivi di una produzione, compresi l'illuminazione, le scene, i costumi. 	632 Production designer
+705 	Scultore 	Usare quando il termine pi� generale Artista (040) non � richiesto. 	705 Sculptor
+723 	Sponsor 		723 Sponsor
+610 	Stampatore 	Stampatore di testi, sia a caratteri mobili sia su lastra (es. clich�). 	610 Printer
+620 	Stampatore delle tavole [Stampatore dei clich�s] 	Stampatore di illustrazioni o disegni da lastre. 	620 Printer of plates
+726 	Stuntman 	Sostituto di un attore, che esegue azioni pericolose o difficili 	726 Stunt performer
+670 	Tecnico della registrazione 	Persona che supervisiona gli aspetti tecnici di una sessione di registrazione sonora o visiva. 	670 Recording engineer
+750 	Tipografo 	Persona responsabile primariamente della scelta e della sistemazione dei caratteri utilizzati in un libro. Se la persona che seleziona e sistema i caratteri � anche responsabile di altri aspetti del design grafico di un libro, es. Designer del libro (130), possono essere necessari codici per entrambe le funzioni. 	750 Typographer
+260 	Titolare dei diritti d'autore 		260 Copyright holder
+730 	Traduttore 	Chi rende da una lingua in un altra, o da una forma pi� antica di una lingua nella forma moderna, seguendo pi� o meno strettamente l'originale. 	730 Translator
+753 	Venditore 	Persona che ha venduto il documento bibliografico in esame. 	753 Vendor
+755 	Vocalist 

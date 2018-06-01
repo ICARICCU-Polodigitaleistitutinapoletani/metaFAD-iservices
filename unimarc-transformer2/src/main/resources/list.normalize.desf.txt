@@ -1,0 +1,18 @@
+DESF aa disegno architettonico aa
+DESF ab copertina ab
+DESF ac figurina ac
+DESF ad manifesto ad
+DESF ae cartolina ae
+DESF af biglietto augurale af
+DESF ag carta ag
+DESF ah carta da gioco ah
+DESF ai scheda didattica ai
+DESF aj materiale effimero aj
+DESF an calendario an
+DESF as segna posto as
+DESF au santino au
+DESF uu sconosciuto uu
+DESF vv misto vv
+DESF xx non applicabile xx
+DESF zz altro zz
+

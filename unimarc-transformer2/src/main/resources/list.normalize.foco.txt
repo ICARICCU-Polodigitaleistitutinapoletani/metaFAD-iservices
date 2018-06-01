@@ -1,0 +1,11 @@
+FOCO	a	dataset	a
+FOCO	b	immagine	b
+FOCO	c	movimento	c
+FOCO	d	musica	d
+FOCO	e	oggetto	e
+FOCO	f	programma	f
+FOCO	g	suoni	g
+FOCO	h	parlato	h
+FOCO	i	testo	i
+FOCO	m	forme di contenuto multiple	m
+FOCO	z	altre forme di contenuto	z

@@ -1,0 +1,26 @@
+AUTM	analisi stilistica
+AUTM	analisi storica
+AUTM	analisi tecnica
+AUTM	analisi tecnico-formale
+AUTM	bibliografia
+AUTM	commento audio
+AUTM	commento audiovisivo
+AUTM	comunicazione autore
+AUTM	comunicazione orale
+AUTM	confronto
+AUTM	contesto
+AUTM	copyright
+AUTM	documentazione
+AUTM	filigrana
+AUTM	filigrana digitale
+AUTM	fonte archivistica
+AUTM	inventario museale
+AUTM	iscrizione
+AUTM	marchio
+AUTM	monogramma
+AUTM	provenienza
+AUTM	punzone
+AUTM	riferimenti biografici
+AUTM	timbro
+AUTM	tradizione orale
+AUTM	NR

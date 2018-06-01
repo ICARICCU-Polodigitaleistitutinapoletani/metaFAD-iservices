@@ -1,0 +1,4 @@
+SCAL a scala lineare a
+SCAL b scala angolare b
+SCAL z altro z
+

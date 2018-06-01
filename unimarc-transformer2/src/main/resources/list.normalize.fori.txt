@@ -1,0 +1,5 @@
+FORI a a mano a
+FORI b stampa b
+FORI c fotografia c
+FORI d fotocopia d
+FORI y originale y

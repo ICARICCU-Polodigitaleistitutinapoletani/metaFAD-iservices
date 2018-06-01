@@ -1,0 +1,14 @@
+= README
+
+== Note
+
+. Il profilo XML è fatto per BNCR.
+
+Build:
+
+[source, bash]
+#> gradle fatJar
+#> java -jar /opt/Progetti/unimarc-transformer2/build/libs/unimarc-transformer2-all-1.0.jar --out mysql --profile xml -of IE001_BVE_CR_00027159.sql /home/ingo/Downloads/IE001_BVE_CR_00027159.mrc
+#> java -jar /opt/Progetti/unimarc-transformer2/build/libs/unimarc-transformer2-all-1.0.jar --profile xml --out mysql -of IE001_BVE_CR_00027181.sql /home/ingo/Downloads/IE001_BVE_CR_00027181.mrc
+
+

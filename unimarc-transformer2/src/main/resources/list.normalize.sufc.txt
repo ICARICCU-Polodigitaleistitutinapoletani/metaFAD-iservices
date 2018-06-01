@@ -1,0 +1,19 @@
+SUFC	aa	carta	aa
+SUFC	ab	legno	ab
+SUFC	ac	pietra	ac
+SUFC	ad	metallo	ad
+SUFC	ae	sintetico	ae
+SUFC	af	pelle	af
+SUFC	ag	fibre tessili, anche sintetiche 	ag
+SUFC	ah	supporto magnetico compatibile con computer	ah
+SUFC	ai	supporto magnetico non compatibile con computer	ai
+SUFC	aj	tracing paper 	aj
+SUFC	ak	cardboard	ak
+SUFC	ap	plastico	ap
+SUFC	au	sconosciuto	au
+SUFC	az	altro	az
+SUFC	ba	positivo flessibile	ba
+SUFC	bb	negativo flessibile	bb
+SUFC	bc	positivo non flessibile	bc
+SUFC	bd	negativo non flessibile	bd
+SUFC	bz	altro supporto fotografico	bz

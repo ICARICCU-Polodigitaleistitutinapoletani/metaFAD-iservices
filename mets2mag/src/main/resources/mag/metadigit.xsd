@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Giovanni Bergamin (Giovanni Bergamin) -->
+<!--edited with oXygen v5.1 (http://www.oxygenxml.com) by Elena Pierazzo-->
+<xsd:schema xmlns="http://www.iccu.sbn.it/metaAG1.pdf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.iccu.sbn.it/metaAG1.pdf" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:include schemaLocation="./metatype.xsd"/>
+	<xsd:element name="metadigit">
+		<xsd:annotation>
+			<xsd:documentation>21/02/2006 2.0.1 version
+1. element &lt;encode&gt; in video_format type is now optional;
+2. element &lt;aspectratio&gt; in &lt;video_spatialmetrics&gt; is now optional;
+3. elements &lt;transcriptionsummary&gt; and &lt;transcriptiondata&gt; in video section are now unbounded;
+4. the unused complexType targetdata and simpleType targettype in audio-mag and video-mag xsd files have been cancelled.
+5. the attribute Manufacturer in element &lt;device_manufacturer&gt; in video section has been cancelled and the element is now defined as string, to be homogeneous with &lt;device_manufacturer&gt; in audio section.   
+</xsd:documentation>
+			<xsd:documentation>03/05/2005
+1. Element local_bib created with content (geog_name*,not_date*)
+2. DC schema taken directly form Dublin Core Org.
+3. Added specialized compression types and mime types added for ocr and doc files
+4. Added djvu format (in compression types and in mime types)  for images 
+5. Predefined value of &lt;usage&gt; are now suggested values, depending on cases     
+</xsd:documentation>
+			<xsd:documentation>
+10/03/2005
+1. Added "uniqnum" constraint
+2. element &lt;shelfmark&gt; is now unbounded ad has an attibute type
+3. elements &lt;stpiece_per&gt; and &lt;stpiece_vol&gt; added  
+</xsd:documentation>
+			<xsd:documentation>11/01/2005  2.0 version
+1. new section &lt;dis&gt; for DIP phase of OAIS
+2. new section &lt;audio&gt;
+3. new section &lt;video&gt; 
+</xsd:documentation>
+			<xsd:documentation>11/08/2004 1.51 version
+1 - &lt;usage&gt;  has now predefined values
+2. in section &lt;stru&gt;  it is now possible - but not mandatory -  to refer to an host item via &lt;file&gt; instead of &lt;dc:identifier&gt;</xsd:documentation>
+			<xsd:documentation>05/04/2004 Changes:
+1- Added "uniqstru" constraint
+2- Added tags &lt;sequence_number&gt; and &lt;nomenclature&gt; to section &lt;stru&gt;
+3- Relevant changes in section &lt;stru&gt;
+4- tag &lt;usage&gt; is repeatable</xsd:documentation>
+			<xsd:documentation>19/05/2003 Changes:
+1- Added tag &lt;collection&gt;, and subsection &lt;img_group&gt; to &lt;gen&gt; section
+2- Added complete set of DC elements to &lt;bib&gt; section 
+3- Added attribute level to &lt;bib&gt; section
+4- Section &lt;holdings&gt; is repetitive
+5- Added tag &lt;library&gt; to section &lt;holdings&gt;
+6- Renamed &lt;fis&gt; to &lt;piece&gt;
+7- Added tag &lt;element&gt; to section &lt;stru&gt;
+8- Added &lt;doc&gt; section
+9- Added imggroupID attribute to &lt;img&gt; and &lt;altimg&gt; sections
+10- Added holdingsID attribute to &lt;img&gt; section
+11- Added &lt;image_metrics&gt; section
+12- Moved tag &lt;dpi&gt; to section &lt;image_metrics&gt; and added tag &lt;ppi&gt; 
+13- Moved tag &lt;photometricinterpretation&gt; from section &lt;format&gt; to &lt;image_metrics&gt;
+14- Renamed &lt;size&gt; to &lt;filesize&gt;
+15- Added section &lt;doc&gt;</xsd:documentation>
+			<xsd:documentation>10/03/2003 Changes:
+1- Added tag &lt;size&gt;, &lt;usage&gt; and &lt;scale&gt; to &lt;img&gt; section
+2- Added subsections &lt;target&gt; and &lt;altimg&gt; to &lt;img&gt; section
+3- Changed type of attributes &lt;creation&gt; and &lt;last_update&gt; for tag &lt;gen&gt;</xsd:documentation>
+			<xsd:documentation>4/11/2002 Changes:
+1- Changed schema for DC
+2- Added section &lt;stru&gt;
+3- Added type SBN and BNI
+4- Added tag &lt;side&gt; to &lt;img&gt; section</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="gen" type="gen"/>
+				<xsd:element name="bib" type="bib"/>
+				<xsd:element name="stru" type="stru" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="img" type="img" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="audio" type="audio" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="video" type="video" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="ocr" type="ocr" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="doc" type="doc" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="dis" type="dis" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:attribute name="version" type="xsd:string" default="2.0.1"/>
+		</xsd:complexType>
+		<xsd:unique name="uniqstru">
+			<xsd:selector xpath="stru"/>
+			<xsd:field xpath="sequence_number"/>
+		</xsd:unique>
+		<xsd:unique name="uniqimg">
+			<xsd:selector xpath="img"/>
+			<xsd:field xpath="sequence_number"/>
+		</xsd:unique>
+		<xsd:unique name="uniqaudio">
+			<xsd:selector xpath="audio"/>
+			<xsd:field xpath="sequence_number"/>
+		</xsd:unique>
+		<xsd:unique name="uniqvideo">
+			<xsd:selector xpath="video"/>
+			<xsd:field xpath="sequence_number"/>
+		</xsd:unique>
+		<xsd:unique name="uniqocr">
+			<xsd:selector xpath="ocr"/>
+			<xsd:field xpath="sequence_number"/>
+		</xsd:unique>
+		<xsd:unique name="uniqdoc">
+			<xsd:selector xpath="doc"/>
+			<xsd:field xpath="sequence_number"/>
+		</xsd:unique>
+		<xsd:unique name="uniqnum">
+			<xsd:selector xpath="stru/element"/>
+			<xsd:field xpath="@num"/>
+		</xsd:unique>
+	</xsd:element>
+</xsd:schema>

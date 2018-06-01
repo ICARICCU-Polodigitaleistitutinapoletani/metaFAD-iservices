@@ -1,0 +1,281 @@
+= Servizi REST per il Polo digitale
+Ingo Schütze <ingo.schuetze@gruppometa.it>
+v1.0.1, 19-04-2017
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toc-title: Indice
+:lang: it
+:toclevels: 4
+:sectlinks:
+
+[introduction]
+= Introduzione
+
+I servizi REST per il Polo digitale sono servizi di interfacciamento con altri sistemi e 
+di trasformazioni tra i vari formati della piattaforma.
+
+[Risorse]
+= Risorse
+
+In seguito vengono descritti i vari servizi esposti.
+
+[[Sbnmarc]]
+
+== Sbnmarc
+
+Una richiesta `GET` per ottenere il Sbnmarc di una risorsa.
+
+include::{snippets}/get-sbnmarc/request-parameters.adoc[]
+
+
+=== Per esempio
+
+include::{snippets}/get-sbnmarc/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-sbnmarc/http-response.adoc[]
+
+[[Iccd]]
+
+== Iccd
+
+Una richiesta `GET` per ottenere l'Iccd di una risorsa. Questo metodo applica una trasformazione del record in format 
+sbnmarc in ICCD, nel fomrato relativo al tipo di scheda. Al momento sopportato: F, S, D, e AUT per gli autori.
+AU.AUT ha la proprietà 'vid' che individuare la risorse collgata, authority file con vid, che
+può essere richiesto a questo servizio con bid=vid e type=AUT. 
+
+include::{snippets}/get-iccd/request-parameters.adoc[]
+
+
+=== Per esempio
+
+include::{snippets}/get-iccd/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-iccd/http-response.adoc[]
+
+=== Per esempio per la scheda AUT
+
+include::{snippets}/get-iccd2/curl-request.adoc[]
+
+=== La riposta per la scheda AUT
+
+include::{snippets}/get-iccd2/http-response.adoc[]
+
+
+[[Job_import]]
+
+== Job Importazione
+
+Una richiesta `GET` per importare il file Unimarc in formato JSON.
+
+include::{snippets}/get-job/request-parameters.adoc[]
+
+Il processo di importazione è diviso in bibliografico e authorities. Ci sarà da lanciare:
+
+. Import UNIMARC -> Json
+
+    Chiamata a: http://localhost:8080/jobs/import/start?filename=test.mrc&direcory=/opt/dataOut/etc
+
+. Importazione in FE
+
+    Chiamata a: http://localhost:8080/jobs/import/start?filename=test.mrc&direcory=toSolr
+
+. Importazione in FE-Metaindice
+
+    Chiamata a: http://localhost:8080/jobs/import/start?filename=test.mrc&direcory=toSolrMetaindice
+
+
+Per Authorities è sequenza è:
+
+. Import UNIMARC -> Json (AU)
+
+    Chiamata a: http://localhost:8080/jobs/import/start?filename=test.mrc&direcory=/opt/dataOut/etc&profile=au
+
+. Importazione in FE-Au
+
+    Chiamata a: http://localhost:8080/jobs/import/start?filename=test.mrc&direcory=toSolr&profile=au
+
+. Importazione in FE-Metaindice-Au
+
+    Chiamata a: http://localhost:8080/jobs/import/start?filename=test.mrc&direcory=toSolrMetaindiceAu&profile=au
+
+[TIP]
+L'opzione aggiuntivo "clear=false" permette di fare un aggiornamento incrementale. Per default
+ il servizio cancella tutti i record che sono stati inseriti prima dell'esecuzione
+  del job di importazione.
+
+=== Per esempio
+
+include::{snippets}/get-job/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-job/http-response.adoc[]
+
+
+[[Job_import_status]]
+
+== Stato del Job Importazione
+
+Una richiesta `GET` per conoscere lo stato del job di importazione.
+
+
+
+=== Per esempio
+
+include::{snippets}/get-jobstatus/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-jobstatus/response-fields.adoc[]
+
+include::{snippets}/get-jobstatus/http-response.adoc[]
+
+
+[[opac_search]]
+
+== Ricerca nel catalogo
+
+=== GET
+Una richiesta `GET` per cercare nel catalogo (opac, iccd, iccd-f, iccd-s,
+iccd-d, iccd-oa). NOTA: superato dalla richiesta in POST.
+
+include::{snippets}/get-opacsearch/request-parameters.adoc[]
+
+
+==== Per esempio
+
+include::{snippets}/get-opacsearch/curl-request.adoc[]
+
+==== La risposta
+
+include::{snippets}/get-opacsearch/response-fields.adoc[]
+
+include::{snippets}/get-opacsearch/http-response.adoc[]
+
+=== POST
+Una richiesta `POST` per cercare nel OPAC. Si manda in POST un
+oggetto del tipo SearchRequest creando una specie di protocollo
+uniforme per tutte le richieste anche più complesse.
+
+Gli operatori sono;
+
+. OR
+. AND
+. contains all [dei valori]
+. contains one [dei valori]
+. NOT
+. between [valore1 e valore2]
+. =
+. <
+. >
+
+
+Ogni SimpleClause (proposizione semplice) ha un operatore
+esterno e uno interno. L'esterno serve in
+sostanza per la negazione della proposizione. L'interno della
+ SimpleClause serve per dire come sono collegati i valori al
+ campo, uguale o altro.
+ Per il tipo CompostedClause l'operatore interno definisce
+ la congiunzione tra le sue proposizioni (p.e. una lista di SimpleClause)
+ in AND o in OR.
+
+Se viene utilizzato l'operatore NOT (come operatore esterno) e l'interno è
+"contains all" vuol dire che si esclude dal risultato solo i documenti
+ che contengono tutte le parole.
+ Con l'operatore "contains one" si escludono tutti i documenti che hanno una delle
+ palore.
+
+include::{snippets}/post-opacsearch/request-fields.adoc[]
+
+
+==== Per esempio
+
+include::{snippets}/post-opacsearch/curl-request.adoc[]
+
+==== La risposta
+
+include::{snippets}/post-opacsearch/response-fields.adoc[]
+
+include::{snippets}/post-opacsearch/http-response.adoc[]
+
+[[opac_rresource]]
+
+== Risorsa Catalogo
+
+Una richiesta `GET` per ottenere una risorsa dal OPAC.
+
+include::{snippets}/get-opacresource/request-parameters.adoc[]
+
+
+=== Per esempio
+
+include::{snippets}/get-opacresource/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-opacresource/response-fields.adoc[]
+
+include::{snippets}/get-opacresource/http-response.adoc[]
+
+== Facette Catalogo
+
+Una richiesta `GET` per ottenere i valori di una faccetta dall'indice OPAC.
+
+include::{snippets}/get-facet/request-parameters.adoc[]
+
+
+=== Per esempio
+
+include::{snippets}/get-facet/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-facet/response-fields.adoc[]
+
+include::{snippets}/get-facet/http-response.adoc[]
+
+== Campi Catalogo
+
+Una richiesta `GET` per ottenere la lista dei campi per la definizione della ricerca avanzata.
+
+include::{snippets}/get-fields/request-parameters.adoc[]
+
+
+=== Per esempio
+
+include::{snippets}/get-fields/curl-request.adoc[]
+
+=== La riposta
+
+include::{snippets}/get-fields/response-fields.adoc[]
+
+include::{snippets}/get-fields/http-response.adoc[]
+
+[[Mets2mag]]
+
+== Mets2mag
+
+Il servizio restituisce per una richiesta con un METS un MAG. Si deve fare
+una richiesta `Multipart` per ottenere il MAG di una risorsa METS.
+
+include::{snippets}/test-mets2-mag/request-parameters.adoc[]
+
+include::{snippets}/test-mets2-mag/request-parts.adoc[]
+
+=== Per esempio
+
+include::{snippets}/test-mets2-mag/curl-request.adoc[lines=1..50]
+...
+----
+
+=== La riposta
+
+include::{snippets}/test-mets2-mag/http-response.adoc[lines=1..50]
+...
+----

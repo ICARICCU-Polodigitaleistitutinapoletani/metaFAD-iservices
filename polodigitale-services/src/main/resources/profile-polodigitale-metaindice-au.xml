@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.4.0</version>
+
+
+    <mapping destination="identificativi" searchField="true" is4Fe='true' multiple="false" />
+    <!-- da togliere per POLODEBUG-233
+        non prendere i campi per label ma pe id
+        "denominazione/nome/sintetica" è il campo del titolo
+    -->
+    <!--
+    <mapping destination="tipoEntita"  searchField="true" is4Fe='true' multiple="false" facet="" vistaShort="1"/>
+    <mapping destination="tipoScheda" searchField="true" is4Fe='true' multiple="false" facet="" vistaShort="3"/>
+    <mapping destination="dominio" searchField="true" is4Fe='true' multiple="false" facet="" vistaShort="2"/>
+    <mapping destination="denominazione/nome" searchField="true" is4Fe='true' multiple="true" vistaShort="4"/>
+    <mapping destination="denominazione/nome/sintetica" searchField="false" is4Fe='true' multiple="true"  sortField="true"/>
+    -->
+    <!--  titolo per la sintetica POLODEBUG-233-->
+    <mapping destination="tipoEntita" facetLabel="Tipo entità" label="tipo entità" searchField="true" is4Fe='true' multiple="false" facet="" vistaShort="1" facetOrder="3"/>
+    <mapping destination="tipoScheda" facetLabel="Tipo scheda" label="tipo scheda" searchField="true" is4Fe='true' multiple="false" facet="" vistaShort="3" facetOrder="2"/>
+    <mapping destination="dominio" facetLabel="Dominio" searchField="true" is4Fe='true' multiple="false" facet="" vistaShort="2" facetOrder="1"/>
+    <mapping destination="denominazione/nome" searchField="true" is4Fe='true' multiple="true" vistaShort="4" />
+    <mapping destination="denominazione/nome/sintetica" searchField="false" is4Fe='true' multiple="true" vistaShort="5"  sortField="true"/>
+
+    <mapping destination="dataDa" searchField="true" is4Fe='true' multiple="false"/>
+    <mapping destination="dataA" searchField="true" is4Fe='true' multiple="false" />
+    <mapping destination="datazione" facetLabel="Datazione" searchField="true" is4Fe='true' multiple="true" facet="" facetOrder="4"/>
+    <!-- diventa multiple 11-04-2017 -->
+    <mapping destination="ruolo" facetLabel="Ruolo" searchField="true" is4Fe='true' multiple="true" facet="" facetOrder="5"/>
+
+    <!-- ricerca semplice -->
+    <mapping destination="Tutto" multiple="true"  searchType="text" label="Tutti i campi" solrFieldname="text" searchField="true" type="text"/>
+
+</mappings>

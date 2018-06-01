@@ -1,0 +1,49 @@
+= Libreria mets2mag
+
+La libreria mets2mag trasforma un XML METS in MAG. La libreria fornisce
+un transformer per effettuare la trasformazione XSLT.
+
+Il formato restituito è un XML MAG completo.
+
+Il componente DefaultFileDescriptionRepository tenta di leggere le singole
+immagini descritte nel file METS,se viene passato al template il parametro "baseDir"
+che si riferisce
+alla cartella della risorsa descritta dal METS, dato in forma assoluta.
+Vengono aggiunte larghezza e altezza dell'immagine,
+md5 e filesize del METS vengono sovrascritti per il MAG.
+
+Codice di esempio:
+[source, java]
+----
+import java.io.StringWriter;
+
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import com.gruppometa.mets2mag.saxon.SaxonHelper;
+
+...
+Transformer transformer = SaxonHelper.getInstance().getTransformer();
+try {
+    StringWriter stringWriter = new StringWriter();
+    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+    Source streamSource = new StreamSource(...));
+    transformer.setParameter("baseDir","/home/users/temp");
+    transformer.setParameter("stprog","Progetto X");
+    transformer.setParameter("collection","Collezione Y");
+    transformer.setParameter("agency","Agency Z");
+    transformer.setParameter("access_rights","0");
+    transformer.setParameter("completeness","1");
+    transformer.transform(streamSource,new StreamResult(stringWriter));
+    String ret = stringWriter.toString();
+} catch (Exception e) {
+    e.printStackTrace();
+}
+...
+----
+
+

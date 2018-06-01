@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>MetaFad</title>
+    <style th:fragment="style">
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+th{
+    text-align: center;
+    background-color: #cecece;
+}
+table#t01 {
+    width: 90%;
+    background-color: #eeeeee;
+    margin-left: 40px;
+}
+body{
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h4, h3, h3 a{
+    background-color: #7B8967;
+    padding: 20px;
+    color: white;
+}
+a{
+    color: #7B8967;
+}
+.about{
+    font-weight: bold;
+}
+tr:nth-child(even) {background: #eeeeee}
+tr:nth-child(odd) {background: #e0e0e0}
+</style>
+</head>
+<body>
+    <th:block th:each="doc  : ${result.response.docs}">
+            <h3 th:text="${doc.id}">doc</h3>
+        <table id="t01">
+        <th:block th:each="node1: ${doc.nodes}">
+                <tr th:each="node: ${node1.nodes}">
+                    <td th:text="${node.label}"></td>
+                    <td>
+                        <th:block th:each="value: ${node.values}">
+                                <a th:if="${#strings.startsWith(value,'Concept/')}" th:href="@{resource(id=${value})}" th:text="${value}"></a>
+                                <span th:unless="${#strings.startsWith(value,'Concept/')}"  th:text="${value}"></span>
+                            <br/>
+                        </th:block>
+                    </td>
+                </tr>
+        </th:block>
+        </table>
+    </th:block>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.3.7</version>
+
+    <mapping destination="primo_livello_id" label="Primo livello (identificativo)" searchType="text"  multiple="false" vistaShort="1" is4Fe="true" />
+    <mapping destination="primo_livello_label" label="Primo livello (label)" searchType="text"  multiple="false" vistaShort="1.01" is4Fe="true"
+             facet="" facetOrder="3" facetLabel="Complesso d'appartanenza" />
+
+    <!-- UD -->
+
+    <mapping destination="Tutto"  solrFieldname="text" searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <!-- per label del campo -->
+    <mapping destination="ca:denominazione_all_intestazione"  label="Denominazione + Estremo cronologico testuale (relativo)" searchField="true" is4Fe='true' multiple="true" vistaShort="5"/>
+
+    <!-- ricerca avanzata -->
+
+    <xi:include href="/profile-polodigitale-archivio-search-ud.xml"/>
+    <!-- scheda di dettaglio -->
+    <xi:include href="/profile-polodigitale-archivio-fe-ud.xml"/>
+   <mapping destination="Digitale" searchField="true" is4Fe='true' multiple="false" facet=""/>
+   <mapping destination="InstituteKey" facetLabel="Istituto" searchField="false" is4Fe='true' multiple="false" vistaShort="6" docAttribute="true" facet="" facetOrder="100"/>
+
+    <mapping destination="type_nxs" solrFieldname="type_nxs" searchField="true" is4Fe='true' multiple="false"/>
+    <xi:include href="/na-common-fields.xml"/>
+
+</mappings>

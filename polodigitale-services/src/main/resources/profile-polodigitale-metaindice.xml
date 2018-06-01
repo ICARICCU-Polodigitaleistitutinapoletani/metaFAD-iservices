@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.3.7</version>
+
+
+    <mapping destination="dominio" facetLabel="Dominio" searchField="true" is4Fe='true' multiple="false" facet="" facetOrder="1" vistaShort="1"/>
+    <mapping destination="tipoSpecificoDoc" label="Tipologia" searchField="true" is4Fe='true' multiple="false" facet="" facetOrder="2"/>
+    <mapping destination="localizzazione" facetLabel="Localizzazione" searchField="true" is4Fe='true' multiple="true" facet="" vistaEtichette="1" facetOrder="9" vistaShort="10"/>
+    <mapping destination="digitale" facetLabel="Digitale" searchField="true" is4Fe='true' multiple="false" facet="" facetOrder="3"/>
+    <mapping destination="denominazione/titolo" searchField="true" is4Fe='true' multiple="true" vistaShort="2"  vistaEtichette="2"/>
+    <mapping destination="collezione" searchField="true" is4Fe='true' multiple="true" vistaShort="2.3"  vistaEtichette="2.3"/>
+    <mapping destination="fa parte di" searchField="true" is4Fe='true' multiple="true" vistaShort="2.2"  vistaEtichette="2.2"/>
+    <!--
+    <mapping destination="responsabilita" label="Responsabilità" searchField="true" is4Fe='true' multiple="true" vistaShort="3" facet=""  vistaEtichette="3" facetOrder="5"/>
+    tutte le forme
+    solo forme accettate
+    -->
+    <mapping destination="responsabilita" label="Responsabilità" searchField="true" is4Fe='true' multiple="true" vistaEtichette="3"/>
+    <mapping destination="responsabilita_accettate" label="Responsabilità" searchField="false" is4Fe='true' multiple="true" vistaShort="3" facet=""  facetOrder="5"/>
+    <mapping destination="autore" label="Autore" is4Fe='true' multiple="true" vistaShort="3.1" facet=""  facetOrder="5"/>
+    <mapping destination="ruolo"  facetLabel="Ruolo" searchField="true" is4Fe='true' multiple="true" facet="" facetOrder="6"/>
+    <mapping destination="estremo_remoto" searchField="true" is4Fe='true' multiple="true"/>
+    <mapping destination="estremo_recente" searchField="true" is4Fe='true' multiple="true"/>
+    <mapping destination="cronologia_range" searchField="true" is4Fe='true' multiple="true"/>
+    <mapping destination="soggetto" facetLabel="Soggetto" searchField="true" is4Fe='true' multiple="true" facet=""  vistaEtichette="4" facetOrder="8"/>
+    <mapping destination="lingua"  facetLabel="Lingua" searchField="true" is4Fe='true' multiple="true" facetOrder="7" facet="" />
+    <mapping destination="chi" searchField="true" is4Fe='true' multiple="true"/>
+    <mapping destination="cosa" searchField="true" is4Fe='true' multiple="true"/>
+    <mapping destination="quando" searchField="true" is4Fe='true' multiple="true"/>
+    <mapping destination="dove" searchField="true" is4Fe='true' multiple="true"/>
+
+    <mapping destination="Titolo ordinamento" is4Fe="true" multiple="false" sortField="true" sortFieldName="titolo_ordinamento_s"/>
+    <mapping destination="Autore ordinamento" is4Fe="true" multiple="false" sortField="true"  sortFieldName="autore_ordinamento_s"/>
+
+    <!--
+    NO FACCETTA
+    10-05-2017: SI FACCETTA
+    <mapping destination="complessoDAppartenenza" facetLabel="Complesso" label="complesso" searchField="true" is4Fe='true' multiple="true" vistaShort="4"  vistaEtichette="5" />
+    -->
+    <mapping destination="complessoDAppartenenza" facetLabel="Complesso" label="complesso" searchField="true" is4Fe='true' multiple="true" facet="" vistaShort="4"  vistaEtichette="5" facetOrder="4"/>
+    <mapping destination="Area digitale" searchField="true" is4Fe='true' multiple="true" facet=""/>
+    <mapping destination="InstituteKey" searchField="false" is4Fe='true' multiple="false" vistaShort="6" docAttribute="true"/>
+
+    <xi:include href="/na-common-fields.xml"/>
+    <!-- ricerca semplice -->
+    <mapping destination="Tutto" multiple="true"  searchType="text" label="Tutti i campi" solrFieldname="text" searchField="true" type="text"/>
+
+</mappings>

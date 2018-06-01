@@ -1,0 +1,11 @@
+frui	3	Prestito categorie particolar	3
+frui	C	consultazione e fotoriproduzione	C
+frui	D	Prestito e consultazione	D
+frui	E	tutti i servizi(da non usare)	E
+frui	G	Consultabile in Google Books. Disponibile al  prestito, se ammesso	G
+frui	LR	Legatura e restauro	LR
+frui	N	Momentaneamente non disponibile	N
+frui	P	Escluso dal prestito salvo casi eccezionali	P
+frui	T	tutti i servizi	T
+frui	U	Uso interno	U
+frui	Z	solo consultazione	Z  

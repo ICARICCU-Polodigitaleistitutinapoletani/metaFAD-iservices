@@ -1,0 +1,69 @@
+version '1.0'
+
+buildscript {
+    ext {
+        springBootVersion = '1.4.0.RELEASE'
+        springRestDocsVersion = '1.1.1.RELEASE'
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath('io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE')
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.0.0"
+        classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+    }
+}
+apply plugin: "com.jfrog.artifactory"
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'com.bmuschko.nexus'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+version = '1.0'
+group = "com.gruppometa"
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'sbnmarc-mag',
+                'Implementation-Version': version
+    }
+}
+
+nexus {
+    sign = false
+    repositoryUrl = 'http://127.0.0.1:8081/repository/maven-releases/'
+    snapshotRepositoryUrl = 'http://127.0.0.1:8081/repository/maven-snapshots/'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        name "meta.nexus"
+        url "http://127.0.0.1:8081/repository/maven-releases/"
+    }
+}
+
+dependencies {
+    compile ('net.sf.saxon:Saxon-HE:9.7.0-14')
+    compile ('org.slf4j:slf4j-api:1.7.7')
+    compile('com.gruppometa:unimarc-transformer2:1.0') {
+        exclude group: 'org.slf4j', module: 'slf4j-jcl'
+//    	exclude group: 'org.codehaus.woodstox'
+    }
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.7'
+
+}
+
+uploadArchives {
+    repositories {
+        flatDir {
+            dirs 'repos'
+        }
+    }
+}

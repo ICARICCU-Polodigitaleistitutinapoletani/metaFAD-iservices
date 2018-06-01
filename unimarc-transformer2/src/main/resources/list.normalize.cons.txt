@@ -1,0 +1,14 @@
+CONS	A	Annotato	A
+CONS	B	Buono	B
+CONS	C	Consumato	C
+CONS	G	Idoneo digitalizzazione	G
+CONS	H	Rott	H
+CONS	I	Integro	I
+CONS	M	Mutilo	M
+CONS	N	Nuovo	N
+CONS	R	Rilegato	R
+CONS	S	Sottolineato	S
+CONS	Z	Consumato e sottolineato	Z
+
+
+

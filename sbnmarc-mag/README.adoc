@@ -1,0 +1,43 @@
+= Libreria sbnmarc-mag
+
+La libreria converte un documento SBNMARC o UNIMARC
+nel formato Mag (sezione bib).
+
+Il formato restituito è un XML MAG solamente con la sezione BIB.
+
+[source, java]
+----
+
+import com.gruppometa.sbnmarc.mag.*;
+
+    MagTransformer magTransformer = new MagTransformer();
+
+    /**
+     * unimarc da OPAC SBN
+     */
+    UnimarcClient unimarcClient = new UnimarcClient();
+    String mag = null;
+
+    try {
+        mag = unimarcClient.getOpacSbn2Mag(magTransformer, "NAP0668034");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    System.out.println(mag);
+
+    /**
+     * SBNMARC dal polo
+     */
+    SbnMarcClient sbnMarcClient = new SbnMarcClient();
+    sbnMarcClient.setUsername("pmdigi");
+    sbnMarcClient.setUrl("http://sbnweb.bnnonline.it/SbnMarcWeb/SbnMarcTest");
+
+    String mag2 = null;
+    try {
+        mag2 = sbnMarcClient.getSbnMarc2Mag(magTransformer, "NAP0668034");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    System.out.println(mag2);
+----

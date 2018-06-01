@@ -1,0 +1,208 @@
+spring:
+  jackson:
+    date-format: "YYYY-MM-dd"
+    serialization:
+      write-dates-as-timestamps: false
+      indent_output: true
+
+serviceUsername: pmdigi
+devSwitch: _dev
+servicePassword: pmdigi16
+solrBase: http://127.0.0.1:8983/solr
+solrFeUrl: ${solrBase}/polodigitale_fe${devSwitch}
+solrFeAuUrl: ${solrBase}/polodigitale_fe_aut${devSwitch}
+solrBeUrl: ${solrBase}/polodigitale${devSwitch}
+solrIccdUrl: ${solrBase}/polofe${devSwitch}
+solrIccdAuUrl: ${solrBase}/polofe_aut${devSwitch}
+solrArchivioCAUrl: ${solrBase}/archive_polofe${devSwitch}
+solrArchivioUDUrl: ${solrBase}/archive_polofe${devSwitch}
+solrArchivioUAUrl: ${solrBase}/archive_polofe${devSwitch}
+solrArchivioAUUrl: ${solrBase}/archive_polofe_aut${devSwitch}
+solrUrlMetaindice: ${solrBase}/metaindice${devSwitch}
+solrUrlMetaindiceAu: ${solrBase}/metaindice_aut${devSwitch}
+
+kardexService:
+  username: ${serviceUsername}
+  password: ${servicePassword}
+  baseUrl: http://sbnweb.bnnonline.it/sbn/api/1.0/periodici/kardex/
+
+sbnWebController:
+  url: "http://sbnweb.bnnonline.it/SbnMarcWeb/SbnMarcTest"
+  username: ${serviceUsername}
+  urlPosseduti: http://sbnweb.bnnonline.it/sbn/api/1.0/docfisico/posseduto/
+  usernamePosseduti: ${serviceUsername}
+  passwordPosseduti: ${servicePassword}
+  timeout: 7000
+# collaudo 
+#  urlPosseduti: http://sbnweb.collaudo.sbn.it/sbn/api/1.0/docfisico/posseduto/
+#  usernamePosseduti: iccerl
+#  passwordPosseduti: polodigitale15
+  
+solrSearchController:
+  solrUrl: ${solrFeUrl}
+  solrUrls:
+      "opac": ${solrFeUrl}
+      "opac-au": ${solrFeAuUrl}
+      "iccd": ${solrIccdUrl}
+      "iccdau": ${solrIccdAuUrl}
+      "iccdau-3.00": ${solrIccdAuUrl}
+      "iccdau-4.00": ${solrIccdAuUrl}
+      "iccd-s": ${solrIccdUrl}
+      "iccd-f": ${solrIccdUrl}
+      "iccd-d": ${solrIccdUrl}
+      "iccd-oa": ${solrIccdUrl}
+      "archivio-ca": ${solrArchivioCAUrl}
+      "archivio-ud": ${solrArchivioUDUrl}
+      "archivio-ua": ${solrArchivioUAUrl}
+      "archivio-au": ${solrArchivioAUUrl}
+      "metaindice": ${solrUrlMetaindice}
+      "metaindice-au": ${solrUrlMetaindiceAu}
+  updatableFields:
+      "digitale"
+  labels:
+    -
+      label: "Responsabilità principale"
+      id: "responsabilita_principale_ss"
+    -
+      label: "test2"
+      id: "test_id2"
+    
+
+unimarcClient:
+  solrUrl: ${solrBeUrl}
+  unimarcBinaryFieldName: unimarc_binary
+
+unimarcImportJob:
+  solrUrl: ${solrFeUrl}
+  solrUrlAu: ${solrFeAuUrl}
+  solrUrlMetaindice: ${solrUrlMetaindice}
+  solrUrlMetaindiceAu: ${solrUrlMetaindiceAu}
+  bufferSize: 3000
+
+recordCollegatiController:
+  solrUrl: ${solrFeUrl}
+  queryField2: nome_di_persona_responsabilita_secondaria_html_nxtxt
+
+recordCollegatiArchivioController:
+  solrUrl: ${solrArchivioUDUrl}
+  queryField: autoreruolo_html_nxtxt
+
+recordCollegatiIccdController:
+  solrUrl: ${solrIccdUrl}
+  queryField: autoreruolo_html_nxtxt
+
+test:
+  test
+
+mappedSolrQueryCreator:
+  filterQueries:
+      "metaindice": "-tipo_seriale_s:serie\\ monografica"
+      "opac": "-tipo_seriale_s:serie\\ monografica"
+
+  queryAdds:
+      "iccd-f": "tipo_di_scheda_ss:F"
+      "iccd-s": "tipo_di_scheda_ss:S"
+      "iccd-d": "tipo_di_scheda_ss:D"
+      "iccd-oa": "tipo_di_scheda_ss:OA"
+      "archivio-ud": "type_nxs:archiveUN"
+      "archivio-ua": "type_nxs:archiveUN"
+      "archivio-ca": "type_nxs:archiveCA"
+
+mappedResponseCreator:
+  profilesNames:
+      "opac": "/naProfile.xml"
+      "opac-au": "/auProfile.xml"
+      "iccd": "/profile-polodigitale-iccd.xml"
+      "iccdau": "/profile-polodigitale-iccdau.xml"
+      "iccdau-3.00": "/profile-polodigitale-iccdau-3.00.xml"
+      "iccdau-4.00": "/profile-polodigitale-iccdau-4.00.xml"
+      "iccd-f": "/profile-polodigitale-iccd-f.xml"
+      "iccd-d": "/profile-polodigitale-iccd-d.xml"
+      "iccd-oa": "/profile-polodigitale-iccd-oa.xml"
+      "iccd-s": "/profile-polodigitale-iccd-s.xml"
+      "archivio-ca": "/profile-polodigitale-archivio-ca.xml"
+      "archivio-ud": "/profile-polodigitale-archivio-ud.xml"
+      "archivio-ua": "/profile-polodigitale-archivio-ua.xml"
+      "archivio-au": "/profile-polodigitale-archivio-au.xml"
+      "metaindice": "/profile-polodigitale-metaindice.xml"
+      "metaindice-au": "/profile-polodigitale-metaindice-au.xml"
+  labelmap:
+     record_collegati: "Titoli collegati"
+     guida_e_identificazione: "Identificativi"
+     qualificazione: "Informazioni codificate"
+  whiteLists4Facets:
+     "livello_bibliografico_s": "spoglio|monografia|periodico"
+  label4CustomFacetMap:
+      "archivio-ud::Antroponimi e sub (UN)": "Persone citate"
+      "archivio-ud::Enti e sub (UN)": "Enti citati"
+      "archivio-ca::Cronologia. Estremo cronologico testuale": "Estremi cronologici"
+      "archivio-ca::Soggetto produttore (in Contesto di provenienza)": "Soggetto produttore"
+      "archivio-ca::Soggetto conservatore (in Contesto di provenienza)": "Soggetto conservatore"
+      "archivio-ca::InstituteKey": "Istituto"
+      "archivio-ca::Denominazione + Estremo cronologico testuale (relativo)": "Complesso"
+
+  facetsValueMap:
+      "metaindice::dominio_s::Archivi": "Archivistico"
+      "metaindice::dominio_s::bibliografico": "Bibliografico"
+# NO      "metaindice::localizzazione_ss::Archivio del Tesoro di San Gennaro - Biblioteca": "Cappella del Tesoro di San Gennaro"
+#      "opac::localizzazione_ss::Archivio del Tesoro di San Gennaro - Biblioteca": "Cappella del Tesoro di San Gennaro"
+
+logging:
+  level:
+    root:
+      INFO
+    com:
+      gruppometa:
+        DEBUG
+        
+---
+spring:
+  profiles: desktop
+
+#solrBase: http://127.0.0.1:9999/solr
+solrBase: http://127.0.0.1:8983/solr
+
+#devSwitch: "_dev"
+devSwitch: ""
+
+---
+
+spring:
+  profiles: produzione
+
+server:
+  port: 8888
+
+devSwitch: ""
+
+---
+
+
+spring:
+  profiles: metafad
+
+devSwitch: ""
+
+solrFeUrl: ${solrBase}/metafad_fe_sbn${devSwitch}
+solrFeAuUrl: ${solrBase}/metafad_fe_sbn_aut${devSwitch}
+solrBeUrl: ${solrBase}/metafad_be${devSwitch}
+solrIccdUrl: ${solrBase}/metafad_fe_iccd${devSwitch}
+solrIccdAuUrl: ${solrBase}/metafad_fe_iccd_aut${devSwitch}
+solrArchivioCAUrl: ${solrBase}/metafad_fe_archive${devSwitch}
+solrArchivioUDUrl: ${solrBase}/metafad_fe_archive${devSwitch}
+solrArchivioUAUrl: ${solrBase}/metafad_fe_archive${devSwitch}
+solrArchivioAUUrl: ${solrBase}/metafad_fe_archive_aut${devSwitch}
+solrUrlMetaindice: ${solrBase}/metaindice${devSwitch}
+solrUrlMetaindiceAu: ${solrBase}/metaindice_aut${devSwitch}
+
+
+
+---
+
+spring:
+  profiles: prova
+
+solrFeUrl: http://127.0.0.1:8983/solr/mycore
+mappedResponseCreator:
+  profilesNames:
+      "opac": "/provaProfile.xml"

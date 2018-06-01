@@ -1,0 +1,48 @@
+Titolo
+Variante del titolo
+Titolo parallelo
+Titolo uniforme 2
+Titoli tutti
+Autore (intestazione)
+Responsabilita tutte
+Nomi tutti
+Titoli collegati
+Data pubblicazione
+Data_inizio
+Data_fine
+Data_range
+Codice Dewey
+Descrizione Dewey
+Classificazione Dewey
+Editore 2
+Stampatore 2
+Responsabilita materiale
+Edizione
+Luogo 2
+Pubblicazione
+Impronta
+Incipit
+ISBN2
+ISSN2
+ISMN2
+Numero di lastra
+Numero editoriale
+Codice identificativo
+Identificativi
+Tutto
+Luogo
+Marca editoriale
+Numero MID
+Numero catalogo tematico
+Numeri
+Numero d'ordine
+Numero d'opera
+RISM
+Sartori
+Organico sintetico
+Organico analitico
+Personaggi
+Rappresentazione (mat. musicale)
+Prima rappresentazione
+Rappresentazione dal vivo
+Rimasterizzazione

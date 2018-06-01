@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad">
+	<mapping destination="un:livello_descrizione"  facet="" facetOrder="1" label="Livello di descrizione (UN)" facetLabel="Livello di descrizione" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:livello_superiore"  vistaShort="1" label="Livello superiore (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:numero_ordinamento"  label="Numero di ordinamento definitivo (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:segnatura"  label="Segnatura attuale (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ud:tipologia"  facet="" facetOrder="2" facetLabel="Tipologia" vistaShort="2" label="Tipologia (UD)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:denominazione_titolo"  label="Titolo originale | Titolo attribuito (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:denominazione_titolo_all"  label="Titolo originale + Integrazione al titolo | Titolo attribuito + Integrazione al titolo (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:intestazione"  vistaShort="3" label="Titolo originale + Cronologia.Estremo cronologico testuale | Titolo attribuito + Cronologia.Estremo cronologico testuale (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ud:autore_responsabile"  facet="" facetOrder="4" facetLabel="Autore/responsabile" label="Cognome e nome | Denominazione (UD)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:ruolo"  facet="" facetOrder="5" facetLabel="Ruolo" label="Ruolo (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:cronologia_principale:estremo_remoto"  label="Cronologia. Estremo remoto.data (UN)" searchField="true" is4Fe='true' multiple="true" rangeEnd="un:cronologia_principale:estremo_recente"/>
+	<mapping destination="un:cronologia_principale:estremo_recente"  label="Cronologia. Estremo recente.data (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:cronologia_principale:estremo_remoto_sec"  label="Cronologia. Estremo remoto.secolo (+ Specifica) (UN)" searchField="true" is4Fe='true' multiple="true" rangeEnd="un:cronologia_principale:estremo_recente_sec" type="century"/>
+	<mapping destination="un:cronologia_principale:estremo_recente_sec"  label="Cronologia. Estremo recente.secolo (+ Specifica) (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:cronologia_datazione_ECT"  facet="" facetOrder="6" facetLabel="Estremi cronologici" label="Cronologia. Estremo cronologico testuale (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:complesso_appartenenza"  _facet="" _facetOrder="3" _facetLabel="Complesso d'appartanenza" vistaShort="4" label="Complesso d'appartanenza (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ud:data_topica"  facet="" facetOrder="7" facetLabel="Data topica" label="Data topica (UD)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:desc_fisica"  label="Descrizione fisica.Tipologia (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:consistenza_all"  label="Visualizzazione della consistenza (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:descrizione_regesto"  label="Descrizione del contenuto (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ud:lingua"  facet=""  facetOrder="8" facetLabel="Lingua" label="Lingua del testo (UD)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:antroponimi" facet="" facetOrder="10" facetLabel="Persone citate"  label="Antroponimi e sub (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:enti"  facet="" facetOrder="11" facetLabel="Enti citati" label="Enti e sub (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:toponimi"  facet="" facetOrder="12" facetLabel="Toponimi" label="Toponimi e sub (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="un:descrittori"  facet="" facetOrder="13" facetLabel="Descrittori" label="Descrittori (UN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:livello_descrizione"  label="Livello di descrizione (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:denominazione/titolo"  label="Denominazione | Altra denominazione (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:cronologia_datazione_ECT"  label="Cronologia. Estremo cronologico testuale (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:denominazione_all_intestazione"  facet="" vistaShort="5" label="Denominazione + Estremo cronologico testuale (relativo) (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:descrizione"  label="Descrizione del contenuto (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:descrizione_all"  label="Descrizione del contenuto | Storia archivistica | Criteri di ordinamento … (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:produttore" facet="" facetOrder="90" facetLabel="Soggetto produttore" label="Soggetto produttore (in Contesto di provenienza ...) (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:conservatore"  facet="" facetOrder="91" facetLabel="Soggetto conservatore" label="Soggetto conservatore (in Contesto di provenienza …) (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="ca:strumenti"  label="Strumenti di ricerca (in Contesto di provenienza …) (CA)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:tipologia"  label="Tipologia (EN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:denominazione"  label="Denominazione principale e sub (EN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:cronologia_datazione_ECT"  label="Cronologia. Estremo cronologico testuale (EN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:denominazione_all_intestazione"  label="Denominazione + Estremo cronologico testuale (relativo) (EN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:luogo_all_intestazione"  label="Luogo + qualifica + estremo cronologico testuale (EN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:descrizione_produttore"  label="&quot;Descrizione.Storia / Biografia … (nel Tab &quot;&quot;Produttore&quot;&quot;)&quot; (EN)" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="en:descrizione_conservatore"  label="&quot;Descrizione e sub (nel Tab &quot;&quot;Conservatore&quot;&quot;)&quot; (EN)" searchField="true" is4Fe='true' multiple="true"/>
+</mappings>

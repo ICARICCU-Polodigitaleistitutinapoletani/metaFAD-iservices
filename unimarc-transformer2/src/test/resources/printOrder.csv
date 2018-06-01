@@ -1,0 +1,140 @@
+Campo	Ordine BE	Ordine  FE	Gruppo BE	Ripetibile
+Livello bibliografico	1	100.1	Guida e identificazione	
+Tipo documento	2	100.2	Guida e identificazione	
+Codice identificativo	3	750.1	Guida e identificazione	
+Identificativo di versione	4		Guida e identificazione	
+ISBN	5	750.3	Guida e identificazione	true
+ISSN	6	750.4	Guida e identificazione	true
+Impronta	7	750.5	Guida e identificazione	true
+ISMN	8	750.6	Guida e identificazione	true
+Altri numeri standard	9	750.7	Guida e identificazione	true
+Numero Bibliografica Nazionale	10	750.8	Guida e identificazione	true
+Numero pubblicazione governativa	11	750.9	Guida e identificazione	true
+Numero editoriale (musica)	12	751.1	Guida e identificazione	true
+Codice universale di prodotto (upc)	13	751.2	Guida e identificazione	true
+Numero internazionale articolo (ean)	14	751.3	Guida e identificazione	true
+Dati per la elaborazione	15	760.1	Qualificazione	
+Data pubblicazione	16			
+Data pubblicazione	17			
+Lingua	18	760.2	Qualificazione	true
+Paese	19	760.3	Qualificazione	
+Dati codificati: monografie	20	760.4	Qualificazione	
+Dati codificati: perodici	21	760.5	Qualificazione	
+Dati codificati: proiezioni visive, registrazioni sonore, film	22	760.6	Qualificazione	
+Dati codificati: materiale grafico	23	760.7	Qualificazione	
+Dati codificati: materiale cartografico - dati generali	24	760.7	Qualificazione	
+Dati codificati: materiale cartografico - caratteristiche fisiche	25	760.8	Qualificazione	
+Dati codificati: materiale cartografico - scala e coordinate	26	760.9	Qualificazione	
+Dati codificati: materiale cartografico - designazione specifica del materiale	27	761.0	Qualificazione	
+Dati codificati: musica a stampa - designazione specifica del materiale	28	761.1	Qualificazione	
+Dati codificati: materiale audiovisivo - attributi fisici	29	761.1	Qualificazione	
+Dati codificati: elaborazioni musicali (elaborazione)	30	761.2	Qualificazione	
+Dati codificati: materiale elettronico	31	761.22	Qualificazione	
+Dati codificati: materiale antico	32	761.3	Qualificazione	
+Dati codificati: contenuto caratteristico dell'espressione	33	761.4	Qualificazione	true
+Tipo di mediazione	34	761.5	Qualificazione	
+Tipo di supporto	35	761.6	Qualificazione	
+Titolo [sintetico]	36			true
+Titolo	37	300.1	Informazioni descrittive	true
+Edizione	38	300.2	Informazioni descrittive	
+Area specifica del materiale: materiale cartografico dati matematici	39	300.3	Informazioni descrittive	true
+Numerazione	40	300.4	Informazioni descrittive	
+Presentazione	41	300.5	Informazioni descrittive	
+Pubblicazione	42	300.6	Informazioni descrittive	
+Luogo	43			
+Editore	44			
+Data pubblicazione	45			
+Luogo	46			
+Editore	47			
+Descrizione fisica	48	300.7	Informazioni descrittive	
+Descrizioni delle serie / collezioni	49	300.8	Informazioni descrittive	true
+Area specifica delle risorse elettroniche	50	300.9	Informazioni descrittive	true
+Note generali	51	301.0	Informazioni descrittive	true
+Note tra titoli	52	301.1	Informazioni descrittive	true
+Note tra titoli	53	301.2	Informazioni descrittive	true
+Note relative alla responsabilita'	54	301.3	Informazioni descrittive	true
+Note relative all'esemplare	55	1301.4	Informazioni descrittive	true
+Note al cast	56	301.6	Informazioni descrittive	true
+Note relative alla periodicita' di pubblicazione	57	301.7	Informazioni descrittive	true
+Note di contenuto	58	301.8	Informazioni descrittive	true
+Abstract	59	301.9	Informazioni descrittive	
+Note sulla risorsa elettronica	60	302.1	Informazioni descrittive	true
+Note tecniche sulla risorsa elettronica	61	302.2	Informazioni descrittive	true
+Collezione	62	400.1	Record collegati	true
+Supplemento	63	400.2	Record collegati	
+Padre di supplemento	64	400.3	Record collegati	
+Allegato a	65	400.4	Record collegati	true
+Continuazione di	66	400.5	Record collegati	
+Continuazione in parte di	67	400.6	Record collegati	
+Ha assorbito	68	400.7	Record collegati	
+Continua con	69	400.8	Record collegati	
+Assorbito da	70	400.88	Record collegati	
+Si scinde in	71	400.88	Record collegati	
+Fuso con	72	400.9	Record collegati	
+Altra edizione su stesso supporto	73	401.1	Record collegati	
+Altra edizione su altro supporto	74	401.2	Record collegati	true
+Traduzione di	75	401.3	Record collegati	
+Legame al livello piu' elevato (set)	76	401.32	Record collegati	
+Legame a livelli intermedi (subset)	77	401.33	Record collegati	
+Legame parte analitica - padre	78	401.34	Record collegati	true
+Legame allo spoglio	79	401.4	Record collegati	true
+Altri titolo correlati	80	401.5	Record collegati	true
+Titolo uniforme	81	500.1	Altri titoli	true
+Titolo parallelo	82	500.2	Altri titoli	true
+Titolo alternativo	83	500.3	Altri titoli	true
+Titolo chiave	84	500.4	Altri titoli	true
+Titolo di raccolta fattizia	85	500.5	Altri titoli	true
+Soggetto	86	600.1	Soggetti e classi	true
+Luogo di pubblicazione normalizzato	87	600.2	Soggetti e classi	true
+Luogo	88			
+Luogo	89			
+Classificazione Dewey	90	600.3	Soggetti e classi	true
+Codice Dewey	91			true
+Descrizione Dewey	92			true
+Altri sistema di classificazione	93	600.4	Soggetti e classi	true
+Responsabilita' principale	94	200.1		true
+Responsabilita' principale	95	200.3		true
+Responsabilita' principale	96	200.3		true
+Responsabilita' principale	97	200.4		true
+Autore [sintetico]	98			
+Autore	99			true
+Autore	100			true
+Autore secondario	101			true
+Autore	102			true
+Editore	103			true
+Autore	104			true
+Autore secondario	105			true
+Nome di persona: responsabilita' principale	106	700.1	Responsabilita'	true
+Nome di persona: responsabilita' alternativa	107	700.2	Responsabilita'	true
+Nome di persona: responsabilita' secondaria	108	700.3	Responsabilita'	true
+Nome di gruppo(ente): responsabilita' principale	109	700.4	Responsabilita'	true
+Nome di gruppo(ente): responsabilita' alternativa	110	700.5	Responsabilita'	true
+Nome di gruppo(ente): responsabilita' secondaria	111	700.6	Responsabilita'	true
+Nome di persona: forma non accettata	112	700.7	Responsabilita'	true
+Nome di gruppo: forma non accettata	113	700.8	Responsabilita'	true
+Orgine del record	114		Dati gestionali	
+Istituzione	115		Dati gestionali	
+Risorsa elettronica	116	303.1	Dati gestionali	
+Localizzazione delle copie in formato elettronico	117		Dati gestionali	true
+Marca editoriale	118	900.1	Campi personalizzati	
+Rappresentazione (mat. musicale)	119	900.2	Identificazione	true
+Notazione (mat. musicale)	120	900.3	Campi personalizzati	
+Incipit (mat. musicale)	121	900.3	Campi personalizzati	true
+Personaggi e interpreti (mat. musicale)	122	900.4	Campi personalizzati	true
+Dati codificati per titolo uniforme musicale	123	900.5	Campi personalizzati	
+Composizione (mat. musicale)	124	900.6	Campi personalizzati	
+Localizzazione	125			true
+Inventari e collocazioni delle copie	126	1000		true
+Inventari e collocazioni delle copie (BE)	127		Dati gestionali	true
+Inventari e collocazioni delle copie	128	1000		true
+Inventari e collocazioni delle copie (BE)	129		Dati gestionali	true
+Inventari e collocazioni delle copie	130	1000		true
+Inventari e collocazioni delle copie (BE)	131		Dati gestionali	true
+Note relative alla provenienza	132	1301.5	Dati gestionali	true
+Localizzazione	133			true
+Localizzazione	134			true
+Numero di monografie e spogli collegati	135		Dati gestionali	true
+Inventario	136			true
+Unimarc	137	0		false
+Data	138	301.1		true
+Nota informativa	139	301.1		true

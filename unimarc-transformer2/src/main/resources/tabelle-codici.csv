@@ -1,0 +1,4106 @@
+Tabella	Descrizione	
+ADES	TIPO ADESIONE A SBN	
+AGEN	AGENZIA DI CATALOGAZIONE	
+ALLI	TIPO ALLINEAMENTO	
+ALTI	ALTITUDINE	
+AUTO	TIPO AUTORE	
+BIDI	DIMENSIONALITA	
+CASA	CATEGORIA DEL SATELLITE	
+CDCO	COLORE	
+CDDI	DIMENSIONI	
+COLA	CONTENUTO LETTERARIO ANTICO	
+COLC	COLORE PER CARTOGRAFIA	
+COLM	CONTENUTO LETTERARIO MODERNO	
+COLO	COLORE PER GRAFICA	
+CONA	CONFIGURAZIONE DEL NASTRO	
+COPE	COMPOSIZIONE DELLA PELLICOLA	
+DATA	TIPO DATA DI PUBBLICAZIONE	
+DESF	DESIGNAZIONE DI FUNZIONE	
+DESI	INDICAZIONE SPECIFICA MATERIALE	
+DIME	CODICE DIMENSIONE	
+DINA	DIMENSIONE DEL NASTRO	
+ECLA	EDIZIONE DEL SISTEMA DI CLASSIFICAZIONE	
+ELEP	ELEMENTI DELLA PRODUZIONE	
+ELMU	TIPO ELABORAZIONE MUSICALE	
+EMUL	MATERIALE DI EMULSIONE DI BASE	
+EMUP	POLARITA'	
+FOAU	FORMA DELL'AUTORE	
+FOCO	FORMA DEL CONTENUTO	
+FODC	FORMA DEL DOCUMENTO CARTOGRAFICO	
+FODE	FORMA DESCRITTORE	
+FODI	FORMATO DI DISTRIBUZIONE (film e imm. proiett.)	
+FOIN	FORMA DELL'INCIPIT	
+FOLU	FORMA DEL LUOGO	
+FOMU	FORMA MUSICALE	
+FOPU	FORMA DELLA PUBBLICAZIONE	
+FORI	FORMA DELLA RIPRODUZIONE	
+FPIM	FORMATO DI PRESENTAZIONE (film)	
+FPUB	FORMATO DI DISTRIBUZIONE	
+GENR	GENERE DELLA ESECUZIONE / REGISTRAZIONE	
+GEPU	GENERE DELLA PUBBLICAZIONE	
+GEUN	TIPO RECORD UNIMARC	
+IMMA	CARATTERE DELL'IMMAGINE	
+INDC	INDICATORE DI COLORE	
+INDS	INDICATORE DI SUONO	
+INDT	TIPO DI TESTO DI REGISTRAZIONE SONORA	
+ININ	INDICATORE INCIPIT	
+LANA	LARGHEZZA DEL NASTRO	
+LARG	LARGHEZZA O DIMENSIONI	
+LASC	LARGHEZZA DELLA SCANALATURA	
+LEAA	LEGAME AUTORE - AUTORE	
+LEDD	LEGAME DESCRITTORE - DESCRITTORE	
+LELK	LEGAME DEL TITOLO PER FUSIONE O DUPLICAZIONE	
+LELL	LEGAME LUOGO - LUOGO	
+LEMU	LEGAME TITOLO - TITOLO PER MUSICA	
+LETA	LEGAME TITOLO - AUTORE	
+LETT	LEGAME TITOLO - TITOLO	
+LICM	SOTTOTIPO LEGAMI MUSICA	
+LICR	LEGAME TITOLO - TITOLO	
+LING	LINGUA DI PUBBLICAZIONE	
+LIVE	LIVELLO DI AUTORITA'	
+LUOG	LEGAME TITOLO - LUOGO	
+MACC	MATERIALE DI ACCOMPAGNAMENTO	
+MAGR	DESIGNAZIONE SPECIFICA DEL MATERIALE GRAFICO	
+MAMU	TIPO MATERIALE MUSICALE	
+MASU	MATERIALE DI SUPPORTO SECONDARIO (immag. proiett.)	
+MATA	MATERIALE TESTUALE DI ACCOMPAGNAMENTO	
+MATE	TIPI MATERIALE DEI DOCUMENTI	
+MEDI	TIPO DI MEDIAZIONE	
+MEOR	MERIDIANO DI ORIGINE	
+MOVI	MOVIMENTO	
+NABI	NATURA BIBLIOGRAFICA	
+NOTA	TIPO DI NOTA	
+NSTD	TIPO NUMERO STANDARD	
+ORGA	STRUMENTI E VOCI PER ORGANICO	
+ORGP	STRUMENTI E VOCI PER ORGANICO - PLURALI	
+PAES	PAESE DI PUBBLICAZIONE	
+PIAT	POSIZIONE DELLA PIATTAFORMA	
+POLO	CODICI POLO	
+PRES	PRESENTAZIONE	
+PRVI	FORMA DI PRESENTAZIONE DI VIDEOREGISTRAZIONI	
+PUGO	PUBBLICAZIONE GOVERNATIVA	
+PUVI	FORMATO DI  DISTRIBUZIONE DI VIDEOREGISTRAZIONI	
+REPE	TIPO REPERTORIO	
+RESP	RESPONSABILITA' AUTORI	
+RIEL	TIPO DI RISORSA ELETTRONICA	
+RISM	CODIFICA BIBLIOTECA DI POLO RISM FITTIZIO - SIGLA RISM	
+SCAL	TIPO DI SCALA	
+SCAR	SPECIALI CARATTERISTICHE DI RIPRODUZIONE	
+SCCF	CARATTERISTICHE DEL COLORE (film)	
+SCLA	SISTEMA DI CLASSIFICAZIONE	
+SENS	SENSORIALITA	
+SIMA	TIPO CONTROLLI DI SIMILITUDINE PER AUTHORITY FILE	
+SIMD	TIPO CONTROLLI DI SIMILITUDINE PER DOCUMENTI	
+SOGG	SOGGETTARIO	
+STES	STESURA	
+STRA	STANDARD TELEVISIVO (videoregistraz. video)	
+SUFC	SUPPORTO FISICO PER CARTOGRAFICO	
+SUFG	SUPPORTO FISICO PER GRAFICA (supporto primario)	
+SUON	INDICATORE DI SUONO	
+SUPP	TIPO DI SUPPORTO	
+SUSU	SUPPORTO DEL SUONO	
+TDIS	TIPO DI DISCO, CILINDRO O NASTRO	
+TECD	INDICATORE DI TECNICA (Disegni)	
+TECN	TECNICA PER CARTOGRAFIA (Tecnica di creazione)	
+TECS	TECNICA PER STAMPE	
+TERE	TECNICA DI REGISTRAZIONE	
+TESL	TIPO TESTO	
+TEVI	TECNICA DI VIDEOREGISTRAZIONI E FILM	
+TICO	TIPO DI CONTENUTO	
+TIMA	TIPO DI MATERIALE	
+TIPE	TIPO DI PELLICOLA A COLORI (film)	
+TIRE	TIPO RETICOLO DOCUMENTO	
+TISC	INDICATORE DI TIPO SCALE	
+TISI	CARATTERISTICHE DEL SUONO (film)	
+TISU	TIPO DI SUONO	
+TITA	TIPO DI TAGLIO	
+TIVI	TIPO DI VIDEO	
+TIVO	TIMBRO VOCALE	
+TONO	TONALITA'	
+TPAU	TIPO ELEMENTO DI AUTHORITY	
+TPMA	TIPO MATERIALE	
+VELO	VELOCITA	
+VERS	VERSIONE (film)	
+		
+TABELLA	DESCRIZIONE	CODICE
+ADES	Struttura e Authority	1
+ADES	Solo Cattura	2
+ADES	Cattura e Localizza per Gestione	3
+ADES	Cattura e Localizza per Possesso	4
+ADES	Cattura, Crea/Corregge senza Allineamento	5
+ADES	Cattura, Crea/Corregge e Allinea	6
+AGEN	ISTITUTO CENTRALE PER IL CATALOGO UNICO	ICCU
+AGEN	Istituto Centrale SBN	ITICCU
+ALLI	Per Data di Aggiornamento	Data
+ALLI	Per Flag	Flag
+ALTI	Terrestre	a
+ALTI	aerea	b
+ALTI	spaziale	c
+AUTO	NOME SEMPLICE	A
+AUTO	NOME COMPOSTO	B
+AUTO	COGNOME SEMPLICE	C
+AUTO	COGNOME COMPOSTO	D
+AUTO	ENTE NOME	E
+AUTO	ENTE GERARCHICO	G
+AUTO	ENTE CONGRESSO	R
+BIDI	bidimensionale	2
+BIDI	tridimensionale	3
+CASA	satellite metereologico	a
+CASA	risorsa terrestre	b
+CASA	osservazione dallo spazio	c
+CDCO	monocolore	a
+CDCO	bianco e nero	b
+CDCO	multicolore	c
+CDCO	scala di grigi	g
+CDCO	misto	m
+CDCO	non applicabile	n
+CDCO	sconosciuto	u
+CDCO	altro	z
+CDDI	9 cm (3½ in)	a
+CDDI	30 cm (12 in)	e
+CDDI	4¾ in o 12 cm	g
+CDDI	3 x 6 cm (1⅛ x 2⅜ in.)	i
+CDDI	10 x 7 cm (3⅞ x 2½ in.)	j
+CDDI	non applicabile	n
+CDDI	14 cm (5¼ in)	o
+CDDI	sconosciuto	u
+CDDI	20 cm (8 in.)	v
+CDDI	altro	z
+COLA	poesia	aa
+COLA	letteratura epica, cavalleresca, pastorale	ab
+COLA	testo teatrale	ca
+COLA	libretto	da
+COLA	narrativa 	ea
+COLA	romanzo	eb
+COLA	novella	ec
+COLA	favola	ed
+COLA	fiaba	ef
+COLA	allegoria	eg
+COLA	leggenda	eh
+COLA	parabola	ei
+COLA	racconto breve	ej
+COLA	saggio, romanzo d'appendice	fa
+COLA	umorismo, satira	ga
+COLA	epistolario	ha
+COLA	miscellanea	ia
+COLA	massima, aforisma, proverbio, aneddoto	ja
+COLA	letteratura giovanile	ka
+COLA	altro	la
+COLA	cronaca	lb
+COLA	memoria	lc
+COLA	diario	ld
+COLA	biografia	le
+COLA	agiografia	lf
+COLA	viaggio	lg
+COLA	erotica	lh
+COLA	letteratura mistica	li
+COLA	oratoria, discorsi	ma
+COLA	testo non letterario	yy
+COLA	multiplo o altro	zz
+COLC	un colore	a
+COLC	multi colore	b
+COLM	narrativa	a
+COLM	testo teatrale, sceneggiatura	b
+COLM	saggi	c
+COLM	umorismo, satira	d
+COLM	epistolari	e
+COLM	racconti brevi	f
+COLM	poesia	g
+COLM	discorsi, oratoria	h
+COLM	libretto	i
+COLM	testo non letterario	y
+COLM	miscellanea o altre forme letterarie	z
+COLO	monocromatico	a
+COLO	bianco e nero	b
+COLO	multicolore	c
+COLO	colorato a mano	d
+COLO	sconosciuto	u
+COLO	misto	v
+COLO	non applicabile	x
+COLO	altro	z
+CONA	pista intera	a
+CONA	metà di una pista	b
+CONA	un quarto di pista	c
+CONA	un ottavo di pista	d
+CONA	12 piste	e
+CONA	16 piste	f
+CONA	24 piste	g
+CONA	6 piste	h
+CONA	sconosciuto	u
+CONA	registrazione diversa da nastro	x
+CONA	altro	z
+COPE	supporto safety (triacetato)	a
+COPE	nitrato	b
+COPE	safety (diacetato)	c
+COPE	supporto di poliestere	d
+COPE	sconosciuto	u
+COPE	supporto misto (nitrato e safety)	v
+COPE	altro	z
+DATA	SERIALE CORRENTE	a
+DATA	SERIALE CESSATO	b
+DATA	DATA SEMPLICE	d
+DATA	RIPRODUZIONE	e
+DATA	DATA INCERTA	f
+DATA	DATA MULTIPLA	g
+DESF	disegno architettonico	aa
+DESF	copertina	ab
+DESF	figurina	ac
+DESF	manifesto	ad
+DESF	cartolina	ae
+DESF	biglietto augurale	af
+DESF	carta	ag
+DESF	carta da gioco	ah
+DESF	scheda didattica	ai
+DESF	materiale effimero	aj
+DESF	calendario	an
+DESF	segna posto	as
+DESF	santino	au
+DESF	sconosciuto	uu
+DESF	misto	vv
+DESF	non applicabile	xx
+DESF	altro	zz
+DESI	cartuccia nastro	a
+DESI	cartuccia con chip di memoria	b
+DESI	cartuccia disco ottico del computer	c
+DESI	cassetta del nastro	f
+DESI	bobina del nastro	h
+DESI	disco magnetico	j
+DESI	disco ottico magnetico	m
+DESI	disco ottico	o
+DESI	remoto	r
+DESI	sconosciuto	u
+DESI	altro	z
+DIME	due dimensioni	a
+DIME	tre dimensione	b
+DINA	7.5 cm (3 in.)	a
+DINA	12.7 cm (5 in.)	b
+DINA	17,78 cm (7 in.)	c
+DINA	25.4 cm (10 in.)	d
+DINA	30.48 cm (12 in.)	e
+DINA	40.64 cm (16 in.)	f
+DINA	35.56 cm (14 in.)	g
+DINA	12 cm (4¾ in., compact disc)	h
+DINA	10 cm x 6.3 cm (3 7/8 x 2½ in., audiocassetta)	j
+DINA	13.2 cm x 9.7 cm (5¼ x 3 7/8 in., cartuccia)	o
+DINA	2¾ x 4 in. Cilindri	s
+DINA	sconosciuto	u
+DINA	non applicabile	x
+DINA	altro	z
+ECLA	10^ edizione ridotta della 18^	10
+ECLA	11^ edizione ridotta della 19^	11
+ECLA	12^ edizione ridotta della 20^	12
+ECLA	13^ edizione ridotta della 21^ 	13
+ECLA	14^ edizione ridotta della 22^	14
+ECLA	15^ edizione	15
+ECLA	15^ edizione ridotta della 23^	15r
+ECLA	16^ edizione	16
+ECLA	17^ edizione	17
+ECLA	18^ edizione	18
+ECLA	19^ edizione	19
+ECLA	20^ edizione	20
+ECLA	21^ edizione	21
+ECLA	22^ edizione	22
+ECLA	23^ edizione	23
+ELEP	stampa di lavoro	a
+ELEP	tagli	b
+ELEP	esterni	c
+ELEP	rushes	d
+ELEP	colonne mix	e
+ELEP	fondini titoli/rullini didascalie	g
+ELEP	rullini di lavorazione	h
+ELEP	sconosciuto	u
+ELEP	non applicabile	x
+ELEP	altro	z
+ELMU	adattamento	a
+ELMU	contrafactum	c
+ELMU	elaborazione	e
+ELMU	riduzione facilitata	f
+ELMU	arrangiamento	g
+ELMU	realizzazione	l
+ELMU	armonizzazione	m
+ELMU	orchestrazione	o
+ELMU	trasposizione	p
+ELMU	riduzione	r
+ELMU	strumentazione	s
+ELMU	trascrizione	t
+EMUL	pellicola safety	a
+EMUL	pellicola di base oltre a pellicola safety	b
+EMUL	sintetico (plastica, vinile, ecc.)	c
+EMUL	sconosciuto	u
+EMUL	supporti vari (che contiene più di un tipo di supporto)	v
+EMUL	non una proiezione visiva	x
+EMUL	altro	z
+EMUP	positiva	a
+EMUP	negativa	b
+EMUP	sconosciuta	u
+EMUP	non applicabile	x
+EMUP	altro	z
+FOAU	ACCETTATA	A
+FOAU	RINVIO	R
+FOCO	dataset	a
+FOCO	immagine	b
+FOCO	movimento	c
+FOCO	musica	d
+FOCO	oggetto	e
+FOCO	programma	f
+FOCO	suoni	g
+FOCO	parlato	h
+FOCO	testo	i
+FOCO	forme di contenuto multiple	m
+FOCO	altre forme di contenuto	z
+FODC	atlante	a
+FODC	diagramma	b
+FODC	globo	c
+FODC	mappa	d
+FODC	modello	e
+FODC	profilo	f
+FODC	immagine remota	g
+FODC	sezione	h
+FODC	veduta	i
+FODC	pianta	j
+FODC	altro	z
+FODE	ACCETTATA	A
+FODE	RINVIO	R
+FODI	film in bobina	a
+FODI	film in cartuccia	b
+FODI	film in cassetta	c
+FODI	altro tipo di film	d
+FODI	filmina in cartuccia 	g
+FODI	filmslip	h
+FODI	altro tipo di filmina	i
+FODI	filmina in rotolo	j
+FODI	diapositiva, gruppo di diapositive, immagini stereoscopiche	k
+FODI	lucido	l
+FODI	sconosciuto	u
+FODI	non film o videoproiezione	x
+FODI	altre forme di pubblicazione/distribuzione	z
+FOIN	accademia	aaa           
+FOIN	acclamazione	aab           
+FOIN	actus musicus	aac           
+FOIN	agnus dei	aad           
+FOIN	akathistos hymnos	aae           
+FOIN	alba	aaf           
+FOIN	albumblatt	aag           
+FOIN	alleluia	aah           
+FOIN	allemanda	aai           
+FOIN	amener	aaj           
+FOIN	anagramma	aak           
+FOIN	ante evangelium	aal           
+FOIN	antifona	aam           
+FOIN	applauso	aan           
+FOIN	arabesque	aao           
+FOIN	ariette	aap           
+FOIN	arioso	aaq           
+FOIN	assoluzione	aar           
+FOIN	aubade	aas           
+FOIN	aurresku	aat           
+FOIN	azione coreografica	aau           
+FOIN	azione giocosa	aav           
+FOIN	azione musicale (sec. 20.)	aaw           
+FOIN	azione sacra	aax           
+FOIN	azione teatrale	aba           
+FOIN	baccanale	abb           
+FOIN	badinage	abc           
+FOIN	bagatella	abd           
+FOIN	baiao	abe           
+FOIN	bänkelgesang	abf           
+FOIN	ballad opera	abg           
+FOIN	ballo	abh           
+FOIN	barcarola	abi           
+FOIN	barform	abj           
+FOIN	barriera	abk           
+FOIN	bassa danza	abl           
+FOIN	battaglia	abm           
+FOIN	batuque	abn           
+FOIN	béguine	abo           
+FOIN	benedictus	abp           
+FOIN	berceuse	abq           
+FOIN	bergamasca	abr           
+FOIN	bergerette	abs           
+FOIN	bergreichen	abt           
+FOIN	bicinium	abu           
+FOIN	black bottom	abv           
+FOIN	bluette	abw           
+FOIN	bolero	abx           
+FOIN	bolero cubano	aca           
+FOIN	boogie-woogie	acb           
+FOIN	bop	acc           
+FOIN	boston	acd           
+FOIN	bourrée	ace           
+FOIN	boutade	acf           
+FOIN	branle	acg           
+FOIN	brunette	ach           
+FOIN	bugaku	aci           
+FOIN	burlesca	acj           
+FOIN	cabaletta	ack           
+FOIN	caccia	acl           
+FOIN	cachucha	acm           
+FOIN	cadenza	acn           
+FOIN	cakewalk	aco           
+FOIN	calata	acp           
+FOIN	calypso	acq           
+FOIN	canario	acr           
+FOIN	cancan	acs           
+FOIN	cancion	act           
+FOIN	canone bizantino	acu           
+FOIN	canso	acv           
+FOIN	cantata sacra	acw           
+FOIN	cantico	acx           
+FOIN	cantiga	ada           
+FOIN	cantilena	adb           
+FOIN	cantio	adc           
+FOIN	canto carnascialesco	add           
+FOIN	canto funebre	ade           
+FOIN	canto goliardico	adf           
+FOIN	cantus	adg           
+FOIN	cantus planus	adh           
+FOIN	canzona spirituale	adi           
+FOIN	canzone alla francese	adj           
+FOIN	canzone di guerra	adk           
+FOIN	canzone infantile	adl           
+FOIN	canzone leggera	adm           
+FOIN	canzonetta	adn           
+FOIN	capriccio	ado           
+FOIN	carioca	adp           
+FOIN	carmagnole	adq           
+FOIN	carmen	adr           
+FOIN	carola	ads           
+FOIN	carosello	adt           
+FOIN	cassazione	adu           
+FOIN	catch	adv           
+FOIN	cavata	adw           
+FOIN	cavatina	adx           
+FOIN	centone	aea           
+FOIN	cha-cha-cha	aeb           
+FOIN	chanson	aec           
+FOIN	chanson de geste	aed           
+FOIN	chanson de toile	aee           
+FOIN	chanson sentencieuse	aef           
+FOIN	chanson spirituelle	aeg           
+FOIN	chanting	aeh           
+FOIN	charakterstück	aei           
+FOIN	charleston	aej           
+FOIN	chasse	aek           
+FOIN	chiarantana	ael           
+FOIN	ciaccona	aem           
+FOIN	clausula	aen           
+FOIN	colinda	aeo           
+FOIN	comédie-ballet	aep           
+FOIN	comédie mêlée d’ariettes	aeq           
+FOIN	comic opera	aer           
+FOIN	commedia per musica	aes           
+FOIN	communio	aet           
+FOIN	compieta	aeu           
+FOIN	conductus	aev           
+FOIN	confrattorio	aew           
+FOIN	conga	aex           
+FOIN	contacio	afa           
+FOIN	contraddanza	afb           
+FOIN	contrafactum	afc           
+FOIN	contrappunto	afd           
+FOIN	copla	afe           
+FOIN	coro	aff           
+FOIN	corrente	afg           
+FOIN	corrido	afh           
+FOIN	cotillon	afi           
+FOIN	country dance	afj           
+FOIN	couplet	afk           
+FOIN	credo	afl           
+FOIN	csárdás	afm           
+FOIN	cueca	afn           
+FOIN	danza macabra	afo           
+FOIN	decimino	afp           
+FOIN	descort	afq           
+FOIN	devozione	afr           
+FOIN	dialogo	afs           
+FOIN	disguisings	aft           
+FOIN	ditirambo	afu           
+FOIN	divertissement	afv           
+FOIN	dossologia	afw           
+FOIN	double	afx           
+FOIN	drame lyrique	aga           
+FOIN	dramma eroico	agb           
+FOIN	dramma giocoso	agc           
+FOIN	dramma lirico	agd           
+FOIN	dramma liturgico	age           
+FOIN	dramma pastorale	agf           
+FOIN	dramma per musica	agg           
+FOIN	dramma sacro	agh           
+FOIN	dramma scolastico	agi           
+FOIN	dramma semiserio	agj           
+FOIN	dreher	agk           
+FOIN	duetto	agl           
+FOIN	dumka	agm           
+FOIN	écossaise	agn           
+FOIN	egloga	ago           
+FOIN	elegia	agp           
+FOIN	elevazione	agq           
+FOIN	english waltz	agr           
+FOIN	ensalada	ags           
+FOIN	entrée	agt           
+FOIN	epitalamio	agu           
+FOIN	epos	agv           
+FOIN	estampie	agw           
+FOIN	extravaganza	agx           
+FOIN	fackeltanz	aha           
+FOIN	fado	ahb           
+FOIN	falsobordone	ahc           
+FOIN	fandango	ahd           
+FOIN	fanfara	ahe           
+FOIN	farandole	ahf           
+FOIN	farsa	ahg           
+FOIN	favola per musica	ahh           
+FOIN	festa	ahi           
+FOIN	finale	ahj           
+FOIN	fioretto	ahk           
+FOIN	flamenco	ahl           
+FOIN	follia	ahm           
+FOIN	foxtrot	ahn           
+FOIN	fricassée	aho           
+FOIN	frottola	ahp           
+FOIN	furiant	ahq           
+FOIN	furlana	ahr           
+FOIN	gagliarda	ahs           
+FOIN	galop	aht           
+FOIN	gassenhauer	ahu           
+FOIN	gavotta	ahv           
+FOIN	geisslerlieder	ahw           
+FOIN	genero chico	ahx           
+FOIN	air	ai#           
+FOIN	giga	aia           
+FOIN	giustiniana	aib           
+FOIN	glee	aic           
+FOIN	gloria	aid           
+FOIN	graduale	aie           
+FOIN	grand opéra	aif           
+FOIN	greghesca	aig           
+FOIN	gymel	aih           
+FOIN	habanera	aii           
+FOIN	hadutanc	aij           
+FOIN	halling	aik           
+FOIN	hopak	ail           
+FOIN	hoquetus	aim           
+FOIN	hornpipe	ain           
+FOIN	imeneo	aio           
+FOIN	implorazione	aip           
+FOIN	impromptu	aiq           
+FOIN	improperia	air           
+FOIN	ingressa	ais           
+FOIN	inno nazionale	ait           
+FOIN	inno patriottico	aiu           
+FOIN	interludio	aiv           
+FOIN	intermedio	aiw           
+FOIN	intonazione	aix           
+FOIN	intrada	aja           
+FOIN	introduzione	ajb           
+FOIN	introduzione drammatica	ajc           
+FOIN	introito	ajd           
+FOIN	invenzione	aje           
+FOIN	invitatorio	ajf           
+FOIN	invocazione	ajg           
+FOIN	iporchema	ajh           
+FOIN	jeu parti	aji           
+FOIN	jig	ajj           
+FOIN	jigg	ajk           
+FOIN	jota	ajl           
+FOIN	jubilee	ajm           
+FOIN	koleda	ajn           
+FOIN	kolo	ajo           
+FOIN	krakowiak	ajp           
+FOIN	kujawiak	ajq           
+FOIN	kyrie	ajr           
+FOIN	lai	ajs           
+FOIN	ländler	ajt           
+FOIN	lamentazione	aju           
+FOIN	lamento	ajv           
+FOIN	langaus	ajw           
+FOIN	lauda	ajx           
+FOIN	leise	aka           
+FOIN	lettura	akb           
+FOIN	licenza	akc           
+FOIN	liederspiel	akd           
+FOIN	lindy	ake           
+FOIN	lirica	akf           
+FOIN	litania	akg           
+FOIN	liturgia delle ore	akh           
+FOIN	lodi	aki           
+FOIN	loure	akj           
+FOIN	lucernario	akk           
+FOIN	macchietta	akl           
+FOIN	madrigale rappresentativo	akm           
+FOIN	madrigale spirituale	akn           
+FOIN	maggiolata	ako           
+FOIN	malaguena	akp           
+FOIN	mambo	akq           
+FOIN	marcia funebre	akr           
+FOIN	marcia militare	aks           
+FOIN	marcia nuziale	akt           
+FOIN	marcia processionale	aku           
+FOIN	mascherata	akv           
+FOIN	masque	akw           
+FOIN	mattaccino	akx           
+FOIN	mattutino	ala           
+FOIN	maxixe	alb           
+FOIN	mazur	alc           
+FOIN	mélodie	ald           
+FOIN	melodia	ale           
+FOIN	melodia religiosa	alf           
+FOIN	melodramma	alg           
+FOIN	melodramma tragico	alh           
+FOIN	melologo	ali           
+FOIN	melos	alj           
+FOIN	messa di requiem	alk           
+FOIN	messa per organo	all           
+FOIN	metamorfosi	alm           
+FOIN	metodo	aln           
+FOIN	milonga	alo           
+FOIN	mimodramma	alp           
+FOIN	mistero	alq           
+FOIN	modinha	alr           
+FOIN	momento musicale	als           
+FOIN	monferrina	alt           
+FOIN	moralità	alu           
+FOIN	morceau de salon	alv           
+FOIN	moresca	alw           
+FOIN	morris dance	alx           
+FOIN	moto perpetuo	ama           
+FOIN	mumming	amb
+FOIN	muñeira	amc
+FOIN	musette	amd
+FOIN	musica di scena	ame
+FOIN	musical	amf
+FOIN	musique mesurée	amg
+FOIN	mutanza	amh
+FOIN	nachtanz	ami
+FOIN	nauba	amj
+FOIN	negro spiritual	amk
+FOIN	nenia	aml
+FOIN	ninna nanna	amm
+FOIN	noël	amn
+FOIN	nomos	amo
+FOIN	nonetto	amp
+FOIN	novelletta	amq
+FOIN	oberek	amr
+FOIN	offertorio	amt
+FOIN	onestep	amu
+FOIN	opéra-ballet	amv
+FOIN	opera comica	amx
+FOIN	anthem	an#           
+FOIN	opera da camera	ana
+FOIN	opera multimediale	anb
+FOIN	opera per bambini	anc           
+FOIN	opera per marionette	and           
+FOIN	opera radiofonica	ane
+FOIN	opera televisiva	anf
+FOIN	opéra-comique	ang
+FOIN	operetta	anh           
+FOIN	organum	ani
+FOIN	ottetto	anj
+FOIN	padovana	ank
+FOIN	palotas	anl           
+FOIN	pantomima	anm           
+FOIN	parafrasi	ann           
+FOIN	parodia	ano           
+FOIN	partimento	anp
+FOIN	partita	anq
+FOIN	pas de deux	anr
+FOIN	pas redoublé	ans
+FOIN	paso doble	ant
+FOIN	passamezzo	anu
+FOIN	passepied	anv           
+FOIN	pasticcio	anw           
+FOIN	pastorale	anx           
+FOIN	pastourelle	aoa           
+FOIN	pater noster	aob           
+FOIN	pavaniglia	aoc           
+FOIN	peana	aod           
+FOIN	penillon	aoe           
+FOIN	perigordino	aof           
+FOIN	pezzo da concerto	aog           
+FOIN	pibroch	aoh           
+FOIN	piva	aoi           
+FOIN	plainte	aoj           
+FOIN	plaisanterie	aok           
+FOIN	planctus	aol           
+FOIN	plantation song	aom           
+FOIN	polka	aon           
+FOIN	polka mazurka	aoo           
+FOIN	polo	aop           
+FOIN	post evangelium	aoq           
+FOIN	post lectionem	aor           
+FOIN	postcommunio	aos           
+FOIN	postludio	aot           
+FOIN	potpourri	aou           
+FOIN	praeambulum	aov           
+FOIN	praefatio	aow           
+FOIN	preghiera	aox           
+FOIN	preludio	apa           
+FOIN	proemio	apb           
+FOIN	profezia	apc           
+FOIN	prologo	apd           
+FOIN	quadriglia	ape           
+FOIN	quartetto	apf           
+FOIN	quintetto	apg           
+FOIN	quodlibet	aph           
+FOIN	rada	api           
+FOIN	ranz des vaches	apj           
+FOIN	raspa	apk           
+FOIN	récit	apl           
+FOIN	réjouissance	apm           
+FOIN	recitativo	apn           
+FOIN	redowa	apo           
+FOIN	reel	app           
+FOIN	reigenlied	apq           
+FOIN	rejdovak	apr           
+FOIN	responsorio	aps           
+FOIN	rheinländer	apt           
+FOIN	rigaudon	apu           
+FOIN	rispetto	apv           
+FOIN	ritirata	apw           
+FOIN	ritornello	apx           
+FOIN	romance	aqa           
+FOIN	romanesca	aqb           
+FOIN	romanza	aqc           
+FOIN	romanza senza parole	aqd           
+FOIN	rondr	aqe           
+FOIN	rota	aqf           
+FOIN	rotruenge	aqg           
+FOIN	rotta	aqh           
+FOIN	rueda	aqi           
+FOIN	ruggero	aqj           
+FOIN	ruggiero	aqk           
+FOIN	rumba	aql           
+FOIN	sacra rappresentazione	aqm           
+FOIN	saeta	aqn           
+FOIN	sainete	aqo           
+FOIN	sallenda	aqp           
+FOIN	salmello	aqq           
+FOIN	salmo	aqr           
+FOIN	salsa	aqs           
+FOIN	saltarello	aqt           
+FOIN	saltarello tedesco	aqu           
+FOIN	samba	aqv           
+FOIN	sanctus	aqw           
+FOIN	sarabanda	aqx           
+FOIN	aria	ar#           
+FOIN	sardana	ara           
+FOIN	sarum	arb           
+FOIN	scat	arc           
+FOIN	scena	ard           
+FOIN	scherzo	are           
+FOIN	scherzo drammatico	arf           
+FOIN	schnadahüpfl	arg           
+FOIN	schottisch	arh           
+FOIN	schottish	ari           
+FOIN	schuhplattler	arj           
+FOIN	seguidilla	ark           
+FOIN	seises	arl           
+FOIN	sequenza	arm           
+FOIN	serenata	arn           
+FOIN	sestetto	aro           
+FOIN	settimino	arp           
+FOIN	sevillana	arq           
+FOIN	shanty	arr           
+FOIN	shimmy	ars           
+FOIN	siciliana	art           
+FOIN	sinfonia concertante	aru           
+FOIN	sinfonia da camera	arv           
+FOIN	sinfonietta	arw           
+FOIN	singspiel	arx           
+FOIN	sirventes	asa           
+FOIN	sketch	asb           
+FOIN	solfeggio	asc           
+FOIN	soliloquio	asd           
+FOIN	stornello	ase           
+FOIN	strambotto	asf           
+FOIN	stratspey	asg           
+FOIN	symbolum	ash           
+FOIN	symphonie dramatique	asi           
+FOIN	syomyo	asj           
+FOIN	tafelmusik	ask           
+FOIN	tambourin	asl           
+FOIN	tango	asm           
+FOIN	tarantella	asn           
+FOIN	tenso	aso           
+FOIN	terzetto	asp           
+FOIN	threnos	asq           
+FOIN	tirana	asr           
+FOIN	tombeau	ass           
+FOIN	tonadilla	ast           
+FOIN	torneo	asu           
+FOIN	tourdion	asv           
+FOIN	tragédie lyrique	asw           
+FOIN	transitorium	asx           
+FOIN	traquenard	ata           
+FOIN	trattato	atb           
+FOIN	tratto	atc           
+FOIN	trecanum	atd           
+FOIN	trenchmore	ate           
+FOIN	tresca	atf           
+FOIN	trezza	atg           
+FOIN	tricinium	ath           
+FOIN	tricotet	ati           
+FOIN	triodion	atj           
+FOIN	trishagion	atk           
+FOIN	tropo	atl           
+FOIN	tumba	atm           
+FOIN	twostep	atn           
+FOIN	ufficio di requiem	ato           
+FOIN	ufficio divino	atp           
+FOIN	umoresca	atq           
+FOIN	varsovienne	atr           
+FOIN	vaudeville	ats           
+FOIN	veneziana	att           
+FOIN	versetto	atu           
+FOIN	versicolo	atv           
+FOIN	vespro	atw           
+FOIN	villancico	atx           
+FOIN	villanella	aua           
+FOIN	villota	aub           
+FOIN	virelai	auc           
+FOIN	vocalizzo	aud           
+FOIN	volta	aue           
+FOIN	voluntary	auf           
+FOIN	yaravi	aug           
+FOIN	zamacueca	auh           
+FOIN	zamba	aui           
+FOIN	zapateado	auj           
+FOIN	zarzuela	auk           
+FOIN	zoppa	aul           
+FOIN	zortziko	aum           
+FOIN	zwiefacher	aun           
+FOIN	ballata	bd#           
+FOIN	bluegrass	bg#           
+FOIN	blues	bl#           
+FOIN	balletto	bt#           
+FOIN	canzone	cb#           
+FOIN	canto sacro	cc#           
+FOIN	concerto grosso	cg#           
+FOIN	corale	ch#           
+FOIN	preludio corale	cl#           
+FOIN	canone	cn#           
+FOIN	concerto	co#           
+FOIN	chansons, polyphonic	cp#           
+FOIN	carol	cr#           
+FOIN	chance compositions, aleatoric music	cs#           
+FOIN	cantata	ct#           
+FOIN	country music	cy#           
+FOIN	sonata	cz#           
+FOIN	danza	df#           
+FOIN	divertimento	dv#           
+FOIN	fuga	fg#           
+FOIN	canto popolare	fm#           
+FOIN	fantasia	ft#           
+FOIN	gospel song	gm#           
+FOIN	inno	hy#           
+FOIN	intermezzo	in#           
+FOIN	jazz	jz#           
+FOIN	lied	li#           
+FOIN	rivista	mc#           
+FOIN	madrigale	md#           
+FOIN	minuetto	mi#           
+FOIN	mottetto	mo#           
+FOIN	musica da film	mp
+FOIN	marcia	mr#           
+FOIN	messa	ms#           
+FOIN	multiple forms	mu#           
+FOIN	mazurka	mz#           
+FOIN	notturno	nc
+FOIN	ode	ode
+FOIN	opera	op
+FOIN	oratorio	or#           
+FOIN	ouverture	ov#           
+FOIN	prelude and fugue	pf#           
+FOIN	programme music	pg#           
+FOIN	passione	pm#           
+FOIN	polacca	po#           
+FOIN	popular music	pp#           
+FOIN	passacaglia	ps
+FOIN	song	pt#           
+FOIN	pavana	pv#           
+FOIN	rock music	rc#           
+FOIN	rondeau	rd#           
+FOIN	ragtime	rg#           
+FOIN	ricercare	ri#           
+FOIN	rapsodia	rp#           
+FOIN	requiem	rq#           
+FOIN	sinfonia	si#           
+FOIN	poema sinfonico	sp#           
+FOIN	square dance	sq#           
+FOIN	studio	st#           
+FOIN	suite	su#           
+FOIN	toccata	tc#           
+FOIN	trio	ts#           
+FOIN	variazione	vr#           
+FOIN	walzer	wz#           
+FOIN	other forms	zz
+FOLU	ACCETTATA	A
+FOLU	RINVIO	R
+FOMU	accademia	aaa
+FOMU	acclamazione	aab
+FOMU	actus musicus	aac
+FOMU	agnus dei	aad
+FOMU	akathistos hymnos	aae
+FOMU	alba	aaf
+FOMU	albumblatt	aag
+FOMU	alleluia	aah
+FOMU	allemanda	aai
+FOMU	amener	aaj
+FOMU	anagramma	aak
+FOMU	ante evangelium	aal
+FOMU	antifona	aam
+FOMU	applauso	aan
+FOMU	arabesque	aao
+FOMU	ariette	aap
+FOMU	arioso	aaq
+FOMU	assoluzione	aar
+FOMU	aubade	aas
+FOMU	aurresku	aat
+FOMU	azione coreografica	aau
+FOMU	azione giocosa	aav
+FOMU	azione musicale (sec. 20.)	aaw
+FOMU	azione sacra	aax
+FOMU	azione teatrale	aba
+FOMU	baccanale	abb
+FOMU	badinage	abc
+FOMU	bagatella	abd
+FOMU	baiao	abe
+FOMU	bänkelgesang	abf
+FOMU	ballad opera	abg
+FOMU	ballo	abh
+FOMU	barcarola	abi
+FOMU	barform	abj
+FOMU	barriera	abk
+FOMU	bassa danza	abl
+FOMU	battaglia	abm
+FOMU	batuque	abn
+FOMU	béguine	abo
+FOMU	benedictus	abp
+FOMU	berceuse	abq
+FOMU	bergamasca	abr
+FOMU	bergerette	abs
+FOMU	bergreichen	abt
+FOMU	bicinium	abu
+FOMU	black bottom	abv
+FOMU	bluette	abw
+FOMU	bolero	abx
+FOMU	bolero cubano	aca
+FOMU	boogie-woogie	acb
+FOMU	bop	acc
+FOMU	boston	acd
+FOMU	bourrée	ace
+FOMU	boutade	acf
+FOMU	branle	acg
+FOMU	brunette	ach
+FOMU	bugaku	aci
+FOMU	burlesca	acj
+FOMU	cabaletta	ack
+FOMU	caccia	acl
+FOMU	cachucha	acm
+FOMU	cadenza	acn
+FOMU	cakewalk	aco
+FOMU	calata	acp
+FOMU	calypso	acq
+FOMU	canario	acr
+FOMU	cancan	acs
+FOMU	cancion	act
+FOMU	canone bizantino	acu
+FOMU	canso	acv
+FOMU	cantata sacra	acw
+FOMU	cantico	acx
+FOMU	cantiga	ada
+FOMU	cantilena	adb
+FOMU	cantio	adc
+FOMU	canto carnascialesco	add
+FOMU	canto funebre	ade
+FOMU	canto goliardico	adf
+FOMU	cantus	adg
+FOMU	cantus planus	adh
+FOMU	canzona spirituale	adi
+FOMU	canzone alla francese	adj
+FOMU	canzone di guerra	adk
+FOMU	canzone infantile	adl
+FOMU	canzone leggera	adm
+FOMU	canzonetta	adn
+FOMU	capriccio	ado
+FOMU	carioca	adp
+FOMU	carmagnole	adq
+FOMU	carmen	adr
+FOMU	carola	ads
+FOMU	carosello	adt
+FOMU	cassazione	adu
+FOMU	catch	adv
+FOMU	cavata	adw
+FOMU	cavatina	adx
+FOMU	centone	aea
+FOMU	cha-cha-cha	aeb
+FOMU	chanson	aec
+FOMU	chanson de geste	aed
+FOMU	chanson de toile	aee
+FOMU	chanson sentencieuse	aef
+FOMU	chanson spirituelle	aeg
+FOMU	chanting	aeh
+FOMU	charakterstück	aei
+FOMU	charleston	aej
+FOMU	chasse	aek
+FOMU	chiarantana	ael
+FOMU	ciaccona	aem
+FOMU	clausula	aen
+FOMU	colinda	aeo
+FOMU	comédie-ballet	aep
+FOMU	comédie mêlée d’ariettes	aeq
+FOMU	comic opera	aer
+FOMU	commedia per musica	aes
+FOMU	communio	aet
+FOMU	compieta	aeu
+FOMU	conductus	aev
+FOMU	confrattorio	aew
+FOMU	conga	aex
+FOMU	contacio	afa
+FOMU	contraddanza	afb
+FOMU	contrafactum	afc
+FOMU	contrappunto	afd
+FOMU	copla	afe
+FOMU	coro	aff
+FOMU	corrente	afg
+FOMU	corrido	afh
+FOMU	cotillon	afi
+FOMU	country dance	afj
+FOMU	couplet	afk
+FOMU	credo	afl
+FOMU	csárdás	afm
+FOMU	cueca	afn
+FOMU	danza macabra	afo
+FOMU	decimino	afp
+FOMU	descort	afq
+FOMU	devozione	afr
+FOMU	dialogo	afs
+FOMU	disguisings	aft
+FOMU	ditirambo	afu
+FOMU	divertissement	afv
+FOMU	dossologia	afw
+FOMU	double	afx
+FOMU	drame lyrique	aga
+FOMU	dramma eroico	agb
+FOMU	dramma giocoso	agc
+FOMU	dramma lirico	agd
+FOMU	dramma liturgico	age
+FOMU	dramma pastorale	agf
+FOMU	dramma per musica	agg
+FOMU	dramma sacro	agh
+FOMU	dramma scolastico	agi
+FOMU	dramma semiserio	agj
+FOMU	dreher	agk
+FOMU	duetto	agl
+FOMU	dumka	agm
+FOMU	écossaise	agn
+FOMU	egloga	ago
+FOMU	elegia	agp
+FOMU	elevazione	agq
+FOMU	english waltz	agr
+FOMU	ensalada	ags
+FOMU	entrée	agt
+FOMU	epitalamio	agu
+FOMU	epos	agv
+FOMU	estampie	agw
+FOMU	extravaganza	agx
+FOMU	fackeltanz	aha
+FOMU	fado	ahb
+FOMU	falsobordone	ahc
+FOMU	fandango	ahd
+FOMU	fanfara	ahe
+FOMU	farandole	ahf
+FOMU	farsa	ahg
+FOMU	favola per musica	ahh
+FOMU	festa	ahi
+FOMU	finale	ahj
+FOMU	fioretto	ahk
+FOMU	flamenco	ahl
+FOMU	follia	ahm
+FOMU	foxtrot	ahn
+FOMU	fricassée	aho
+FOMU	frottola	ahp
+FOMU	furiant	ahq
+FOMU	furlana	ahr
+FOMU	gagliarda	ahs
+FOMU	galop	aht
+FOMU	gassenhauer	ahu
+FOMU	gavotta	ahv
+FOMU	geisslerlieder	ahw
+FOMU	genero chico	ahx
+FOMU	air	ai#
+FOMU	giga	aia
+FOMU	giustiniana	aib
+FOMU	glee	aic
+FOMU	gloria	aid
+FOMU	graduale	aie
+FOMU	grand opéra	aif
+FOMU	greghesca	aig
+FOMU	gymel	aih
+FOMU	habanera	aii
+FOMU	hadutanc	aij
+FOMU	halling	aik
+FOMU	hopak	ail
+FOMU	hoquetus	aim
+FOMU	hornpipe	ain
+FOMU	imeneo	aio
+FOMU	implorazione	aip
+FOMU	impromptu	aiq
+FOMU	improperia	air
+FOMU	ingressa	ais
+FOMU	inno nazionale	ait
+FOMU	inno patriottico	aiu
+FOMU	interludio	aiv
+FOMU	intermedio	aiw
+FOMU	intonazione	aix
+FOMU	intrada	aja
+FOMU	introduzione	ajb
+FOMU	introduzione drammatica	ajc
+FOMU	introito	ajd
+FOMU	invenzione	aje
+FOMU	invitatorio	ajf
+FOMU	invocazione	ajg
+FOMU	iporchema	ajh
+FOMU	jeu parti	aji
+FOMU	jig	ajj
+FOMU	jigg	ajk
+FOMU	jota	ajl
+FOMU	jubilee	ajm
+FOMU	koleda	ajn
+FOMU	kolo	ajo
+FOMU	krakowiak	ajp
+FOMU	kujawiak	ajq
+FOMU	kyrie	ajr
+FOMU	lai	ajs
+FOMU	ländler	ajt
+FOMU	lamentazione	aju
+FOMU	lamento	ajv
+FOMU	langaus	ajw
+FOMU	lauda	ajx
+FOMU	leise	aka
+FOMU	lettura	akb
+FOMU	licenza	akc
+FOMU	liederspiel	akd
+FOMU	lindy	ake
+FOMU	lirica	akf
+FOMU	litania	akg
+FOMU	liturgia delle ore	akh
+FOMU	lodi	aki
+FOMU	loure	akj
+FOMU	lucernario	akk
+FOMU	macchietta	akl
+FOMU	madrigale rappresentativo	akm
+FOMU	madrigale spirituale	akn
+FOMU	maggiolata	ako
+FOMU	malaguena	akp
+FOMU	mambo	akq
+FOMU	marcia funebre	akr
+FOMU	marcia militare	aks
+FOMU	marcia nuziale	akt
+FOMU	marcia processionale	aku
+FOMU	mascherata	akv
+FOMU	masque	akw
+FOMU	mattaccino	akx
+FOMU	mattutino	ala
+FOMU	maxixe	alb
+FOMU	mazur	alc
+FOMU	mélodie	ald
+FOMU	melodia	ale
+FOMU	melodia religiosa	alf
+FOMU	melodramma	alg
+FOMU	melodramma tragico	alh
+FOMU	melologo	ali
+FOMU	melos	alj
+FOMU	messa di requiem	alk
+FOMU	messa per organo	all
+FOMU	metamorfosi	alm
+FOMU	metodo	aln
+FOMU	milonga	alo
+FOMU	mimodramma	alp
+FOMU	mistero	alq
+FOMU	modinha	alr
+FOMU	momento musicale	als
+FOMU	monferrina	alt
+FOMU	moralità	alu
+FOMU	morceau de salon	alv
+FOMU	moresca	alw
+FOMU	morris dance	alx
+FOMU	moto perpetuo	ama
+FOMU	mumming	amb
+FOMU	muñeira	amc
+FOMU	musette	amd
+FOMU	musica di scena	ame
+FOMU	musical	amf
+FOMU	musique mesurée	amg
+FOMU	mutanza	amh
+FOMU	nachtanz	ami
+FOMU	nauba	amj
+FOMU	negro spiritual	amk
+FOMU	nenia	aml
+FOMU	ninna nanna	amm
+FOMU	noël	amn
+FOMU	nomos	amo
+FOMU	nonetto	amp
+FOMU	novelletta	amq
+FOMU	oberek	amr
+FOMU	ode	ams
+FOMU	offertorio	amt
+FOMU	onestep	amu
+FOMU	opéra-ballet	amv
+FOMU	opéra-comique	amw
+FOMU	opera comica	amx
+FOMU	anthem	an#
+FOMU	opera da camera	ana
+FOMU	opera multimediale	anb
+FOMU	opera per bambini	anc
+FOMU	opera per marionette	and
+FOMU	opera radiofonica	ane
+FOMU	opera televisiva	anf
+FOMU	opéra-comique	ang
+FOMU	operetta	anh
+FOMU	organum	ani
+FOMU	ottetto	anj
+FOMU	padovana	ank
+FOMU	palotas	anl
+FOMU	pantomima	anm
+FOMU	parafrasi	ann
+FOMU	parodia	ano
+FOMU	partimento	anp
+FOMU	partita	anq
+FOMU	pas de deux	anr
+FOMU	pas redoublé	ans
+FOMU	paso doble	ant
+FOMU	passamezzo	anu
+FOMU	passepied	anv
+FOMU	pasticcio	anw
+FOMU	pastorale	anx
+FOMU	pastourelle	aoa
+FOMU	pater noster	aob
+FOMU	pavaniglia	aoc
+FOMU	peana	aod
+FOMU	penillon	aoe
+FOMU	perigordino	aof
+FOMU	pezzo da concerto	aog
+FOMU	pibroch	aoh
+FOMU	piva	aoi
+FOMU	plainte	aoj
+FOMU	plaisanterie	aok
+FOMU	planctus	aol
+FOMU	plantation song	aom
+FOMU	polka	aon
+FOMU	polka mazurka	aoo
+FOMU	polo	aop
+FOMU	post evangelium	aoq
+FOMU	post lectionem	aor
+FOMU	postcommunio	aos
+FOMU	postludio	aot
+FOMU	potpourri	aou
+FOMU	praeambulum	aov
+FOMU	praefatio	aow
+FOMU	preghiera	aox
+FOMU	preludio	apa
+FOMU	proemio	apb
+FOMU	profezia	apc
+FOMU	prologo	apd
+FOMU	quadriglia	ape
+FOMU	quartetto	apf
+FOMU	quintetto	apg
+FOMU	quodlibet	aph
+FOMU	rada	api
+FOMU	ranz des vaches	apj
+FOMU	raspa	apk
+FOMU	récit	apl
+FOMU	réjouissance	apm
+FOMU	recitativo	apn
+FOMU	redowa	apo
+FOMU	reel	app
+FOMU	reigenlied	apq
+FOMU	rejdovak	apr
+FOMU	responsorio	aps
+FOMU	rheinländer	apt
+FOMU	rigaudon	apu
+FOMU	rispetto	apv
+FOMU	ritirata	apw
+FOMU	ritornello	apx
+FOMU	romance	aqa
+FOMU	romanesca	aqb
+FOMU	romanza	aqc
+FOMU	romanza senza parole	aqd
+FOMU	rondò	aqe
+FOMU	rota	aqf
+FOMU	rotruenge	aqg
+FOMU	rotta	aqh
+FOMU	rueda	aqi
+FOMU	ruggero	aqj
+FOMU	ruggiero	aqk
+FOMU	rumba	aql
+FOMU	sacra rappresentazione	aqm
+FOMU	saeta	aqn
+FOMU	sainete	aqo
+FOMU	sallenda	aqp
+FOMU	salmello	aqq
+FOMU	salmo	aqr
+FOMU	salsa	aqs
+FOMU	saltarello	aqt
+FOMU	saltarello tedesco	aqu
+FOMU	samba	aqv
+FOMU	sanctus	aqw
+FOMU	sarabanda	aqx
+FOMU	aria	ar#
+FOMU	sardana	ara
+FOMU	sarum	arb
+FOMU	scat	arc
+FOMU	scena	ard
+FOMU	scherzo	are
+FOMU	scherzo drammatico	arf
+FOMU	schnadahüpfl	arg
+FOMU	schottisch	arh
+FOMU	schottish	ari
+FOMU	schuhplattler	arj
+FOMU	seguidilla	ark
+FOMU	seises	arl
+FOMU	sequenza	arm
+FOMU	serenata	arn
+FOMU	sestetto	aro
+FOMU	settimino	arp
+FOMU	sevillana	arq
+FOMU	shanty	arr
+FOMU	shimmy	ars
+FOMU	siciliana	art
+FOMU	sinfonia concertante	aru
+FOMU	sinfonia da camera	arv
+FOMU	sinfonietta	arw
+FOMU	singspiel	arx
+FOMU	sirventes	asa
+FOMU	sketch	asb
+FOMU	solfeggio	asc
+FOMU	soliloquio	asd
+FOMU	stornello	ase
+FOMU	strambotto	asf
+FOMU	stratspey	asg
+FOMU	symbolum	ash
+FOMU	symphonie dramatique	asi
+FOMU	syomyo	asj
+FOMU	tafelmusik	ask
+FOMU	tambourin	asl
+FOMU	tango	asm
+FOMU	tarantella	asn
+FOMU	tenso	aso
+FOMU	terzetto	asp
+FOMU	threnos	asq
+FOMU	tirana	asr
+FOMU	tombeau	ass
+FOMU	tonadilla	ast
+FOMU	torneo	asu
+FOMU	tourdion	asv
+FOMU	tragédie lyrique	asw
+FOMU	transitorium	asx
+FOMU	traquenard	ata
+FOMU	trattato	atb
+FOMU	tratto	atc
+FOMU	trecanum	atd
+FOMU	trenchmore	ate
+FOMU	tresca	atf
+FOMU	trezza	atg
+FOMU	tricinium	ath
+FOMU	tricotet	ati
+FOMU	triodion	atj
+FOMU	trishagion	atk
+FOMU	tropo	atl
+FOMU	tumba	atm
+FOMU	twostep	atn
+FOMU	ufficio di requiem	ato
+FOMU	ufficio divino	atp
+FOMU	umoresca	atq
+FOMU	varsovienne	atr
+FOMU	vaudeville	ats
+FOMU	veneziana	att
+FOMU	versetto	atu
+FOMU	versicolo	atv
+FOMU	vespro	atw
+FOMU	villancico	atx
+FOMU	villanella	aua
+FOMU	villota	aub
+FOMU	virelai	auc
+FOMU	vocalizzo	aud
+FOMU	volta	aue
+FOMU	voluntary	auf
+FOMU	yaravi	aug
+FOMU	zamacueca	auh
+FOMU	zamba	aui
+FOMU	zapateado	auj
+FOMU	zarzuela	auk
+FOMU	zoppa	aul
+FOMU	zortziko	aum
+FOMU	zwiefacher	aun
+FOMU	ballata	bd#
+FOMU	bluegrass	bg#
+FOMU	blues	bl#
+FOMU	balletto	bt#
+FOMU	canzone	cb#
+FOMU	canto sacro	cc#
+FOMU	concerto grosso	cg#
+FOMU	corale	ch#
+FOMU	preludio corale	cl#
+FOMU	canone	cn#
+FOMU	concerto	co# 
+FOMU	chansons, polyphonic	cp#
+FOMU	carol	cr#
+FOMU	chance compositions, aleatoric music	cs#
+FOMU	cantata	ct#
+FOMU	country music	cy#
+FOMU	sonata	cz#
+FOMU	danza	df#
+FOMU	divertimento	dv#
+FOMU	fuga	fg#
+FOMU	canto popolare	fm#
+FOMU	fantasia	ft#
+FOMU	gospel song	gm#
+FOMU	inno	hy#
+FOMU	intermezzo	in#
+FOMU	jazz	jz#
+FOMU	lied	li#
+FOMU	rivista	mc#
+FOMU	madrigale	md#
+FOMU	minuetto	mi#
+FOMU	mottetto	mo#
+FOMU	musica da film	mp#
+FOMU	marcia	mr#
+FOMU	messa	ms#
+FOMU	forme multiple	mu#
+FOMU	mazurka	mz#
+FOMU	notturno	nc#
+FOMU	opera	op#
+FOMU	oratorio	or#
+FOMU	ouverture	ov#
+FOMU	preludio e fuga	pf#
+FOMU	programme music	pg#
+FOMU	passione	pm#
+FOMU	polacca	po#
+FOMU	popular music	pp#
+FOMU	passacaglia	ps#
+FOMU	song	pt#
+FOMU	pavana	pv#
+FOMU	rock music	rc#
+FOMU	rondeau	rd#
+FOMU	ragtime	rg#
+FOMU	ricercare	ri#
+FOMU	rapsodia	rp#
+FOMU	requiem	rq#
+FOMU	sinfonia	si#
+FOMU	poema sinfonico	sp#
+FOMU	square dance	sq#
+FOMU	studio	st#
+FOMU	suite	su#
+FOMU	toccata	tc#
+FOMU	trio	ts# 
+FOMU	Forma non significativa	und
+FOMU	variazione	vr#
+FOMU	walzer	wz#
+FOMU	altro	zz#
+FOPU	singola	a
+FOPU	in parti	b
+FOPU	atlante	c
+FOPU	supplemento	d
+FOPU	allegato	e
+FOPU	altro	z
+FORI	a mano	a
+FORI	stampa	b
+FORI	fotografia	c
+FORI	fotocopia	d
+FORI	originale	y
+FPIM	standard sound aperture (formato ridotto)	a
+FPIM	non anamorfico (grande schermo)	b
+FPIM	3D	c
+FPIM	anamorfico (grande schermo)	d
+FPIM	standard silent aperture	e
+FPIM	altri formati del grande schermo	f
+FPIM	sconosciuto	u
+FPIM	non film o videoproiezione	x
+FPIM	altro	z
+FPUB	disco	a
+FPUB	nastro (bobina aperta)	b
+FPUB	nastro (cassetta)	c
+FPUB	nastro (cartuccia)	d
+FPUB	registrazione filo	e
+FPUB	cilindro	f
+FPUB	rullo (piano e organo)	g
+FPUB	film (sound film)	h
+GENR	Non specificato	0
+GENR	Rappresentazione	1
+GENR	Prima rappresentazione	2
+GENR	Registrazione	3
+GENR	Registrazione dal vivo	4
+GENR	Rimasterizzazione	5
+GEPU	BIBLIOGRAFIE	A
+GEPU	OPERE RELIGIOSE	AA
+GEPU	CATECHISMO	AB
+GEPU	LETTERATURA DEVOZIONALE	AC
+GEPU	SERMONI	AD
+GEPU	LIBRI LITURGICI	AE
+GEPU	CATALOGHI	B
+GEPU	OPERE SCIENTIFICHE	BA
+GEPU	DISSERTAZIONI	BB
+GEPU	INDICI	C
+GEPU	USI E COSTUMI	CA
+GEPU	SOMMARI	D
+GEPU	OPERE LEGALI	DA
+GEPU	OPERE POLITICHE	DB
+GEPU	DIZIONARI	E
+GEPU	MATERIALE EFFIMERO	EA
+GEPU	ENCICLOPEDIE	F
+GEPU	OPERE DI CONSULTAZIONE	FA
+GEPU	CATALOGHI DI BIBLIOTECA	FB
+GEPU	BIBLIOGRAFIE	FC
+GEPU	CALENDARI	FD
+GEPU	INDICI	FE
+GEPU	DIZIONARI	FF
+GEPU	ENCICLOPEDIE	FG
+GEPU	LISTE	G
+GEPU	OPERE STORICHE	GA
+GEPU	ANNUARI	H
+GEPU	TRATTATI POLEMICI	HA
+GEPU	STATISTICHE	I
+GEPU	OPERE DISCORSIVE	IA
+GEPU	BIOGRAFIE	J
+GEPU	OPERE DI CIRCOSTANZA	JA
+GEPU	BREVETTI	K
+GEPU	LIBRI DI ISTRUZIONE	KA
+GEPU	MANUALI	KB
+GEPU	LIBRI DI TESTO	KC
+GEPU	NORME STANDARDIZZATE	L
+GEPU	LISTE DI PREZZI	LA
+GEPU	TESI O DISSERTAZIONI	M
+GEPU	OPERE DI SVAGO	MA
+GEPU	LEGGI E LEGISLAZIONE	N
+GEPU	DIFFERENTI VERSIONI DI UN'OPERA	NA
+GEPU	TABELLE	O
+GEPU	RENDICONTI TECNICI	P
+GEPU	RECENSIONI	Q
+GEPU	LETTERATURA PER RAGAZZI	R
+GEPU	MOSTRE	S
+GEPU	TESTO LITURGICO	W
+GEPU	ATTI DI CONGRESSI / ALTRO	Z
+GEPU	ALTRO	ZZ
+GEUN	testo a stampa	a
+GEUN	testo manoscritto	b
+GEUN	musica notata, non manoscritta	c
+GEUN	musica manoscritta	d
+GEUN	cartografia non manoscritta	e
+GEUN	cartografia manoscritta	f
+GEUN	materiale video	g
+GEUN	registrazione sonora non musicale	i
+GEUN	registrazione sonora musicale	j
+GEUN	materiale grafico	k
+GEUN	risorse elettroniche	l
+GEUN	materiale multimediale	m
+GEUN	oggetto a tre dimensioni	r
+IMMA	immagine non fotografica	a
+IMMA	immagine fotografica	b
+IMMA	da sensore remoto	c
+INDC	bianco e nero	a
+INDC	colore	b
+INDC	misto (b&n e colore)	c
+INDC	sconosciuto	u
+INDC	altro	z
+INDS	suono integrato nella risorsa	a
+INDS	suono separato	b
+INDS	sconosciuto	u
+INDS	senza suono	y
+INDT	poesia	a
+INDT	teatro	b
+INDT	narrativa	c
+INDT	storia	d
+INDT	conferenze, discorsi	e
+INDT	istruzioni	f
+INDT	suoni	g
+INDT	autobiografia	h
+INDT	biografia	i
+INDT	saggi	j
+INDT	relazione	k
+INDT	memorie	l
+INDT	prove	m
+INDT	interviste	n
+INDT	testi pubblicitari	o
+INDT	istruzione linguistica	p
+INDT	atti di convegno	q
+INDT	commedia	r
+INDT	racconti popolari	s
+INDT	testi sacri	t
+INDT	altri tipi di testo letterario	z
+ININ	SPAZIO	              
+ININ	 	P
+ININ	 	S
+LANA	6 mm (¼ in.)	a
+LANA	12.5 mm (½ in.)	b
+LANA	2.5 cm (1 in.)	c
+LANA	3 mm 1/8 in.)	d
+LANA	5 cm (2 in.)	e
+LANA	8 mm (1/3 in.)	f
+LANA	sconosciuto	u
+LANA	registrazione diversa da nastro	x
+LANA	altro	z
+LARG	8mm	a
+LARG	Super 8mm	b
+LARG	9,5mm	c
+LARG	16mm	d
+LARG	28mm	e
+LARG	35mm	f
+LARG	70mm	g
+LARG	5,5x5,5 cm (slides)	k
+LARG	5x5 cm (slides)	l
+LARG	2 cm	m
+LARG	0,5 cm	n
+LARG	1,33 cm	o
+LARG	2,5 cm	p
+LARG	5 cm	q
+LARG	20 x 25 cm (lucidi)	r
+LARG	10 x 12,5 cm (lucidi)	s
+LARG	12,5 x 17,5 cm (lucidi)	t
+LARG	17,5 x 17,5 cm (lucidi)	u
+LARG	20 x 20 cm (lucidi)	v
+LARG	22,5 x 22,5 cm (lucidi)	w
+LARG	25 x 25 (lucidi)	x
+LARG	nessuna di queste	z
+LASC	coarse/standard	a
+LASC	microgroove/fine	b
+LASC	sconosciuto	u
+LASC	non applicabile	x
+LASC	altro	z
+LEAA	RINVIO	4XX
+LEAA	RINVIO ORIZZONTALE	5XX
+LEDD	HA COME TERMINE PIU' ESTESO	BT
+LEDD	VARIANTE STORICA DI	HSEE
+LEDD	HA PER VARIANTE STORICA	HSF
+LEDD	HA COME TERMINE PIU' RISTRETTO	NT
+LEDD	VEDI ANCHE	RT
+LEDD	USATO AL POSTO DI	UF
+LEDD	SCOMPOSIZIONE DI	UF+
+LEDD	VEDI	USE
+LEDD	SCOMPOSTO IN	USE+
+LELK	DUPLICAZIONE	D
+LELK	FUSIONE	F
+LELL	VEDI	4XX
+LELL	VEDI ANCHE	5XX
+LEMU	Titolo dell'opera in cui è inserito il brano	A
+LEMU	Titolo dell'opera letteraria di riferimento	E
+LEMU	Incipit testuale	I
+LEMU	Titolo dell'opera da cui è desunto il libretto	L
+LEMU	Titolo dell'opera parafrasata	P
+LEMU	Titolo alternativo	T
+LETA	Attore	5
+LETA	Adattatore	10
+LETA	Animatore, cartoonist	18
+LETA	Annotatore	20
+LETA	Arrangiatore	30
+LETA	Artista (Pittore, etc.)	40
+LETA	Assegnatario della licenza di pubblicazione	50
+LETA	Nome associato	60
+LETA	Banditore	65
+LETA	Autore	70
+LETA	Autore citato	72
+LETA	Autore della postfazione, colophon, etc.	75
+LETA	Autore dell'introduzione, etc.	80
+LETA	Autore del dialogo	90
+LETA	Antecedente bibliografico	100
+LETA	Legatore	110
+LETA	Designer della legatura	120
+LETA	Designer del libro	130
+LETA	Designer della sovraccoperta	140
+LETA	Designer dell'ex-libris	150
+LETA	Libraio	160
+LETA	Calligrafo	170
+LETA	Cartografo	180
+LETA	Censore	190
+LETA	Direttore di coro	195
+LETA	Coreografo	200
+LETA	Artista circense	202
+LETA	Collaboratore	205
+LETA	Raccoglitore di materiali sul campo	206
+LETA	Comico	207
+LETA	Commentatore di audiovisivi	210
+LETA	Commentatore di testo scritto	212
+LETA	Compilatore	220
+LETA	Compositore	230
+LETA	Compositore della musica parafrasata	233
+LETA	Compositore della musica parafrasata (codice deprecato)	235
+LETA	Autore dell'opera in cui è inserito il brano	236
+LETA	Compositore tipografico	240
+LETA	Ideatore	245
+LETA	Direttore d'orchestra	250
+LETA	Consulente di progetto	255
+LETA	Continuatore	257
+LETA	Titolare dei diritti d'autore	260
+LETA	Correttore	270
+LETA	Curatore di mostra	273
+LETA	Ballerino	275
+LETA	Dedicatario	280
+LETA	Dedicante	290
+LETA	Conferitore di titolo accademico	295
+LETA	Regista	300
+LETA	Disc jockey	303
+LETA	Autore della dissertazione	305
+LETA	Distributore	310
+LETA	Donatore	320
+LETA	Autore incerto	330
+LETA	Curatore	340
+LETA	Incisore	350
+LETA	Acquafortista	360
+LETA	Perito	365
+LETA	Montatore di film	370
+LETA	Falsificatore	380
+LETA	Possessore precedente	390
+LETA	Fondatore	395
+LETA	Finanziatore	400
+LETA	Grafico	410
+LETA	Onorato	420
+LETA	Miniatore	430
+LETA	Illustratore	440
+LETA	Impresario	445
+LETA	Firmatario del dono	450
+LETA	Intervistato	460
+LETA	Intervistatore	470
+LETA	Ente emittente	475
+LETA	Librettista	480
+LETA	Licenziatario	490
+LETA	Licenziatore	500
+LETA	Litografo	510
+LETA	Paroliere, autore della lirica	520
+LETA	Incisore su metallo	530
+LETA	Mimo	535
+LETA	Garante	540
+LETA	Narratore	550
+LETA	Controrelatore	555
+LETA	Organizzatore di meeting	557
+LETA	Autore dell'inchiesta	560
+LETA	Altro	570
+LETA	Cartaro	580
+LETA	Richiedente del brevetto	582
+LETA	Inventore del brevetto	584
+LETA	Detentore del brevetto	587
+LETA	Interprete	590
+LETA	Ente di ricerca	595
+LETA	Fotografo	600
+LETA	Presentatore	605
+LETA	Stampatore	610
+LETA	Stampatore delle tavole	620
+LETA	Produttore	630
+LETA	Scenografo	632
+LETA	Personale di produzione	633
+LETA	Programmatore	635
+LETA	Project manager	637
+LETA	Correttore di bozze	640
+LETA	Editore	650
+LETA	Direttore editoriale	651
+LETA	Burattinaio	655
+LETA	Destinatario	660
+LETA	Produttore discografico	665
+LETA	Tecnico della registrazione	670
+LETA	Remixer	672
+LETA	Direttore della ricerca	673
+LETA	Recensore	675
+LETA	Membro del gruppo di ricerca	677
+LETA	Rubricatore	680
+LETA	Sceneggiatore	690
+LETA	Consulente scientifico	695
+LETA	Copista	700
+LETA	Scultore	705
+LETA	Segretario, portavoce	710
+LETA	Firmatario	720
+LETA	Cantante	721
+LETA	Committente	723
+LETA	Ente di standardizzazione	725
+LETA	Cascatore	726
+LETA	Relatore di tesi	727
+LETA	Traduttore	730
+LETA	Disegnatore dei caratteri	740
+LETA	Tipografo	750
+LETA	Venditore	753
+LETA	Vocalist	755
+LETA	Xilografo	760
+LETA	Autore dell'allegato	770
+LETA	Inventore	900
+LETA	Disegnatore	901
+LETA	Costumista	904
+LETA	Strumentista	906
+LETA	Direttore del doppiaggio	908
+LETA	Doppiatore	909
+LETA	Telecineoperatore	910
+LETA	Relatore, oratore	911
+LETT	FA PARTE DI	1
+LETT	SUPPLEMENTO DI	2
+LETT	CONTIENE ANCHE	3
+LETT	CONTINUAZIONE DI	4
+LETT	EDIZIONE SUCCESSIVA DI	5
+LETT	HA PER TITOLO DI RAGGRUPPAMENTO NON CONTROLLATO	6
+LETT	ALTRA EDIZIONE DI	7
+LETT	HA PER ALTRO TITOLO	8
+LETT	HA PER TITOLO DI RAGGRUPPAMENTO CONTROLLATO	9
+LETT	ASSORBE	41
+LETT	SI FONDE CON	42
+LETT	CONTINUAZIONE PARZIALE DI	43
+LETT	CONTIENE	51
+LICM	Titolo dell'opera in cui è inserito il brano	08AD
+LICM	Titolo dell'opera letteraria di riferimento	08ED
+LICM	Incipit testuale	08ID
+LICM	Titolo dell'opera da cui è desunto il libretto	08LD
+LICM	Titolo dell'opera parafrasata	08PD
+LICM	Titolo alternativo	08TD
+LICR	 	A08P
+LICR	 	A517D
+LICR	 	B517D
+LICR	 	C410C
+LICR	 	C430C
+LICR	 	C440C
+LICR	 	C451C
+LICR	 	C500A
+LICR	 	C510P
+LICR	 	C517D
+LICR	 	M410C
+LICR	 	M422M
+LICR	 	M422S
+LICR	 	M423T
+LICR	 	M430M
+LICR	 	M430S
+LICR	 	M440M
+LICR	 	M440S
+LICR	 	M451M
+LICR	EDIZIONE PARALLELA	M451S
+LICR	 	M454B
+LICR	 	M461M
+LICR	 	M461S
+LICR	CONTIENE	M463M
+LICR	CONTIENE	M463W
+LICR	CONTIENE SPOGLIO	M464N
+LICR	 	M500A
+LICR	 	M510P
+LICR	 	M517D
+LICR	 	N410C
+LICR	 	N454B
+LICR	 	N461M
+LICR	 	N461S
+LICR	 	N461W
+LICR	 	N500A
+LICR	 	N510P
+LICR	 	N517D
+LICR	 	S410C
+LICR	 	S422S
+LICR	 	S430S
+LICR	 	S431S
+LICR	 	S434S
+LICR	 	S440S
+LICR	 	S447S
+LICR	 	S451S
+LICR	CONTIENE	S464N
+LICR	 	S500A
+LICR	 	S510P
+LICR	 	S517D
+LICR	 	T454B
+LICR	 	T500A
+LICR	 	T510P
+LICR	 	T517D
+LICR	 	W410C
+LICR	 	W423T
+LICR	 	W461M
+LICR	 	W461S
+LICR	CONTIENE	W464N
+LICR	 	W500A
+LICR	 	W517D
+LING	AFAR	AAR
+LING	ABCASO	ABK
+LING	ASSENTE	ABS
+LING	ACCINESE	ACE
+LING	ACIOLI	ACH
+LING	ADANGME	ADA
+LING	ADYGHE	ADY
+LING	AFRO-ASIATICA (ALTRA LINGUA)	AFA
+LING	AFRIHILI	AFH
+LING	AFRIKAANS	AFR
+LING	AINU	AIN
+LING	ALJAMIA	AJM
+LING	AKAN	AKA
+LING	ACCADO	AKK
+LING	ALBANESE	ALB
+LING	ALEUTO	ALE
+LING	LINGUE ALGONCHINE	ALG
+LING	ALTAI DEL SUD	ALT
+LING	AMARICO	AMH
+LING	ANGLOSASSONE (600-1100 CA.)	ANG
+LING	ANGIKA	ANP
+LING	APACHE	APA
+LING	ARABO	ARA
+LING	ARAMAICO	ARC
+LING	ARAGONESE	ARG
+LING	ARMENO	ARM
+LING	ARAUCANO	ARN
+LING	ARAPAHO	ARP
+LING	ARTIFICIALE (ALTRA LINGUA)	ART
+LING	ARUACO	ARW
+LING	ASSAMESE	ASM
+LING	ASTURIANO	AST
+LING	LINGUE ATHABASKA	ATH
+LING	LINGUE AUSTRALIANE	AUS
+LING	AVARO	AVA
+LING	AVESTICO	AVE
+LING	AWADHI	AWA
+LING	AYMARA	AYM
+LING	AZERBAIGIANO	AZE
+LING	BANDA	BAD
+LING	LINGUE BAMILEKE	BAI
+LING	BASCHIRO	BAK
+LING	BELUCI	BAL
+LING	BAMBARA	BAM
+LING	BALINESE	BAN
+LING	BASCO	BAQ
+LING	BASA	BAS
+LING	BALTICA (ALTRA LINGUA)	BAT
+LING	BEGIA	BEJ
+LING	BIELORUSSO	BEL
+LING	WEMBA	BEM
+LING	BENGALI	BEN
+LING	LINGUE BERBERE	BER
+LING	BHOJPURI	BHO
+LING	BIHARI	BIH
+LING	BICOL	BIK
+LING	BINI	BIN
+LING	BISLAMA	BIS
+LING	SIKSIKA	BLA
+LING	BANTU (altra lingua)	BNT
+LING	BOSNIACO	BOS
+LING	BRAJ	BRA
+LING	BRETONE	BRE
+LING	BATAK (indonesia)	BTK
+LING	BURIATO	BUA
+LING	BUGI	BUG
+LING	BULGARO	BUL
+LING	BIRMANO	BUR
+LING	BLIN	BYN
+LING	CADDO	CAD
+LING	INDIANA DELL'AMERICA CENTRALE (A.L.)	CAI
+LING	CAMBOGIANO	CAM
+LING	CARIBICO	CAR
+LING	CATALANO	CAT
+LING	CAUCASICA (ALTRA LINGUA)	CAU
+LING	CEBUANO	CEB
+LING	CELTICO (altra lingua)	CEL
+LING	CHAMORRO	CHA
+LING	CHIBCHA	CHB
+LING	CECENO	CHE
+LING	CIAGATAICO	CHG
+LING	CINESE	CHI
+LING	CHUUKESE	CHK
+LING	MARI	CHM
+LING	CHINOOK	CHN
+LING	CHOCTAW	CHO
+LING	CHIPEWYAN	CHP
+LING	CHEROKEE	CHR
+LING	SLAVO ECCLESIASTICO	CHU
+LING	CIUVASCE	CHV
+LING	CHEYENNE	CHY
+LING	CIAMI (lingue)	CMC
+LING	COPTO	COP
+LING	CORNICO	COR
+LING	CORSO	COS
+LING	CREOLO-INGLESE (ALTRA LINGUA)	CPE
+LING	CREOLO-FRANCESE (ALTRA LINGUA)	CPF
+LING	CREOLO-PORTOGHESE (ALTRA LINGUA)	CPP
+LING	CREE	CRE
+LING	TATARO DI CRIMEA	CRH
+LING	CREOLA (ALTRA LINGUA)	CRP
+LING	KASHUBIAN	CSB
+LING	CUSCITICA (ALTRA LINGUA)	CUS
+LING	CECO	CZE
+LING	DAKOTA	DAK
+LING	DANESE	DAN
+LING	DARGWA	DAR
+LING	DAIACO	DAY
+LING	DELAWARE	DEL
+LING	SCHIAVO	DEN
+LING	DOGRIB	DGR
+LING	DINCA	DIN
+LING	DIVEDI	DIV
+LING	DOGRI	DOI
+LING	DRAVIDICA (ALTRA LINGUA)	DRA
+LING	LOWER SORBIAN	DSB
+LING	DUALA	DUA
+LING	OLANDESE MEDIO (1050-1350 CA.)	DUM
+LING	OLANDESE	DUT
+LING	DIULA	DYU
+LING	DZONGKHA	DZO
+LING	EFIK	EFI
+LING	EGIZIANO	EGY
+LING	EKAJUK	EKA
+LING	ELAMITICO	ELX
+LING	INGLESE	ENG
+LING	INGLESE MEDIO (1100-1500 CA.)	ENM
+LING	ESPERANTO	EPO
+LING	ESCHIMESE	ESK
+LING	ESPERANTO	ESP
+LING	ESTONE	EST
+LING	ETIOPICO	ETH
+LING	EWE	EWE
+LING	EWONDO	EWO
+LING	FAN	FAN
+LING	FAROESE	FAO
+LING	FAEROICO	FAR
+LING	FANTI	FAT
+LING	FIGI	FIJ
+LING	FILIPPINO	FIL
+LING	FINLANDESE	FIN
+LING	UGROFINNICA	FIU
+LING	FON	FON
+LING	FRANCESE	FRE
+LING	FRISONE	FRI
+LING	FRANCESE MEDIO (1400-1600 CA.)	FRM
+LING	FRANCESE ANTICO (842-1400 CA.)	FRO
+LING	FRISONE SETTENTRIONALE	FRR
+LING	FRISONE ORIENTALE	FRS
+LING	FRISONE OCCIDENTALE	FRY
+LING	FUL	FUL
+LING	FRIULANO	FUR
+LING	GA	GAA
+LING	GAELICO (SCOZZESE)	GAE
+LING	GALLEGAN	GAG
+LING	GALLA	GAL
+LING	GAYO	GAY
+LING	GBAYA	GBA
+LING	GERMANICA (ALTRA LINGUA)	GEM
+LING	GEORGIANO	GEO
+LING	TEDESCO	GER
+LING	GE'EZ prima ETIOPICO	GEZ
+LING	GILBERTESE	GIL
+LING	GAELICO (SCOZZESE)	GLA
+LING	IRLANDESE	GLE
+LING	GALLEGAN	GLG
+LING	MANNESE	GLV
+LING	TEDESCO MEDIO ALTO (1050-1500 CA.)	GMH
+LING	TEDESCO ALTO ANTICO (750-1050 CA.)	GOH
+LING	GONDI	GON
+LING	GORONTALO	GOR
+LING	GOTICO	GOT
+LING	GREBO	GRB
+LING	GRECO ANTICO (FINO AL 1453)	GRC
+LING	GRECO MODERNO	GRE
+LING	GUARANI	GRN
+LING	TEDESCO SVIZZERO	GSW
+LING	GUARANI	GUA
+LING	GUJARATI	GUJ
+LING	GWICH'IN	GWI
+LING	HAIDA	HAI
+LING	HAITIAN	HAT
+LING	HAUSSA	HAU
+LING	HAWAIANO	HAW
+LING	EBRAICO	HEB
+LING	HERERO	HER
+LING	HILIGAYNA	HIL
+LING	HIMACHALI	HIM
+LING	HINDI	HIN
+LING	ITTITO	HIT
+LING	HMONG	HMN
+LING	HIRI MOTU	HMO
+LING	CROATO	HRV
+LING	UPPER SORBIAN	HSB
+LING	UNGHERESE	HUN
+LING	HUPA	HUP
+LING	IBAN	IBA
+LING	IBO	IBO
+LING	ISLANDESE	ICE
+LING	IDO	IDO
+LING	SICHUAN YI	III
+LING	IJO	IJO
+LING	INUKTITUT	IKU
+LING	INTERLINGUE	ILE
+LING	ILOCANO	ILO
+LING	INTERLINGUA (lingua della international Auxiliary Language Association)	INA
+LING	INDIANA (ALTRA LINGUA)	INC
+LING	INDONESIANO	IND
+LING	INDOEUROPEA (ALTRA LINGUA)	INE
+LING	INGUSH	INH
+LING	INTERLINGUA	INT
+LING	INUPIAQ	IPK
+LING	IRANIANA (ALTRA LINGUA)	IRA
+LING	IRLANDESE	IRI
+LING	LINGUE IROCHESI	IRO
+LING	ITALIANO	ITA
+LING	GIAVANESE	JAV
+LING	LOJBAN	JBO
+LING	GIAPPONESE	JPN
+LING	GIUDEO-PERSIANO	JPR
+LING	GIUDEO-ARABO	JRB
+LING	KARAKALPAK	KAA
+LING	CABILO	KAB
+LING	KACHIN	KAC
+LING	GROENLANDESE	KAL
+LING	KAMBA	KAM
+LING	CANARESE	KAN
+LING	KAREN	KAR
+LING	KASMIRI	KAS
+LING	KANURI	KAU
+LING	KAWI	KAW
+LING	COSACCO	KAZ
+LING	KABARDIAN	KBD
+LING	KHASI	KHA
+LING	KHOISAN (ALTRA LINGUA)	KHI
+LING	KHMER	KHM
+LING	KHOTANESE	KHO
+LING	KIKUYU	KIK
+LING	RUANDA	KIN
+LING	CHIRGHISO	KIR
+LING	KIMBUNDU	KMB
+LING	KONKANI	KOK
+LING	KOMI	KOM
+LING	CONGOLESE	KON
+LING	COREANO	KOR
+LING	COSREANO (cosreo)	KOS
+LING	KPELLE	KPE
+LING	KARACHAY-BALKAR	KRC
+LING	KARELIAN	KRL
+LING	KRU	KRO
+LING	KURUKH	KRU
+LING	KUANYAMA	KUA
+LING	KUMYK	KUM
+LING	CURDO	KUR
+LING	KUSAIE	KUS
+LING	KUTENAI	KUT
+LING	GIUDEO-SPAGNOLO	LAD
+LING	LAHNDA	LAH
+LING	LAMBA	LAM
+LING	LINGUA D'OC (DOPO IL 1500)	LAN
+LING	LAOTIANO	LAO
+LING	LAPPONE	LAP
+LING	LATINO	LAT
+LING	LETTONE	LAV
+LING	LESGO	LEZ
+LING	LIMBURGAN	LIM
+LING	LINGALA	LIN
+LING	LITUANO	LIT
+LING	LOLO (BANTU)	LOL
+LING	LOZI	LOZ
+LING	LUSSEMBURGHESE	LTZ
+LING	LUBA-LULUA	LUA
+LING	LUBA-KALANGA	LUB
+LING	LUGANDA	LUG
+LING	LUISENO	LUI
+LING	LUNDA	LUN
+LING	LUO (KENIA E TANZANIA)	LUO
+LING	LUSHEI	LUS
+LING	MACEDONE	MAC
+LING	MADURESE	MAD
+LING	MAGAHI	MAG
+LING	MARSHALL	MAH
+LING	MAITHILI	MAI
+LING	MACASSAR	MAK
+LING	MALAYALAM	MAL
+LING	MANDINGO	MAN
+LING	MAORI	MAO
+LING	AUSTRONESIANA (ALTRA LINGUA)	MAP
+LING	MARATTO	MAR
+LING	MASAI	MAS
+LING	MANNESE	MAX
+LING	MALESE	MAY
+LING	MOKSHA	MDF
+LING	MANDAR	MDR
+LING	MENDE	MEN
+LING	IRLANDESE MEDIO (9OO-1200)	MGA
+LING	MICMAC	MIC
+LING	MENANGKABAU	MIN
+LING	LINGUE DIVERSE	MIS
+LING	MON-KHMER (ALTRA LINGUA)	MKH
+LING	MALGASCIO	MLA
+LING	MALGASCIO	MLG
+LING	MALTESE	MLT
+LING	MANCHU	MNC
+LING	MANIPURI	MNI
+LING	MANOBO	MNO
+LING	MOHAWK	MOH
+LING	MOLDAVO	MOL
+LING	MONGOLO	MON
+LING	MOSSI	MOS
+LING	MULTILINGUE	MUL
+LING	MUNDA (ALTRA LINGUA)	MUN
+LING	MUSKOGEE	MUS
+LING	MIRANDESE	MWL
+LING	MARWARI	MWR
+LING	LINGUE MAYA	MYN
+LING	ERZYA	MYV
+LING	NAHUATL	NAH
+LING	INDIANA DELL'AMERICA DEL NORD (A.L.)	NAI
+LING	NAPOLETANO	NAP
+LING	NAURUANO	NAU
+LING	NAVAHO	NAV
+LING	NDEBELE DEL SUD	NBL
+LING	NDEBELE DEL NORD	NDE
+LING	NDONGA	NDO
+LING	BASSO TEDESCO	NDS
+LING	NEPALESE	NEP
+LING	NEWARI	NEW
+LING	NIASSESE	NIA
+LING	NIGERO-CORDOFANIANA (ALTRA LINGUA)	NIC
+LING	NIUE	NIU
+LING	NORWEGIAN NYNORSK	NNO
+LING	NORWEGIAN BOKMAL	NOB
+LING	NOGAI	NOG
+LING	NORDICO ANTICO	NON
+LING	NORVEGESE	NOR
+LING	N'KO	NQO
+LING	SOTHO DEL NORD	NSO
+LING	NUBIANO	NUB
+LING	NEWARI CLASSICO	NWC
+LING	NYANJA	NYA
+LING	NYAMWESI	NYM
+LING	NYANKOLE	NYN
+LING	NYORO	NYO
+LING	NZIMA	NZI
+LING	OCCITANICO (dopo il 1500)	OCI
+LING	OJIBWA	OJI
+LING	ORIYA	ORI
+LING	OROMO	ORM
+LING	OSAGE	OSA
+LING	OSSETICO	OSS
+LING	TURCO OTTOMANO (1500-1928)	OTA
+LING	LINGUE OTOMI	OTO
+LING	PAPUANO-AUSTRALIANA (ALTRA LINGUA)	PAA
+LING	PANGASINAN	PAG
+LING	PAHLAVI	PAL
+LING	PAMPANGA	PAM
+LING	PANJABI	PAN
+LING	PAPIAMENTO	PAP
+LING	PALAU	PAU
+LING	PERSIANO ANTICO (600-400 A.C. CA.)	PEO
+LING	PERSIANO MODERNO	PER
+LING	FILIPPINA (altra lingua)	PHI
+LING	FENICIO	PHN
+LING	PALI	PLI
+LING	POLACCO	POL
+LING	PONAPE	PON
+LING	PORTOGHESE	POR
+LING	PRACRITO	PRA
+LING	PROVENZALE (FINO AL 1500)	PRO
+LING	PASHTO	PUS
+LING	QUECHUA	QUE
+LING	RAJASTHANI	RAJ
+LING	RAPANUI	RAP
+LING	RAROTONGA	RAR
+LING	ROMANZA (ALTRA LINGUA)	ROA
+LING	RETOROMANZO	ROH
+LING	ZINGARESCO	ROM
+LING	RUMENO	RUM
+LING	RUNDI	RUN
+LING	AROMANIAN	RUP
+LING	RUSSO	RUS
+LING	Codice Up/Down Notizie	SA
+LING	SANDAWE	SAD
+LING	SANGO	SAG
+LING	YAKUT	SAH
+LING	INDIANA DEL SUD AMERICA (A.L.)	SAI
+LING	LINGUE SALISH	SAL
+LING	SAMARITANO	SAM
+LING	SANSCRITO	SAN
+LING	SAMOANO	SAO
+LING	SASAK	SAS
+LING	SANTALI	SAT
+LING	SERBO-CROATO (CIRILLICO)	SCC
+LING	SICILIANO	SCN
+LING	SCOZZESE	SCO
+LING	SERBO-CROATO (LATINO)	SCR
+LING	SELKUPICO	SEL
+LING	SEMITICA (ALTRA LINGUA)	SEM
+LING	IRLANDESE ANTICO (fino al 900)	SGA
+LING	LINGUA DEI SEGNI	SGN
+LING	SHAN	SHN
+LING	SHONA	SHO
+LING	SIDAMA	SID
+LING	SINGALESE	SIN
+LING	LINGUE SIOUX	SIO
+LING	SINO-TIBETANA (ALTRA LINGUA)	SIT
+LING	SLAVA (ALTRA LINGUA)	SLA
+LING	SLOVACCO	SLO
+LING	SLOVENO	SLV
+LING	SAMI DEL SUD	SMA
+LING	SAMI DEL NORD	SME
+LING	LINGUE SAMI	SMI
+LING	LULE SAMI	SMJ
+LING	INARI SAMI	SMN
+LING	SAMOANO	SMO
+LING	SKOLT SAMI	SMS
+LING	SHONA	SNA
+LING	SINDHI	SND
+LING	SINGALESE	SNH
+LING	SONINKE	SNK
+LING	SOGDIANO	SOG
+LING	SOMALO	SOM
+LING	SONGHAI	SON
+LING	SOTHO DEL SUD	SOT
+LING	SPAGNOLO	SPA
+LING	SARDO	SRD
+LING	SRANAN TONGO	SRN
+LING	SERBO	SRP
+LING	SERER	SRR
+LING	NILO-SAHARIANA (ALTRA LINGUA)	SSA
+LING	SOTHO DEL SUD	SSO
+LING	SWATI	SSW
+LING	SUKUMA	SUK
+LING	SUNDANESE	SUN
+LING	SUSU	SUS
+LING	SUMERO	SUX
+LING	SUAHELI	SWA
+LING	SVEDESE	SWE
+LING	SWAZI	SWZ
+LING	SIRIACO CLASSICO	SYC
+LING	SIRIACO	SYR
+LING	TAGALOG	TAG
+LING	TAHITIANO	TAH
+LING	TAI (ALTRA LINGUA)	TAI
+LING	TAGICCO	TAJ
+LING	TAMIL	TAM
+LING	TATARO	TAR
+LING	TATARO	TAT
+LING	TELUGU	TEL
+LING	TEMNE	TEM
+LING	TERENO	TER
+LING	TETUM	TET
+LING	TAGICO	TGK
+LING	TAGALOG	TGL
+LING	THAI	THA
+LING	TIBETANO	TIB
+LING	TIGRE	TIG
+LING	TIGRINO	TIR
+LING	TIV	TIV
+LING	TOKELAU	TKL
+LING	KLINGON	TLH
+LING	TLINGIT	TLI
+LING	TAMASHEK	TMH
+LING	TONGA (NYASA)	TOG
+LING	TONGA (ISOLE TONGA)	TON
+LING	TOK PISIN	TPI
+LING	TRUK	TRU
+LING	TSIMSHIAN	TSI
+LING	TSWANA	TSN
+LING	TSONGA	TSO
+LING	CWANA	TSW
+LING	TURCOMANNO	TUK
+LING	TUMBUKA	TUM
+LING	LINGUE TUPI	TUP
+LING	TURCO	TUR
+LING	ALTAICA (ALTRA LINGUA)	TUT
+LING	TUVALU	TVL
+LING	CI	TWI
+LING	TUVINIAN	TYV
+LING	UDMURT	UDM
+LING	UGARITICO	UGA
+LING	UIGURICO	UIG
+LING	UCRAINO	UKR
+LING	MBUNDU	UMB
+LING	LINGUA IMPRECISATA	UND
+LING	URDU	URD
+LING	USBECO	UZB
+LING	VAI	VAI
+LING	VENDA	VEN
+LING	VIETNAMITA	VIE
+LING	VOLAPUK	VOL
+LING	VOTO	VOT
+LING	LINGUE WAKASH	WAK
+LING	UOLAMO	WAL
+LING	WARAY	WAR
+LING	WASHO	WAS
+LING	GALLESE	WEL
+LING	SORABO	WEN
+LING	VALLONE	WLN
+LING	UOLOF	WOL
+LING	KALMYK	XAL
+LING	XOSA	XHO
+LING	YAO (BANTU)	YAO
+LING	YAP	YAP
+LING	YIDDISH	YID
+LING	YORUBA	YOR
+LING	YUPIK	YPK
+LING	ZAPOTECO	ZAP
+LING	ZENAGA	ZEN
+LING	ZHUANG	ZHA
+LING	ZANDE	ZND
+LING	ZULU	ZUL
+LING	ZUNI	ZUN
+LING	ZAZA	ZZA
+LIVE	RECUPERO	5
+LIVE	MINIMO	51
+LIVE	MEDIO	71
+LIVE	MASSIMO	90
+LIVE	SUPER	95
+LIVE	IN LAVORAZIONE	96
+LIVE	A.F.	97
+LUOG	Altro	E
+LUOG	Principale Falso	F
+LUOG	Principale Incerto	I
+LUOG	Altro Falso	L
+LUOG	Altro Incerto	N
+LUOG	Principale	P
+MACC	fotogrammi	a
+MACC	materiale del copione	b
+MACC	manifesti	c
+MACC	programmi e pressbooks	d
+MACC	biglietti d'ingresso (lobby cards)	e
+MACC	materiale informativo	f
+MACC	spartiti o altro formato musicale	g
+MACC	disegni di costumi o collezioni 	h
+MAGR	collage	a
+MAGR	disegno	b
+MAGR	pittura	c
+MAGR	riproduzione fotomeccanica	d
+MAGR	negativo fotografico	e
+MAGR	fotografia	f
+MAGR	immagine	h
+MAGR	stampa	i
+MAGR	disegno tecnico	k
+MAGR	master	m
+MAGR	altro	z
+MAMU	carta	A
+MAMU	cartaceo	B
+MAMU	carta di riso	C
+MAMU	pasta di legno	D
+MAMU	pergamena	E
+MAMU	lucido	F
+MAMU	pellicola	G
+MAMU	Misto	X
+MAMU	altro	Z
+MASU	cartone	a
+MASU	vetro	b
+MASU	sintetico (plastica, vinile, ecc.)	c
+MASU	metallo	d
+MASU	metallo e vetro	e
+MASU	sintetico (plastica, vinile, ecc.) e vetro	f
+MASU	sconosciuto	u
+MASU	non una proiezione visiva	x
+MASU	non presente (non c'è supporto secondario)	y
+MASU	altro	z
+MATA	discografia	a
+MATA	bibliografia	b
+MATA	indice tematico	c
+MATA	libretto o testo	d
+MATA	biografia del compositore	e
+MATA	biografia dell'esecutore o storia del complesso	f
+MATA	informazione tecnica e/o storica sugli strumenti	g
+MATA	informazione tecnica sulla musica	h
+MATA	informazione storica sulla musica	i
+MATA	altre informazioni storiche	j
+MATA	informazione etnologica	k
+MATA	biografia dell'arrangiatore o dell'autore della trascrizione	l
+MATA	materiale didattico	r
+MATA	partiture	s
+MATA	altro materiale testuale di accompagnamento	z
+MATE	CARTOGRAFIA	C
+MATE	ANTICO	E
+MATE	GRAFICA	G
+MATE	AUDIOVISIVO	H
+MATE	MODERNO	M
+MATE	MUSICA	U
+MEDI	audio	a
+MEDI	elettronico	b
+MEDI	microforma	c
+MEDI	microscopico	d
+MEDI	proiettato	e
+MEDI	stereografico	f
+MEDI	video	g
+MEDI	mediazioni multiple	m
+MEDI	senza mediazione	n
+MEDI	altre mediazioni	z
+MEOR	Greenwich	aa
+MEOR	Amsterdam	ab
+MEOR	Atene	ac
+MEOR	Batavia (Indonesia)	ad
+MEOR	Berna (Svizzera)	ae
+MEOR	Bogotà 	af
+MEOR	Bombay	ag
+MEOR	Brussels	ah
+MEOR	Cadiz	ai
+MEOR	Capetown	aj
+MEOR	Caracas	ak
+MEOR	Copenhagen	al
+MEOR	Cordoba (Argentina)	am
+MEOR	Ferro (isole Canarie)	an
+MEOR	Helsinki	ao
+MEOR	Istambul	ap
+MEOR	Julianehaab (Greenland)	aq
+MEOR	Lisbona	ar
+MEOR	Londra	as
+MEOR	Madras (India)	at
+MEOR	Madrid	ba
+MEOR	Città del Messico	bb
+MEOR	Mosca	bc
+MEOR	Monaco (Germania)	bd
+MEOR	Napoli	be
+MEOR	Oslo	bf
+MEOR	Parigi	bg
+MEOR	Pechino	bh
+MEOR	Filadelfia	bi
+MEOR	Rio de Janerio	bk
+MEOR	Roma	bl
+MEOR	Santiago	bm
+MEOR	Stoccolma	bn
+MEOR	Sydney	bo
+MEOR	Tirana	bp
+MEOR	Tokyo	bq
+MEOR	Washington	br
+MEOR	sconosciuto	uu
+MEOR	altro	zz
+MOVI	in movimento	a
+MOVI	fissa	b
+NABI	SPOGLIO	A
+NABI	TITOLO DI RAGGRUPPAMENTO CONTROLLATO	X
+NABI	TITOLO DI RAGGRUPPAMENTO NON CONTROLLATO	B
+NABI	COLLEZIONE	C
+NABI	TITOLO SVILUPPATO O ESTRAPOLATO	D
+NABI	MONOGRAFIA	M
+NABI	TITOLO ANALITICO	N
+NABI	TITOLO PARALLELO	P
+NABI	PERIODICO	S
+NABI	TITOLO SUBORDINATO	T
+NABI	VOL. PARTICOLARE PRIVO DI TIT. SIGNIFICATIVO	W
+NOTA	NOTA ISBD	300
+NOTA	Nota al cast	323
+NOTA	Nota di contenuto	327
+NOTA	ABSTRACT	330
+NOTA	tipo di computer file	336
+NOTA	note tecniche	337
+NOTA	Note sulla datazione	DATA
+NOTA	FILIGRANA	FILI
+NOTA	Note sull'origine	ORIG
+NOTA	Possessori	POSS
+NOTA	Provenienza	PROV
+NSTD	ISBN	10
+NSTD	ISSN	11
+NSTD	ISMN	13
+NSTD	BNI	20
+NSTD	NUMERO PUBBLICAZIONE GOVERNATIVA	22
+NSTD	NUMERO EDIZIONE REGISTRAZIONI SONORE	A
+NSTD	NUMERO EDITORIALE MUSICA A STAMPA	E
+NSTD	NUMERO MATRICE REGISTRAZIONI SONORE	F
+NSTD	NUMERO VIDEOREGISTRAZIONE	H
+NSTD	NUMERO DI LASTRA	L
+NSTD	NUMERO DI RISORSA ELETTRONICA	O
+NSTD	ACNP	P
+NSTD	UPC	Q
+NSTD	EAN	T
+NSTD	CUBI	U
+NSTD	ISRC	V
+NSTD	RISM	X
+NSTD	SARTORI	Y
+NSTD	ISSN-L	Z
+OPAC	Dati per l'export OPAC, esito e ultima data di esecuzione	Esito OK
+ORGA	Contralto	A
+ORGA	Contralto voce bianca	A-bi 
+ORGA	Basso	B
+ORGA	Baritono	Br
+ORGA	Baritono - basso	Br-b
+ORGA	Cantus	C
+ORGA	Coro	Coro
+ORGA	Mezzosoprano	Mzs
+ORGA	Soprano	S
+ORGA	Soprano voce bianca	S-bi
+ORGA	Tenore	T
+ORGA	Voce	V
+ORGA	Voce bianca	V-bi
+ORGA	Decima vox	V-d
+ORGA	Duodecima vox	V-dd
+ORGA	Nona vox	V-nn
+ORGA	Octava vox	V-oc
+ORGA	Quinta vox	V-q
+ORGA	Voce recitante	V-recit
+ORGA	Septima vox	V-sp
+ORGA	Sexta vox	V-sx
+ORGA	Undecima vox	V-ud
+ORGA	 	abs
+ORGA	Agogo	ago
+ORGA	Alphorn	alpcor
+ORGA	Archicembalo	arcemb
+ORGA	Archi	archi
+ORGA	Armonica	arm
+ORGA	Arco musicale	armus
+ORGA	Arpa	arp
+ORGA	Arpanetta	arpan
+ORGA	Arpeggione	arpeg
+ORGA	Aulos	aul
+ORGA	Basso strumentale	b
+ORGA	Basso/Organo	b-org
+ORGA	Balalajka	bal
+ORGA	Banda	banda
+ORGA	Banjo	banj
+ORGA	Batteria	batt
+ORGA	Basso continuo	bc
+ORGA	Biucolo	bcl
+ORGA	Basso grave	bg
+ORGA	Bassanello	blo
+ORGA	Bombarda	bomb
+ORGA	Bombarda tenore	bomb-t 
+ORGA	Bombardone	bombne
+ORGA	Bombardino	bombno
+ORGA	Bongos	bon
+ORGA	Boobams	boob
+ORGA	Baryton	bry
+ORGA	Bassetto	bto
+ORGA	Bucina	buc
+ORGA	Bumbasz	bum
+ORGA	Contratenor altus	cA
+ORGA	Contratenor	cT
+ORGA	Campana	camp
+ORGA	Campane a lastra	campl
+ORGA	Campanella	campla
+ORGA	Campanelle a vento	campven
+ORGA	Cannone	cann
+ORGA	Castagnette	cast
+ORGA	Catene	cat
+ORGA	Contrabbasso	cb
+ORGA	Cimbasso	cbs
+ORGA	Cabaza	cbz
+ORGA	Caccavella	ccvl
+ORGA	Celesta	cel
+ORGA	Cembalo	cemb
+ORGA	Cembalo a 4 mani	cemb-qt
+ORGA	Cembalo a 6 mani	cemb-sx
+ORGA	Cembalo a 3 mani	cemb-ts
+ORGA	Cembalo ad arco	cembar
+ORGA	Controfagotto	cfag
+ORGA	Chalumeau	chal
+ORGA	Chitarra	chit
+ORGA	Chitarra basso elettrica	chit-b-el
+ORGA	Chitarra elettrica	chit-el
+ORGA	Angelica	chite
+ORGA	Chitarra hawaiana	chith
+ORGA	Chitarrone	chitne
+ORGA	Chocalho	choc
+ORGA	Chordette	chord
+ORGA	Ciaramella	ciar
+ORGA	Cister	cis
+ORGA	Citola	cit
+ORGA	Clarinetto	cl
+ORGA	Clarinetto basso	cl-b
+ORGA	Clarinetto contrabbasso	cl-cb
+ORGA	Clarinetto piccolo	cl-picc
+ORGA	Baguettes	claves
+ORGA	Claviciterio	clcit
+ORGA	Clarone	clne
+ORGA	Clarino (ted.)	clno
+ORGA	Claviorgano	clorg
+ORGA	Clavicordo	clvd
+ORGA	Campanaccio	cmpc
+ORGA	Cornamusa	cms
+ORGA	Cornetta	cnta
+ORGA	Cornetta a chiavi	cntach
+ORGA	Cornetto	cnto
+ORGA	Cornetto basso	cnto-b
+ORGA	Cornu	cnu
+ORGA	Cobza	cob
+ORGA	Colascione	col
+ORGA	Calcolatore	comp
+ORGA	Conga	con
+ORGA	Corno	cor
+ORGA	Corno di bassetto	corbass
+ORGA	Cornetta da postiglione	corpos
+ORGA	Corno russo	corrus
+ORGA	Corno segnale	corseg
+ORGA	Cromorno	crom
+ORGA	Crotali	crot
+ORGA	Crwth	crw
+ORGA	Cuica	cuic
+ORGA	Darabukke	darab
+ORGA	Diapason	diap
+ORGA	Doppione	dop
+ORGA	Dulciana	dulc
+ORGA	Duplex	dup
+ORGA	Dvoinice	dvo
+ORGA	Corno inglese	eh
+ORGA	Arpa eolia	eol
+ORGA	Eschiquier	esch
+ORGA	Eufonio	euf
+ORGA	Fagotto	fag
+ORGA	Fagottino	fagno
+ORGA	Fiati	fiati
+ORGA	Fisarmonica	fis
+ORGA	Fischietto	fisc
+ORGA	Flauto	fl
+ORGA	Flauto contralto	fl-a
+ORGA	Flauto d amore	fl-am 
+ORGA	Flauto basso	fl-b
+ORGA	Flauto piccolo	fl-picc
+ORGA	Flageolet	flag
+ORGA	Flauto a coulisse	flcoul
+ORGA	Flexaton	flex
+ORGA	Flicorno	flic
+ORGA	Flicorno contralto	flic-a
+ORGA	Flicorno contrabbasso	flic-cb
+ORGA	Flicorno soprano	flic-s 
+ORGA	Flicorno sopranino	flic-sno
+ORGA	Flicorno sopracuto	flic-spc
+ORGA	Flicorno tenore	flic-t 
+ORGA	Flautino	flno
+ORGA	Flotenuhr	fluhr
+ORGA	Fortepiano	fp
+ORGA	Fortepiano a 4 mani	fp-qt
+ORGA	Frusta	fr
+ORGA	Galoubet	gal
+ORGA	Viola da gamba	gamba
+ORGA	Viola da gamba basso	gamba-b
+ORGA	Viola da gamba soprano	gamba-s
+ORGA	Grancassa	gc
+ORGA	Gemshorn	gem
+ORGA	Ghironda	gh
+ORGA	Glasharmonika	glarm
+ORGA	Glockenspiel	glock
+ORGA	Gong	gong
+ORGA	Gong intonato	gongin
+ORGA	Guiro	guir
+ORGA	Gusle	gus
+ORGA	Harmonium	harm
+ORGA	Hornpipe	hornp
+ORGA	Incudine	incud
+ORGA	Intonarumori	intr
+ORGA	Karnyx	kar
+ORGA	Tastiera	keyb
+ORGA	Kithara	kit
+ORGA	Legni	legni
+ORGA	Lira	lir
+ORGA	Lira da braccio	lirb
+ORGA	Lira chitarra	lirch
+ORGA	Lirone	lirne
+ORGA	Litofono	lit
+ORGA	Liuto	lt
+ORGA	Lujon	luj
+ORGA	Lur	lur
+ORGA	Mandolino	mand
+ORGA	Marimba	mar
+ORGA	Martello	mart
+ORGA	Melopiano	melp
+ORGA	Mirliton	mirl
+ORGA	Mezzaluna	ml
+ORGA	Mandola	mla
+ORGA	Monocordo	mon
+ORGA	Maracas	mrc
+ORGA	Nyckelharpa	nyck
+ORGA	Oboe	ob
+ORGA	Oboe d amore	ob-am
+ORGA	Oboe baritono	ob-br
+ORGA	Oboe da caccia	ob-cac
+ORGA	Oboe tenore	ob-t
+ORGA	Octobasse	ocbs
+ORGA	Ocarina	ocr
+ORGA	Oficleide	of
+ORGA	oficleide contrabbasso	of-cb
+ORGA	Onde martenot	omar
+ORGA	Orchestra	orch
+ORGA	Orchestra di archi	orchar
+ORGA	Orchestra di fiati	orchfi
+ORGA	Organo	org
+ORGA	Organo a 4 mani	org-qt
+ORGA	Organo a 6 mani	org-sx
+ORGA	Organo elettronico	org-tron
+ORGA	Organo di barberia	orgb
+ORGA	Ottavino	ott
+ORGA	Ottoni	ottoni
+ORGA	Flauto di pan	pan
+ORGA	Percussioni	perc
+ORGA	Percussioni elettroniche	perc-tron 
+ORGA	Pianoforte	pf
+ORGA	Pianoforte elettrico	pf-el
+ORGA	Pianoforte a 8 mani	pf-oc
+ORGA	Pianoforte a 4 mani	pf-qt 
+ORGA	Pianoforte a 6 mani	pf-sx
+ORGA	Pianoforte a 3 mani	pf-ts  
+ORGA	Phorminx	phor
+ORGA	Piffero	pif
+ORGA	Pianola	pla
+ORGA	Viola pomposa	pmp
+ORGA	Pochette	poch
+ORGA	Piatti	pt
+ORGA	Piatto chiodato	ptch
+ORGA	Piatto cinese	ptcin
+ORGA	Piattini	ptn
+ORGA	Piatti a pedale	ptp
+ORGA	Piatto sospeso	pts
+ORGA	Quintone	quint
+ORGA	Rabab	rab
+ORGA	Rackett	rack
+ORGA	Raganella	rag
+ORGA	Flauto dolce	rec
+ORGA	Flauto dolce contralto	rec-a
+ORGA	Flauto dolce basso	rec-b
+ORGA	Regale	reg
+ORGA	Ribeca	rib
+ORGA	Rombo	rom
+ORGA	Rothfono	roth
+ORGA	Roto-toms	roto
+ORGA	Rute	rute
+ORGA	Salterio	salt
+ORGA	Sandpaper	sandp
+ORGA	Sarrusofono	sar
+ORGA	Sassofono	sax
+ORGA	Sassofono contralto	sax-a
+ORGA	Sassofono basso	sax-b
+ORGA	Sassofono baritono	sax-bt
+ORGA	Sassofono soprano	sax-s
+ORGA	Sassofono sopranino	sax-sno
+ORGA	Sassofono tenore	sax-t
+ORGA	Scacciapensieri	scac
+ORGA	Scatola musicale	scat
+ORGA	Sega musicale	sega
+ORGA	Serpentone	serp
+ORGA	Shofar	sho
+ORGA	Sintetizzatore	sin
+ORGA	Sirenion	sir
+ORGA	Sistro	sis
+ORGA	Sirena	sna
+ORGA	Sonagli	son
+ORGA	Sordone	sord
+ORGA	Spinetta	spin
+ORGA	Salpinx	spx
+ORGA	Corno di toro	sthor
+ORGA	Strumento	str
+ORGA	Tabla	tabl
+ORGA	Tamburo a fessura	taf
+ORGA	Tamburo	tamb
+ORGA	Tamburello	tamblo
+ORGA	Tamburo militare	tambmil
+ORGA	Tamburo militare piccolo	tambmil-picc
+ORGA	Tamburino	tambno
+ORGA	Tanbur	tan
+ORGA	Nastro magnetico	tape
+ORGA	Tuba	tba
+ORGA	Basso tuba	tba-b
+ORGA	Tuba contrabbasso	tba-cb
+ORGA	Tuba wagneriana	tbaw
+ORGA	Tamburin de bearn	tbea
+ORGA	Temple block	tbl
+ORGA	Tamburo di ferro	tdf
+ORGA	Teremin	term
+ORGA	Timbales	timb
+ORGA	Timpano	timp
+ORGA	Tiorba	tior
+ORGA	Tom-tom	tom
+ORGA	Tromba	tr
+ORGA	Tromba piccola	tr-picc
+ORGA	Trombone	trb
+ORGA	Trombone basso	trb-b
+ORGA	Trombone contrabbasso	trb-cb
+ORGA	Tromba diritta	trdir
+ORGA	Triangolo	triang
+ORGA	Tromba marina	trm
+ORGA	Ottoni	tromba
+ORGA	Lastra del tuono	tuono
+ORGA	Ukulele	uk
+ORGA	Vagans	vag
+ORGA	Vibraslap	vbslp
+ORGA	Macchina del vento	ven
+ORGA	Viella	vi
+ORGA	Vibrafono	vibr
+ORGA	Vihuela	vih
+ORGA	Virginale	virg
+ORGA	Violino	vl
+ORGA	Violino piccolo	vl-picc
+ORGA	Viola	vla
+ORGA	Viola d'amore	vla-am
+ORGA	Violoncello	vlc
+ORGA	Violino di ferro	vlf
+ORGA	Violone	vlne
+ORGA	Wood blocks	wbl
+ORGA	Xilofono	xil
+ORGA	Xilomarimba	xmar
+ORGA	Zarb	zarb
+ORGA	Zither	zit
+ORGP	Contralti	A
+ORGP	Contralti voce bianca	A-bi 
+ORGP	Bassi	B
+ORGP	Baritoni	Br
+ORGP	Canti	C
+ORGP	Cori	Coro
+ORGP	Mezzosoprani	Mzs
+ORGP	Soprani	S
+ORGP	Soprani voce bianca	S-bi
+ORGP	Tenori	T
+ORGP	Voci	V
+ORGP	Voci bianche	V-bi
+ORGP	Decima vox	V-d
+ORGP	Duodecima vox	V-dd
+ORGP	Nona vox	V-nn
+ORGP	Octava vox	V-oc
+ORGP	Quinta vox	V-q
+ORGP	Voci recitanti	V-recit
+ORGP	Septima vox	V-sp
+ORGP	Sexta vox	V-sx
+ORGP	Undecima vox	V-ud
+ORGP	 	abs
+ORGP	Agogó	ago
+ORGP	Alphorn	alpcor
+ORGP	Archicembali	arcemb
+ORGP	Archi	archi
+ORGP	Armoniche	arm
+ORGP	Archi musicali	armus
+ORGP	Arpe	arp
+ORGP	Arpanette	arpan
+ORGP	Arpeggioni	arpeg
+ORGP	Aulos	aul
+ORGP	Bassi	b
+ORGP	Bassi/Organi	b-org
+ORGP	Balalajke	bal
+ORGP	Bande	banda
+ORGP	Banjo	banj
+ORGP	Batterie	batt
+ORGP	Bassi continui	bc
+ORGP	Biucoli	bcl
+ORGP	Bassi gravi	bg
+ORGP	Bassanelli	blo
+ORGP	Bombarde	bomb
+ORGP	Bombarde tenore	bomb-t 
+ORGP	Bombardoni	bombne
+ORGP	Bombardini	bombno
+ORGP	Bongos	bon
+ORGP	Boobams	boob
+ORGP	Baryton	bry
+ORGP	Bassetti	bto
+ORGP	Bucine	buc
+ORGP	Bumbasz	bum
+ORGP	Contratenor altus	cA
+ORGP	Contratenor	cT
+ORGP	Campane	camp
+ORGP	Campane a lastra	campl
+ORGP	Campanelle	campla
+ORGP	Campanelle a vento	campven
+ORGP	Cannoni	cann
+ORGP	Castagnette	cast
+ORGP	Catene	cat
+ORGP	Contrabbassi	cb
+ORGP	Cimbassi	cbs
+ORGP	Cabaze	cbz
+ORGP	Caccavelle	ccvl
+ORGP	Celeste	cel
+ORGP	Cembali	cemb
+ORGP	Cembali a 4 mani	cemb-qt
+ORGP	Cembali a 6 mani	cemb-sx
+ORGP	Cembali a 3 mani	cemb-ts
+ORGP	Cembali ad arco	cembar
+ORGP	Controfagotti	cfag
+ORGP	Chalumeaux	chal
+ORGP	Chitarre	chit
+ORGP	Chitarre basse elettriche	chit-b-el
+ORGP	Chitarre elettriche	chit-el
+ORGP	Angeliche	chite
+ORGP	Chitarre hawaiane	chith
+ORGP	Chitarroni	chitne
+ORGP	Chocalho	choc
+ORGP	Chordettes	chord
+ORGP	Ciaramelle	ciar
+ORGP	Cister	cis
+ORGP	Citole	cit
+ORGP	Clarinetti	cl
+ORGP	Clarinetti bassi	cl-b
+ORGP	Clarinetti contrabbassi	cl-cb
+ORGP	Clarinetti piccoli	cl-picc
+ORGP	Baguettes	claves
+ORGP	Claviciteri	clcit
+ORGP	Claroni	clne
+ORGP	Clarini	clno
+ORGP	Claviorgani	clorg
+ORGP	Clavicordi	clvd
+ORGP	Campanacci	cmpc
+ORGP	Cornamuse	cms
+ORGP	Cornette	cnta
+ORGP	Cornette a chiavi	cntach
+ORGP	Cornetti	cnto
+ORGP	Cornetti bassi	cnto-b
+ORGP	Cornu	cnu
+ORGP	Cobza	cob
+ORGP	Colascioni	col
+ORGP	Calcolatori	comp
+ORGP	Congas	con
+ORGP	Corni	cor
+ORGP	Corni di bassetto	corbass
+ORGP	Cornette da postiglione	corpos
+ORGP	Corni russi	corrus
+ORGP	Corni segnale	corseg
+ORGP	Cromorni	crom
+ORGP	Crotali	crot
+ORGP	Crwth	crw
+ORGP	Cuica	cuic
+ORGP	Darabukka	darab
+ORGP	Diapason	diap
+ORGP	Doppioni	dop
+ORGP	Dulciane	dulc
+ORGP	Duplex	dup
+ORGP	Dvoinice	dvo
+ORGP	Corni inglesi	eh
+ORGP	Arpe eolie	eol
+ORGP	Eschiquier	esch
+ORGP	Eufoni	euf
+ORGP	Fagotti	fag
+ORGP	Fagottini	fagno
+ORGP	Fiati	fiati
+ORGP	Fisarmoniche	fis
+ORGP	Fischietti	fisc
+ORGP	Flauti	fl
+ORGP	Flauti contralti	fl-a
+ORGP	Flauti d''amore	fl-am 
+ORGP	Flauti bassi	fl-b
+ORGP	Flauti piccoli	fl-picc
+ORGP	Flageolet	flag
+ORGP	Flauti a coulisse	flcoul
+ORGP	Flexaton	flex
+ORGP	Flicorni	flic
+ORGP	Flicorni contralti	flic-a
+ORGP	Flicorni contrabbassi	flic-cb
+ORGP	Flicorni soprani	flic-s 
+ORGP	Flicorni sopranini	flic-sno
+ORGP	Flicorni sopracuti	flic-spc
+ORGP	Flicorni tenori	flic-t 
+ORGP	Flautini	flno
+ORGP	Flötenuhr	fluhr
+ORGP	Fortepiani	fp
+ORGP	Fortepiani a 4 mani	fp-qt
+ORGP	Fruste	fr
+ORGP	Galoubet	gal
+ORGP	Viole da gamba	gamba
+ORGP	Viole da gamba basse	gamba-b
+ORGP	Viole da gamba soprano	gamba-s
+ORGP	Grancasse	gc
+ORGP	Gemshorn	gem
+ORGP	Ghironde	gh
+ORGP	Glasharmonika	glarm
+ORGP	Glockenspiel	glock
+ORGP	Gong	gong
+ORGP	Gong intonati	gongin
+ORGP	Guiro	guir
+ORGP	Gusle	gus
+ORGP	Harmonium	harm
+ORGP	Hornpipe	hornp
+ORGP	Incudini	incud
+ORGP	Intonarumori	intr
+ORGP	Karnyx	kar
+ORGP	Tastiere	keyb
+ORGP	Kithare	kit
+ORGP	Legni	legni
+ORGP	Lire	lir
+ORGP	Lire da braccio	lirb
+ORGP	Lire chitarra	lirch
+ORGP	Lirone	lirne
+ORGP	Litofoni	lit
+ORGP	Liuti	lt
+ORGP	Lujon	luj
+ORGP	Lur	lur
+ORGP	Mandolini	mand
+ORGP	Marimbe	mar
+ORGP	Martelli	mart
+ORGP	Melopiani	melp
+ORGP	Mirliton	mirl
+ORGP	Mezzelune	ml
+ORGP	Mandole	mla
+ORGP	Monocordi	mon
+ORGP	Maracas	mrc
+ORGP	Nyckelharpa	nyck
+ORGP	Oboi	ob
+ORGP	Oboi d''amore	ob-am
+ORGP	Oboi baritoni	ob-br
+ORGP	Oboi da caccia	ob-cac
+ORGP	Oboi tenori	ob-t
+ORGP	Octobassi	ocbs
+ORGP	Ocarine	ocr
+ORGP	Oficleidi	of
+ORGP	Oficleidi contrabbassi	of-cb
+ORGP	Onde martenot	omar
+ORGP	Orchestre	orch
+ORGP	Orchestre d''archi	orchar
+ORGP	Orchestre di fiati	orchfi
+ORGP	Organi	org
+ORGP	Organi a 4 mani	org-qt
+ORGP	Organi a 6 mani	org-sx
+ORGP	Organi elettronici	org-tron
+ORGP	Organi di barberia	orgb
+ORGP	Ottavini	ott
+ORGP	Ottoni	ottoni
+ORGP	Flauti di pan	pan
+ORGP	Percussioni	perc
+ORGP	Percussioni elettroniche	perc-tron 
+ORGP	Pianoforti	pf
+ORGP	Pianoforti elettrici	pf-el
+ORGP	Pianoforti a 8 mani	pf-oc
+ORGP	Pianoforti a 4 mani	pf-qt 
+ORGP	Pianoforti a 6 mani	pf-sx
+ORGP	Pianoforti a 3 mani	pf-ts  
+ORGP	Phorminx	phor
+ORGP	Pifferi	pif
+ORGP	Pianole	pla
+ORGP	Viole pompose	pmp
+ORGP	Pochette	poch
+ORGP	Piatti	pt
+ORGP	Piatti chiodati	ptch
+ORGP	Piatti cinesi	ptcin
+ORGP	Piattini	ptn
+ORGP	Piatti a pedale	ptp
+ORGP	Piatti sospesi	pts
+ORGP	Quintoni	quint
+ORGP	Rabab	rab
+ORGP	Rackett	rack
+ORGP	Raganelle	rag
+ORGP	Flauti dolci	rec
+ORGP	Flauti dolci contralto	rec-a
+ORGP	Flauti dolci basso	rec-b
+ORGP	Regali	reg
+ORGP	Ribeche	rib
+ORGP	Rombi	rom
+ORGP	Rothfoni	roth
+ORGP	Roto-toms	roto
+ORGP	Rute	rute
+ORGP	Salteri	salt
+ORGP	Sandpaper	sandp
+ORGP	Sarrusofoni	sar
+ORGP	Sassofoni	sax
+ORGP	Sassofoni contralto	sax-a
+ORGP	Sassofoni basso	sax-b
+ORGP	Sassofoni baritono	sax-bt
+ORGP	Sassofoni soprano	sax-s
+ORGP	Sassofoni sopranino	sax-sno
+ORGP	Sassofoni tenore	sax-t
+ORGP	Scacciapensieri	scac
+ORGP	Scatole musicali	scat
+ORGP	Seghe musicali	sega
+ORGP	Serpentoni	serp
+ORGP	Shofar	sho
+ORGP	Sintetizzatori	sin
+ORGP	Sirenion	sir
+ORGP	Sistri	sis
+ORGP	Sirene	sna
+ORGP	Sonagli	son
+ORGP	Sordoni	sord
+ORGP	Spinette	spin
+ORGP	Salpinx	spx
+ORGP	Corni di toro	sthor
+ORGP	Strumenti	str
+ORGP	Tablas	tabl
+ORGP	Tamburi a fessura	taf
+ORGP	Tamburi	tamb
+ORGP	Tamburelli	tamblo
+ORGP	Tamburi militari	tambmil
+ORGP	Tamburi militari piccoli	tambmil-picc
+ORGP	Tamburini	tambno
+ORGP	Tanbur	tan
+ORGP	Nastri magnetici	tape
+ORGP	Tube	tba
+ORGP	Bassi tuba	tba-b
+ORGP	Tube contrabbasso	tba-cb
+ORGP	Tube wagneriane	tbaw
+ORGP	Tamburin de béarn	tbea
+ORGP	Temple blocks	tbl
+ORGP	Tamburi di ferro	tdf
+ORGP	Teremin	term
+ORGP	Timbales	timb
+ORGP	Timpani	timp
+ORGP	Tiorbe	tior
+ORGP	Tom-tom	tom
+ORGP	Trombe	tr
+ORGP	Trombe piccole	tr-picc
+ORGP	Tromboni	trb
+ORGP	Tromboni bassi	trb-b
+ORGP	Tromboni contrabbassi	trb-cb
+ORGP	Trombe diritte	trdir
+ORGP	Triangoli	triang
+ORGP	Trombe marine	trm
+ORGP	Ottoni	tromba
+ORGP	Lastre del tuono	tuono
+ORGP	Ukulele	uk
+ORGP	Vagans	vag
+ORGP	Vibraslap	vbslp
+ORGP	Macchine del vento	ven
+ORGP	Vielle	vi
+ORGP	Vibrafoni	vibr
+ORGP	Vihuelas	vih
+ORGP	Virginali	virg
+ORGP	Violini	vl
+ORGP	Violini piccoli	vl-picc
+ORGP	Viole	vla
+ORGP	Viole d'amore	vla-am
+ORGP	Violoncelli	vlc
+ORGP	Violini di ferro	vlf
+ORGP	Violoni	vlne
+ORGP	Wood blocks	wbl
+ORGP	Xilofoni	xil
+ORGP	Xilomarimbe	xmar
+ORGP	Zarb	zarb
+ORGP	Zither	zit
+PAES	ANDORRA	AD
+PAES	EMIRATI ARABI UNITI	AE
+PAES	AFGHANISTAN	AF
+PAES	ANTIGUA E BARBUDA	AG
+PAES	ANGUILLA	AI
+PAES	ALBANIA	AL
+PAES	ARMENIA	AM
+PAES	ANTILLE OLANDESI (CODICE SOPPRESSO)	AN
+PAES	ANGOLA	AO
+PAES	ANTARTICO	AQ
+PAES	ARGENTINA	AR
+PAES	SAMOA AMERICANE	AS
+PAES	AUSTRIA	AT
+PAES	AUSTRALIA	AU
+PAES	ARUBA	AW
+PAES	ALAND, ISOLE	AX
+PAES	AZERBAIGIAN	AZ
+PAES	BOSNIA-HERZEGOVINA	BA
+PAES	BARBADOS	BB
+PAES	BANGLADESH	BD
+PAES	BELGIO	BE
+PAES	BURKINA FASO	BF
+PAES	BULGARIA	BG
+PAES	BAHREIN	BH
+PAES	BURUNDI	BI
+PAES	BENIN	BJ
+PAES	SAINT BARTHELÉMY	BL
+PAES	BERMUDA	BM
+PAES	BRUNEI DARUSSALAM	BN
+PAES	BOLIVIA	BO
+PAES	BONAIRE, SANT'EUSTACHIO E SABA	BQ
+PAES	BRASILE	BR
+PAES	BAHAMAS	BS
+PAES	BHTAN	BT
+PAES	BIRMANIA	BU
+PAES	BOUVET, ISOLA	BV
+PAES	BOTSWANA	BW
+PAES	BIELORUSSIA, RSS DI	BY
+PAES	BELIZE	BZ
+PAES	CANADA	CA
+PAES	COCOS, ISOLE	CC
+PAES	CONGO, REPUBBLICA DEMOCRATICA DEL	CD
+PAES	CENTRAFRICANA, REPUBBLICA	CF
+PAES	CONGO	CG
+PAES	SVIZZERA	CH
+PAES	COSTA D'AVORIO	CI
+PAES	COOK, ISOLE	CK
+PAES	CILE	CL
+PAES	CAMERUN	CM
+PAES	CINA	CN
+PAES	COLOMBIA	CO
+PAES	COSTA RICA	CR
+PAES	CECOSLOVACCHIA	CS
+PAES	CUBA	CU
+PAES	CAPO VERDE	CV
+PAES	CURAÇAO	CW
+PAES	CHRISTMAS, ISOLA (AUSTRALIANA)	CX
+PAES	CIPRO	CY
+PAES	CECA, REPUBBLICA	CZ
+PAES	GERMANIA, REPUBBLICA DEMOCRATICA	DD
+PAES	GERMANIA	DE
+PAES	GIBUTI	DJ
+PAES	DANIMARCA	DK
+PAES	DOMINICA	DM
+PAES	DOMINICANA, REPUBBLICA	DO
+PAES	ALGERIA	DZ
+PAES	ECUADOR	EC
+PAES	ESTONIA	EE
+PAES	EGITTO	EG
+PAES	SAHARA OCCIDENTALE	EH
+PAES	ERITREA	ER
+PAES	SPAGNA	ES
+PAES	ETIOPIA	ET
+PAES	FINLANDIA	FI
+PAES	FIGI	FJ
+PAES	FALKLAND, ISOLE	FK
+PAES	MICRONESIA	FM
+PAES	FAEROER, ISOLE	FO
+PAES	FRANCIA	FR
+PAES	FRANCIA METROPOLITANA	FX
+PAES	GABON	GA
+PAES	GRAN BRETAGNA	GB
+PAES	GRENADA	GD
+PAES	GEORGIA	GE
+PAES	GUIANA FRANCESE	GF
+PAES	GUERNSEY	GG
+PAES	GHANA	GH
+PAES	GIBILTERRA	GI
+PAES	GROENLANDIA	GL
+PAES	GAMBIA	GM
+PAES	GUINEA	GN
+PAES	GUADALUPA	GP
+PAES	GUINEA EQUATORIALE	GQ
+PAES	GRECIA	GR
+PAES	GEORGIA DEL SUD	GS
+PAES	GUATEMALA	GT
+PAES	GUAM	GU
+PAES	GUINEA-BISSAU	GW
+PAES	GUIANA	GY
+PAES	HONG KONG	HK
+PAES	HEARD E MC DONALD, ISOLE	HM
+PAES	HONDURAS	HN
+PAES	CROAZIA	HR
+PAES	HAITI	HT
+PAES	UNGHERIA	HU
+PAES	INDONESIA	ID
+PAES	IRLANDA	IE
+PAES	ISRAELE	IL
+PAES	ISOLA DI MAN	IM
+PAES	INDIA	IN
+PAES	OCEANO INDIANO, TERR. BRIT. DELL'	IO
+PAES	IRAQ	IQ
+PAES	IRAN	IR
+PAES	ISLANDA	IS
+PAES	ITALIA	IT
+PAES	JERSEY	JE
+PAES	GIAMAICA	JM
+PAES	GIORDANIA	JO
+PAES	GIAPPONE	JP
+PAES	KENIA	KE
+PAES	KIRGHIZISTAN	KG
+PAES	CAMBOGIA	KH
+PAES	KIRIBATI	KI
+PAES	COMORE	KM
+PAES	SAINT-KITTS E NEVIS	KN
+PAES	COREA, REP. DEMOCRATICA POPOL. DI	KP
+PAES	COREA, REPUBBLICA DI	KR
+PAES	KUWAIT	KW
+PAES	CAYMAN, ISOLE	KY
+PAES	KAZAKISTAN	KZ
+PAES	LAOS	LA
+PAES	LIBANO	LB
+PAES	SAINTE-LUCIE	LC
+PAES	LIECHTENSTEIN	LI
+PAES	SRI-LANKA	LK
+PAES	LIBERIA	LR
+PAES	LESOTHO	LS
+PAES	LITUANIA	LT
+PAES	LUSSEMBURGO	LU
+PAES	LETTONIA	LV
+PAES	LIBIA	LY
+PAES	MAROCCO	MA
+PAES	MONACO	MC
+PAES	MOLDAVIA, REPUBBLICA	MD
+PAES	MONTENEGRO	ME
+PAES	SAINT MARTIN (PARTE FRANCESE)	MF
+PAES	MADAGASCAR	MG
+PAES	MARSHALL, ISOLE	MH
+PAES	MACEDONIA, EX REPUBBLICA IUGOSLAVA DI	MK
+PAES	MALI	ML
+PAES	MYANMAR (EX BIRMANIA)	MM
+PAES	MONGOLIA	MN
+PAES	MACAO	MO
+PAES	MARIANNE SETTENTRIONALI, ISOLE	MP
+PAES	MARTINICA	MQ
+PAES	MAURITANIA	MR
+PAES	MONTSERRAT	MS
+PAES	MALTA	MT
+PAES	MAURIZIO	MU
+PAES	MALDIVE	MV
+PAES	MALAWI	MW
+PAES	MESSICO	MX
+PAES	MALESIA	MY
+PAES	MOZAMBICO	MZ
+PAES	NAMIBIA	NA
+PAES	NUOVA CALEDONIA	NC
+PAES	NIGER	NE
+PAES	NORFOLK, ISOLA	NF
+PAES	NIGERIA	NG
+PAES	NICARAGUA	NI
+PAES	PAESI BASSI	NL
+PAES	NORVEGIA	NO
+PAES	NEPAL	NP
+PAES	NAURU	NR
+PAES	ZONA NEUTRA	NT
+PAES	NIUE	NU
+PAES	NUOVA ZELANDA	NZ
+PAES	OMAN	OM
+PAES	PANAMA	PA
+PAES	PERU'	PE
+PAES	POLINESIA FRANCESE	PF
+PAES	PAPUA NUOVA GUINEA	PG
+PAES	FILIPPINE	PH
+PAES	PAKISTAN	PK
+PAES	POLONIA	PL
+PAES	SAINT-PIERRE E MIQUELON	PM
+PAES	PITCAIRN	PN
+PAES	PORTORICO	PR
+PAES	TERRITORIO PALESTINESE, OCCUPATO	PS
+PAES	PORTOGALLO	PT
+PAES	PALAU	PW
+PAES	PARAGUAY	PY
+PAES	QATAR	QA
+PAES	RIUNIONE	RE
+PAES	ROMANIA	RO
+PAES	SERBIA	RS
+PAES	RUSSIA, FEDERAZIONE DI	RU
+PAES	RUANDA	RW
+PAES	ARABIA SAUDITA	SA
+PAES	SALOMONE, ISOLE	SB
+PAES	SEICELLE	SC
+PAES	SUDAN	SD
+PAES	SVEZIA	SE
+PAES	SINGAPORE	SG
+PAES	SANT'ELENA	SH
+PAES	SLOVENIA	SI
+PAES	SVALBARD E ISOLA JAN MAYEN	SJ
+PAES	SLOVACCHIA	SK
+PAES	SIERRA LEONE	SL
+PAES	SAN MARINO	SM
+PAES	SENEGAL	SN
+PAES	SOMALIA	SO
+PAES	SURINAME	SR
+PAES	SUDAN DEL SUD	SS
+PAES	SAO TOME E PRINCIPE	ST
+PAES	URSS	SU
+PAES	EL SALVADOR	SV
+PAES	SINT MAARTEN (PARTE OLANDESE)	SX
+PAES	SIRIA	SY
+PAES	SWAZILAND	SZ
+PAES	TURKS E CAICOS, ISOLE	TC
+PAES	CIAD	TD
+PAES	TERRE AUSTRALI FRANCESI	TF
+PAES	TOGO	TG
+PAES	TAILANDIA	TH
+PAES	TAGICHISTAN	TJ
+PAES	TOKELAU	TK
+PAES	TIMOR-LESTE (EX TP TIMOR-ORIENTALE)	TL
+PAES	TURKMENISTAN	TM
+PAES	TUNISIA	TN
+PAES	TONGA	TO
+PAES	TIMOR ORIENTALE	TP
+PAES	TURCHIA	TR
+PAES	TRINIDAD E TOBAGO	TT
+PAES	TUVALU	TV
+PAES	TAIWAN	TW
+PAES	TANZANIA	TZ
+PAES	UCRAINA, RSS DI	UA
+PAES	UGANDA	UG
+PAES	STATI UNITI,IS.MIN. LONTANE DEGLI	UM
+PAES	PAESE INDETERMINATO	UN
+PAES	STATI UNITI	US
+PAES	URUGUAY	UY
+PAES	USBECHISTAN	UZ
+PAES	SANTA SEDE (STATO DELLA CITTA' DEL VATICANO)	VA
+PAES	SAINT-VINCENT E GRENADINE	VC
+PAES	VENEZUELA	VE
+PAES	VERGINI BRITANNICHE, ISOLE	VG
+PAES	VERGINI AMERICANE, ISOLE	VI
+PAES	VIETNAM	VN
+PAES	VANUATU	VU
+PAES	WALLIS E FUTUNA, ISOLE	WF
+PAES	SAMOA	WS
+PAES	YEMEN DEMOCRATICO	YD
+PAES	YEMEN	YE
+PAES	MAYOTTE	YT
+PAES	IUGOSLAVIA	YU
+PAES	AFRICA DEL SUD	ZA
+PAES	ZAMBIA	ZM
+PAES	ZAIRE	ZR
+PAES	ZIMBABWE	ZW
+PIAT	terrestre	a
+PIAT	aerea	b
+PIAT	spaziale	c
+POLO	Polo Bibl. Associazione Lipizer	109
+POLO	Rete delle biblioteche della provincia di Agrigento - AGR	AGR
+POLO	Polo di test ALeph Adesione minima	ALE
+POLO	Polo bibliotecario provinciale di Ancona	ANA     
+POLO	Polo Università de L'Aquila	AQ1
+POLO	Polo di Arezzo - ARE	ARE
+POLO	Polo Terra di Bari	BA1
+POLO	Polo Sistema Bibliotecario Anglona Gallura - BAG	BAG
+POLO	Polo Regione Basilicata	BAS
+POLO	Polo di Barletta, Andria e Trani - BAT	BAT
+POLO	Polo delle Biblioteche Civiche di Torino	BCT
+POLO	Polo Biblioteca civica di Biella	BIA
+POLO	Polo Biblioteca Nazionale Universitaria Torino - BMT	BMT
+POLO	Polo Biblioteca provinciale di Brindisi	BRI
+POLO	Polo Biblioteca nazionale centrale di Roma	BVE
+POLO	Polo di Bolzano - BZM	BZM
+POLO	Polo regionale SBN Sardegna	CAG
+POLO	Polo Regione Campania	CAM
+POLO	Polo di Catania - CAT	CAT
+POLO	Polo Regione Toscana Co.Bi.Re	CBR
+POLO	Polo Emilia Romagna - CER	CER
+POLO	Polo Biblioteca nazionale centrale di Firenze	CFI
+POLO	Edit 16	CNC
+POLO	Polo del Ministero delle Comunicazioni	COM
+POLO	Polo di Cosenza	CSA
+POLO	Recupero CUB	CUB
+POLO	Discoteca di Stato - DDS	DDS
+POLO	Polo DOB	DOB
+POLO	Polo Istituto Nazionale di Geofisica e Vulcanologia	EVE
+POLO	Polo bibliotecario ferrarese	FER
+POLO	Polo FOG	FOG
+POLO	Polo Friuli Venezia Giulia - FVG	FVG
+POLO	Polo Presidenza del Consiglio dei Ministri. Dipartimento per i servizi tecnici nazionali	GEA
+POLO	Polo degli istituti culturali di Roma	IEI
+POLO	Polo Istituto nazionale di statistica	IST
+POLO	Polo ISU	ISU
+POLO	Polo di Lecce	LEK
+POLO	Polo di La Spezia	LI2
+POLO	Polo Ligure - LI3	LI3
+POLO	Polo Biblioteca comunale Labronica	LIA
+POLO	Polo SBN ligure	LIG
+POLO	Polo regionale Lombardia	LO1
+POLO	Polo LO2	LO2
+POLO	Polo bibliotecario Comune di Lucca	LUA
+POLO	Polo Consorzio per il Sistema Bibliotecario Castelli Romani - LZ1	LZ1
+POLO	Sistema Bibliotecario SBR Polo di Messina - MES	MES
+POLO	Polo fittizio per import	MIG
+POLO	Polo Università lombarde	MIL
+POLO	Polo Campobasso	MO1
+POLO	Polo provinciale modenese	MOD
+POLO	Polo Regione Molise	MOL
+POLO	Polo Ministero Sviluppo Economico (MSE)	MSE
+POLO	Polo MBAC - Napoli	NAP
+POLO	Polo Sistema Nord-Est Milano - NEM	NEM
+POLO	Polo PA1	PA1
+POLO	Polo regionale di Sicilia	PAL
+POLO	Polo bibliotecario parmense	PAR
+POLO	Polo di Pavia - PAV	PAV
+POLO	Polo Biblioteche Ecclesiastiche - PBE	PBE
+POLO	Polo rete Pisa Bibliolandia - PBI 	PBI
+POLO	Polo MBAC - Pisa	PIS
+POLO	Polo Politecnico Milano	PMI
+POLO	Polo della rete REDOP di Pistoia - PTA	PTA
+POLO	Polo universitario veneto	PUV
+POLO	Polo rete bibliotecaria di Romagna	RAV
+POLO	Polo Reggio Calabria	RCA
+POLO	Polo Reggio Emilia 2 - RE2	RE2
+POLO	Polo Provincia di Reggio Emilia	REA
+POLO	Polo della Regione Emilia Romagna	RER
+POLO	Polo Biblioteche di Roma	RMB
+POLO	Polo Università cattolica del Sacro Cuore - A. Gemelli - Roma	RMC
+POLO	Polo giuridico - Roma	RMG
+POLO	Polo delle biblioteche pubbliche statali di Roma	RML
+POLO	Polo Comune di Roma	RMR
+POLO	Polo Università La Sapienza di Roma	RMS
+POLO	Polo del Sistema Bibliotecario Provinciale di Rovigo (ROV)	ROV
+POLO	Polo Regione Toscana - RT1	RT1
+POLO	Recupero SBL	SBL
+POLO	Polo Indice	SBN
+POLO	Polo Sistema bibliotecario provinciale di	
+Siracusa - SBS	SBS	
+POLO	Polo del Politecnico della cultura, delle arti, delle lingue della Fondazione Scuole Civiche di Milano	SCM
+POLO	Polo di Genova	SGE
+POLO	Polo Sistema Interprovinciale Piceno	SIP
+POLO	Polo Ministero della Sanità	SNT
+POLO	Polo Scuola Superiore Pubblica Amministrazione - SPA	SPA
+POLO	Polo di Taranto - TA1	TA1
+POLO	Polo di Teramo	TER
+POLO	Polo Biblioteca storica del Tesoro	TES
+POLO	Polo regionale Piemonte	TO0
+POLO	Polo SBN2 della Regione Piemonte - TO1	TO1
+POLO	Polo di Trapani - TPS	TPS
+POLO	Polo Università degli studi di Trieste	TSA
+POLO	Polo Università Politecnica delle Marche	UAN
+POLO	Polo unificato bolognese	UBO
+POLO	Polo Università di Brescia - UBS	UBS
+POLO	Polo Università di Chieti-Pescara - UDA	UDA
+POLO	Polo Università degli studi di Ferrara	UFE
+POLO	Polo Università degli studi di Firenze	UFI
+POLO	Polo regionale umbro	UM1
+POLO	Polo Università degli studi di Macerata	UMC
+POLO	Polo Università per stranieri di Perugia	UPG
+POLO	Polo UR1	UR1
+POLO	Polo Università di Urbino	URB
+POLO	Polo Università statale di Milano	USM
+POLO	Polo di Ussana - USS	USS
+POLO	Polo bibliografico dell'Università di Torino - UTO	UTO
+POLO	Polo Biblioteca Ambrosiana - VBA	VBA
+POLO	Polo MBAC - Venezia	VEA
+POLO	Polo del Comune di Venezia - VEB	VEB
+POLO	Polo bibliotecario regionale del Veneto	VIA
+POLO	Polo VR0	VR0
+POLO	Polo di test X11	X11
+POLO	Polo di Test X12	X12
+POLO	Polo XXX	XXX
+POLO	Polo per lo stress test - ZZZ	ZZZ
+PRES	cartina	CA
+PRES	intavolatura	IN
+PRES	libro corale	LC
+PRES	Libro da tavolo	LT
+PRES	Melodia con accordi	MA
+PRES	non applicabile	NA
+PRES	parti	PA
+PRES	parte conduttore	PC
+PRES	partitura condensata	PD
+PRES	partitura e parte	PE
+PRES	partitura e parti	PI
+PRES	particella	PL
+PRES	partiturina	PN
+PRES	pseudopartitura	PP
+PRES	partitura ristretta	PR
+PRES	partitura	PU
+PRES	partitura vocale	PV
+PRES	sconosciuto	SC
+PRES	Spartito e parte	SE
+PRES	spartitino	SO
+PRES	spartito	SP
+PRES	spartito e parti	ST
+PRES	variabile	VB
+PRES	altro	Z
+PRVI	beta (videocassetta)	a
+PRVI	VHS (videocassetta)	b
+PRVI	U-matic (videocassetta)	c
+PRVI	EIAJ (bobina)	d
+PRVI	type C (bobina)	e
+PRVI	quadruplex (bobina)	f
+PRVI	videodisco a laser ottico	g
+PRVI	videodisco CED 	h
+PRVI	V2000 (videocassetta)	i
+PRVI	video8 (videocassetta)	j
+PRVI	DVD-video	k
+PRVI	sconosciuta	u
+PRVI	non videoregistrazione	x
+PRVI	altro	z
+PUGO	nazionale	a
+PUGO	provinciale	b
+PUGO	dipartimentale	c
+PUGO	comunale	d
+PUGO	locale	e
+PUGO	intergovernativa	f
+PUGO	sconosciuto	u
+PUGO	altro	z
+PUVI	cartuccia video	a
+PUVI	videodisco	b
+PUVI	videocasssetta	c
+PUVI	bobina video	d
+PUVI	videoregistrazione elettronica (EVR)	e
+PUVI	non videoregistrazione	x
+PUVI	altri videotype	z
+REPE	AUTORE/TITOLO	A
+REPE	MARCA	M
+RESP	Nome citato nel documento	0
+RESP	Responsabilità  principale	1
+RESP	Responsabilità  alternativa	2
+RESP	Responsabilità  secondaria	3
+RESP	Responsabilità  nella produzione materiale	4
+RIEL	dati numerici	a
+RIEL	programma informatico	b
+RIEL	dati grafici	c
+RIEL	dati testuali	d
+RIEL	dati bibliografici	e
+RIEL	set di caratteri	f
+RIEL	gioco	g
+RIEL	suono	h
+RIEL	multimediale interattivo	i
+RIEL	sistema o servizio on line	j
+RIEL	sconosciuto	u
+RIEL	combinazione	v
+RIEL	altro	z
+RISM	A-Gu	RSM AA        
+RISM	A-GU	RSM AB        
+RISM	A-Imf	RSM AC        
+RISM	A-Iu	RSM AD        
+RISM	A-KN	RSM AE        
+RISM	A-KR	RSM AF        
+RISM	A-L	RSM AG        
+RISM	A-M	RSM AH        
+RISM	A-Sca	RSM AI        
+RISM	A-Sm	RSM AK        
+RISM	A-Sst	RSM AL        
+RISM	A-SCH	RSM AM        
+RISM	A-ST	RSM AN        
+RISM	A-Wgm	RSM AO        
+RISM	A-Wmk	RSM AP        
+RISM	A-Wst	RSM AQ        
+RISM	A-Wu	RSM AR        
+RISM	A-Wm	RSM AS        
+RISM	A-Wmi	RSM AT        
+RISM	A-Wn	RSM AW        
+RISM	B-Amp	RSM BA        
+RISM	B-Bc	RSM BC        
+RISM	B-Gc	RSM BG        
+RISM	B-Gu	RSM BH        
+RISM	B-Lc	RSM BL        
+RISM	B-Br	RSM BR        
+RISM	B-Tv	RSM BT        
+RISM	DK-Kk	RSM DK        
+RISM	F-Pc	RSM FC        
+RISM	D-Mbs	RSM GM        
+RISM	GB-Lbl	RSM IL        
+RISM	PL-GD	RSM PG        
+RISM	I-FOGc	RSM X1        
+RISM	I-RPTc	RSM X2        
+RISM	I-Tstrona	RSM X3        
+RISM	I-Tt	RSM X4        
+RISM	I-NICc	RSM X5        
+RISM	I-MACmc	RSM X6        
+SCAL	scala lineare	a
+SCAL	scala angolare	b
+SCAL	altro	z
+SCAR	standard NAB	a
+SCAR	standard CCIR/IEC	b
+SCAR	codifica DBX	c
+SCAR	digitale (compact disc)	d
+SCAR	codifica Dolby-A	e
+SCAR	codifica Dolby-B	f
+SCAR	codifica Dolby-C	g
+SCAR	codifica CX	h
+SCAR	sconosciuto	u
+SCAR	non applicabile	x
+SCAR	altro	z
+SCCF	colore a 3 strati	a
+SCCF	2 colori, strip unica	b
+SCCF	2 colori, non determinato	c
+SCCF	3 colori, non determinato	d
+SCCF	colore, 3 strip	e
+SCCF	colore, 2 strip	f
+SCCF	strip rosso	g
+SCCF	strip blu o verde	h
+SCCF	strip ciano	i
+SCCF	strip  magenta	j
+SCCF	strip giallo	k
+SCCF	S E N 2	l
+SCCF	S E N 3	m
+SCCF	viraggio seppia	n
+SCCF	altro viraggio seppia	o
+SCCF	imbibizione	p
+SCCF	imbibizione e viraggio	q
+SCCF	colori  stencil	r
+SCCF	colorato a mano	s
+SCCF	sconosciuto	u
+SCCF	non applicabile (copia non è a colori)	x
+SCCF	altro	z
+SCLA	DEWEY	D
+SCLA	LC	L
+SCLA	Sistema cartografico	Z
+SENS	uditivo	a
+SENS	gustativo	b
+SENS	olfattivo	c
+SENS	tattile	d
+SENS	visivo	e
+SIMA	Controllo Massimo	0
+SIMA	Controllo Medio	1
+SIMA	Controllo Minimo	2
+SIMD	Controllo Massimo	0
+SIMD	Controllo Medio	1
+SIMD	Controllo Minimo	2
+SOGG	NUOVO E VECCHIO SOGGETTARIO DI FIRENZE	FE
+SOGG	SOGGETTARIO DI FIRENZE	FI
+SOGG	NUOVO SOGGETTARIO DI FIRENZE	FN
+STES	Autografo	A
+STES	Autografo incerto	B
+STES	Autografo in parte	C
+STES	Copia	D
+STES	Copia di vari copisti	E
+STRA	405	a
+STRA	525 (ad es. NTSC)	b
+STRA	625 PAL	c
+STRA	625 SECAM	d
+STRA	1125	g
+SUFC	carta	aa
+SUFC	legno	ab
+SUFC	pietra	ac
+SUFC	metallo	ad
+SUFC	sintetico	ae
+SUFC	pelle	af
+SUFC	fibre tessili, anche sintetiche 	ag
+SUFC	supporto magnetico compatibile con computer	ah
+SUFC	supporto magnetico non compatibile con computer	ai
+SUFC	tracing paper 	aj
+SUFC	cardboard	ak
+SUFC	plastico	ap
+SUFC	sconosciuto	au
+SUFC	altro	az
+SUFC	positivo flessibile	ba
+SUFC	negativo flessibile	bb
+SUFC	positivo non flessibile	bc
+SUFC	negativo non flessibile	bd
+SUFC	altro supporto fotografico	bz
+SUFG	tela	a
+SUFG	cartoncino bristol	b
+SUFG	cartone	c
+SUFG	vetro	d
+SUFG	sintetico	e
+SUFG	pelle	f
+SUFG	tessuto	g
+SUFG	metallo	h
+SUFG	carta	i
+SUFG	gesso	j
+SUFG	lastra	k
+SUFG	porcellana	l
+SUFG	pietra	m
+SUFG	legno	n
+SUFG	sconosciuto	u
+SUFG	misto	v
+SUFG	altro	z
+SUON	sonoro combinato	a
+SUON	sconosciuto	u
+SUPP	Elettronico - Cartuccia di nastro per computer	ca
+SUPP	Elettronico - Cartuccia di memoria per computer	cb
+SUPP	Elettronico - Disco magnetico per computer	cd
+SUPP	Elettronico - Cartuccia di disco magnetico per computer	ce
+SUPP	Elettronico - Cassetta di nastro per computer	cf
+SUPP	Elettronico - Bobina di nastro per computer	ch
+SUPP	Elettronico - Scheda per computer	ck
+SUPP	Elettronico - Risorsa online per computer	cr
+SUPP	Elettronico - Altro	cz
+SUPP	Stereografico - Carta stereografica	eh
+SUPP	Stereografico - Disco stereografico	es
+SUPP	Stereografico - Altro	ez
+SUPP	Proiettato - Cartuccia di filmina	gc
+SUPP	Proiettato - Spezzone di pellicola	gd
+SUPP	Proiettato - Filmina	gf
+SUPP	Proiettato - Diapositiva	gs
+SUPP	Proiettato - Lucido per proiezione	gt
+SUPP	Microforma - Scheda forata	ha
+SUPP	Microforma - Cassetta di microfilm (microfilm catridge)	hb
+SUPP	Microforma - Cassetta di microfilm (microfilm cassette)	hc
+SUPP	Microforma - Bobina di microfilm	hd
+SUPP	Microforma - Microfiche	he
+SUPP	Microforma - Cassetta di microfiche	hf
+SUPP	Microforma - Microopaco	hg
+SUPP	Microforma - Spezzone di microfilm	hh
+SUPP	Microforma - Rullino di microfilm	hj
+SUPP	Microforma - Altro	hz
+SUPP	Proiettato - Cartuccia di pellicola	mc
+SUPP	Proiettato - Cassetta di pellicola	mf
+SUPP	Proiettato - Rullino di pellicola	mo
+SUPP	Proiettato - Bobina di pellicola	mr
+SUPP	Proiettato - Altro	mz
+SUPP	Senza mediazione - Rotolo	na
+SUPP	Senza mediazione - Foglio	nb
+SUPP	Senza mediazione - Volume	nc
+SUPP	Senza mediazione - Lavagna a fogli mobili	nn
+SUPP	Senza mediazione - Scheda	no
+SUPP	Senza mediazione - Oggetto	nr
+SUPP	Senza mediazione - Altro	nz
+SUPP	Microscopio - Vetrino da microscopio	pp
+SUPP	Microscopio - Altro	pz
+SUPP	Audio - Disco audio	sd
+SUPP	Audio - Cilindro audio	se
+SUPP	Audio - Cartuccia audio	sg
+SUPP	Audio - Rullo audio (sound track reel)	si
+SUPP	Audio - Rullo audio (audio roll)	sq
+SUPP	Audio - Audiocassetta	ss
+SUPP	Audio - Bobina di nastro audio	st
+SUPP	Audio - Altro	sz
+SUPP	Video - Cartuccia video	vc
+SUPP	Video - Videodisco	vd
+SUPP	Video - Videocassetta	vf
+SUPP	Video - Bobina di videonastro	vr
+SUPP	Video - Altro	vz
+SUPP	Non specificato/non identificato - Non specificato	zu
+SUSU	colonna sonora ottica su film	a
+SUSU	colonna sonora magnetica su film	b
+SUSU	nastro magnetico audio in cartuccia	c
+SUSU	disco	d
+SUSU	nastro magnetico audio su bobina	e
+SUSU	nastro magnetico audio in cassetta	f
+SUSU	colonna sonora ottica e magnetica su film	g
+SUSU	videotape	h
+SUSU	videodisco	i
+SUSU	sconosciuto	u
+SUSU	senza suono	x
+SUSU	altro	z
+TDIS	incisione diretta (unique, cut on the spot)	a
+TDIS	prodotto in serie (most commercial discs or tapes)	b
+TDIS	"nastro ""master"""	c
+TDIS	"duplicazione del nastro ""master"""	d
+TDIS	"disco ""padre"" (negativo)"	e
+TDIS	"disco ""madre"" (positiva)"	f
+TDIS	matrice (negativa)	g
+TDIS	stampa di prova	h
+TDIS	sconosciuto	u
+TDIS	non applicabile	x
+TDIS	altro	z
+TECD	matita	aa
+TECD	grafite	ab
+TECD	matita colorata	ac
+TECD	inchiostro indiano	ad
+TECD	inchiostro indiano lavierung	ae
+TECD	carbone	af
+TECD	gesso	ag
+TECD	gesso nero	ah
+TECD	sanguigna	ai
+TECD	acquarello	aj
+TECD	tempera	ak
+TECD	guazzo	al
+TECD	pastello	am
+TECD	olio	an
+TECD	pennarello	ba
+TECD	macchia	bb
+TECD	pastello a cera	bc
+TECD	seppia	bd
+TECD	inchiostro	be
+TECD	caseina	bf
+TECD	doratura	bg
+TECD	encausto	bh
+TECD	acrilico	bi
+TECD	collage	bj
+TECD	punta d'argento	bk
+TECD	aerografo	bl
+TECD	sconosciuto	uu
+TECD	misto	vv
+TECD	non applicabile	xx
+TECD	altro	zz
+TECN	manoscritto	a
+TECN	stampa	b
+TECN	fotocopia	c
+TECN	microfilm	d
+TECN	sconosciuto	u
+TECN	pre-produzione	y
+TECN	altro	z
+TECS	xilografia	ba
+TECS	xilografia a chiaro scuro	bb
+TECS	xilografia a linea bianca	bc
+TECS	camaiu	bd
+TECS	eliografia	be
+TECS	cromolitografia	bf
+TECS	linoleum intagliato	bg
+TECS	acquaforte	bh
+TECS	litografia	bi
+TECS	fotolitografia	bj
+TECS	zincografia	bk
+TECS	algrafia	bl
+TECS	acquatinta	bm
+TECS	incisione con inchiostro allo zucchero	bn
+TECS	vernice molle	ca
+TECS	engraving	cb
+TECS	litografia con pastello	cc
+TECS	bulino	cd
+TECS	puntasecca	ce
+TECS	mezzatinta	cf
+TECS	monotipo	cg
+TECS	serigrafia	ch
+TECS	incisione su metallo	ci
+TECS	computer grafica	cj
+TECS	fotocopia	ck
+TECS	sconosciuto	uu
+TECS	misto	vv
+TECS	non applicabile	xx
+TECS	altro	zz
+TERE	acustica	a
+TERE	elettrica	b
+TERE	digitale	c
+TERE	sconosciuta	u
+TERE	altro	z
+TESL	libretto	b
+TEVI	animazione	a
+TEVI	azione dal vivo	b
+TEVI	animazione ed azione dal vivo	c
+TEVI	non specificata/sconosciuta	u
+TEVI	non è un film o una videoregistrazione	x
+TEVI	altro	z
+TICO	notato	a
+TICO	eseguito	b
+TICO	cartografico	c
+TIMA	lacca	a
+TIMA	metallo	b
+TIMA	stampa di gommalacca (prodotto in serie)	c
+TIMA	stampa di plastica (prodotto in serie)	d
+TIMA	metallo e plastica (compact disc)	e
+TIMA	cera	g
+TIMA	plastica (prodotto in serie)	h
+TIMA	supporto in carta	i
+TIMA	acetato	j
+TIMA	pvc	k
+TIMA	poliestere	l
+TIMA	sconosciuto	u
+TIMA	non applicabile	x
+TIMA	altro	z
+TIPE	stampe dye transfer per imbibizione	a
+TIPE	stock di pellicola colore a tre strati	b
+TIPE	stock di pellicola colore a tre strati (low fade)	c
+TIPE	stock costituito da due pellicole unite tra loro	d
+TIPE	sconosciuto	u
+TIPE	non applicabile	x
+TIPE	altro	z
+TIRE	Reticolo completo	1
+TIRE	Reticolo medio	2
+TIRE	Reticolo minimo	3
+TISC	indeterminata	0
+TISC	singola	1
+TISC	multipla	2
+TISC	range	3
+TISC	approssimata	4
+TISI	mono	a
+TISI	stereofonico	b
+TISI	quadrifonico, multicanale o surround	c
+TISI	sconosciuto	u
+TISI	misto	v
+TISI	non applicabile (la copia non ha sonoro)	x
+TISI	altro	z
+TISU	monofonico	a
+TISU	stereofonico	b
+TISU	quadrifonico	c
+TISU	sconosciuto	u
+TISU	altro	z
+TITA	 incisione laterale o combinata	a
+TITA	 incisione verticale	b
+TITA	sconosciuto	u
+TITA	 non applicabile	x
+TIVI	film	a
+TIVI	videoproiezione	b
+TIVI	videoregistrazione	c
+TONO	1. modo	1
+TONO	2. modo	2
+TONO	3. modo	3
+TONO	4. modo	4
+TONO	5. modo	5
+TONO	6. modo	6
+TONO	7. modo	7
+TONO	8. modo	8
+TONO	9. modo	9
+TONO	10. modo	10
+TONO	11. modo	11
+TONO	12. modo	12
+TONO	tonus peregrinus	13
+TONO	la maggiore	A
+TONO	la bemolle maggiore	Ab
+TONO	si maggiore	B
+TONO	si bemolle maggiore	Bb
+TONO	do maggiore	C
+TONO	do bemolle maggiore	Cb
+TONO	do diesis maggiore	Cx
+TONO	re maggiore	D
+TONO	re bemolle maggiore	Db
+TONO	mi maggiore	E
+TONO	mi bemolle maggiore	Eb
+TONO	fa maggiore	F
+TONO	fa diesis maggiore	Fx
+TONO	sol maggiore	G
+TONO	sol bemolle maggiore	Gb
+TONO	la minore	a
+TONO	la bemolle minore	ab
+TONO	la diesis minore	ax
+TONO	si minore	b
+TONO	si bemolle minore	bb
+TONO	do minore	c
+TONO	do diesis minore	cx
+TONO	re minore	d
+TONO	re diesis minore	dx
+TONO	mi minore	e
+TONO	mi bemolle minore	eb
+TONO	fa minore	f
+TONO	fa diesis minore	fx
+TONO	sol minore	g
+TONO	sol diesis minore	gx
+TONO	altro	zz
+TPAU	Autore	AU
+TPAU	Classificazione	CL
+TPAU	Descrittore di Soggetto	DE
+TPAU	Luogo	LU
+TPAU	Marca editoriale	MA
+TPAU	Repertorio	RE
+TPAU	Soggetto	SO
+TPAU	Titolo Uniforme	TU
+TPAU	Titolo Uniforme Musicale	UM
+TPMA	Materiale cartografico	C
+TPMA	Materiale antico	E
+TPMA	Materiale grafico	G
+TPMA	Materiale moderno	M
+TPMA	Materiale musicale	U
+VELO	16 2/3 rpm	a
+VELO	16 2/3 rpm	a
+VELO	33 1/3 rpm	b
+VELO	45 rpm	c
+VELO	78 rpm	d
+VELO	8 rpm	e
+VELO	1.4 m. al secondo (compact discs)	g
+VELO	1 in. al secondo (120 rpm)	h
+VELO	160 rpm	i
+VELO	1 7/8 in. al secondo	k
+VELO	15/16 in. al secondo	l
+VELO	 3 3/4 in al secondo	m
+VELO	15 in. al secondo	o
+VELO	30 in. al secondo	p
+VELO	8/10 in. al secondo	q
+VELO	4/10 in. al secondo	r
+VELO	sconosciuta	u
+VELO	non applicabile	x
+VELO	altro	z
+VERS	originale	a
+VERS	master	b
+VERS	duplicato	c
+VERS	stampa di riferimento / copia di visualizzazione	d
+VERS	sconosciuto	u
+VERS	non applicabile	x
+VERS	altro	z

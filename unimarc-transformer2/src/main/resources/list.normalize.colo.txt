@@ -1,0 +1,8 @@
+COLO a monocromatico a
+COLO b bianco e nero b
+COLO c multicolore c
+COLO d colorato a mano d
+COLO u sconosciuto u
+COLO v misto v
+COLO x non applicabile x
+COLO z altro z

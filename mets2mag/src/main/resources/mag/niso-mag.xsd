@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.niso.org/pdfs/DataDict.pdf" 
+	xmlns="http://www.niso.org/pdfs/DataDict.pdf" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:simpleType name="checksum">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="32"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="img_mimetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="image/gif"/>
+			<xsd:enumeration value="image/jpeg"/>
+			<xsd:enumeration value="image/tiff"/>
+			<xsd:enumeration value="image/png"/>
+			<xsd:enumeration value="image/vnd.djvu"/>
+			<xsd:enumeration value="application/pdf"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	
+	<xsd:simpleType name="compressiontype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Uncompressed"/>
+			<xsd:enumeration value="CCITT 1D"/>
+			<xsd:enumeration value="CCITT Group 3"/>
+			<xsd:enumeration value="CCITT Group 4"/>
+			<xsd:enumeration value="LZW"/>
+			<xsd:enumeration value="JPG"/>
+			<xsd:enumeration value="PNG"/>
+			<xsd:enumeration value="DJVU"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="photometricinterpretationtype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="WhiteIsZero"/>
+			<xsd:enumeration value="BlackIsZero"/>
+			<xsd:enumeration value="RGB"/>
+			<xsd:enumeration value="Palette color"/>
+			<xsd:enumeration value="Transparency Mask"/>
+			<xsd:enumeration value="CMYK"/>
+			<xsd:enumeration value="YCbCr"/>
+			<xsd:enumeration value="CIELab"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="samplingfrequencyunittype">
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>no absolute unit of measurement</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>inch</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>centimeter</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="samplingfrequencyplanetype">
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>camera/scanner focal plane</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>object plane</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>source object plane</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="bitpersampletype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>bitonal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>4-bit grey</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>8-bit grey or palette</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8,8,8">
+				<xsd:annotation>
+					<xsd:documentation>RGB</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16,16,16">
+				<xsd:annotation>
+					<xsd:documentation>TIFF, HDR</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8,8,8,8">
+				<xsd:annotation>
+					<xsd:documentation>CMYK</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="targettype">
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="0">
+				<xsd:annotation>
+					<xsd:documentation>external</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>internal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="format">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="mime" type="img_mimetype"/>
+			<xsd:element name="compression" type="compressiontype" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="image_creation">
+		<xsd:sequence>
+			<xsd:element name="sourcetype" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="scanningagency" minOccurs="0"/>
+			<xsd:element name="devicesource" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="scanningsystem" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="scanner_manufacturer" type="xsd:string"/>
+						<xsd:element name="scanner_model" type="xsd:string"/>
+						<xsd:element name="capture_software" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="dimensions">
+		<xsd:sequence>
+			<xsd:element name="imagelength" type="xsd:positiveInteger"/>
+			<xsd:element name="imagewidth"  type="xsd:positiveInteger"/>
+			<xsd:element name="source_xdimension" type="xsd:double" minOccurs="0"/>
+			<xsd:element name="source_ydimension" type="xsd:double" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="spatialmetrics">
+		<xsd:sequence>
+			<xsd:element name="samplingfrequencyunit" type="samplingfrequencyunittype"/>
+			<xsd:element name="samplingfrequencyplane" type="samplingfrequencyplanetype"/>
+			<xsd:element name="xsamplingfrequency" type="xsd:positiveInteger" minOccurs="0"/>
+			<xsd:element name="ysamplingfrequency" type="xsd:positiveInteger" minOccurs="0"/>
+			<xsd:element name="photometricinterpretation" type="photometricinterpretationtype"/>
+			<xsd:element name="bitpersample" type="bitpersampletype"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="targetdata">
+		<xsd:sequence>
+			<xsd:element name="targetType" type="targettype" minOccurs="0"/>
+			<xsd:element name="targetID" type="xsd:string"/>
+			<xsd:element name="imageData" type="xsd:anyURI" minOccurs="0"/>
+			<xsd:element name="performanceData" type="xsd:anyURI" minOccurs="0"/>
+			<xsd:element name="profiles" type="xsd:anyURI" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+<!-- Despite NISO is coinceived to manage just technical features of images, we have managed in the same way techical details of  text-oriented files-->
+	
+	<xsd:complexType name="docFormat">
+		<xsd:annotation>
+		<xsd:documentation>
+		Nonostante lo schema NISO sia nato per descrivere le caratteristiche tecniche di file contenenti immagini, per ragioni di omogenità si è scelto di usare il medesimo formato anche per file text-oriented 
+		</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="mime" type="doc_mimetype"/>
+			<xsd:element name="compression" type="doc_compressiontype" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="doc_mimetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="text/plain"/>
+			<xsd:enumeration value="text/xml"/>
+			<xsd:enumeration value="text/html"/>
+			<xsd:enumeration value="text/rtf"/>
+			<xsd:enumeration value="application/msword"/>
+			<xsd:enumeration value="application/pdf"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="doc_compressiontype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Uncompressed"/>
+			<xsd:enumeration value="ZIP"/>
+			<xsd:enumeration value="RAR"/>
+			<xsd:enumeration value="GZ"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

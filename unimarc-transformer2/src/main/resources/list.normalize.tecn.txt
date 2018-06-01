@@ -1,0 +1,7 @@
+TECN a manoscritto a
+TECN b stampa b
+TECN c fotocopia c
+TECN d microfilm d
+TECN u sconosciuto u
+TECN y pre-produzione y
+TECN z altro z

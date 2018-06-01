@@ -1,0 +1,10 @@
+a = collage
+b = disegno
+c = pittura
+d = riproduzione fotomeccanica
+e = foto negativo
+f = riproduzione fotografica
+h = immagine
+i = stampa
+k = disegno tecnico
+m = master

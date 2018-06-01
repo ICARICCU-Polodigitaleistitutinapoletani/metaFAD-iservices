@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad">
+	<mapping destination="Titolo sintetica" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Livello di ricerca" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Localizzazione: Regione" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Numero di catalogo generale" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Oggetto: definizione dell oggetto" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Oggetto: trattamento catalografico" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Soggetto: identificazione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Soggetto: titolo" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Soggetto: indicazioni sul soggetto" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Soggetto: descrizione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Soggetto: classificazione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Soggetto: thesaurus" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Ubicazione dati patrimoniali: ubicazione bene" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Ubicazione dati patrimoniali: inventario: numero" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Ubicazione dati patrimoniali: inventario: collocazione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Localizzazione: Provincia" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Localizzazione: Comune" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Localizzazione: Localita" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Istituto" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Cronologia: cronologia generica" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Cronologia: cronologia specifica: da" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Cronologia: cronologia specifica: a" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Dati tecnici: indicazione di colore" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Dati tecnici: materia e tecnica" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Tipo di scheda" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Tipo di scheda (label)" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Definizione del bene" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Descrizione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Codice univoco" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Definizione culturale: autore" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Definizione culturale: ruolo" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Definizione culturale: autore: crono" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Definizione culturale: ambito culturale" searchType="listText" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Produzione e diffusione: responsabilita" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Produzione e diffusione: indicazione di edizione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Produzione e diffusione: indicazione di serie" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Stato di conservazione" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Specifiche di accesso ai dati: motivazione" searchType="list" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Responsabile ricerca e redazione" searchType="text" searchField="true" is4Fe='true' multiple="true"/>
+	<mapping destination="Responsabilita (chi)" searchType="text" searchField="true" is4Fe='true' multiple="false"/>
+	<mapping destination="Bene (cosa)" searchType="text" searchField="true" is4Fe='true' multiple="false"/>
+	<mapping destination="Localizzazione (dove)" searchType="text" searchField="true" is4Fe='true' multiple="false"/>
+	<mapping destination="Cronologia (quando)" searchType="text" searchField="true" is4Fe='true' multiple="false"/>
+	<mapping destination="Dati Analitici (come)" searchType="text" searchField="true" is4Fe='true' multiple="false"/>
+</mappings>

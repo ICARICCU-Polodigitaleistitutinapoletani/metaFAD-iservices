@@ -1,0 +1,17 @@
+SUFG a tela a
+SUFG b cartoncino bristol b
+SUFG c cartone c
+SUFG d vetro d
+SUFG e sintetico e
+SUFG f pelle f
+SUFG g tessuto g
+SUFG h metallo h
+SUFG i carta i
+SUFG j gesso j
+SUFG k lastra k
+SUFG l porcellana l
+SUFG m pietra m
+SUFG n legno n
+SUFG u sconosciuto u
+SUFG v misto v
+SUFG z altro z

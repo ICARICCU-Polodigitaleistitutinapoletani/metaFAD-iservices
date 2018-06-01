@@ -1,0 +1,126 @@
+/**
+	test:
+	foto: http://192.168.0.2:8080/sbnmarc/iccd?bid=NAP0668034&biblioteca=SP NAP0689822
+	disegno: http://192.168.0.2:8080/sbnmarc/iccd?bid=NAP0731253&biblioteca=SP NAP0727530
+	stampa: SBL0479955 NAP0727416 NAP0727394
+*/
+
+buildscript {
+	ext {
+        springBootVersion = '1.5.10.RELEASE'
+        springRestDocsVersion = '1.1.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+        classpath('io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE')
+        classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.8'
+    }
+}
+
+plugins {
+    id "org.asciidoctor.convert" version "1.5.2"
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.asciidoctor.convert'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+version = '1.0.1'
+
+springBoot{
+	executable = true
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        credentials{
+            username = "${meta_nexus_username}"
+            password = "${meta_nexus_password}"
+        }
+        name "meta.nexus"
+        url "http://127.0.0.1:8081/repository/maven-releases/"
+    }
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-web")
+	compile('org.springframework.boot:spring-boot-configuration-processor')
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile('com.gruppometa:metasearch-data:1.0'){
+	}
+    compile('com.gruppometa:mets2mag:1.0.0')
+	compile('com.gruppometa:kardex-data:1.0'){
+//		exclude group: 'org.codehaus.woodstox'
+	}
+    // perchè questa versione?
+	compile('xerces:xerces:2.4.0')
+    //compile('xerces:xercesImpl:2.11.0')
+    //compile group: 'xalan', name: 'xalan', version: '2.7.2'
+
+	// mancava senza questo da un conflitto
+	compile('org.codehaus.woodstox:wstx-asl:4.0.6')
+
+    compile('com.gruppometa:sbnmarc-mag:1.0')
+	compile('com.gruppometa:sbnmarc-iccd:1.0'){
+//		exclude group: 'org.codehaus.woodstox'
+	}
+
+	compile('com.gruppometa:unimarc-transformer2:1.0') {
+		exclude group: 'org.slf4j', module: 'slf4j-jcl'
+//    	exclude group: 'org.codehaus.woodstox'
+	}
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    compile group: 'org.apache.solr', name: 'solr-solrj', version: '5.3.1'
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile 'org.springframework.restdocs:spring-restdocs-mockmvc:1.1.1.RELEASE'
+
+}
+
+ext {
+    snippetsDir = file('build/generated-snippets')
+}
+
+test {
+    systemProperties 'property': 'value'
+    outputs.dir snippetsDir
+}
+
+asciidoctor {
+//	backends 'pdf'
+    attributes 'snippets': snippetsDir
+    inputs.dir snippetsDir
+    outputDir "build/asciidoc"
+    dependsOn test
+    sourceDir 'src/main/asciidoc'
+}
+
+jar {
+    dependsOn asciidoctor
+   	 from ("${asciidoctor.outputDir}/html5") {
+        into 'static/docs'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.7'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}

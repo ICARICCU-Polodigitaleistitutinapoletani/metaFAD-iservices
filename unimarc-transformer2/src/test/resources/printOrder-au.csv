@@ -1,0 +1,21 @@
+Campo	Ordine BE	Ordine  FE	Gruppo BE	Ripetibile
+Tipo scheda	1	0.05	Identificazione e qualificazione	
+Codice identificativo	2	0.1	Identificazione e qualificazione	
+Identificativo di versione	3		Identificazione e qualificazione	
+ISADN	4	0.3	Identificazione e qualificazione	
+Dati per la elaborazione	5	100.1	Identificazione e qualificazione	
+Lingua	6	100.3	Identificazione e qualificazione	
+Nazionalita'	7	100.3	Identificazione e qualificazione	true
+Regole di catalogazione	8	100.3	Identificazione e qualificazione	true
+Nome di persona	9	200.3	Intestazione e descrizione	
+Nome di gruppo (ente)	10	200.3	Intestazione e descrizione	
+Datazione	11	301.0	Intestazione e descrizione	true
+Nota informativa	12	301.0	Intestazione e descrizione	true
+Forme varianti	13	200.4	Relazioni di rinvio	true
+Forme varianti (ente)	14	200.4	Relazioni di rinvio	
+Vedi anche di autore personale	15	200.5	Relazioni vedi anche	true
+Vedi anche di gruppo (ente)	16	200.5	Relazioni vedi anche	
+Fonte del record	17	800.1	Vedi anche	
+Fonte bibliografica (esito positivo)	18	860.1	Intestazione e descrizione	true
+Fonte bibliografica (esito negativo)	19	860.1	Intestazione e descrizione	true
+Note del catalogatore	20	301.0	Note	

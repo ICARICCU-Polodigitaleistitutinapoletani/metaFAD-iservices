@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings>
+			
+	<mapping marcField="700" marcSection="a|b|f" destination="Autore"/>
+	<mapping marcField="710" marcSection="a|b|f" destination="Autore"/>
+	<mapping marcField="200" marcSection="a|e|f|g" destination="Titolo"/>
+	<mapping marcField="205" marcSection="a|f" destination="Edizione"/>
+	<mapping marcField="208" marcSection="a" destination="Presentazione"/>
+	<mapping marcField="207" marcSection="a" destination="Numerazione"/>
+	<mapping marcField="210" marcSection="a|c|d|e|g" destination="Pubblicazione"/>
+	<mapping marcField="210" marcSection="a" destination="Place"/>
+	<mapping marcField="210" marcSection="c" destination="Publisher"/>
+	<mapping marcField="210" marcSection="d" destination="Display_Date"/>
+	<mapping marcField="215" marcSection="a|c|d" destination="Descrizione fisica"/>
+	<mapping marcField="410" marcSection="a|v" destination="Collezione"/>
+	<mapping marcField="300" destination="Note"/>
+	<mapping marcField="012" marcSection="a" destination="Impronta"/>
+	<mapping marcField="430" destination="Continuazione di"/>
+	<!--attenzione i campi 4xx hanno un trattamento speciale, cerca 4xx nel codice 
+	    NO: ho inserito un if nel tratamento generale -->
+	<mapping marcField="461" marcSection="a|e|f|g|v" destination="Fa parte di"/>
+	<mapping marcField="462" marcSection="a|e|f|g|v" destination="Fa parte di"/>
+	<mapping marcField="701" marcSection="a|b|f" destination="Nomi"/>
+	<mapping marcField="702" marcSection="a|b|f" destination="Nomi"/>
+	<mapping marcField="711" marcSection="a|b|f" destination="Nomi"/>
+	<mapping marcField="712" marcSection="a|b|f" destination="Nomi"/>	
+	<mapping marcField="720" marcSection="a|b|f" destination="Nomi"/>
+	<mapping marcField="721" marcSection="a|b|f" destination="Nomi"/>
+	<mapping marcField="517" marcSection="a" destination="Titolo alternativo"/>	
+	<mapping marcField="101" destination="Lingua"/>
+	<mapping marcField="102" destination="Paese"/>
+	<mapping marcField="606" marcSection="a|x|y" destination="Soggetto"/>
+	<!-- 
+	<mapping marcField="950" marcSection="e" destination="Inventario"/>
+
+	 -->
+	<mapping  destination="Dedica" handler="com.gruppometa.unimarc.handlers.DedicaHandler"/>
+
+	<fieldmap name="Type:livello" value="Natura"/>
+	<fieldmap name="Type:tipo" value="Tipo"/>
+	<fieldmap name="Identifier:bid" value="delete"/>
+	
+</mappings>

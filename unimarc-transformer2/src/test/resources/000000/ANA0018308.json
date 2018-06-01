@@ -1,0 +1,290 @@
+{
+  "id" : "ANA0018308",
+  "filename" : "IE001_NAP_BN_00019690.mrc",
+  "isbd" : "<b>Checchetelli, Giuseppe</b><br/><b>La festa degli otto settembre 1846 in Roma / descritta da Giuseppe Checchetelli</b>. - [S.l. : s.n.], stampa 1846 (Roma : Tip. di Clemente Puccinelli). - 16 p., [1] c. di tav. : ill. ; 21 cm. ((Precede il tit.: Settima distribuzione / Estr. dal Giornale romano la Pallade num. 24, a. 1.))",
+  "created" : "2016-03-08 17:05:15",
+  "mapVersion" : "1.2.3",
+  "fields" : [ {
+    "name" : "Inventario",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "0000077235"
+    } ]
+  }, {
+    "name" : "Identificativo di versione",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "20151123104050.0"
+    } ]
+  }, {
+    "name" : "Titolo [sintetico]",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "La festa degli otto settembre 1846 in Roma / descritta da Giuseppe Checchetelli"
+    } ]
+  }, {
+    "name" : "Luogo",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "[S.l."
+    }, {
+      "plain" : "Roma"
+    } ]
+  }, {
+    "name" : "Data pubblicazione",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "stampa 1846"
+    } ]
+  }, {
+    "name" : "Editore",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Tip. di Clemente Puccinelli"
+    } ]
+  }, {
+    "name" : "Autore",
+    "isbd" : true,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "html" : "[Autore] <a href=\"${page}?VID=LO1V057337\">Checchetelli, Giuseppe</a>",
+      "plain" : "Checchetelli, Giuseppe",
+      "vid" : "LO1V057337",
+      "role" : "Autore"
+    } ]
+  }, {
+    "name" : "Autore [sintetico]",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "html" : "[Autore] <a href=\"${page}?VID=LO1V057337\">Checchetelli, Giuseppe</a>",
+      "plain" : "Checchetelli, Giuseppe",
+      "vid" : "LO1V057337",
+      "role" : "Autore"
+    } ]
+  }, {
+    "name" : "Orgine del record",
+    "group" : "Dati gestionali",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "html" : "<div><div class='label'>Paese</div><div class='value'>italia</div></div>\n<div><div class='label'>Agenzia</div><div class='value'>Biblioteca nazionale Vittorio Emanuele III - Napoli - it - it-na0079</div></div>\n<div><div class='label'>Data di produzione</div><div class='value'>20090309</div></div>",
+      "plain" : "italia | Biblioteca nazionale Vittorio Emanuele III - Napoli - it - it-na0079 | 20090309"
+    } ]
+  }, {
+    "name" : "Istituzione",
+    "group" : "Dati gestionali",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Biblioteca della Società napoletana di storia patria - Napoli - IT - IT-NA0097"
+    } ]
+  }, {
+    "name" : "Localizzazione",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Società napoletana di storia patria"
+    } ]
+  }, {
+    "name" : "Inventari e collocazioni delle copie (BE)",
+    "group" : "Dati gestionali",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "html" : "<div><div class='label'>Biblioteca</div><div class='value'>Societ&agrave; napoletana di storia patria</div></div>\n<div class='group' title='950.BE'><div><div class='label'>Consistenza collocazione</div><div class='value'>1 v.</div></div>\n<div><div class='label'>Sezione</div><div class='value'>CUOMO</div></div>\n<div><div class='label'>Collocazione</div><div class='value'>OP 1. SER.</div></div>\n<div><div class='label'>Specificazione</div><div class='value'>SPCUOMO     OP 1. SER.              235</div></div>\n<div><div class='label'>Sequenza</div><div class='value'>(8</div></div>\n<div><div class='label'>Precisazione di inventario</div><div class='value'>1 op. rileg. in misc.</div></div>\n<div><div class='label'>Serie</div><div class='value'>CUO</div></div>\n<div><div class='label'>Inventario</div><div class='value'>000007723</div></div>\n<div><div class='label'>Stato di conservazione</div><div class='value'>B</div></div>\n<div><div class='label'>Categoria di fruizione</div><div class='value'>solo</div></div></div>",
+      "plain" : "Società napoletana di storia patria | 1 v. | CUOMO | OP 1. SER. | SPCUOMO     OP 1. SER.              235 | (8 | 1 op. rileg. in misc. | CUO | 000007723 | B | solo"
+    } ]
+  }, {
+    "name" : "Unimarc",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "LEADER 00920nam0 22002293i 450 \n001 ANA0018308\n005 20151123104050.0\n100   $a20090309d1846    ||||0itac50      ba\n101 | $aita\n102   $ait\n181  0$601$ai$b|||e||\n182  0$601$an\n200 1 $aLa festa degli otto settembre 1846 in Roma$fdescritta da Giuseppe Checchetelli\n210   $a[S.l.$cs.n.]$dstampa 1846$eRoma$gTip. di Clemente Puccinelli\n215   $a16 p., [1] c. di tav.$cill.$d21 cm\n300   $aPrecede il tit.: Settima distribuzione\n300   $aEstr. dal Giornale romano la Pallade num. 24, a. 1.\n700  1$aChecchetelli$b, Giuseppe$3LO1V057337$4070\n801  3$aIT$bIT-NA0079$c20090309\n850   $aIT-NA0097\n950  0$aSocietà napoletana di storia patria$c1 v.$d SPCUOMO     OP 1. SER.              235$e SPCUO0000077235    B   (8                  1 op. rileg. in misc.$fZ $h20090309$i20090309\n977   $a SP",
+      "binary" : "MDA5MjBuYW0wIDIyMDAyMjkzaSA0NTAgMDAxMDAxMTAwMDAwMDA1MDAxNzAwMDExMTAwMDA0MTAwMDI4MTAxMDAwODAwMDY5MTAyMDAwNzAwMDc3MTgxMDAxODAwMDg0MTgyMDAxMDAwMTAyMjAwMDA5OTAwMTEyMjEwMDA2NTAwMjExMjE1MDAzOTAwMjc2MzAwMDA0MzAwMzE1MzAwMDA1NjAwMzU4NzAwMDA0NjAwNDE0ODAxMDAyODAwNDYwODUwMDAxNDAwNDg4OTUwMDE4MDAwNTAyOTc3MDAwODAwNjgyHkFOQTAwMTgzMDgeMjAxNTExMjMxMDQwNTAuMB4gIB9hMjAwOTAzMDlkMTg0NiAgICB8fHx8MGl0YWM1MCAgICAgIGJhHnwgH2FpdGEeICAfYWl0HiAwHzYwMR9haR9ifHx8ZXx8HiAwHzYwMR9hbh4xIB9hPFUrMDA5OD5MYSA8VSswMDljPmZlc3RhIGRlZ2xpIG90dG8gc2V0dGVtYnJlIDE4NDYgaW4gUm9tYR9mZGVzY3JpdHRhIGRhIEdpdXNlcHBlIENoZWNjaGV0ZWxsaR4gIB9hW1MubC4fY3Mubi5dH2RzdGFtcGEgMTg0Nh9lUm9tYR9nVGlwLiBkaSBDbGVtZW50ZSBQdWNjaW5lbGxpHiAgH2ExNiBwLiwgWzFdIGMuIGRpIHRhdi4fY2lsbC4fZDIxIGNtHiAgH2FQcmVjZWRlIGlsIHRpdC46IFNldHRpbWEgZGlzdHJpYnV6aW9uZR4gIB9hRXN0ci4gZGFsIEdpb3JuYWxlIHJvbWFubyBsYSBQYWxsYWRlIG51bS4gMjQsIGEuIDEuHiAxH2FDaGVjY2hldGVsbGkfYiwgR2l1c2VwcGUfM0xPMVYwNTczMzcfNDA3MB4gMx9hSVQfYklULU5BMDA3OR9jMjAwOTAzMDkeICAfYUlULU5BMDA5Nx4gMB9hU29jaWV0IMyJbmFwb2xldGFuYSBkaSBzdG9yaWEgcGF0cmlhH2MxIHYuH2QgU1BDVU9NTyAgICAgT1AgMS4gU0VSLiAgICAgICAgICAgICAgMjM1H2UgU1BDVU8wMDAwMDc3MjM1ICAgIEIgICAoOCAgICAgICAgICAgICAgICAgIDEgb3AuIHJpbGVnLiBpbiBtaXNjLh9mWiAfaDIwMDkwMzA5H2kyMDA5MDMwOR4gIB9hIFNQHh0="
+    } ]
+  }, {
+    "name" : "Data",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "1846"
+    } ]
+  }, {
+    "name" : "Nota informativa",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Precede il tit.: Settima distribuzione"
+    }, {
+      "plain" : "Estr. dal Giornale romano la Pallade num. 24, a. 1."
+    } ]
+  }, {
+    "name" : "Livello bibliografico",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 100.1,
+    "values" : [ {
+      "plain" : "Monografia"
+    } ]
+  }, {
+    "name" : "Tipo documento",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 100.2,
+    "values" : [ {
+      "plain" : "Testo a stampa"
+    } ]
+  }, {
+    "name" : "Responsabilita' principale",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 200.4,
+    "values" : [ {
+      "html" : "[Autore] <a href=\"${page}?VID=LO1V057337\">Checchetelli, Giuseppe</a>",
+      "plain" : "Checchetelli, Giuseppe",
+      "vid" : "LO1V057337",
+      "role" : "Autore"
+    } ]
+  }, {
+    "name" : "Titolo",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 300.1,
+    "values" : [ {
+      "plain" : "La festa degli otto settembre 1846 in Roma / descritta da Giuseppe Checchetelli"
+    } ]
+  }, {
+    "name" : "Pubblicazione",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 300.6,
+    "values" : [ {
+      "plain" : "[S.l. : s.n.], stampa 1846 (Roma : Tip. di Clemente Puccinelli)"
+    } ]
+  }, {
+    "name" : "Descrizione fisica",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 300.7,
+    "values" : [ {
+      "plain" : "16 p., [1] c. di tav. : ill. ; 21 cm"
+    } ]
+  }, {
+    "name" : "Note generali",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 301.0,
+    "values" : [ {
+      "plain" : "Precede il tit.: Settima distribuzione"
+    }, {
+      "plain" : "Estr. dal Giornale romano la Pallade num. 24, a. 1."
+    } ]
+  }, {
+    "name" : "Nome di persona: responsabilita' principale",
+    "group" : "Responsabilita'",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 700.1,
+    "values" : [ {
+      "html" : "[Autore] <a href=\"${page}?VID=LO1V057337\">Checchetelli, Giuseppe</a>",
+      "plain" : "Checchetelli, Giuseppe",
+      "vid" : "LO1V057337",
+      "role" : "Autore"
+    } ]
+  }, {
+    "name" : "Codice identificativo",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 750.1,
+    "values" : [ {
+      "plain" : "ANA0018308"
+    } ]
+  }, {
+    "name" : "Dati per la elaborazione",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 760.1,
+    "values" : [ {
+      "html" : "<div><div class='label'>Data di immissione nella base dati</div><div class='value'>20090309</div></div>\n<div><div class='label'>Tipo data di pubblicazione</div><div class='value'>data semplice</div></div>\n<div><div class='label'>Data pubblicazione 1</div><div class='value'>1846</div></div>\n<div><div class='label'>Destinazione del documento</div><div class='value'>|||</div></div>\n<div><div class='label'>Codice record modificato</div><div class='value'>0</div></div>\n<div><div class='label'>Lingua della catalogazione</div><div class='value'>italiano</div></div>\n<div><div class='label'>Codice di traslitterazione</div><div class='value'>c</div></div>\n<div><div class='label'>Character set</div><div class='value'>50</div></div>\n<div><div class='label'>Alfabeto del titolo</div><div class='value'>ba</div></div>",
+      "plain" : "20090309 | data semplice | 1846 | ||| | 0 | italiano | c | 50 | ba"
+    } ]
+  }, {
+    "name" : "Lingua",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 760.2,
+    "values" : [ {
+      "plain" : "italiano"
+    } ]
+  }, {
+    "name" : "Paese",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 760.3,
+    "values" : [ {
+      "plain" : "italia"
+    } ]
+  }, {
+    "name" : "Dati codificati: contenuto caratteristico dell'espressione",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 761.4,
+    "values" : [ {
+      "html" : "<div><div class='label'>Forma del contenuto</div><div class='value'>testo</div></div>\n<div><div class='label'>Sensorialita'</div><div class='value'>visivo</div></div>",
+      "plain" : "testo | visivo"
+    } ]
+  }, {
+    "name" : "Dati codificati: tipo di supporto",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 761.5,
+    "values" : [ {
+      "html" : "<div><div class='label'>Tipo di mediazione</div><div class='value'>senza mediazione</div></div>",
+      "plain" : "senza mediazione"
+    } ]
+  }, {
+    "name" : "Inventari e collocazioni delle copie",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 1000.0,
+    "values" : [ {
+      "html" : "<div><div class='label'>Biblioteca</div><div class='value'>Societ&agrave; napoletana di storia patria</div></div>\n<div class='group' title='950.FE'><div><div class='label'>Consistenza collocazione</div><div class='value'>1 v.</div></div>\n<div><div class='label'>Sezione</div><div class='value'>CUOMO</div></div>\n<div><div class='label'>Collocazione</div><div class='value'>OP 1. SER. SPCUOMO     OP 1. SER.              235 (8</div></div>\n<div><div class='label'>Precisazione di inventario</div><div class='value'>1 op. rileg. in misc.</div></div>\n<div><div class='label'>Inventario</div><div class='value'>CUO 000007723</div></div>\n<div><div class='label'>Categoria di fruizione</div><div class='value'>solo</div></div></div>",
+      "plain" : "Società napoletana di storia patria | 1 v. | CUOMO | OP 1. SER. SPCUOMO     OP 1. SER.              235 (8 | 1 op. rileg. in misc. | CUO 000007723 | solo"
+    } ]
+  } ]
+}

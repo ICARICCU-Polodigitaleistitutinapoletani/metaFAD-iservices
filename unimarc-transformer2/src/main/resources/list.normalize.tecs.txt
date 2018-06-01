@@ -1,0 +1,29 @@
+TECS ba xilografia ba
+TECS bb xilografia a chiaro scuro bb
+TECS bc xilografia a linea bianca bc
+TECS bd camaiu bd
+TECS be eliografia be
+TECS bf cromolitografia bf
+TECS bg linoleum intagliato bg
+TECS bh acquaforte bh
+TECS bi litografia bi
+TECS bj fotolitografia bj
+TECS bk zincografia bk
+TECS bl algrafia bl
+TECS bm acquatinta bm
+TECS bn incisione con inchiostro allo zucchero bn
+TECS ca vernice molle ca
+TECS cb engraving cb
+TECS cc litografia con pastello cc
+TECS cd bulino cd
+TECS ce puntasecca ce
+TECS cf mezzatinta cf
+TECS cg monotipo cg
+TECS ch serigrafia ch
+TECS ci incisione su metallo ci
+TECS cj computer grafica cj
+TECS ck fotocopia ck
+TECS uu sconosciuto uu
+TECS vv misto vv
+TECS xx non applicabile xx
+TECS zz altro zz

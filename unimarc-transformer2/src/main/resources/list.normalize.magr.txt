@@ -1,0 +1,11 @@
+MAGR a collage a
+MAGR b disegno b
+MAGR c pittura c
+MAGR d riproduzione fotomeccanica d
+MAGR e negativo fotografico e
+MAGR f fotografia f
+MAGR h immagine h
+MAGR i stampa i
+MAGR k disegno tecnico k
+MAGR m master m
+MAGR z altro z

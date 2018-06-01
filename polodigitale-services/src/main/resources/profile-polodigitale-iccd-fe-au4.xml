@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad">
+	<mapping destination="CD_TSK" searchField="false" vistaEtichette="101" is4Fe='true' label="Tipo scheda" group="CODICI" multiple="false"/>
+	<mapping destination="CD_LIR" searchField="false" vistaEtichette="102" is4Fe='true' label="Livello" group="CODICI" multiple="false"/>
+	<mapping destination="CD_NCU" searchField="false" vistaEtichette="103" is4Fe='true' label="Codice univoco ICCD" group="CODICI" multiple="false"/>
+	<mapping destination="CD_ESC" searchField="false" vistaEtichette="104" is4Fe='true' label="Ente schedatore" group="CODICI" multiple="false"/>
+	<mapping destination="CD_ECP" searchField="false" vistaEtichette="105" is4Fe='true' label="Ente competente" group="CODICI" multiple="false"/>
+	<mapping destination="AC" searchField="false" vistaEtichette="200" is4Fe='true' label="ALTRI CODICI" group="ALTRI CODICI" multiple="false"/>
+	<mapping destination="AU_AUTN" searchField="false" vistaEtichette="301.000" is4Fe='true' label="Nome scelto di persona o ente" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTH" searchField="false" vistaEtichette="301.001" is4Fe='true' label="Codice identificativo" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTP" searchField="false" vistaEtichette="301.002" is4Fe='true' label="Tipo intestazione" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTE" searchField="false" vistaEtichette="301.003" is4Fe='true' label="Sesso" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTA" searchField="false" vistaEtichette="301.004" is4Fe='true' label="Indicazioni cronologiche" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTQ" searchField="false" vistaEtichette="301.005" is4Fe='true' label="Qualifica" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTF" searchField="false" vistaEtichette="301.006" is4Fe='true' label="Nazionalità/ambito geografico" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUTU" searchField="false" vistaEtichette="301.007" is4Fe='true' label="Riferimento culturale" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="AU_AUV" searchField="false" vistaEtichette="302" is4Fe='true' label="Varianti del nome" group="INTESTAZIONE UNIFORME" multiple="true"/>
+	<mapping destination="AU_NSC" searchField="false" vistaEtichette="303" is4Fe='true' label="Notizie storico-critiche" group="INTESTAZIONE UNIFORME" multiple="false"/>
+	<mapping destination="DO" searchField="false" vistaEtichette="400" is4Fe='true' label="DOCUMENTAZIONE" group="DOCUMENTAZIONE" multiple="false"/>
+	<mapping destination="AD_ADSP" searchField="false" vistaEtichette="501.000" is4Fe='true' label="Profilo di accesso" group="ACCESSO AI DATI" multiple="false"/>
+	<mapping destination="AD_ADSM" searchField="false" vistaEtichette="501.001" is4Fe='true' label="Motivazione" group="ACCESSO AI DATI" multiple="false"/>
+	<mapping destination="CM_CMPD" searchField="false" vistaEtichette="601.000" is4Fe='true' label="Anno di redazione" group="CERTIFICAZIONE E GESTIONE DEI DATI" multiple="false"/>
+	<mapping destination="CM_CMPN" searchField="false" vistaEtichette="601.001" is4Fe='true' label="Responsabile ricerca e redazione" group="CERTIFICAZIONE E GESTIONE DEI DATI" multiple="false"/>
+	<mapping destination="CM_RSR" searchField="false" vistaEtichette="602" is4Fe='true' label="Referente verifica scientifica" group="CERTIFICAZIONE E GESTIONE DEI DATI" multiple="true"/>
+	<mapping destination="CM_FUR" searchField="false" vistaEtichette="603" is4Fe='true' label="Funzionario responsabile" group="CERTIFICAZIONE E GESTIONE DEI DATI" multiple="true"/>
+	<mapping destination="AN" searchField="false" vistaEtichette="700" is4Fe='true' label="ANNOTAZIONI" group="ANNOTAZIONI" multiple="false"/>
+</mappings>

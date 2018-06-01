@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad">
+	<mapping destination="CD_TSK" searchField="false" vistaEtichette="101" is4Fe='true' label="Tipo scheda" group="CODICI" multiple="false"/>
+	<mapping destination="CD_NCU" searchField="false" vistaEtichette="102" is4Fe='true' label="CODICE UNIVOCO ICCD" group="CODICI" multiple="false"/>
+	<mapping destination="CD_ESC" searchField="false" vistaEtichette="103" is4Fe='true' label="Ente schedatore" group="CODICI" multiple="false"/>
+	<mapping destination="CD_ECP" searchField="false" vistaEtichette="104" is4Fe='true' label="Ente competente" group="CODICI" multiple="false"/>
+	<mapping destination="AU_AUTN" searchField="false" vistaEtichette="201.000" is4Fe='true' label="Nome scelto" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTA" searchField="false" vistaEtichette="201.001" is4Fe='true' label="Dati anagrafici" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTC" searchField="false" vistaEtichette="201.002" is4Fe='true' label="Cognome" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTO" searchField="false" vistaEtichette="201.003" is4Fe='true' label="Nome" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTP" searchField="false" vistaEtichette="201.004" is4Fe='true' label="Pseudonimo" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTE" searchField="false" vistaEtichette="201.005" is4Fe='true' label="Nome convenzionale" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTF" searchField="false" vistaEtichette="201.006" is4Fe='true' label="Monogramma, firma" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTV" searchField="false" vistaEtichette="201.007" is4Fe='true' label="Varianti" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTZ" searchField="false" vistaEtichette="201.008" is4Fe='true' label="Sesso" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTL" searchField="false" vistaEtichette="201.009" is4Fe='true' label="Luogo di nascita" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTD" searchField="false" vistaEtichette="201.010" is4Fe='true' label="Data di nascita" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTX" searchField="false" vistaEtichette="201.011" is4Fe='true' label="Luogo di morte" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTT" searchField="false" vistaEtichette="201.012" is4Fe='true' label="Data di morte" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTG" searchField="false" vistaEtichette="201.013" is4Fe='true' label="Luogo e/o periodo di attivita'" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTU" searchField="false" vistaEtichette="201.014" is4Fe='true' label="Scuola di appartenenza" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTQ" searchField="false" vistaEtichette="201.015" is4Fe='true' label="Qualifica" group="AUTORE" multiple="false"/>
+	<mapping destination="AU_AUTH" searchField="false" vistaEtichette="201.016" is4Fe='true' label="Sigla per citazione" group="AUTORE" multiple="false"/>
+	<mapping destination="CM_CMPD" searchField="false" vistaEtichette="301.000" is4Fe='true' label="Data" group="COMPILAZIONE" multiple="false"/>
+	<mapping destination="CM_CMPN" searchField="false" vistaEtichette="301.001" is4Fe='true' label="Nome" group="COMPILAZIONE" multiple="false"/>
+	<mapping destination="CM_RSR" searchField="false" vistaEtichette="302" is4Fe='true' label="Referente scientifico" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="CM_FUR" searchField="false" vistaEtichette="303" is4Fe='true' label="Funzionario responsabile" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="CM_AGG" searchField="false" vistaEtichette="304" is4Fe='true' label="AGGIORNAMENTO - REVISIONE" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="AN" searchField="false" vistaEtichette="400" is4Fe='true' label="ANNOTAZIONI" group="ANNOTAZIONI" multiple="false"/>
+</mappings>

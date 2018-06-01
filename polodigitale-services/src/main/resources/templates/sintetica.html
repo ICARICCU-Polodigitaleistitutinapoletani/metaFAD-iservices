@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>MetaFad</title>
+    <style th:fragment="style">
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+th{
+    text-align: center;
+    background-color: #cecece;
+}
+table#t01 {
+    width: 90%;
+    background-color: #eeeeee;
+    margin-left: 40px;
+}
+body{
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h4, h3, h3 a{
+    background-color: #7B8967;
+    padding: 20px;
+    color: white;
+}
+a{
+    color: #7B8967;
+}
+.about{
+    font-weight: bold;
+}
+tr:nth-child(even) {background: #eeeeee}
+tr:nth-child(odd) {background: #e0e0e0}
+</style>
+</head>
+<body>
+<table id="t01">
+    <tr>
+
+    </tr>
+    <tr th:each="doc  : ${result.response.docs}">
+        <td><a th:href="@{/view/resource(id=${doc.id})}" th:text="${doc.id}">doc</a></td>
+        <td th:each="node1: ${doc.nodes}">
+            <th:block th:each="node: ${node1.nodes}">
+                <th:block th:each="value: ${node.values}">
+                    <span th:text="${value}"></span><br/>
+                </th:block>
+            </th:block>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

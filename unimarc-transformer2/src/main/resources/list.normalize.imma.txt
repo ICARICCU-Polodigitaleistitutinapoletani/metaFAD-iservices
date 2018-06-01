@@ -1,0 +1,3 @@
+IMMA a immagine non fotografica a
+IMMA b immagine fotografica b
+IMMA c da sensore remoto c

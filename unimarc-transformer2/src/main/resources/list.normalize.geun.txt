@@ -1,0 +1,13 @@
+GEUN	a	testo a stampa	a
+GEUN	b	testo manoscritto	b
+GEUN	c	musica notata, non manoscritta	c
+GEUN	d	musica manoscritta	d
+GEUN	e	cartografia non manoscritta	e
+GEUN	f	cartografia manoscritta	f
+GEUN	g	materiale video	g
+GEUN	i	registrazione sonora non musicale	i
+GEUN	j	registrazione sonora musicale	j
+GEUN	k	materiale grafico	k
+GEUN	l	risorse elettroniche	l
+GEUN	m	materiale multimediale	m
+GEUN	r	oggetto a tre dimensioni	r

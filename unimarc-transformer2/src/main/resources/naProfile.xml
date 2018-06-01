@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+		  xmlns:xi="http://www.w3.org/2001/XInclude">
+	<!--
+		Commento:
+		"parole chiave" dovrebbe contenere tutto
+		"anno" dovrebbe contenere "Data" e "Data pubblicazione"
+		"Editore" e' uguale "Responsabilita'"
+		
+		Campi senza vistaEtichette sono solo per la indicizzazione
+		Campi con vistaIsbd vanno nascoate quando di visualizza isbd
+		
+		Campi aggiuntivi:
+			- Inventario  - numero di inventario
+			- Data - data della pubblicazione in anno
+		
+		History:
+			1.3.4: da ordinare secondo POLOBe-349
+			1.3.3 (03-06-2016):
+				- aggiornamento per le faccette
+			1.1.0 (12-0-1-2016): 
+				- Sintetica (POLOBE-326)
+					- "Autore [sintetico]" e "Titolo [sintetico]" per la sintetica
+					- Data c'e' gia'
+					- Tipo record c'e' gia' come "Tipo documento"
+				- Dettaglio POLOBE-327)
+					- aggiunto la proprieta' "group" per i "TAB", i gruppi sono
+						- Guida
+						- Identificazione
+						- Qualificazione
+						- Informazioni descrittive
+						- Record collegati
+						- Altri titoli
+						- Soggetti e classi
+						- Responsabilita'
+						- Campi personalizzati
+						- Dati gestionali
+					- nuovi campi:
+						- "Identificativo di versione"
+						- Origine del record
+						- Istituzione
+						- Ordini
+						
+				- Domande: 
+					- come è la prospettazione dei campi della sezione "identificazione",
+						e "DATI PER LA ELABORAZIONE"		
+						
+	 -->
+	<version>1.3.8</version>
+	<fieldmap name="Type:livello" value="Livello bibliografico"/>
+	<fieldmap name="Type:tipo" value="Tipo documento"/>
+	<fieldmap name="tipo_catalogazione:type" value="delete"/>
+	<fieldmap name="Identifier:bid" value="Codice identificativo"/>
+
+	<mapping marcField="000" destination="Livello bibliografico" group="Guida e identificazione" group2="Guida" vistaEtichette="100.1" vistaShort="4" facet="" facetOrder="1" searchField="true"/>
+	<mapping marcField="000" destination="Tipo documento"  group="Guida e identificazione" group2="Guida" vistaEtichette="100.2" vistaShort="5" facet="" facetOrder="2" searchField="true"/>
+
+	<mapping marcField="000" destination="Codice identificativo"  group="Guida e identificazione" vistaEtichette="750.1" copyTo="Identificativi" searchField="true"/>
+	<mapping marcField="005" destination="Identificativo di versione"  group="Guida e identificazione" />
+	
+	<mapping marcField="010" multiple="true" marcSection="a" destination="ISBN"  group="Guida e identificazione" vistaEtichette="750.3" copyTo="Numeri"/>
+	<mapping marcField="011" multiple="true" marcSection="a" destination="ISSN"   group="Guida e identificazione" vistaEtichette="750.4"  copyTo="Numeri"/>
+	<mapping marcField="012" multiple="true" marcSection="a" destination="Impronta"  group="Guida e identificazione" vistaEtichette="750.5" searchField="true" copyTo="Numeri"/>
+	<mapping marcField="013" multiple="true" marcSection="a" destination="ISMN"  group="Guida e identificazione" vistaEtichette="750.6"  copyTo="Numeri"/>
+
+	<mapping marcField="010" multiple="true" marcSection="a|z" destination="ISBN2" label="ISBN" is4Fe="true" searchField="true" copyTo="Identificativi"/>
+	<mapping marcField="011" multiple="true" marcSection="a|z" destination="ISSN2" label="ISSN" is4Fe="true" searchField="true"  copyTo="Identificativi"/>
+	<mapping marcField="013" multiple="true" marcSection="a|z" destination="ISMN2"  label="ISMN" is4Fe="true" searchField="true"  copyTo="Identificativi"/>
+
+	<mapping marcField="017" multiple="true" marcSection="a" destination="Altri numeri standard"  group="Guida e identificazione" vistaEtichette="750.7"  copyTo="Numeri"/>
+	<mapping marcField="017" multiple="true" marcSection="a" destination="Numero catalogo tematico 2" is4Fe="true"
+			 condMarcSection="2" condValue="v" ind="70" copyTo="Numero catalogo tematico"/>
+	<mapping marcField="017" multiple="true" marcSection="a" destination="Numero catalogo tematico 3" is4Fe="true"
+			 ind="01" copyTo="Numero d'opera"/>
+	<mapping marcField="017" multiple="true" marcSection="a" destination="RISM" is4Fe="true" condMarcSection="2" searchField="true" condValue="x" ind="70"/>
+	<mapping marcField="017" multiple="true" marcSection="a" destination="Sartori" is4Fe="true" condMarcSection="2" searchField="true" condValue="y" ind="70"/>
+
+	<mapping marcField="020" multiple="true" marcSection="a|b" destination="Numero Bibliografica Nazionale"  group="Guida e identificazione" vistaEtichette="750.8"  copyTo="Numeri"/>
+	<mapping marcField="022" multiple="true" marcSection="a|b" destination="Numero pubblicazione governativa"  group="Guida e identificazione" vistaEtichette="750.9"  copyTo="Numeri"/>
+
+	<mapping marcField="071" multiple="true" marcSection="a" destination="Numero editoriale (musica)"  group="Guida e identificazione" vistaEtichette="751.1"  copyTo="Numeri"/>
+	<mapping marcField="071" multiple="true" marcSection="a" destination="Numero di lastra" is4Fe="true" ind="20" searchField="true"/>
+	<mapping marcField="071" multiple="true" marcSection="a" destination="Numero editoriale" is4Fe="true"  ind="40" searchField="true"/>
+
+	<mapping marcField="072" multiple="true" marcSection="a" destination="Codice universale di prodotto (upc)"  group="Guida e identificazione" vistaEtichette="751.2" copyTo="Identificativi"/>
+	<mapping marcField="073" multiple="true" marcSection="a" destination="Numero internazionale articolo (ean)"  group="Guida e identificazione" vistaEtichette="751.3" copyTo="Identificativi"/>
+
+	<!-- POLODEBUG-394 -->
+	<mapping marcField="100" destination="Dati per la elaborazione" group="Qualificazione" _vistaEtichette="760.1" multiple="true">
+		<mapping marcField="100" marcSection="a" posInit="0" posEnd="8" destination="Data di immissione nella base dati" excludeInFe="true"/>
+		<mapping marcField="100" marcSection="a" posInit="8" posEnd="9" destination="Tipo data di pubblicazione" vocabulary="data"/>
+		<mapping marcField="100" marcSection="a" posInit="9" posEnd="13" destination="Data pubblicazione 1"/>
+		<mapping marcField="100" marcSection="a" posInit="13" posEnd="17" destination="Data pubblicazione 2"/>
+		<mapping marcField="100" marcSection="a" posInit="17" posEnd="20" destination="Destinazione del documento"  excludeInFe="true"/>
+		<mapping marcField="100" marcSection="a" posInit="20" posEnd="21" destination="Codice di pubblicazione governativa"/>
+		<mapping marcField="100" marcSection="a" posInit="21" posEnd="22" destination="Codice record modificato"  excludeInFe="true"/>
+		<mapping marcField="100" marcSection="a" posInit="22" posEnd="25" destination="Lingua della catalogazione" vocabulary="ling"/>
+		<mapping marcField="100" marcSection="a" posInit="25" posEnd="26" destination="Codice di traslitterazione"  excludeInFe="true"/>
+		<mapping marcField="100" marcSection="a" posInit="26" posEnd="30" destination="Character set"  excludeInFe="true"/>
+		<mapping marcField="100" marcSection="a" posInit="30" posEnd="34" destination="Character set addizionale"  excludeInFe="true"/>
+		<mapping marcField="100" marcSection="a" posInit="34" posEnd="36" destination="Alfabeto del titolo"  excludeInFe="true"/>
+	</mapping>
+	<!-- per le faccette -->
+	<mapping marcField="100" marcSection="a" posInit="9" posEnd="13" destination="Data pubblicazione" facet="Anno" label="Anno di pubblicazione" facetOrder="8" type="year" searchField="true"/>
+	<mapping marcField="100" marcSection="a" posInit="13" posEnd="17" destination="Data pubblicazione" type="year" />
+	
+	<mapping marcField="101" multiple="true" destination="Lingua" feLabel="Lingua del testo" group="Qualificazione" vistaEtichette="760.2" comment="Campo decodificato" facet="" facetOrder="10" searchField="true"/>
+	<mapping marcField="102" destination="Paese" feLabel="Paese di pubblicazione" group="Qualificazione" vistaEtichette="760.3" comment="Campo decodificato" facet="" facetOrder="11"  searchField="true"/>
+	<mapping marcField="105" destination="Dati codificati: monografie"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="760.4" facets="true" multiple="true">
+		<mapping marcField="105" marcSection="a" posInit="4" posEnd="5" destination="Forma di contenuto" vocabulary="gepu"/>
+		<mapping marcField="105" marcSection="a" posInit="5" posEnd="6" destination="Forma di contenuto" vocabulary="gepu"/>
+		<mapping marcField="105" marcSection="a" posInit="6" posEnd="7" destination="Forma di contenuto" vocabulary="gepu"/>
+		<mapping marcField="105" marcSection="a" posInit="7" posEnd="8" destination="Forma di contenuto" vocabulary="gepu"/>
+		<mapping marcField="105" marcSection="a" posInit="11" posEnd="12" destination="Tipo testo letterario" vocabulary="tesl"/>
+	</mapping>
+	<!-- forse manca qui qualche indizccazione? 11/07/2016 -->
+	<mapping marcField="110" destination="Tipo seriale" posInit="0" posEnd="1"  vocabulary="seriali" is4Fe="true"/>
+	<mapping marcField="110" destination="Dati codificati: perodici" feLabel="Dati specifici"  group="Qualificazione" vistaEtichette="760.5" excludeInFe="true">
+	</mapping>
+	<mapping marcField="115" destination="Dati codificati: proiezioni visive, registrazioni sonore, film"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="760.6" facets="true">
+		<mapping marcField="115" marcSection="a" posInit="0" posEnd="1" destination="Tipo di video" vocabulary="tivi"/>
+		<mapping marcField="115" marcSection="a" posInit="1" posEnd="4" destination="Lunghezza" />
+		<mapping marcField="115" marcSection="a" posInit="4" posEnd="5" destination="Indicatore di colore" vocabulary="indc"/>
+		<mapping marcField="115" marcSection="a" posInit="5" posEnd="6" destination="Indicatore di souno" vocabulary="inds"/>
+		<mapping marcField="115" marcSection="a" posInit="6" posEnd="7" destination="Supporto di souno" vocabulary="susu"/>
+		<mapping marcField="115" marcSection="a" posInit="7" posEnd="8" destination="Larghezza o dimensioni" vocabulary="larg"/>
+		<mapping marcField="115" marcSection="a" posInit="8" posEnd="9" destination="Formato di distribuzione" vocabulary="fodi"/>
+		<mapping marcField="115" marcSection="a" posInit="9" posEnd="10" destination="Tecnica" vocabulary="tevi"/>
+		<mapping marcField="115" marcSection="a" posInit="10" posEnd="11" destination="Formato di presentazione" vocabulary="fpim"/>
+		<mapping marcField="115" marcSection="a" posInit="11" posEnd="12" destination="Materiale di accompagnamento" vocabulary="macc"/>
+		<mapping marcField="115" marcSection="a" posInit="12" posEnd="13" destination="Materiale di accompagnamento" vocabulary="macc"/>
+		<mapping marcField="115" marcSection="a" posInit="13" posEnd="14" destination="Materiale di accompagnamento" vocabulary="macc"/>
+		<mapping marcField="115" marcSection="a" posInit="14" posEnd="15" destination="Materiale di accompagnamento" vocabulary="macc"/>
+		<mapping marcField="115" marcSection="a" posInit="15" posEnd="16" destination="Formato di distribuzione" vocabulary="puvi"/>
+		<mapping marcField="115" marcSection="a" posInit="16" posEnd="17" destination="Formato di presentazione" vocabulary="prvi"/>
+		<mapping marcField="115" marcSection="a" posInit="17" posEnd="18" destination="Emulsione di base" vocabulary="emul"/>
+		<mapping marcField="115" marcSection="a" posInit="18" posEnd="19" destination="Supporto secondario" vocabulary="masu"/>
+		<mapping marcField="115" marcSection="a" posInit="19" posEnd="20" destination="Standard televisivo" vocabulary="stra"/>
+		<mapping marcField="115" marcSection="b" posInit="0" posEnd="1" destination="Versione" vocabulary="vers"/>
+		<mapping marcField="115" marcSection="b" posInit="1" posEnd="2" destination="Elementi della produzione" vocabulary="elep"/>
+		<mapping marcField="115" marcSection="b" posInit="2" posEnd="3" destination="Caratteristiche del colore" vocabulary="sccf"/>
+		<mapping marcField="115" marcSection="b" posInit="3" posEnd="4" destination="Polarita'" vocabulary="emup"/>
+		<mapping marcField="115" marcSection="b" posInit="4" posEnd="5" destination="Supporto della pellicola" vocabulary="cope"/>
+		<mapping marcField="115" marcSection="b" posInit="5" posEnd="6" destination="Caratteristiche del suono" vocabulary="tisi"/>
+		<mapping marcField="115" marcSection="b" posInit="6" posEnd="7" destination="Tipo di pellicola a colori" vocabulary="tipe"/>		
+	</mapping>
+	<mapping marcField="116" destination="Dati codificati: materiale grafico"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="760.7" facets="true" multiple="true">
+		<mapping marcField="116" marcSection="a" posInit="0" posEnd="1" destination="Specifica del materiale" group="Qualificazione" vocabulary="magr" vistaEtichette="510"/>
+		<mapping marcField="116" marcSection="a" posInit="1" posEnd="2" destination="Supporto primario" group="Qualificazione" vocabulary="sufg"  vistaEtichette="510"/>
+		<mapping marcField="116" marcSection="a" posInit="3" posEnd="4" destination="Colore" group="Qualificazione" vocabulary="colo"  vistaEtichette="510"/>
+		<mapping marcField="116" marcSection="a" posInit="4" posEnd="6" destination="Tecnica disegni" group="Qualificazione" vocabulary="tecd"  />
+		<mapping marcField="116" marcSection="a" posInit="6" posEnd="8" destination="Tecnica disegni" group="Qualificazione" vocabulary="tecd"  />
+		<mapping marcField="116" marcSection="a" posInit="8" posEnd="10" destination="Tecnica disegni" group="Qualificazione" vocabulary="tecd" />
+		<mapping marcField="116" marcSection="a" posInit="10" posEnd="12" destination="Tecnica stampa" group="Qualificazione" vocabulary="tecs" />
+		<mapping marcField="116" marcSection="a" posInit="12" posEnd="14" destination="Tecnica stampa" group="Qualificazione" vocabulary="tecs" />
+		<mapping marcField="116" marcSection="a" posInit="14" posEnd="16" destination="Tecnica stampa" group="Qualificazione" vocabulary="tecs"  />
+		<mapping marcField="116" marcSection="a" posInit="16" posEnd="18" destination="Funzione" group="Qualificazione" vocabulary="desf"  />
+	</mapping>
+	<mapping marcField="120" destination="Dati codificati: materiale cartografico - dati generali"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="760.7" facets="true">
+		<mapping marcField="120" marcSection="a" posInit="0" posEnd="1" destination="Indicatore di colore"  vocabulary="colc" />
+		<mapping marcField="120" marcSection="a" posInit="9" posEnd="10" destination="Meridiano d’origine" vocabulary="meor" />
+		<mapping marcField="120" marcSection="a" posInit="10" posEnd="12" destination="Meridiano d’origine" vocabulary="meor" />
+	</mapping>
+	<mapping marcField="121" destination="Dati codificati: materiale cartografico - caratteristiche fisiche"   feLabel="Dati specifici" group="Qualificazione" vistaEtichette="760.8" facets="true">
+		<mapping marcField="121" marcSection="a" posInit="0" posEnd="1" destination="Dimensione"  vocabulary="dime" />
+		<mapping marcField="121" marcSection="a" posInit="3" posEnd="5" destination="Supporto fisico" vocabulary="sufc" />
+		<mapping marcField="121" marcSection="a" posInit="5" posEnd="6" destination="Tecnica di creazione" vocabulary="tecn" />		
+		<mapping marcField="121" marcSection="a" posInit="6" posEnd="7" destination="Forma di riproduzione" vocabulary="fori" />
+		<mapping marcField="121" marcSection="a" posInit="8" posEnd="9" destination="Forma della pubblicazione" vocabulary="fopu" />
+		<mapping marcField="121" marcSection="b" posInit="0" posEnd="1" destination="Altitudine del sensore"  vocabulary="alti"/>
+	</mapping>
+	<mapping marcField="123" destination="Dati codificati: materiale cartografico - scala e coordinate"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="760.9" facets="true">
+		<mapping marcField="123" marcSection="1" destination="Codifica tipo di scala" vocabulary="tiposcal"/>
+		<mapping marcField="123" marcSection="a" destination="Tipo di scala" vocabulary="scal"/>
+		<mapping marcField="123" marcSection="b" destination="Scala orizzontale" searchField="true"/>
+		<mapping marcField="123" marcSection="c" destination="Scala verticale"  searchField="true"/>
+		<mapping marcField="123" marcSection="d" destination="Coordinate - Massima estensione ad Ovest Long" searchField="true"/>
+		<mapping marcField="123" marcSection="e" destination="Coordinate - Massima estensione ad Est Long" searchField="true"/>
+		<mapping marcField="123" marcSection="f" destination="Coordinate - Massima estensione a Nord Lat" searchField="true"/>
+		<mapping marcField="123" marcSection="g" destination="Coordinate - Massima estensione a Sud Lat" searchField="true"/>
+	</mapping>
+	<mapping marcField="124" destination="Dati codificati: materiale cartografico - designazione specifica del materiale"  feLabel="Dati specifici"  group="Qualificazione" vistaEtichette="761.0" facets="true">
+		<mapping marcField="124" marcSection="a"  destination="Carattere dell'immagine" vocabulary="imma"/>
+		<mapping marcField="124" marcSection="b" destination="Forma del documento cartografico" vocabulary="fodc"/>
+		<mapping marcField="124" marcSection="c" destination="Posizione" searchField="true"/>
+		<mapping marcField="124" marcSection="d" destination="Posizione della piattaforma per immagine fotografica o a telerilevamento remoto" vocabulary="piat"/>
+		<mapping marcField="124" marcSection="e" destination="Categoria del satellite per l'immagine a telerilevamento remoto" vocabulary="casa"/>
+	</mapping>
+	<mapping marcField="125" destination="Dati codificati: musica a stampa - designazione specifica del materiale"  feLabel="Dati specifici"  group="Qualificazione" vistaEtichette="761.1" facets="true">
+		<mapping marcField="125" marcSection="a" posInit="0" posEnd="1" destination="Codice presentazione" vocabulary="pres"/>
+		<mapping marcField="125" marcSection="a" posInit="1" posEnd="2" destination="Indicatore di parti"/>
+		<mapping marcField="125" marcSection="b" destination="Tipo di testo letterario" vocabulary="indt"/>
+	</mapping>
+	<mapping marcField="126" destination="Dati codificati: materiale audiovisivo - attributi fisici"   feLabel="Dati specifici" group="Qualificazione" vistaEtichette="761.1" facets="true">
+		<mapping marcField="126" marcSection="a" posInit="0" posEnd="1" destination="Forma di pubblicazione" vocabulary="fpub"/>
+		<mapping marcField="126" marcSection="a" posInit="1" posEnd="2" destination="Velocita'" vocabulary="velo"/>
+		<mapping marcField="126" marcSection="a" posInit="2" posEnd="3" destination="Tipo di suono" vocabulary="tisu"/>
+		<mapping marcField="126" marcSection="a" posInit="3" posEnd="4" destination="Larghezza del solco" vocabulary="lasc"/>
+		<mapping marcField="126" marcSection="a" posInit="4" posEnd="5" destination="Dimensioni (registrazione)" vocabulary="dina"/>
+		<mapping marcField="126" marcSection="a" posInit="5" posEnd="6" destination="Larghezza del nastro" vocabulary="lana"/>
+		<mapping marcField="126" marcSection="a" posInit="6" posEnd="7" destination="Configurazione del nastro" vocabulary="cona"/>
+		<mapping marcField="126" marcSection="a" posInit="7" posEnd="13" destination="Materiale testuale di accompagnamento" vocabulary="mata"/>
+		<mapping marcField="126" marcSection="a" posInit="13" posEnd="14" destination="Tecnica di registrazione" vocabulary="tere"/>
+		<mapping marcField="126" marcSection="a" posInit="14" posEnd="15" destination="Speciali caratteristiche di riproduzione" vocabulary="scar"/>
+		<mapping marcField="126" marcSection="b" posInit="0" posEnd="1" destination="Tipo di disco o cilindro" vocabulary="tdis"/>
+		<mapping marcField="126" marcSection="b" posInit="1" posEnd="2" destination="Tipo di materiale" vocabulary="tima"/>
+		<mapping marcField="126" marcSection="b" posInit="2" posEnd="3" destination="Tipo di taglio" vocabulary="tita"/>
+	</mapping>
+
+	<mapping marcField="128" destination="Dati codificati: elaborazioni musicali (elaborazione)"  feLabel="Dati specifici"   group="Qualificazione" vistaEtichette="761.2" facets="true">
+		<mapping marcField="128" marcSection="b" destination="Organico sintetico"/>
+		<mapping marcField="128" marcSection="c" destination="Organico analitico"/>
+		<!-- d o 9 23-08-2016 prima era 9 -->
+		<mapping marcField="128" marcSection="d" destination="Tipo elaborazione" vocabulary="elmu"/>
+	</mapping>
+	
+	<!-- nuovo campo 28-03-2016 -->
+	<mapping marcField="135" destination="Dati codificati: materiale elettronico"  feLabel="Dati specifici"   group="Qualificazione" vistaEtichette="761.22" facets="true">
+		<mapping marcField="135" marcSection="a" posInit="0" posEnd="1" destination="Tipo risorsa elettronica" vocabulary="riel"/>
+		<mapping marcField="135" marcSection="a" posInit="1" posEnd="2" destination="Indicazione specifica materiale" vocabulary="desi"/>
+		<mapping marcField="135" marcSection="a" posInit="2" posEnd="3" destination="Colore" vocabulary="cdco"/>
+		<mapping marcField="135" marcSection="a" posInit="3" posEnd="4" destination="Dimensione" vocabulary="cddi"/>
+		<mapping marcField="135" marcSection="a" posInit="4" posEnd="5" destination="Suono" vocabulary="suon"/>
+	</mapping>
+	
+	<mapping marcField="140" destination="Dati codificati: materiale antico"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="761.3" facets="true" multiple="true">
+		<mapping marcField="140" marcSection="a" posInit="0" posEnd="4" destination="Illustrazioni"></mapping>			
+		<mapping marcField="140" marcSection="a" posInit="4" posEnd="8" destination="Illustrazioni a tutta pagina"></mapping> 		
+		<mapping marcField="140" marcSection="a" posInit="8" posEnd="9" destination="Tecnica usata per le illustrazioni"></mapping>
+		<mapping marcField="140" marcSection="a" posInit="9" posEnd="11" destination="Forma del contenuto" vocabulary="gepu"/>			
+		<mapping marcField="140" marcSection="a" posInit="11" posEnd="13" destination="Forma del contenuto" vocabulary="gepu"/>			
+		<mapping marcField="140" marcSection="a" posInit="13" posEnd="15" destination="Forma del contenuto" vocabulary="gepu"/>			
+		<mapping marcField="140" marcSection="a" posInit="15" posEnd="17" destination="Forma del contenuto" vocabulary="gepu"/>			
+		<mapping marcField="140" marcSection="a" posInit="17" posEnd="19" destination="Codice letterario"></mapping>			
+		<mapping marcField="140" marcSection="a" posInit="19" posEnd="20" destination="Codice biografico"></mapping>	 		
+		<mapping marcField="140" marcSection="a" posInit="20" posEnd="21" destination="Materiale di supporto"></mapping>		
+		<mapping marcField="140" marcSection="a" posInit="21" posEnd="22" destination="Materiale di supporto"></mapping>		
+		<mapping marcField="140" marcSection="a" posInit="22" posEnd="23" destination="Codice Watermark"></mapping>				
+		<mapping marcField="140" marcSection="a" posInit="23" posEnd="24" destination="Codice per la stampa"></mapping>			
+		<mapping marcField="140" marcSection="a" posInit="24" posEnd="25" destination="Codice per la pubblicazione"></mapping>
+		<mapping marcField="140" marcSection="a" posInit="25" posEnd="26" destination="Codice per gli ornamenti"></mapping>	
+		<mapping marcField="140" marcSection="a" posInit="26" posEnd="28" destination="Non usato"></mapping>					
+	</mapping> 
+	
+	<mapping marcField="181" multiple="true" destination="Dati codificati: contenuto caratteristico dell'espressione"  feLabel="Dati specifici" group="Qualificazione" vistaEtichette="761.4" facets="true">
+		<mapping marcField="181" marcSection="a" posInit="0" posEnd="1" destination="Forma del contenuto" vocabulary="foco"></mapping>			
+		<mapping marcField="181" marcSection="b" posInit="0" posEnd="1" destination="Tipo di contenuto" vocabulary="tico"></mapping>
+		<mapping marcField="181" marcSection="b" posInit="1" posEnd="2" destination="Movimento" vocabulary="movi"></mapping>
+		<mapping marcField="181" marcSection="b" posInit="2" posEnd="3" destination="Dimensionalita'" vocabulary="bidi"></mapping>
+		<mapping marcField="181" marcSection="b" posInit="3" posEnd="4" destination="Sensorialita'" vocabulary="sens"></mapping>
+		<mapping marcField="181" marcSection="b" posInit="4" posEnd="5" destination="Sensorialita'" vocabulary="sens"></mapping>
+		<mapping marcField="181" marcSection="b" posInit="5" posEnd="6" destination="Sensorialita'" vocabulary="sens"></mapping>
+	</mapping>
+	<mapping marcField="182" marcSection="a" posInit="0" posEnd="1" 
+		destination="Tipo di mediazione" vocabulary="medi" group="Qualificazione" vistaEtichette="761.5"  multiple="true"/>
+	<!-- 
+	<mapping marcField="182" multiple="true" destination="Dati codificati: tipo di supporto" group="Qualificazione" vistaEtichette="761.5">
+		<mapping marcField="182" marcSection="a" posInit="0" posEnd="1" destination="Tipo di mediazione" vocabulary="medi"></mapping>			
+	</mapping>
+	-->
+	<!-- 183 - tipo di supporto sembra che non esista. Ma vedi indicazioni POLODEBUG-79
+		vocaburaly=? 
+	-->
+	<mapping marcField="183" marcSection="a" posInit="0" posEnd="1" destination="Tipo di supporto" vocabulary="supp"
+		group="Qualificazione" vistaEtichette="761.6" />
+
+	<mapping marcField="200" multiple="true" marcSection="a|c|e|f" destination="Titolo [sintetico]" vistaShort="2" sortField="true"/>
+	<mapping marcField="200" multiple="true" marcSection="a|e" destination="Titolo proprio" searchField="true" is4Fe="true"/>
+	<mapping marcField="200" multiple="true" destination="Titoli collegati" is4Fe="true" searchField="true" handler="com.gruppometa.unimarc.handlers.TitoliCollegatiHandler"/>
+	<mapping marcField="200" multiple="true" marcSection="a|b|c|e|f|g|h|i" destination="Titolo" group="Informazioni descrittive"
+		 vistaEtichette="300.1" vistaIsbd="100" copyTo="Titoli tutti" searchField="true"/>
+	<mapping marcField="205" marcSection="a|b|f|g" destination="Edizione" group="Informazioni descrittive" vistaEtichette="300.2" vistaIsbd="200" searchField="true"/>
+	<mapping marcField="206" multiple="true" marcSection="a" destination="Area specifica del materiale: materiale cartografico dati matematici" feLabel="Dati matematici" vistaEtichette="300.3" group="Informazioni descrittive"/>
+	<mapping marcField="207" marcSection="a" destination="Numerazione" group="Informazioni descrittive" vistaEtichette="300.4"/>
+	<mapping marcField="208" marcSection="a" destination="Presentazione" group="Informazioni descrittive" vistaEtichette="300.5"/>
+	<mapping marcField="210" marcSection="a|c|d|e|g|h" destination="Pubblicazione" group="Informazioni descrittive" vistaEtichette="300.6" vistaIsbd="300" vistaShort="3" searchField="true"/>
+	<mapping marcField="210" marcSection="a" destination="Luogo" facet="" facetOrder="6" searchField="true"  multiple="true"/>
+	<mapping marcField="210" marcSection="a" destination="Luogo 2" is4Fe="true" searchField="true" label="Paese di pubblicazione" multiple="true"/>
+	<mapping marcField="210" marcSection="c" destination="Editore" copyTo="Editore 2" facet="Responsabilita materiale facet" label="Responsabilita' materiale" facetOrder="7"  is4Fe="true"/>
+	<mapping marcField="210" marcSection="d" destination="Data pubblicazione" facet="Anno"  label="Anno di pubblicazione" facetOrder="8" type="year" multiple="true"/>
+	<mapping marcField="210" marcSection="e" destination="Luogo" searchField="true" multiple="true"/>
+	<mapping marcField="210" marcSection="e" destination="Luogo 2" is4Fe="true"  searchField="true" label="Paese di pubblicazione" multiple="true"/>
+	<mapping marcField="210" marcSection="g" destination="Editore"  facet="Responsabilita materiale facet" label="Responsabilita' materiale" facetOrder="7"  is4Fe="true"/>
+	<mapping marcField="210" marcSection="g" destination="Stampatore" is4Fe="true" copyTo="Stampatore 2"/>
+	<mapping marcField="215" marcSection="a|c|d|e" destination="Descrizione fisica" group="Informazioni descrittive" vistaEtichette="300.7" vistaIsbd="400"/>
+	<mapping marcField="225" multiple="true" marcSection="a|d|e|f" destination="Descrizioni delle serie / collezioni" feLabel="Collezione" vistaEtichette="300.8" group="Informazioni descrittive"/>
+	<mapping marcField="230" multiple="true" marcSection="a" destination="Area specifica delle risorse elettroniche" feLabel="Dati della risorsa elettronica" vistaEtichette="300.9" group="Informazioni descrittive"/>
+	
+	<mapping marcField="300" multiple="true" destination="Note generali" feLabel="Note" group="Informazioni descrittive" vistaEtichette="301.0" vistaIsbd="500"
+		join=".- "/>
+	<mapping marcField="311" multiple="true" marcSection="a" destination="Note tra titoli"  group="Informazioni descrittive" vistaEtichette="301.1"/>
+	<mapping marcField="312" multiple="true" marcSection="a" destination="Note tra titoli"  group="Informazioni descrittive" vistaEtichette="301.2"/>
+	<!-- POLODEBUG-580 elimnare questo tipo di nota -->
+	<!--
+	<mapping marcField="314" multiple="true" marcSection="a" destination="Note relative alla responsabilita'"  group="Informazioni descrittive" vistaEtichette="301.3"/>
+	-->
+	<!-- " Le note 316 e 317, riferendosi alla copia vengono inserite nell'area del documento fisico (950)" MET-235 -->
+	<mapping marcField="316" multiple="true" marcSection="a" destination="Note relative all'esemplare"  group="Informazioni descrittive" vistaEtichette="1301.4"  group2="Copie"/>
+	<!-- 317 in BE va sotto 950  POLODEBUG-80 -->
+	<mapping marcField="323" multiple="true" marcSection="a" destination="Note al cast"  group="Informazioni descrittive" vistaEtichette="301.6"/>
+	<mapping marcField="326" multiple="true" marcSection="a" destination="Note relative alla periodicita' di pubblicazione"  group="Informazioni descrittive" vistaEtichette="301.7"/>	
+	<mapping marcField="327" multiple="true" marcSection="a" destination="Note di contenuto"  group="Informazioni descrittive" vistaEtichette="301.8"/>
+	<mapping marcField="330" destination="Abstract" group="Informazioni descrittive" vistaEtichette="301.9"/>
+	<mapping marcField="336" multiple="true" destination="Note sulla risorsa elettronica" group="Informazioni descrittive" vistaEtichette="302.1"/>
+	<mapping marcField="337" multiple="true" destination="Note tecniche sulla risorsa elettronica" group="Informazioni descrittive" vistaEtichette="302.2"/>
+	
+	<mapping marcField="410" multiple="true" marcSection="a|v" destination="Collezione" group="Record collegati" vistaEtichette="400.1" copyTo="Titoli tutti"/>
+	<mapping marcField="410" multiple="true" marcSection="a" destination="Collezione [Faccetta]" facet="" facetOrder="9" copyTo="Titoli tutti" searchField="true" label="Collezione"/>
+	<mapping marcField="410" multiple="true" marcSection="a" destination="Collezione [Sintetica]" label="Collezione" vistaShort="2.2"/>
+	<mapping marcField="421" marcSection="" destination="Supplemento" feLabel="Ha per supplemento" group="Record collegati" vistaEtichette="400.2" copyTo="Titoli tutti"/>
+	<mapping marcField="422" marcSection="" destination="Padre di supplemento" feLabel="Supplemento di" group="Record collegati" vistaEtichette="400.3" copyTo="Titoli tutti"/>
+	<mapping marcField="423" multiple="true" marcSection="" destination="Allegato a" group="Record collegati" vistaEtichette="400.4" copyTo="Titoli tutti"/>	
+	<mapping marcField="430" marcSection="a|e|f|g|v|3" destination="Continuazione di" inverse="Continua con" group="Record collegati" vistaEtichette="400.5" multiple="true"  copyTo="Titoli tutti"/>
+	<mapping marcField="431" marcSection="a|e|f|g|v|3" destination="Continuazione in parte di" inverse="Si scinde in" group="Record collegati" vistaEtichette="400.6" multiple="true" copyTo="Titoli tutti"/>
+	<mapping marcField="434" marcSection="" destination="Ha assorbito" inverse="Assorbito da" group="Record collegati" vistaEtichette="400.7" copyTo="Titoli tutti"/>
+	<mapping marcField="440" marcSection="a|e|f|g|v|3" destination="Continua con" group="Record collegati" vistaEtichette="400.8" multiple="true" copyTo="Titoli tutti"/>
+	<mapping marcField="444" marcSection="a|e|f|g|v|3" destination="Assorbito da" group="Record collegati" vistaEtichette="400.88" copyTo="Titoli tutti"/>
+	<mapping marcField="446" marcSection="a|e|f|g|v|3" destination="Si scinde in" group="Record collegati" vistaEtichette="400.88"  multiple="true" copyTo="Titoli tutti"/>
+	<mapping marcField="447" marcSection="a|e|f|g|v|3" destination="Fuso con" inverse="Fuso con" group="Record collegati" vistaEtichette="400.9" multiple="true" copyTo="Titoli tutti"/>
+	<mapping marcField="451" marcSection="a|e|f|g|v|3" destination="Altra edizione su stesso supporto" group="Record collegati" vistaEtichette="401.1" copyTo="Titoli tutti"  multiple="true"/>
+	<mapping marcField="452" multiple="true" marcSection="a|e|f|g|v|3" destination="Altra edizione su altro supporto" group="Record collegati" vistaEtichette="401.2" copyTo="Titoli tutti"/>	
+	<mapping marcField="454" marcSection="a|e|f|g|v|3" destination="Traduzione di" group="Record collegati" vistaEtichette="401.3" multiple="true" copyTo="Titoli tutti"/>
+	
+	<!--attenzione i campi 4xx hanno un trattamento speciale, cerca 4xx nel codice 
+	    NO: ho inserito un if nel trattamento generale -->
+	<mapping marcField="461" marcSection="a|c|e|f|g|v|3" destination="Legame al livello piu' elevato (set)" feLabel="Fa parte di" group="Record collegati" vistaEtichette="401.32" multiple="true" copyTo="Titoli tutti" vistaShort="2.1"/>
+	<mapping marcField="462" marcSection="a|c|e|f|g|v|3" destination="Legame a livelli intermedi (subset)" feLabel="Fa parte di o Contiene" group="Record collegati" vistaEtichette="401.33" multiple="true" copyTo="Titoli tutti"/>
+	<mapping marcField="463" multiple="true" marcSection="a|e|f|g|v|3" destination="Legame parte analitica - padre" feLabel="Contiene" vistaEtichette="401.34" group="Record collegati" copyTo="Titoli tutti" />
+ 	<mapping marcField="464" multiple="true" marcSection="a|e|f|g|v|3" destination="Legame allo spoglio" feLabel="Contiene" group="Record collegati" vistaEtichette="401.4" copyTo="Titoli tutti"/>
+ 	<!-- non questo campo inseriisce i figli -->
+ 	<!--
+ 	<mapping marcField=""  destination="Comprende" group="Record collegati" vistaEtichette="401.45"/>
+ 	-->
+	<mapping marcField="488" multiple="true" marcSection="a|e|f|g|v|3" destination="Altri titolo correlati" group="Record collegati" vistaEtichette="401.5" copyTo="Titoli tutti"/>
+	 
+
+	<mapping marcField="500" multiple="true" marcSection="a|3" destination="Titolo uniforme" feLabel="Titolo dell'opera" group2="Titolo uniforme" group="Altri titoli"  vistaEtichette="500.1" facet="" facetOrder="12" />
+	<mapping marcField="500" multiple="true" marcSection="9" destination="Titolo uniforme, nome" is4Fe="true" copyTo="Nomi tutti"/>
+	<mapping marcField="500" multiple="true" marcSection="a|3" destination="Titolo uniforme 2" is4Fe="true" searchField="true" label="Titolo uniforme" copyTo="Titoli tutti"/>
+	<mapping marcField="510" multiple="true" marcSection="a" destination="Titolo parallelo" feLabel="Titolo in altra lingua" group="Altri titoli" vistaEtichette="500.2" copyTo="Titoli tutti" searchField="true"/>
+	<mapping marcField="517" multiple="true" marcSection="a" destination="Titolo alternativo" group="Altri titoli" vistaEtichette="500.3" />
+	<mapping marcField="517" multiple="true" marcSection="a|e" destination="Variante del titolo" is4Fe="true" searchField="true" copyTo="Titoli tutti"/>
+	<mapping marcField="530" multiple="true" marcSection="a" destination="Titolo chiave" group="Altri titoli" vistaEtichette="500.4"  copyTo="Titoli tutti"/>
+	<mapping marcField="560" multiple="true" marcSection="a" destination="Titolo di raccolta fattizia" feLabel="Raccolto in" group="Altri titoli" vistaEtichette="500.5"  copyTo="Titoli tutti"/>
+	
+	<!--  ricerca via $3 non sembra necessaria -->	
+	<mapping marcField="606" multiple="true" marcSection="a|x|y" separator=" - | - | - " destination="Soggetto" group="Soggetti e classi" vistaEtichette="600.1" facet="" facetOrder="4" searchField="true"/>
+	<mapping marcField="620" multiple="true" marcSection="a|d" vistaEtichette="600.2" destination="Luogo di pubblicazione normalizzato" group="Soggetti e classi" >
+	<!--
+            <mapping marcField="620" marcSection="a" destination="Nazione" />
+            <mapping marcField="620" marcSection="d" destination="Citta'" />
+             -->
+	</mapping>
+	<!-- servono per la faccetta Luogo POLOBE-315 03-06-2016 -->
+	<mapping marcField="620" marcSection="a" destination="Luogo" facet=""  multiple="true"/>
+	<mapping marcField="620" marcSection="d" destination="Luogo" facet=""  multiple="true"/>
+	
+	<mapping marcField="676" multiple="true" marcSection="a|c" separator=" - | - "   destination="Classificazione Dewey" group="Soggetti e classi" vistaEtichette="600.3" searchField="true"/>
+	<mapping marcField="676" multiple="true" marcSection="a" destination="Codice Dewey"  facet="" facetOrder="5" searchField="true"/>
+	<mapping marcField="676" multiple="true" marcSection="c" destination="Descrizione Dewey" is4Fe="true" searchField="true"/>
+	<mapping marcField="686" multiple="true" marcSection="a|c" destination="Altri sistema di classificazione" group="Soggetti e classi" vistaEtichette="600.4"/>
+	
+	<!-- serve per FE, non nel BE -->
+	<mapping marcField="700" multiple="true" marcSection="a|b|f|3|4" destination="Responsabilita' principale" feLabel="Autore" group2="Autore" vistaEtichette="200.1"/>
+	<mapping marcField="701" multiple="true" marcSection="a|b|f|3|4" destination="Responsabilita' principale" feLabel="Autore" vistaEtichette="200.3"/>
+	<mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="Responsabilita' principale" feLabel="Autore" vistaEtichette="200.3"/>
+	<mapping marcField="711" multiple="true" marcSection="a|b|f|3|4" destination="Responsabilita' principale" feLabel="Autore" vistaEtichette="200.4"/>
+
+	<mapping marcField="" marcSection="" destination="Autore [sintetico]" vistaShort="1" multiple="true" sortField="true"/>
+	<!-- per la faccetta nostra -->
+	<mapping marcField="700" multiple="true" marcSection="a|b|f|3|4" destination="Autore"   vistaIsbd="50" facet="" facetOrder="3" group2="Autore"/>
+	<mapping marcField="701" multiple="true" marcSection="a|b|f|3|4" destination="Autore"   vistaIsbd="50"/>
+	<mapping marcField="702" multiple="true" marcSection="a|b|f|3|4" destination="Autore secondario"
+			 condMarcSection="4" condValue="!390" condValue2="!320"
+		/>
+	<mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="Autore"  vistaIsbd="50"/>
+	<!-- " facet" in attribute facet = take label -->
+	<mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="Editore"  handler="com.gruppometa.unimarc.handlers.EditoreHandler"  facet="Responsabilita materiale facet" label="Responsabilita' materiale" facetOrder="7"  is4Fe="true"/>
+	<mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="Editore 2" label="Editore"  handler="com.gruppometa.unimarc.handlers.Editore2Handler" is4Fe="true" searchField="true" copyTo="Responsabilita materiale"/>
+	<mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="Stampatore"  handler="com.gruppometa.unimarc.handlers.StampatoreHandler" is4Fe="true" />
+	<mapping marcField="711" multiple="true" marcSection="a|b|f|3|4" destination="Autore"   vistaIsbd="50"/>
+	<mapping marcField="712" multiple="true" marcSection="a|b|f|3|4" destination="Autore secondario"
+			 condMarcSection="4" condValue="!390" condValue2="!320"/>
+	<mapping marcField="712" multiple="true" marcSection="a|b|f|3|4" destination="Stampatore 2" label="Stampatore" handler="com.gruppometa.unimarc.handlers.StampatoreHandler" is4Fe="true" searchField="true"  copyTo="Responsabilita materiale"/>
+
+	<!-- per la ricerca avanzata Autore (intestazione) -->
+	<mapping marcField="700" multiple="true" marcSection="a|b|f" destination="Autore (intestazione)" is4Fe="true" searchField="true"/>
+	<mapping marcField="710" multiple="true" marcSection="a|b|f" destination="Autore (intestazione)" is4Fe="true" searchField="true"/>
+
+	<!-- 	TODO non servono piu'?
+	<mapping marcField="720" marcSection="a|b|f|3|4" destination="Autore secondario" group="Responsabilita'" vistaEtichette="690"/>
+	<mapping marcField="721" marcSection="a|b|f|3|4" destination="Autore secondario" group="Responsabilita'" vistaEtichette="690"/>
+	 -->
+	 <!-- per il BE, ma per il FE? -->
+	<mapping marcField="700" multiple="true" marcSection="a|b|f|3|4" destination="Nome di persona: responsabilita' principale" feLabel="Autore" vistaEtichette="700.1" group="Responsabilita'" copyTo="Responsabilita tutte" />
+	<mapping marcField="701" multiple="true" marcSection="a|b|f|3|4" destination="Nome di persona: responsabilita' alternativa" feLabel="Autore" vistaEtichette="700.2" group="Responsabilita'" copyTo="Responsabilita tutte" />
+	<mapping marcField="702" multiple="true" marcSection="a|b|f|3|4" destination="Nome di persona: responsabilita' secondaria" feLabel="Autore" vistaEtichette="700.3" group="Responsabilita'" copyTo="Responsabilita tutte"
+			condMarcSection="4" condValue="!390" condValue2="!320"/>
+	<mapping marcField="702" multiple="true" marcSection="a|b|f|3|4" destination="Nome di persona: responsabilita' secondaria (BE)" group="Responsabilita'"
+			 condMarcSection="4" condValue="[ROLE: 390]" condValue2="[ROLE: 320]"/>
+	<mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="Nome di gruppo(ente): responsabilita' principale" feLabel="Autore" vistaEtichette="700.4" group="Responsabilita'" copyTo="Responsabilita tutte" />
+	<mapping marcField="711" multiple="true" marcSection="a|b|f|3|4" destination="Nome di gruppo(ente): responsabilita' alternativa" feLabel="Autore" vistaEtichette="700.5" group="Responsabilita'" copyTo="Responsabilita tutte" />
+	<mapping marcField="712" multiple="true" marcSection="a|b|f|3|4" destination="Nome di gruppo(ente): responsabilita' secondaria" feLabel="Autore" vistaEtichette="700.6" group2="Responsabilita'" copyTo="Responsabilita tutte"
+			 condMarcSection="4" condValue="!390" condValue2="!320"/>
+	<mapping marcField="712" multiple="true" marcSection="a|b|f|3|4" destination="Nome di gruppo(ente): responsabilita' secondaria (BE)" group="Responsabilita'"
+			 condMarcSection="4" condValue="[ROLE: 390]" condValue2="[ROLE: 320]"/>
+	<!-- con o senza link? 9/3/2016: senza vedi POLODEBUG-83 -->
+	<!-- POLODEBUG-354  non visualizzare -->
+	<mapping marcField="790" multiple="true" marcSection="a|b|f|4" destination="Nome di persona: forma non accettata" is4Fe="true" group="Responsabilita'" copyTo="Responsabilita tutte" />
+	<mapping marcField="791" multiple="true" marcSection="a|b|f|4" destination="Nome di gruppo: forma non accettata"  is4Fe="true" group="Responsabilita'" copyTo="Responsabilita tutte" />
+	 
+	<mapping marcField="801" marcSection="a|b|c" destination="Orgine del record" group="Dati gestionali" >
+		<mapping marcField="801" marcSection="a" destination="Paese" vocabulary="paes"/>
+		<mapping marcField="801" marcSection="b" destination="Agenzia" vocabulary="anagrafica-biblioteche"/>
+		<mapping marcField="801" marcSection="c" destination="Data di produzione"/>
+	</mapping>	
+	<mapping marcField="850" marcSection="a" destination="Istituzione" group="Dati gestionali"  vocabulary="anagrafica-biblioteche" is4Fe="true" searchField="true"/>
+	
+	<mapping marcField="856" destination="Risorsa elettronica" group="Dati gestionali" group2="Informazioni descrittive" vistaEtichette="303.1" multiple="true">	
+		<mapping marcField="856" marcSection="u" destination="Url"  />
+		<mapping marcField="856" marcSection="9" destination="File" />
+	</mapping>
+	
+	<mapping marcField="899" multiple="true" marcSection="a|1|2" destination="Localizzazione delle copie in formato elettronico" group="Dati gestionali">
+		<mapping marcField="899" marcSection="a" destination="Biblioteca" vocabulary="anagrafica-biblioteche"/>
+		<mapping marcField="899" marcSection="n" destination="Note"/>
+		<mapping marcField="899" marcSection="u" destination="URI"/>
+	</mapping>
+	
+	<!-- $a viene montato come BID, tolto al 9-3-2016 -->
+	<!-- $a raggiunto come campo separato per la ricerca avanzata FE -->
+	<mapping marcField="921" marcSection="a" destination="Numero MID" is4Fe="true" searchField="true" multiple="true"/>
+
+	<mapping marcField="921" marcSection="b|c|d|f" destination="Marca editoriale"  group="Campi personalizzati" vistaEtichette="900.1" multiple="true" searchField="true"/>
+	<mapping marcField="922" multiple="true" destination="Rappresentazione (mat. musicale)" vistaEtichette="900.2"  group="Identificazione" group2="Campi personalizzati" searchField="true">
+		<mapping marcField="922" marcSection="a" destination="Genere" vocabulary="genr"/>
+		<mapping marcField="922" marcSection="p" destination="Anno"/>
+		<mapping marcField="922" marcSection="q" destination="Periodo"/>
+		<mapping marcField="922" marcSection="r" destination="Teatro"/>
+		<mapping marcField="922" marcSection="s" destination="Luogo"/>
+		<mapping marcField="922" marcSection="t" destination="Nota"/>
+		<mapping marcField="922" marcSection="u" destination="Occasione"/>
+	</mapping>
+	<mapping marcField="922" multiple="true" marcSection="p|q|r|s|t|u" destination="Prima rappresentazione" condMarcSection="a" condValue="2" is4Fe="true" searchField="true"/>
+	<mapping marcField="922" multiple="true" marcSection="p|q|r|s|t|u" destination="Rappresentazione dal vivo" condMarcSection="a" condValue="24"  is4Fe="true" searchField="true"/>
+	<mapping marcField="922" multiple="true" marcSection="p|q|r|s|t|u" destination="Rimasterizzazione" condMarcSection="a" condValue="5"  is4Fe="true" searchField="true"/>
+
+	<mapping marcField="923" destination="Notazione (mat. musicale)" vistaEtichette="900.3"  group="Campi personalizzati">
+		<mapping marcField="923" marcSection="b" destination="Codice stesura" vocabulary="stes"/>
+		<mapping marcField="923" marcSection="c" destination="Indicatore di composito"/>
+		<mapping marcField="923" marcSection="d" destination="Indicatore di palinsesto"/>
+		<mapping marcField="923" marcSection="e" destination="Datazione"/>
+		<mapping marcField="923" marcSection="g" destination="Codice materia" vocabulary="mamu"/>
+		<mapping marcField="923" marcSection="h" destination="Illustrazioni"/>
+		<mapping marcField="923" marcSection="i" destination="Notazione musicale"/>
+		<mapping marcField="923" marcSection="l" destination="Legatura"/>
+		<mapping marcField="923" marcSection="m" destination="Conservazione"/>
+	</mapping>
+	
+	<mapping marcField="926" marcSection="c" multiple="true" destination="Incipit" is4Fe="true" searchField="true"/>
+	<mapping marcField="926" multiple="true" destination="Incipit (mat. musicale)" vistaEtichette="900.3"  group="Campi personalizzati">
+		<mapping marcField="926" destination="Indicatore" marcSection="a" vocabulary="inin"/>
+		<mapping marcField="926" destination="Numero composizioni" marcSection="b"/>
+		<mapping marcField="926" destination="Contesto" marcSection="c"/>
+		<mapping marcField="926" destination="Numero movimento" marcSection="f"/>
+		<mapping marcField="926" destination="Numero progressivo movimenti" marcSection="g"/>
+		<mapping marcField="926" destination="Registro musicale" marcSection="h" vocabulary="orga"/>
+		<mapping marcField="926" destination="Codice forma musicale" marcSection="i" vocabulary="fomu"/>
+		<mapping marcField="926" destination="Tonalita'" marcSection="l" vocabulary="tono"/>
+		<mapping marcField="926" destination="Chiave musicale" marcSection="m"/>
+		<mapping marcField="926" destination="Alterazione" marcSection="n"/>
+		<mapping marcField="926" destination="Misura" marcSection="o"/>
+		<mapping marcField="926" destination="Tempo musicale" marcSection="p"/>
+		<mapping marcField="926" destination="Nome personaggio" marcSection="q"/>
+		<mapping marcField="926" destination="Identificativo del titolo di incipit letterario" marcSection="r"/>
+		<mapping marcField="926" destination="ISBD del titolo di incipit letterario" marcSection="s"/>	
+	</mapping>
+	<mapping marcField="926" destination="Personaggi" marcSection="q" is4Fe="true" searchField="true"/>
+
+	<mapping marcField="927" multiple="true" destination="Personaggi e interpreti (mat. musicale)" vistaEtichette="900.4"  group="Campi personalizzati">
+		<mapping marcField="927" destination="Personaggio" marcSection="a"/>
+		<!-- tivo è vuoto -->
+		<mapping marcField="927" destination="timbro vocale" marcSection="b" vocabulary="orga"/>
+		<mapping marcField="927" destination="identificativo dell'autore (interprete)" marcSection="3"/>
+		<mapping marcField="927" destination="Nome dell'autore" marcSection="c"/>
+	</mapping>
+	<mapping marcField="927" destination="Personaggi" marcSection="a|b|c" is4Fe="true" searchField="true"/>
+
+	<mapping marcField="928" destination="Dati codificati per titolo uniforme musicale" vistaEtichette="900.5"  group="Campi personalizzati"  multiple="true">
+		<mapping marcField="928" destination="Forma" marcSection="a"/> <!-- vocabulary=fomu" ?-->
+		<mapping marcField="928" destination="Organico sintetico" marcSection="b" />
+		<mapping marcField="928" destination="Organico analitico" marcSection="c" />
+		<mapping marcField="928" destination="Identificativo del titolo uniforme collegato" marcSection="z"/>
+	</mapping>
+	<mapping marcField="928" destination="Organico sintetico" marcSection="b" is4Fe="true" searchField="true" multiple="true"/>
+	<mapping marcField="928" destination="Organico analitico" marcSection="c" is4Fe="true" searchField="true" multiple="true"/>
+
+	<mapping marcField="929" destination="Composizione (mat. musicale)" vistaEtichette="900.6"  group="Campi personalizzati" multiple="true" facets="true">
+		<mapping marcField="929" destination="Numero d'ordine" marcSection="a"/>
+		<mapping marcField="929" destination="Numero d'opera" marcSection="b" />
+		<mapping marcField="929" destination="Numero di catalogo tematico" marcSection="c"/>
+		<mapping marcField="929" destination="Datazione della composizione" marcSection="d"/>
+		<mapping marcField="929" destination="Tonalita' della composizione" marcSection="e" vocabulary="tono"/>
+		<mapping marcField="929" destination="Sezioni" marcSection="f"/>
+		<mapping marcField="929" destination="Titolo di ordinamento" marcSection="g"/>
+		<mapping marcField="929" destination="Titolo dell'estratto" marcSection="h"/>
+		<mapping marcField="929" destination="Appellativo" marcSection="i"/>
+		<mapping marcField="929" destination="Identificativo del titolo uniforme collegato" marcSection="z"/>		
+	</mapping>
+	<mapping marcField="929" destination="Numero catalogo tematico" marcSection="c" is4Fe="true" searchField="true"/>
+	<mapping marcField="929" destination="Numero d'ordine" marcSection="a"  is4Fe="true" searchField="true"/>
+	<mapping marcField="929" destination="Numero d'opera" marcSection="b" is4Fe="true" searchField="true"/>
+
+	<mapping marcField="950" multiple="true" marcSection="a" destination="Localizzazione" facet="" facetOrder="15" searchField="true" vistaShort="10"/>
+	<mapping marcField="977" multiple="true" marcSection="a" destination="Localizzazione" facet="" facetOrder="15" searchField="true" vocabulary="biblioteche" vistaShort="10"/>
+
+	<!--
+	<mapping marcField="950" multiple="true" marcSection="a" destination="LocalizzazioneAttr" is4Fe="true" searchField="false" docAttribute="true"/>
+	<mapping marcField="977" multiple="true" marcSection="a" destination="LocalizzazioneAttr" is4Fe="true" searchField="false" vocabulary="biblioteche" docAttribute="true"/>
+	-->
+
+	<mapping marcField="950" multiple="true" destination="Inventari e collocazioni delle copie" vistaEtichette="1000" group2="Copie" hideLabel="true">
+		<mapping marcField="950" marcSection="a" destination="Biblioteca"/>
+		<mapping marcField="950" marcSection="b" destination="Consistenza esemplare" labelGroup="950.FE"/>
+		<mapping marcField="950" marcSection="c" destination="Consistenza collocazione" labelGroup="950.FE"/>
+		<!-- 
+		<mapping marcField="950" marcSection="d" destination="Collocazione"/>
+		 -->
+		<!-- Sezione = Collocazione vedi POLODEBUG-227 -->
+		<mapping marcField="950" marcSection="d" posInit="3" posEnd="13" destination="Collocazione" labelGroup="950.FE"/>
+		<mapping marcField="950" marcSection="d" posInit="13" posEnd="37" destination="Collocazione"  labelGroup="950.FE"/>
+		<mapping marcField="950" marcSection="d" posInit="37" destination="Collocazione"  labelGroup="950.FE"/>
+		<mapping marcField="950" marcSection="e" posInit="24" posEnd="44" destination="Collocazione"  labelGroup="950.FE"/>
+		<mapping marcField="950" marcSection="e" posInit="44" posEnd="0" destination="Precisazione di inventario"  labelGroup="950.FE"/>
+		<mapping marcField="950" marcSection="e" posInit="3" posEnd="6" destination="Inventario"  labelGroup="950.FE"  cutZeros="true"/>
+		<mapping marcField="950" marcSection="e" posInit="6" posEnd="15" destination="Inventario"  labelGroup="950.FE"  cutZeros="true"/>
+		<mapping marcField="950" marcSection="f"  destination="Categoria di fruizione"  labelGroup="950.FE" vocabulary="frui"/>
+		<mapping marcField="950" marcSection="e" posInit="3" posEnd="15"  destination="Kardex"  labelGroup="950.FE" handler="com.gruppometa.unimarc.handlers.KardexHandler"/>
+		 <!-- 
+		<mapping marcField="950" marcSection="e" destination="Inventario completo"/>
+		-->
+	</mapping>
+	<mapping marcField="950" multiple="true" destination="Inventari e collocazioni delle copie (BE)" group="Dati gestionali">
+		<mapping marcField="950" marcSection="a" destination="Biblioteca"/>
+		<mapping marcField="950" marcSection="b" destination="Consistenza esemplare"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="c" destination="Consistenza collocazione"  labelGroup="950.BE"/>
+		<!-- 
+		<mapping marcField="950" marcSection="d" destination="Collocazione"/>
+		 -->
+		
+		<mapping marcField="950" marcSection="d" posInit="3" posEnd="13" destination="Sezione" labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="d" posInit="13" posEnd="37" destination="Collocazione"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="d" posInit="37" destination="Specificazione"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="e" posInit="24" posEnd="44" destination="Sequenza"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="e" posInit="44" posEnd="0" destination="Precisazione di inventario"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="e" posInit="3" posEnd="6" destination="Serie"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="e" posInit="6" posEnd="15" destination="Inventario"  labelGroup="950.BE"/>
+		<mapping marcField="950" marcSection="e" posInit="20" posEnd="22" destination="Stato di conservazione"  labelGroup="950.BE" vocabulary="cons"/>
+		<mapping marcField="950" marcSection="f"  destination="Categoria di fruizione"  labelGroup="950.BE"  vocabulary="frui"/>
+		<mapping marcField="950" marcSection="e" posInit="6" posEnd="15"  destination="Kardex"  labelGroup="950.BE" handler="com.gruppometa.unimarc.handlers.KardexHandler"/>
+
+	</mapping>
+	<!-- 951 non serve -->
+	<mapping marcField="956" multiple="true" destination="Inventari e collocazioni delle copie" vistaEtichette="1000"  group2="Copie">
+		<mapping marcField="956" marcSection="a" destination="Biblioteca"/>
+		<mapping marcField="956" marcSection="b" destination="Tipo di digitalizzazione"/>
+		<mapping marcField="956" marcSection="c" destination="Teca"/>
+		<mapping marcField="956" marcSection="d" destination="Disponibilita'"/>
+	</mapping>
+
+	<mapping marcField="956" multiple="true" destination="Inventari e collocazioni delle copie (BE)" group="Dati gestionali">
+		<mapping marcField="956" marcSection="a" destination="Biblioteca"/>
+		<mapping marcField="956" marcSection="b" destination="Tipo di digitalizzazione"/>
+		<mapping marcField="956" marcSection="c" destination="Teca"/>
+		<mapping marcField="956" marcSection="d" destination="Disponibilita'"/>
+		<mapping marcField="956" marcSection="e" posInit="2" posEnd="5" destination="Serie"  labelGroup="956.BE"/>
+		<mapping marcField="956" marcSection="e" posInit="5" posEnd="14" destination="Inventario"  labelGroup="956.BE"/>
+		<mapping marcField="956" marcSection="e" posInit="5" posEnd="14" destination="Collocazione"  labelGroup="956.BE"/>
+		<mapping marcField="956" marcSection="e" posInit="2" posEnd="5" destination="Inventario"  labelGroup="956.FE"/>
+		<mapping marcField="956" marcSection="e" posInit="5" posEnd="14" destination="Inventario"  labelGroup="956.FE"/>
+		<mapping marcField="956" marcSection="e" posInit="5" posEnd="14" destination="Collocazione"  labelGroup="956.FE"/>
+		<mapping marcField="956" marcSection="e" posInit="2" posEnd="14"  destination="Kardex"  labelGroup="950.FE" handler="com.gruppometa.unimarc.handlers.KardexHandler"/>
+		
+	</mapping>
+	
+	<mapping marcField="960" multiple="true" destination="Inventari e collocazioni delle copie" vistaEtichette="1000"  group2="Copie" hideLabel="true">
+		<mapping marcField="960" marcSection="a" destination="Biblioteca"/>
+		<mapping marcField="960" marcSection="b" destination="Consistenza esemplare"  labelGroup="950.FE"/>
+		<mapping marcField="960" marcSection="c" destination="Consistenza collocazione"  labelGroup="950.FE"/>
+		<!-- 
+		<mapping marcField="960" marcSection="d" destination="Collocazione"/>
+	 	-->
+		<mapping marcField="960" marcSection="d" posInit="3" posEnd="13" destination="Collocazione" labelGroup="950.FE"/>
+		<mapping marcField="960" marcSection="d" posInit="13" posEnd="37" destination="Collocazione"  labelGroup="950.FE"/>
+		<mapping marcField="960" marcSection="d" posInit="37" destination="Collocazione"  labelGroup="950.FE"/>
+		<mapping marcField="960" marcSection="e" posInit="14" posEnd="44" destination="Collocazione"  labelGroup="950.FE"/>
+		<mapping marcField="960" marcSection="e" posInit="54" posEnd="0" destination="Precisazione di inventario"  labelGroup="950.FE"/>
+		<mapping marcField="960" marcSection="e" posInit="2" posEnd="5" destination="Inventario"  labelGroup="950.FE" cutZeros="true"/>
+		<mapping marcField="960" marcSection="e" posInit="5" posEnd="14" destination="Inventario"  labelGroup="950.FE" cutZeros="true"/>
+		<mapping marcField="960" marcSection="e" posInit="5" posEnd="14"  destination="Kardex"  labelGroup="950.FE" handler="com.gruppometa.unimarc.handlers.KardexHandler"/>
+		<!-- 
+		<mapping marcField="960" marcSection="e" destination="Inventario completo"/>
+		 -->
+	</mapping>
+
+	<mapping marcField="960" multiple="true" destination="Inventari e collocazioni delle copie (BE)" group="Dati gestionali" >
+		<mapping marcField="960" marcSection="a" destination="Biblioteca"/>
+		<mapping marcField="960" marcSection="b" destination="Consistenza esemplare"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="c" destination="Consistenza collocazione" labelGroup="950.BE"/>
+		<!-- 
+		<mapping marcField="960" marcSection="d" destination="Collocazione"/>
+	 	-->
+		
+		<mapping marcField="960" marcSection="d" posInit="3" posEnd="13" destination="Sezione" labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="d" posInit="13" posEnd="37" destination="Collocazione"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="d" posInit="37" destination="Specificazione"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="e" posInit="14" posEnd="44" destination="Sequenza"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="e" posInit="54" posEnd="0" destination="Precisazione di inventario"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="e" posInit="2" posEnd="5" destination="Serie"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="e" posInit="5" posEnd="14" destination="Inventario"  labelGroup="950.BE"/>
+		<mapping marcField="960" marcSection="e" posInit="50" posEnd="52" destination="Stato di conservazione"  labelGroup="950.BE" vocabulary="cons"/>
+		<mapping marcField="960" marcSection="e" posInit="2" posEnd="14"  destination="Kardex"  labelGroup="950.BE" handler="com.gruppometa.unimarc.handlers.KardexHandler"/>
+		
+	</mapping>
+
+	<mapping marcField="317" label="Possessore" multiple="true" marcSection="a" destination="Note relative alla provenienza"  group="Dati gestionali" vistaEtichette="1301.5"  group2="Copie" searchField="true"/>
+	<!-- solo FE -->
+	<mapping marcField="702" marcSection="a|b|f|3|4" condMarcSection="4" condValue="[ROLE: 390]" label="Possessore" multiple="true" destination="Possessore"   vistaEtichette="1303"  group2="Copie" searchField="true" is4Fe="true"/>
+	<mapping marcField="712" marcSection="a|b|f|3|4" condMarcSection="4" condValue="[ROLE: 390]" label="Possessore" multiple="true" destination="Possessore"   vistaEtichette="1304"  group2="Copie" searchField="true" is4Fe="true"/>
+	<mapping marcField="702" marcSection="a|b|f|3|4" condMarcSection="4" condValue="[ROLE: 320]" label="Provenienza" multiple="true" destination="Provenienza"   vistaEtichette="1305"  group2="Copie" searchField="true" is4Fe="true"/>
+	<mapping marcField="712" marcSection="a|b|f|3|4" condMarcSection="4" condValue="[ROLE: 320]" label="Provenienza" multiple="true" destination="Provenienza"   vistaEtichette="1306"  group2="Copie" searchField="true" is4Fe="true"/>
+
+
+	<mapping marcField="956" multiple="true" marcSection="a" destination="Localizzazione" facet="" searchField="true"/>
+	<mapping marcField="960" multiple="true" marcSection="a" destination="Localizzazione" facet=""  searchField="true"/>
+	<!-- 
+	<mapping marcField="951" marcSection="a|b" destination="Ordini" group="Dati gestionali" />
+	<mapping marcField="961" marcSection="a|b" destination="Ordini" group="Dati gestionali" />
+	-->
+	<mapping marcField="967" multiple="true" destination="Numero di monografie e spogli collegati" group="Dati gestionali" />
+	<!-- viene creato da special -->
+	<!-- 
+	<mapping marcField="950" marcSection="e" destination="Inventario"/>
+	 -->
+	 <mapping marcField="" multiple="true" marcSection="" destination="Inventario" />
+	 <!-- campi di supporto -->
+	 <mapping marcField="" multiple="false" marcSection="" destination="Unimarc" vistaEtichette="0" />
+	 <mapping marcField="" multiple="true" marcSection="" destination="Data" vistaEtichette="301.1" group2="Informazioni descrittive"/>
+	 <!--
+	 <mapping marcField="" multiple="true" marcSection="" destination="Data_range" solrFieldname="data_range"/>
+	 -->
+	 <mapping marcField="" multiple="true" marcSection="" destination="Titoli tutti" solrFieldname="titoli_tutti_txt" searchField="true" type="text"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Responsabilita tutte" solrFieldname="responsabilita_tutte_txt" searchField="true" copyTo="Nomi tutti" type="text"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Responsabilita materiale" is4Fe="true" searchField="true"  type="text" copyTo="Responsabilita materiale facet"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Nomi tutti" solrFieldname="nomi_tutti_txt" searchField="true" type="text"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Data_inizio" type="year" _facet="" searchField="true" rangeEnd="Data_fine" is4Fe="true"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Data_range" _facet="" is4Fe="true" searchField="true" />
+	 <mapping marcField="" multiple="true" marcSection="" destination="Data_fine" type="year" _facet="" searchField="true"  is4Fe="true"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Nota informativa" vistaEtichette="301.1" group2="Informazioni descrittive"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Tutto" label="Tutti i campi" solrFieldname="text" searchField="true" type="text"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Numeri" is4Fe="true" searchField="true" copyTo="Identificativi"  type="text"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Personaggi" is4Fe="true" searchField="true"  type="text"/>
+ 	 <mapping marcField="" multiple="true" marcSection="" destination="Identificativi"  is4Fe="true" searchField="true" type="text"/>
+	 <mapping marcField="" multiple="true" marcSection="" destination="Ruolo" vocabulary="leta" is4Fe="true" searchField="true" />
+	 <mapping marcField="" multiple="true" marcSection="" destination="Ruolo ridotto grafica"  is4Fe="true" searchField="true" />
+	 <mapping marcField="" multiple="false" marcSection="" destination="Digitale"  is4Fe="true" searchField="true" facet="" />
+	 <mapping marcField="" multiple="false" marcSection="" destination="linkediccd"  is4Fe="true" searchField="false" vistaEtichette="1000"/>
+	<xi:include href="/na-common-fields.xml"/>
+</mappings>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:simpleType name="mimetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="video/x-ms-asf"/>
+			<xsd:enumeration value="video/avi"/>
+			<xsd:enumeration value="video/mpeg"/>
+			<xsd:enumeration value="video/vnd.rn-realvideo"/>
+			<xsd:enumeration value="video/wmv"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="streamtypetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Uncompressed"/>
+			<xsd:enumeration value="MPEG-1"/>
+			<xsd:enumeration value="MPEG-2"/>
+			<xsd:enumeration value="MPEG-4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="videosizetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="160x120">
+				<xsd:annotation>
+					<xsd:documentation>RealVideo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="176x144">
+				<xsd:annotation>
+					<xsd:documentation>Windows Media</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="192x144">
+				<xsd:annotation>
+					<xsd:documentation>internet</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="280x180">
+				<xsd:annotation>
+					<xsd:documentation>RealVideo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="320x240">
+				<xsd:annotation>
+					<xsd:documentation>RealVideo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="352x288">
+				<xsd:annotation>
+					<xsd:documentation>VHS, VCD</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="360x288">
+				<xsd:annotation>
+					<xsd:documentation>Windows Media</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="384x288">
+				<xsd:annotation>
+					<xsd:documentation>multimedia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="480x576">
+				<xsd:annotation>
+					<xsd:documentation>SVCD</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="720x576">
+				<xsd:annotation>
+					<xsd:documentation>DVD</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="aspectratiotype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1:1"/>
+			<xsd:enumeration value="4:3"/>
+			<xsd:enumeration value="16:9"/>
+			<xsd:enumeration value="2.11:1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="videoformattype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Component"/>
+			<xsd:enumeration value="NTSC"/>
+			<xsd:enumeration value="PAL"/>
+			<xsd:enumeration value="SECAM"/>
+			<xsd:enumeration value="Unspecified"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="encodetype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="interlaced"/>
+			<xsd:enumeration value="non-interlaced"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="frameratetype">
+		<xsd:restriction base="xsd:float">
+			<xsd:enumeration value="23.976"/>
+			<xsd:enumeration value="24"/>
+			<xsd:enumeration value="25"/>
+			<xsd:enumeration value="29.97"/>
+			<xsd:enumeration value="30"/>
+			<xsd:enumeration value="50"/>
+			<xsd:enumeration value="59.94"/>
+			<xsd:enumeration value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="transcriptionsummarytype">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element name="grouping" type="xsd:string"/>
+				<xsd:element name="transcriptionsummary" type="transcriptionsummarytype" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:element name="data_description" type="xsd:string"/>
+				<xsd:element name="data_unit" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="data_value" type="xsd:float"/>
+			</xsd:sequence>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="transcriptiondatatype">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element name="grouping" type="xsd:string"/>
+				<xsd:element name="transcriptiondata" type="transcriptiondatatype" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:element name="data_description" type="xsd:string"/>
+				<xsd:element name="data_unit" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="interval" minOccurs="0">
+					<xsd:complexType>
+						<xsd:attribute name="start" type="xsd:time" use="required"/>
+						<xsd:attribute name="stop" type="xsd:time" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="data_value" type="xsd:float" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<xsd:complexType name="video_format">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="mime" type="mimetype"/>
+			<xsd:element name="videoformat" type="videoformattype"/>
+			<xsd:element name="encode" type="encodetype" minOccurs="0"/>
+			<xsd:element name="streamtype" type="streamtypetype" minOccurs="0"/>
+			<xsd:element name="codec" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="video_creation">
+		<xsd:sequence>
+			<xsd:element name="sourcetype" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="transcriptionagency" minOccurs="0"/>
+			<xsd:element name="devicesource" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="transcriptionchain" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="device_description">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="Type" type="xsd:string" use="required"/>
+										<xsd:attribute name="Unique_identifier" type="xsd:string" use="optional"/>
+										<xsd:attribute name="Comments" type="xsd:string" use="optional"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="device_manufacturer" type="xsd:string"/>
+						<xsd:element name="device_model">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="Model" type="xsd:string" use="required"/>
+										<xsd:attribute name="Serial_Number" type="xsd:string" use="optional"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="capture_software" type="xsd:string" minOccurs="0"/>
+						<xsd:element name="device_settings" type="xsd:string" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="transcriptionsummary" type="transcriptionsummarytype" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="transcriptiondata" type="transcriptiondatatype" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="video_dimensions">
+		<xsd:sequence>
+			<xsd:element name="duration" type="xsd:time"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="video_spatialmetrics">
+		<xsd:sequence>
+			<xsd:element name="videosize" type="videosizetype"/>
+			<xsd:element name="aspectratio" type="aspectratiotype" minOccurs="0"/>
+			<xsd:element name="framerate" type="frameratetype"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+</xsd:schema>

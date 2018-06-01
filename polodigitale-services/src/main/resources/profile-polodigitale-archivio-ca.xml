@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.3.7</version>
+
+    <mapping destination="primo_livello_id" label="Primo livello (identificativo)" searchType="text"  multiple="false" vistaShort="1" is4Fe="true" />
+    <mapping destination="primo_livello_label" label="Primo livello (label)" searchType="text"  multiple="false" vistaShort="1.01" is4Fe="true"  facet="" facetLabel="Complesso" facetOrder="2"/>
+
+    <!-- CA -->
+    <mapping destination="livello_descrizione" label="Livello di descrizione" searchType="text"  multiple="true"  searchField="true" is4Fe="true" facet="" facetOrder="1" vistaShort="3.2" />
+    <mapping destination="denominazione" label=" Denominazione | Altra denominazione"  searchType="text"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="crono_denominazione" label="Cronologia e sub (area Denominazione del complesso)" searchType="text"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="cronologia_principale_estremo_remoto" label="Cronologia. Estremo remoto.data"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" rangeEnd="cronologia_principale:estremo_recente"/>
+    <mapping destination="cronologia_principale:estremo_recente" label="Cronologia. Estremo recente.data"  searchType="text"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="cronologia_principale:estremo_remoto_sec" label="Cronologia. Estremo remoto.secolo (+ Specifica)"  searchType="text"  multiple="true"  searchField="true" is4Fe="true"  rangeEnd="cronologia_principale:estremo_recente_sec"
+        type="century"/>
+    <mapping destination="cronologia_principale:estremo_recente_sec" label=" Cronologia. Estremo remoto.secolo (+ Specifica)" searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="cronologia_datazione_ECT" label="Cronologia. Estremo cronologico testuale"   searchType="text"  multiple="true"  searchField="true" is4Fe="true" facet="" facetOrder="3"/>
+    <mapping destination="denominazione_all_intestazione" label="Denominazione + Estremo cronologico testuale (relativo)" searchType="text" vistaShort="2"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="descrizione" label="Descrizione del contenuto"  searchType="text" vistaShort="2"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="descrizione_all" label="Descrizione del contenuto | Storia archivistica | Criteri di ordinamento …" searchType="text" vistaShort="3"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="produttore" label="Soggetto produttore (in Contesto di provenienza)"  searchType="text" facet="" facetOrder="4" multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="conservatore" label="Soggetto conservatore (in Contesto di provenienza)"  searchType="text"  facet="" facetOrder="5" multiple="true"  searchField="true" is4Fe="true" vistaShort="3"/>
+    <mapping destination="strumenti" label="Strumenti di ricerca (in Contesto di provenienza ...)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="Tutto"  solrFieldname="text" searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+
+    <!-- entita' -->
+    <mapping destination="en:tipologia" label="Tipologia"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="tipologiaEnte" label="Tipologia ente"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="condizione_giuridica" label="Condizione giuridica"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:denominazione" label="Denominazione principale e sub"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:cronologia_principale:estremo_remoto" label="Cronologia. Estremo remoto.data"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:cronologia_principale:estremo_recente" label="Cronologia. Estremo recente.data"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:cronologia_principale:estremo_remoto_sec" label="Cronologia. Estremo remoto.secolo (+ Specifica)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:cronologia_principale:estremo_recente_sec" label="Cronologia. Estremo recente.secolo (+ Specifica)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:cronologia_datazione_ECT" label="Cronologia. Estremo cronologico testuale"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:denominazione_all_intestazione" label="Denominazione + Estremo cronologico testuale (relativo)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" vistaShort="5"/>
+    <mapping destination="en:luogo" label="Luogo e sub"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:luogo_crono" label="Luogo.Cronologia.Estremo cronologico testuale"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:luogo_qualifica" label="Luogo.Qualifica"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:luogo_all_intestazione" label="Luogo + qualifica + estremo cronologico testuale"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:descrizione_produttore" label="Descrizione.Storia / Biografia … (nel Tab &quot;Produttore&quot;)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:descrizione_conservatore" label="Descrizione e sub (nel Tab &quot;Conservatore&quot;)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="en:descrizione_all" label="Descrizione.Storia / Biografia … (nel Tab &quot;Produttore&quot;) | Descrizione e sub (nel Tab &quot;Conservatore&quot;)"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+
+    <!-- strumento -->
+    <mapping destination="st:tipologia" label="Tipologia"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="st:titolo" label="Titolo normalizzato | Titolo originale dello strumento"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="st:redazione" label="Modalità di redazione"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="st:edito" label="Edito"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="st:autore" label="Autore della strumento e sub"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="st:crono" label="Cronologia.Estremo cronologico testuale"  searchType="text"   multiple="true"  searchField="true" is4Fe="true" />
+
+   <mapping destination="Digitale" searchField="true" is4Fe='true' multiple="false" facet=""/>
+    <!-- 4-1-2017  nuovo campo -->
+   <mapping destination="InstituteKey" searchField="false" is4Fe='true' multiple="false" vistaShort="6" docAttribute="true" facet="" facetOrder="6"/>
+    <!--
+    <mapping destination="Ecommerce" solrFieldname="ecommerce_nxs"  searchField="false" is4Fe="true" multiple="false" vistaShort="8"/>
+    -->
+    <xi:include href="/na-common-fields.xml"/>
+    <!-- scheda di dettaglio -->
+    <xi:include href="/profile-polodigitale-archivio-fe-ca.xml"/>
+</mappings>

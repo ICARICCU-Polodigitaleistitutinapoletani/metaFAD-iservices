@@ -1,0 +1,10 @@
+{
+  "message" : "",
+  "status" : "started",
+  "convertorStatus" : {
+    "message" : "05/10/16 13.07 258690 record aggiunti. Tempo: 87758ms.",
+    "status" : "running",
+    "count" : 16691,
+    "scartati" : 0
+  }
+}

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad">
+	<version>1.1.3</version>	
+	<fieldmap name="tipo_catalogazione:type" value="delete"/>
+	<fieldmap name="tipo_record:type" value="delete"/>
+	<fieldmap name="tipo_entita:type" value="delete"/>
+	<fieldmap name="Identifier:bid" value="Identificativo VID"/>
+	<!-- 
+	<mapping marcField="" destination="Tipo record"  group="Guida del record" vistaEtichette="0.03"/>
+	<mapping marcField="" destination="Tipo entita'"  group="Guida del record" vistaEtichette="0.04"/>
+	 -->
+	<mapping marcField="" destination="Tipo di scheda"  group="Guida del record" is4Fe="true"/>
+	<mapping marcField="" destination="Tipo di ente"  group="Guida del record" is4Fe="true" searchField="true"/>
+	
+	
+	<mapping marcField="000" destination="Identificativo VID"  group="Identificazione e qualificazione" vistaEtichette="0.1" searchField="true"/>
+	<mapping marcField="005" destination="Identificativo di versione"  group="Identificazione e qualificazione"  />	
+	<mapping marcField="015" marcSection="a" destination="ISADN"  group="Identificazione e qualificazione" vistaEtichette="0.3"/>
+	<mapping marcField="100" destination="Dati per la elaborazione" group="Identificazione e qualificazione">
+		<mapping marcField="100" marcSection="a" posInit="0" posEnd="8" destination="Data di immissione nella base dati"/>
+		<mapping marcField="100" marcSection="a" posInit="8" posEnd="9" destination="Status"/>
+		<mapping marcField="100" marcSection="a" posInit="9" posEnd="12" destination="Lingua della catalogazione" vocabulary="ling"/>
+	</mapping> 	
+	<mapping marcField="101" destination="Lingua"  group="Identificazione e qualificazione" vistaEtichette="100.31" vocabulary="ling" multiple="true" excludeFromSearchField="true"/>
+	<mapping marcField="102" destination="Nazionalita'" group="Identificazione e qualificazione" vistaEtichette="100.32" vocabulary="paes" multiple="true"  excludeFromSearchField="true"/>
+	<mapping marcField="152" destination="Regole di catalogazione"  group="Identificazione e qualificazione" vistaEtichette="100.33" multiple="true"/>
+	
+		
+	<mapping marcField="200" marcSection="a|b|c|f|g"  separator="" destination="Nome di persona"  group="Intestazione e descrizione" vistaEtichette="200.3"/>
+	<mapping marcField="200" marcSection="a|b|c|f|g"  separator="" destination="Nome" searchField="true"/>
+	<mapping marcField="300" marcSection=""  separator="" destination="Nascita" handler="com.gruppometa.unimarc.handlers.NascitaHandler" is4Fe="true" searchField="true"/>
+	<mapping marcField="300" marcSection=""  separator="" destination="Morte" handler="com.gruppometa.unimarc.handlers.MorteHandler" is4Fe="true" searchField="true"/>
+	<mapping marcField="210" marcSection="a|b|c|d|e|f|g"  separator="x|x|x|x| |x|x" destination="Nome di gruppo (ente)"  group="Intestazione e descrizione" vistaEtichette="200.33"/>
+	<mapping marcField="210" marcSection="a|b|c|d|e|f|g"  separator="x|x|x|x| |x|x" destination="Nome" is4Fe="true"/>
+
+<!-- 
+	<mapping marcField="230" marcSection="a" destination="Titolo uniforme" group="Intestazione e descrizione" vistaEtichette="301.0"/>
+	<mapping marcField="240" destination="Titolo uniforme con autore" group="Intestazione e descrizione" vistaEtichette="301.0"/>
+
+	<mapping marcField="250" marcSection="a|x|2" destination="Soggetti" group="Intestazione e descrizione" vistaEtichette="600.1">
+		<mapping marcField="250" marcSection="a" destination="Prima voce"/>
+		<mapping marcField="250" marcSection="x" destination="altra voce"/>
+		<mapping marcField="250" marcSection="2" destination="Codice sistema"/>		
+	</mapping>
+
+
+	<mapping marcField="260" destination="Luogo di pubblicazione" group="Intestazione e descrizione" vistaEtichette="300.6">
+		<mapping marcField="260" marcSection="a" destination="Nazione" vocabulary="paes"/>
+		<mapping marcField="260" marcSection="d" destination="Citta'"/>
+	</mapping>
+ -->
+	<!--  viene preso in special -->
+	<mapping marcField="" marcSection="a" destination="Datazione" group="Intestazione e descrizione" vistaEtichette="301.01"  multiple="true" is4Fe="true"/>
+	<mapping marcField="" marcSection="a" destination="Nota informativa" group="Intestazione e descrizione" vistaEtichette="301.02"  multiple="true" searchField="true"/>
+
+
+	<mapping marcField="400" marcSection="a|b|c|d|e|f|g" separator="" destination="Forme varianti" group="Relazioni" vistaEtichette="400.4"  multiple="true" is4Fe="true"/>
+	
+	<mapping marcField="410" marcSection="a|b|c|d|e|f|g" separator="" destination="Forme varianti" group="Relazioni" vistaEtichette="400.44"   multiple="true" is4Fe="true"/>
+
+ <!-- 
+	<mapping marcField="460" destination="Luogo di pubblicazione" group="Relazioni di rinvio" vistaEtichette="200.6">
+		<mapping marcField="460" marcSection="a" destination="Nazione" vocabulary="paes"/>
+		<mapping marcField="460" marcSection="d" destination="Citta'"/>
+		<mapping marcField="460" marcSection="3" destination="Codice"/>
+	</mapping>
+ -->	
+	<mapping marcField="500" marcSection="a|b|c|d|e|f|g|3" separator="" destination="Vedi anche" group="Relazioni" vistaEtichette="400.5"  multiple="true" is4Fe="true"/>
+	<mapping marcField="510" marcSection="a|b|c|d|e|f|g|3" separator="" destination="Vedi anche" group="Relazioni" vistaEtichette="400.5" is4Fe="true"  multiple="true" />
+<!-- 
+	<mapping marcField="560" destination="Luogo di pubblicazione" group="Vedi anche" vistaEtichette="200.6">
+		<mapping marcField="460" marcSection="a" destination="Nazione" vocabulary="paes"/>
+		<mapping marcField="460" marcSection="d" destination="Citta'"/>
+		<mapping marcField="460" marcSection="3" destination="Codice"/>
+	</mapping>
+
+	<mapping marcField="676" marcSection="a" destination="Codice Dewey"  />
+	<mapping marcField="676" marcSection="9" destination="Descrizione Dewey" />
+	<mapping marcField="676"  destination="Classificazione decimale Dewey" group="Vedi anche" vistaEtichette="600.3">
+		<mapping marcField="676" marcSection="a" destination="Codice Dewey"  />
+		<mapping marcField="676" marcSection="9" destination="Descrizione Dewey" />
+		<mapping marcField="676" marcSection="v" destination="Edizione" />
+	</mapping>
+	<mapping marcField="686"  destination="Altri sistemi di classificazione" group="Vedi anche" vistaEtichette="600.35">
+		<mapping marcField="686" marcSection="a" destination="Codice"  />
+		<mapping marcField="686" marcSection="c" destination="Descrizione" />
+		<mapping marcField="686" marcSection="2" destination="Codice sistema" />
+	</mapping>
+ -->
+ <!-- forse non serve 
+	<mapping marcField="801" destination="Fonte del record" group="Vedi anche" vistaEtichette="410.1">
+		<mapping marcField="801" marcSection="a" destination="Nazione" vocabulary="paes"/>
+		<mapping marcField="801" marcSection="b" destination="Agenzia"/>
+		<mapping marcField="801" marcSection="c"  destination="Data"/>
+	</mapping>
+	 -->
+	<mapping marcField="810" marcSection="a" destination="Fonte bibliografica (esito positivo)" group="Intestazione e descrizione"  multiple="true">
+	</mapping>
+	
+	<mapping marcField="815" marcSection="a" destination="Fonte bibliografica (esito negativo)" group="Intestazione e descrizione"  multiple="true">
+	</mapping>
+
+	<mapping marcField="830" destination="Note del catalogatore" group="Note" />
+	<mapping marcField="" multiple="false" marcSection="" destination="Unimarc" vistaEtichette="0" />
+	<mapping marcField="" multiple="true" marcSection="" destination="Tutto" label="Tutti i campi" solrFieldname="text" searchField="true" type="text"/>
+
+
+	<!--
+        <mapping marcField="856" destination="Localizzazione immagine" group="Vedi anche" vistaEtichette="301.1">
+            <mapping marcField="856" marcSection="u" destination="Uri"/>
+            <mapping marcField="856" marcSection="9" destination="File"/>
+        </mapping>
+
+        <mapping marcField="921" marcSection="a|b|c|d|e|f" destination="Marca editoriale" group="Area specifica etichette nazionali" vistaEtichette="301.2">
+        </mapping>
+        <mapping marcField="928" destination="Dati codificati per titolo uniforme musicale" group="Area specifica etichette nazionali" vistaEtichette="301.3">
+            <mapping marcField="928" destination="Forma" marcSection="a"/>
+            <mapping marcField="928" destination="Organico sintetico" marcSection="b"/>
+            <mapping marcField="928" destination="Organico analitico" marcSection="c"/>
+        </mapping>
+        <mapping marcField="929" destination="Composizione (mat. musicale)" group="Area specifica etichette nazionali" vistaEtichette="301.4">
+            <mapping marcField="929" destination="Numero d'ordine" marcSection="a"/>
+            <mapping marcField="929" destination="Numero d'opera" marcSection="b"/>
+            <mapping marcField="929" destination="Numero di catalogo tematico" marcSection="c"/>
+            <mapping marcField="929" destination="Datazione della composizione" marcSection="d"/>
+            <mapping marcField="929" destination="Tonalita' della composizione" marcSection="e"/>
+            <mapping marcField="929" destination="Sezioni" marcSection="f"/>
+            <mapping marcField="929" destination="Titolo di ordinamento" marcSection="g"/>
+            <mapping marcField="929" destination="Titolo dell'estratto" marcSection="h"/>
+            <mapping marcField="929" destination="Appellativo" marcSection="i"/>
+        </mapping>
+        <mapping marcField="930" destination="Repertorio" group="Area specifica etichette nazionali" vistaEtichette="301.5">
+            <mapping marcField="930"  destination="Descrizione" marcSection="a"/>
+            <mapping marcField="930"  destination="Tipo" marcSection="b"/>
+            <mapping marcField="930"  destination="Sigla repetorio" marcSection="c"/>
+        </mapping>
+        <mapping marcField="931" destination="Descrittore di soggetto" group="Area specifica etichette nazionali" vistaEtichette="301.6">
+            <mapping marcField="931"  destination="Descrittore" marcSection="a"/>
+            <mapping marcField="931"  destination="Nota" marcSection="b"/>
+            <mapping marcField="931"  destination="Codice soggettario" marcSection="2"/>
+        </mapping>
+        <mapping marcField="932" destination="Relazioni tra descrittori" group="Area specifica etichette nazionali" vistaEtichette="301.7">
+            <mapping marcField="932"  destination="Descrittore" marcSection="a"/>
+            <mapping marcField="932"  destination="Nota" marcSection="b"/>
+            <mapping marcField="932"  destination="Codice soggettario" marcSection="2"/>
+            <mapping marcField="932"  destination="Codice relazione" marcSection="5"/>
+            <mapping marcField="932"  destination="codice meccanografico" marcSection="3"/>
+        </mapping>
+         -->
+</mappings>

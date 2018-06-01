@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad">
+	<mapping destination="CD_TSK" searchField="false" vistaEtichette="101" is4Fe='true' label="Tipo Scheda" group="CODICI" multiple="false"/>
+	<mapping destination="CD_LIR" searchField="false" vistaEtichette="102" is4Fe='true' label="Livello ricerca" group="CODICI" multiple="false"/>
+	<mapping destination="CD_NCTR" searchField="false" vistaEtichette="103.000" is4Fe='true' label="Codice regione" group="CODICI" multiple="false"/>
+	<mapping destination="CD_NCTN" searchField="false" vistaEtichette="103.001" is4Fe='true' label="Numero catalogo generale" group="CODICI" multiple="false"/>
+	<mapping destination="CD_NCTS" searchField="false" vistaEtichette="103.002" is4Fe='true' label="Suffisso numero catalogo generale" group="CODICI" multiple="false"/>
+	<mapping destination="CD_ESC" searchField="false" vistaEtichette="104" is4Fe='true' label="Ente schedatore" group="CODICI" multiple="false"/>
+	<mapping destination="CD_ECP" searchField="false" vistaEtichette="105" is4Fe='true' label="Ente competente" group="CODICI" multiple="false"/>
+	<mapping destination="CD_EPR" searchField="false" vistaEtichette="106" is4Fe='true' label="Ente proponente" group="CODICI" multiple="false"/>
+	<mapping destination="RV" searchField="false" vistaEtichette="200" is4Fe='true' label="RELAZIONI" group="RELAZIONI" multiple="false"/>
+	<mapping destination="AC" searchField="false" vistaEtichette="300" is4Fe='true' label="ALTRI CODICI" group="ALTRI CODICI" multiple="false"/>
+	<mapping destination="OG_OGTD" searchField="false" vistaEtichette="401.000" is4Fe='true' label="Definizione" group="OGGETTO" multiple="false"/>
+	<mapping destination="OG_OGTT" searchField="false" vistaEtichette="401.001" is4Fe='true' label="Tipologia" group="OGGETTO" multiple="false"/>
+	<mapping destination="OG_OGTV" searchField="false" vistaEtichette="401.002" is4Fe='true' label="Identificazione" group="OGGETTO" multiple="false"/>
+	<mapping destination="OG_OGTN" searchField="false" vistaEtichette="401.003" is4Fe='true' label="Denominazione/dedicazione" group="OGGETTO" multiple="false"/>
+	<mapping destination="OG_OGTP" searchField="false" vistaEtichette="401.004" is4Fe='true' label="Posizione" group="OGGETTO" multiple="false"/>
+	<mapping destination="OG_QNT" searchField="false" vistaEtichette="402" is4Fe='true' label="QUANTITA'" group="OGGETTO" multiple="false"/>
+	<mapping destination="OG_SGT" searchField="false" vistaEtichette="403" is4Fe='true' label="SOGGETTO" group="OGGETTO" multiple="false"/>
+	<mapping destination="LC_PVCS" searchField="false" vistaEtichette="501.000" is4Fe='true' label="Stato" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVCR" searchField="false" vistaEtichette="501.001" is4Fe='true' label="Regione" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVCP" searchField="false" vistaEtichette="501.002" is4Fe='true' label="Provincia" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVCC" searchField="false" vistaEtichette="501.003" is4Fe='true' label="Comune" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVCL" searchField="false" vistaEtichette="501.004" is4Fe='true' label="Localita'" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVCE" searchField="false" vistaEtichette="501.005" is4Fe='true' label="Altra ripartizione amministrativa o localita' estera" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVL" searchField="false" vistaEtichette="502" is4Fe='true' label="Altra localita'" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_PVE" searchField="false" vistaEtichette="503" is4Fe='true' label="Diocesi" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCT" searchField="false" vistaEtichette="504.000" is4Fe='true' label="Tipologia" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCQ" searchField="false" vistaEtichette="504.001" is4Fe='true' label="Qualificazione" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCN" searchField="false" vistaEtichette="504.002" is4Fe='true' label="Denominazione" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCC" searchField="false" vistaEtichette="504.003" is4Fe='true' label="Complesso monumentale di appartenenza" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCU" searchField="false" vistaEtichette="504.004" is4Fe='true' label="Denominazione spazio viabilistico" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCM" searchField="false" vistaEtichette="504.005" is4Fe='true' label="Denominazione raccolta" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="LC_LDCS" searchField="false" vistaEtichette="504.006" is4Fe='true' label="Specifiche" group="LOCALIZZAZIONE GEOGRAFICO-AMMINISTRATIVA" multiple="false"/>
+	<mapping destination="UB" searchField="false" vistaEtichette="600" is4Fe='true' label="UBICAZIONE E DATI PATRIMONIALI" group="UBICAZIONE E DATI PATRIMONIALI" multiple="false"/>
+	<mapping destination="LA" searchField="false" vistaEtichette="700" is4Fe='true' label="ALTRE LOCALIZZAZIONI GEOGRAFICO-AMMINISTRATIVE" group="ALTRE LOCALIZZAZIONI GEOGRAFICO-AMMINISTRATIVE" multiple="true"/>
+	<mapping destination="GP" searchField="false" vistaEtichette="800" is4Fe='true' label="GEOREFERENZIAZIONE TRAMITE PUNTO" group="GEOREFERENZIAZIONE TRAMITE PUNTO" multiple="true"/>
+	<mapping destination="RE" searchField="false" vistaEtichette="900" is4Fe='true' label="MODALITA' DI REPERIMENTO" group="MODALITA' DI REPERIMENTO" multiple="false"/>
+	<mapping destination="RO" searchField="false" vistaEtichette="1000" is4Fe='true' label="RAPPORTO" group="RAPPORTO" multiple="true"/>
+	<mapping destination="DT" searchField="false" vistaEtichette="1100" is4Fe='true' label="CRONOLOGIA" group="CRONOLOGIA" multiple="false"/>
+	<mapping destination="AU_AUT" searchField="false" vistaEtichette="1201" is4Fe='true' label="AUTORE" group="DEFINIZIONE CULTURALE" multiple="true"/>
+	<mapping destination="AU_ATB" searchField="false" vistaEtichette="1202" is4Fe='true' label="AMBITO CULTURALE" group="DEFINIZIONE CULTURALE" multiple="true"/>
+	<mapping destination="AU_AAT" searchField="false" vistaEtichette="1203" is4Fe='true' label="Altre attribuzioni" group="DEFINIZIONE CULTURALE" multiple="true"/>
+	<mapping destination="AU_EDT" searchField="false" vistaEtichette="1204" is4Fe='true' label="EDITORI/STAMPATORI" group="DEFINIZIONE CULTURALE" multiple="true"/>
+	<mapping destination="AU_CMM" searchField="false" vistaEtichette="1205" is4Fe='true' label="COMMITTENZA" group="DEFINIZIONE CULTURALE" multiple="true"/>
+	<mapping destination="MT_MTC" searchField="false" vistaEtichette="1301" is4Fe='true' label="Materia e tecnica" group="DATI TECNICI" multiple="true"/>
+	<mapping destination="MT_MIS" searchField="false" vistaEtichette="1302" is4Fe='true' label="MISURE" group="DATI TECNICI" multiple="true"/>
+	<mapping destination="MT_FIL" searchField="false" vistaEtichette="1303" is4Fe='true' label="Filigrana" group="DATI TECNICI" multiple="false"/>
+	<mapping destination="MT_FRM" searchField="false" vistaEtichette="1304" is4Fe='true' label="Formato" group="DATI TECNICI" multiple="false"/>
+	<mapping destination="CO_STCC" searchField="false" vistaEtichette="1401.000" is4Fe='true' label="Stato di conservazione" group="CONSERVAZIONE" multiple="false"/>
+	<mapping destination="CO_STCS" searchField="false" vistaEtichette="1401.001" is4Fe='true' label="Indicazioni specifiche" group="CONSERVAZIONE" multiple="false"/>
+	<mapping destination="RS" searchField="false" vistaEtichette="1500" is4Fe='true' label="RESTAURI" group="RESTAURI" multiple="false"/>
+	<mapping destination="DA_DESO" searchField="false" vistaEtichette="1601.000" is4Fe='true' label="Indicazioni sull'oggetto" group="DATI ANALITICI" multiple="false"/>
+	<mapping destination="DA_DESI" searchField="false" vistaEtichette="1601.001" is4Fe='true' label="Codifica Iconclass" group="DATI ANALITICI" multiple="false"/>
+	<mapping destination="DA_DESS" searchField="false" vistaEtichette="1601.002" is4Fe='true' label="Indicazioni sul soggetto" group="DATI ANALITICI" multiple="false"/>
+	<mapping destination="DA_ISR" searchField="false" vistaEtichette="1602" is4Fe='true' label="ISCRIZIONI" group="DATI ANALITICI" multiple="true"/>
+	<mapping destination="DA_STM" searchField="false" vistaEtichette="1603" is4Fe='true' label="STEMMI, EMBLEMI, MARCHI" group="DATI ANALITICI" multiple="true"/>
+	<mapping destination="DA_NSC" searchField="false" vistaEtichette="1604" is4Fe='true' label="Notizie storico-critiche" group="DATI ANALITICI" multiple="false"/>
+	<mapping destination="TU_ACQ" searchField="false" vistaEtichette="1701" is4Fe='true' label="ACQUISIZIONE" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="false"/>
+	<mapping destination="TU_CDGG" searchField="false" vistaEtichette="1702.000" is4Fe='true' label="Indicazione generica" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="false"/>
+	<mapping destination="TU_CDGS" searchField="false" vistaEtichette="1702.001" is4Fe='true' label="Indicazione specifica" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="false"/>
+	<mapping destination="TU_CDGI" searchField="false" vistaEtichette="1702.002" is4Fe='true' label="Indirizzo" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="false"/>
+	<mapping destination="TU_NVC" searchField="false" vistaEtichette="1703" is4Fe='true' label="PROVVEDIMENTI DI TUTELA" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="true"/>
+	<mapping destination="TU_ALN" searchField="false" vistaEtichette="1704" is4Fe='true' label="MUTAMENTI TITOLARITA'/POSSESSO/DETENZIONE" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="true"/>
+	<mapping destination="TU_ESP" searchField="false" vistaEtichette="1705" is4Fe='true' label="ESPORTAZIONI" group="CONDIZIONE GIURIDICA E VINCOLI" multiple="true"/>
+	<mapping destination="DO_FTA" searchField="false" vistaEtichette="1801" is4Fe='true' label="DOCUMENTAZIONE FOTOGRAFICA" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_DRA" searchField="false" vistaEtichette="1802" is4Fe='true' label="DOCUMENTAZIONE GRAFICA" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_VDC" searchField="false" vistaEtichette="1803" is4Fe='true' label="DOCUMENTAZIONE VIDEO-CINEMATOGRAFICA" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_REG" searchField="false" vistaEtichette="1804" is4Fe='true' label="DOCUMENTAZIONE AUDIO" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_FNT" searchField="false" vistaEtichette="1805" is4Fe='true' label="FONTI E DOCUMENTI" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_ADM" searchField="false" vistaEtichette="1806" is4Fe='true' label="ALTRA DOCUMENTAZIONE MULTIMEDIALE" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_BIB" searchField="false" vistaEtichette="1807" is4Fe='true' label="BIBLIOGRAFIA" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_BIL" searchField="false" vistaEtichette="1808" is4Fe='true' label="Citazione completa" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="DO_MST" searchField="false" vistaEtichette="1809" is4Fe='true' label="MOSTRE" group="FONTI E DOCUMENTI DI RIFERIMENTO" multiple="true"/>
+	<mapping destination="AD_ADSP" searchField="false" vistaEtichette="1901.000" is4Fe='true' label="Profilo di accesso" group="ACCESSO AI DATI" multiple="false"/>
+	<mapping destination="AD_ADSM" searchField="false" vistaEtichette="1901.001" is4Fe='true' label="Motivazione" group="ACCESSO AI DATI" multiple="false"/>
+	<mapping destination="AD_ADSD" searchField="false" vistaEtichette="1901.002" is4Fe='true' label="Indicazioni sulla data di scadenza" group="ACCESSO AI DATI" multiple="false"/>
+	<mapping destination="CM_CMPD" searchField="false" vistaEtichette="2001.000" is4Fe='true' label="Data" group="COMPILAZIONE" multiple="false"/>
+	<mapping destination="CM_CMPN" searchField="false" vistaEtichette="2001.001" is4Fe='true' label="Nome" group="COMPILAZIONE" multiple="false"/>
+	<mapping destination="CM_RSR" searchField="false" vistaEtichette="2002" is4Fe='true' label="Referente scientifico" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="CM_FUR" searchField="false" vistaEtichette="2003" is4Fe='true' label="Funzionario responsabile" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="CM_RVM" searchField="false" vistaEtichette="2004" is4Fe='true' label="TRASCRIZIONE PER INFORMATIZZAZIONE" group="COMPILAZIONE" multiple="false"/>
+	<mapping destination="CM_AGG" searchField="false" vistaEtichette="2005" is4Fe='true' label="AGGIORNAMENTO - REVISIONE" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="CM_ISP" searchField="false" vistaEtichette="2006" is4Fe='true' label="ISPEZIONI" group="COMPILAZIONE" multiple="true"/>
+	<mapping destination="AN" searchField="false" vistaEtichette="2100" is4Fe='true' label="ANNOTAZIONI" group="ANNOTAZIONI" multiple="false"/>
+</mappings>

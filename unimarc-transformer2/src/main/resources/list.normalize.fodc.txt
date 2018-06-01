@@ -1,0 +1,11 @@
+FODC a atlante a
+FODC b diagramma b
+FODC c globo c
+FODC d mappa d
+FODC e modello e
+FODC f profilo f
+FODC g immagine remota g
+FODC h sezione h
+FODC i veduta i
+FODC j pianta j
+FODC z altro z

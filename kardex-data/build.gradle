@@ -1,0 +1,103 @@
+buildscript {
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath 'com.github.jacobono:gradle-jaxb-plugin:1.3.6'
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.0.0"
+  }
+}
+
+apply plugin: "com.jfrog.artifactory"
+apply plugin: 'com.github.jacobono.jaxb'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.7
+group = "com.gruppometa"
+
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'kardex-data',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+   	jaxb 'com.sun.xml.bind:jaxb-xjc:2.2.7-b41'
+    jaxb 'com.sun.xml.bind:jaxb-impl:2.2.7-b41'
+    jaxb 'javax.xml.bind:jaxb-api:2.2.7'
+}
+
+test {
+    systemProperties 'property': 'value'
+    systemProperties 'user.language': 'en'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+configurations {
+  published
+}
+
+artifactory {
+  contextUrl = 'http://127.0.0.1:38081/artifactory'   //The base Artifactory URL if not overridden by the publisher/resolver
+  publish {
+    contextUrl = 'http://127.0.0.1:38081/artifactory'   //The base Artifactory URL for the publisher
+    //A closure defining publishing information
+    repository {
+      repoKey = 'libs-release-local'   //The Artifactory repository key to publish to
+      username ="${artifactory_user}"         //The publisher user name
+      password = "${artifactory_password}"       //The publisher password
+    }
+    defaults {
+        publishConfigs('archives', 'published')
+        properties {                                                   //Optional closure to attach properties to artifacts based on a list of artifact patterns per project publication
+//            mavenJava 'org.jfrog:*:*:*@*', key1: 'val1'                //The property key1=val1 will be set on all artifacts part of the mavenJava publication and with group org.jfrog
+//            all 'org.jfrog:shared:1.?:*@*', key2: 'val2', key3: 'val3' //The properties key2 and key3 will be set on all published artifacts (all publications) with group:artifact:version
+                                                                       //equal to org.jfrog:shared:1.?
+        }
+        publishBuildInfo = true   //Publish build-info to Artifactory (true by default)
+        publishArtifacts = true   //Publish artifacts to Artifactory (true by default)
+        publishPom = true   //Publish generated POM files to Artifactory (true by default).
+        publishIvy = false   //Publish generated Ivy descriptor files to Artifactory (true by default).
+    }
+  }
+  resolve {
+    contextUrl = 'http://127.0.0.1:38081/artifactory'   //The base Artifactory URL for the resolver
+    repository {
+      repoKey = 'libs-release-local'  //The Artifactory (preferably virtual) repository key to resolve from
+      username = "${artifactory_user}"          //The publisher user name
+      password = "${artifactory_password}"       //The publisher password
+     maven = true                //Resolve Maven-style artifacts and descriptors (true by default)
+    }
+  }
+  clientConfig.timeout = 600 // Artifactory connection timeout (in seconds). The default timeout is 300 seconds.
+}
+
+/*
+	da lanciare con -Duser.language=en
+*/
+jaxb {
+	xsdDir = "schema"
+  	xjc {
+    	 generatePackage    = "it.sbnweb.kardex"
+  	}
+}

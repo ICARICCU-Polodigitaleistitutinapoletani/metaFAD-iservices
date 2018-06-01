@@ -1,0 +1,3 @@
+TICO	a	notato	a
+TICO	b	eseguito	b
+TICO	c	cartografico	c

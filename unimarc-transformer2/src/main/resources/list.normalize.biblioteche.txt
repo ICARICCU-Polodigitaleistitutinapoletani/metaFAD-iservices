@@ -1,0 +1,5 @@
+biblioteche	CR	Istituto italiano per gli studi storici	CR
+biblioteche	SP	Società napoletana di storia patria	SP
+biblioteche	FC	Fondazione Biblioteca Benedetto Croce	FC
+biblioteche	PM	Biblioteca del Pio Monte della Misericordia	PM
+biblioteche	BK	Archivio del Tesoro di San Gennaro - Biblioteca	BK

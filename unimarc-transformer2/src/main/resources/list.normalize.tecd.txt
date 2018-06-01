@@ -1,0 +1,30 @@
+TECD aa matita aa
+TECD ab grafite ab
+TECD ac matita colorata ac
+TECD ad inchiostro indiano ad
+TECD ae inchiostro indiano lavierung ae
+TECD af carbone af
+TECD ag gesso ag
+TECD ah gesso nero ah
+TECD ai sanguigna ai
+TECD aj acquarello aj
+TECD ak tempera ak
+TECD al guazzo al
+TECD am pastello am
+TECD an olio an
+TECD ba pennarello ba
+TECD bb macchia bb
+TECD bc pastello a cera bc
+TECD bd seppia bd
+TECD be inchiostro be
+TECD bf caseina bf
+TECD bg doratura bg
+TECD bh encausto bh
+TECD bi acrilico bi
+TECD bj collage bj
+TECD bk punta d'argento bk
+TECD bl aerografo bl
+TECD uu sconosciuto uu
+TECD vv misto vv
+TECD xx non applicabile xx
+TECD zz altro zz

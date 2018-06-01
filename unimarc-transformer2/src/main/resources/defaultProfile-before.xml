@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings>
+	<mapping marcField="012" marcSection="a" destination="Impronta"/>
+	<mapping marcField="101" destination="Lingua"/>
+	<mapping marcField="102" destination="Paese"/>
+	<mapping marcField="200" marcSection="a|c|d|f|g" destination="Titolo"/>
+	<mapping marcField="210" marcSection="a|b|d|e|g|h" destination="Pubblicazione"/>
+	<mapping marcField="215" marcSection="a|b|d|e|g|h" destination="Descrizione fisica"/>
+	<mapping marcField="225" marcSection="a|v" destination="Fa parte di"/>
+	<mapping marcField="300" destination="Note"/>
+	<mapping marcField="410" destination="Collezione"/>
+	<mapping marcField="422" destination="Supplemento di"/>
+	<mapping marcField="430" destination="Continuazione di"/>
+	<mapping marcField="431" destination="Continuazione parziale di"/>
+	<mapping marcField="434" destination="Assorbe"/>
+	<mapping marcField="440" destination="Continua con"/>
+	<mapping marcField="440" destination="Continua in parte con"/>
+	<mapping marcField="447" destination="Fa parte di"/>
+	<mapping marcField="461" marcSection="a" destination="Fa parte di"/>
+	<mapping marcField="463" marcSection="a|f" destination="Comprende"/>
+	<mapping marcField="464" destination="Fa parte di"/>
+	<mapping marcField="520" destination="Già"/>
+	<mapping marcField="600" marcSection="a" destination="Soggetto"/>
+	<mapping marcField="675" destination="Classificazione"/>
+	<mapping marcField="676" destination="Classificazione"/>
+	<mapping marcField="680" destination="Classificazione"/>
+	<mapping marcField="686" destination="Classificazione"/>	
+	<mapping marcField="700" destination="Autore"/>
+	<mapping marcField="701" destination="Nomi"/>
+	<mapping marcField="702" destination="Nomi"/>
+	<mapping marcField="710" destination="Autore"/>
+	<mapping marcField="711" destination="Nomi"/>
+	<mapping marcField="712" destination="Editore"/>
+	<mapping marcField="716" destination="Autore"/>
+	<mapping marcField="720" destination="Autore"/>
+	<mapping marcField="721" destination="Nomi"/>
+	<mapping marcField="722" destination="Nomi"/>
+	<mapping marcField="921" destination="Marca editoriale"/>
+	<mapping marcField="950" marcSection="a|b|c" destination="Collocazione"/>
+	<!-- 
+	<mapping marcField="950" marcSection="a" destination="Localizzazione"/>	
+	<mapping marcField="950" marcSection="d" destination="Collocazione"/>
+	<mapping marcField="950" marcSection="e" destination="Inventario"/>
+	-->
+	<fieldmap name="Type:livello" value="Natura"/>
+	<fieldmap name="Type:tipo" value="Tipo"/>
+	<fieldmap name="Identifier:bid" value="delete"/>
+	
+</mappings>

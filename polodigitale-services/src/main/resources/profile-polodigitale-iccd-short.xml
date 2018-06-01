@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.3.7</version>
+
+    <!--
+    <mapping destination="Numero di catalogo generale" vistaShort="2" multiple="true"
+             solrFieldname="numero_di_catalogo_generale_ss" is4Fe="true" />
+    -->
+
+    <mapping destination="Codice univoco" searchType="text" vistaShort="2"  multiple="true"  searchField="true" is4Fe="true" />
+    <mapping destination="Soggetto: identificazione" searchType="text" vistaShort="4" is4Fe="true" searchField="true" multiple="true"/>
+    <!-- anche in sintetica POLOBEDUG-217 -->
+    <mapping destination="Soggetto: titolo"  searchType="text" searchField="true" is4Fe="true" multiple="true" vistaShort="6"/>
+    <mapping destination="Level"  searchField="false" is4Fe="true" multiple="false" vistaShort="7"/>
+    <mapping destination="Titolo sintetica" searchType="text" vistaShort="5" searchField="true" is4Fe="true" multiple="true"/>
+    <mapping destination="Titolo ordinamento" is4Fe="true" multiple="false" sortField="true" sortFieldName="titolo_ordinamento_s"/>
+    <mapping destination="Autore ordinamento" is4Fe="true" multiple="false" sortField="true"  sortFieldName="autore_ordinamento_s"/>
+    <!-- ricerca semplice -->
+    <mapping destination="Tutto" multiple="true"  searchType="text" label="Tutti i campi" solrFieldname="text" searchField="true" type="text"/>
+
+    <!-- faccette -->
+
+    <mapping destination="Livello di ricerca" searchType="list" searchField="true" is4Fe='true' multiple="true" facet="" facetOrder="1"/>
+    <mapping destination="Cronologia: cronologia generica" searchType="list" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="3"/>
+    <mapping destination="Tipo di scheda (label)" searchField="true" searchType="list" label="Tipo di scheda" is4Fe='true' multiple="true" vistaShort="1"  facet="" facetOrder="4"/>
+    <mapping destination="Definizione del bene" searchType="listText" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="5"/>
+    <!-- non piu' faccetta
+     <mapping destination="Soggetto: indicazioni sul soggetto" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="6" searchType="text"/>
+    -->
+    <mapping destination="Soggetto: indicazioni sul soggetto" searchField="true" is4Fe='true' multiple="true"   searchType="text"/>
+    <mapping destination="Soggetto(F)" facetLabel="Soggetto" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="6" searchType="text"/>
+
+    <mapping destination="Definizione culturale: autore" searchType="text" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="7" vistaShort="3"/>
+    <mapping destination="Definizione culturale: ambito culturale" searchType="listText" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="8"/>
+ 	<mapping destination="digitale" searchField="true" is4Fe='true' multiple="false" facet=""/>
+    <mapping destination="Istituto" searchType="list" facetLabel="Localizzazione" searchField="true" is4Fe='true' multiple="true"  facet="" facetOrder="9"/>
+    <mapping destination="InstituteKey" searchField="false" is4Fe='true' multiple="false" vistaShort="6" docAttribute="true"/>
+    <mapping destination="linkediccd" multiple="false" marcSection=""   is4Fe="true" searchField="false" vistaEtichette="1000"/>
+
+</mappings>

@@ -1,0 +1,11 @@
+MEDI	a	audio	a
+MEDI	b	elettronico	b
+MEDI	c	microforma	c
+MEDI	d	microscopico	d
+MEDI	e	proiettato	e
+MEDI	f	stereografico	f
+MEDI	g	video	g
+MEDI	m	mediazioni multiple	m
+MEDI	n	senza mediazione	n
+MEDI	z	altre mediazioni	z
+

@@ -1,0 +1,5 @@
+SENS	a	uditivo	a
+SENS	b	gustativo	b
+SENS	c	olfattivo	c
+SENS	d	tattile	d
+SENS	e	visivo	e

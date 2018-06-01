@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+>
+    <version>1.3.7</version>
+    <xi:include href="/profile-polodigitale-iccd-short.xml"/>
+    <xi:include href="/na-common-fields.xml"/>
+    <xi:include href="/profile-polodigitale-iccd-search-oa.xml"/>
+    <xi:include href="/profile-polodigitale-iccd-fe-oa.xml"/>
+</mappings>

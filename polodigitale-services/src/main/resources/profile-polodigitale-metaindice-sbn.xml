@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.3.7</version>
+
+    <fieldmap name="Type:livello" value="tipoSpecificoDoc"/>
+    <fieldmap name="Type:tipo" value="delete"/>
+    <fieldmap name="tipo_catalogazione:type" value="delete"/>
+    <fieldmap name="Identifier:bid" value="delete"/>
+
+    <mapping marcField="001" destination="dominio" constant="bibliografico" is4Fe="true"/>
+    <mapping marcField="000" destination="tipoSpecificoDoc" is4Fe="true"/>
+    <mapping marcField="950" marcSection="a"  destination="localizzazione" multiple="true" is4Fe="true"/>
+
+
+    <mapping marcField="200" multiple="true" marcSection="a|b|c|e|f|g|h|i" destionation="denominazione/titolo" group="Informazioni descrittive"
+             vistaEtichette="300.1" vistaIsbd="100" searchField="true"/>
+    <mapping marcField="410" multiple="true" marcSection="a|v" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.1"/>
+    <mapping marcField="410" multiple="true" marcSection="a" destionation="denominazione/titolo" facet="" facetOrder="9" searchField="true" label="Collezione"/>
+    <mapping marcField="421" marcSection="" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.2"/>
+    <mapping marcField="422" marcSection="" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.3"/>
+    <mapping marcField="423" multiple="true" marcSection="" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.4"/>
+    <mapping marcField="430" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" inverse="Continua con" group="Record collegati" vistaEtichette="400.5" multiple="true" />
+    <mapping marcField="431" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" inverse="Si scinde in" group="Record collegati" vistaEtichette="400.6" multiple="true"/>
+    <mapping marcField="434" marcSection="" destionation="denominazione/titolo" inverse="Assorbito da" group="Record collegati" vistaEtichette="400.7"/>
+    <mapping marcField="440" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.8" multiple="true"/>
+    <mapping marcField="444" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.88"/>
+    <mapping marcField="446" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="400.88"  multiple="true"/>
+    <mapping marcField="447" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" inverse="Fuso con" group="Record collegati" vistaEtichette="400.9" multiple="true"/>
+    <mapping marcField="451" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.1"/>
+    <mapping marcField="452" multiple="true" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.2"/>
+    <mapping marcField="454" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.3" multiple="true"/>
+
+    <!--attenzione i campi 4xx hanno un trattamento speciale, cerca 4xx nel codice
+        NO: ho inserito un if nel trattamento generale -->
+    <mapping marcField="461" marcSection="a|c|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.32" multiple="true"/>
+    <mapping marcField="462" marcSection="a|c|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.33" multiple="true"/>
+    <mapping marcField="463" multiple="true" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" vistaEtichette="401.34" group="Record collegati"/>
+    <mapping marcField="464" multiple="true" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.4"/>
+    <!-- non questo campo inseriisce i figli -->
+    <!--
+    <mapping marcField=""  destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.45"/>
+    -->
+    <mapping marcField="488" multiple="true" marcSection="a|e|f|g|v|3" destionation="denominazione/titolo" group="Record collegati" vistaEtichette="401.5"/>
+
+
+    <mapping marcField="500" multiple="true" marcSection="a|3" destionation="denominazione/titolo" is4Fe="true" searchField="true" label="Titolo uniforme"/>
+    <mapping marcField="510" multiple="true" marcSection="a" destionation="denominazione/titolo" group="Altri titoli" vistaEtichette="500.2" searchField="true"/>
+    <mapping marcField="517" multiple="true" marcSection="a|e" destionation="denominazione/titolo" is4Fe="true" searchField="true"/>
+    <mapping marcField="530" multiple="true" marcSection="a" destionation="denominazione/titolo" group="Altri titoli" vistaEtichette="500.4" />
+    <mapping marcField="560" multiple="true" marcSection="a" destionation="denominazione/titolo" group="Altri titoli" vistaEtichette="500.5" />
+
+
+    <mapping marcField="700" multiple="true" marcSection="a|b|f|3|4" destination="responsabilita" vistaEtichette="700.1" group="Responsabilita'" is4Fe="true" />
+    <mapping marcField="701" multiple="true" marcSection="a|b|f|3|4" destination="responsabilita" vistaEtichette="700.2" is4Fe="true"/>
+    <mapping marcField="702" multiple="true" marcSection="a|b|f|3|4" destination="responsabilita" vistaEtichette="700.3" is4Fe="true"/>
+    <mapping marcField="710" multiple="true" marcSection="a|b|f|3|4" destination="responsabilita" vistaEtichette="700.4" is4Fe="true"/>
+    <mapping marcField="711" multiple="true" marcSection="a|b|f|3|4" destination="responsabilita" vistaEtichette="700.5" is4Fe="true"/>
+    <mapping marcField="712" multiple="true" marcSection="a|b|f|3|4" destination="responsabilita" vistaEtichette="700.6"  is4Fe="true"/>
+    <mapping marcField="790" multiple="true" marcSection="a|b|f|4" destination="responsabilita" vistaEtichette="700.7" is4Fe="true"/>
+    <mapping marcField="791" multiple="true" marcSection="a|b|f|4" destination="responsabilita" vistaEtichette="700.8"  is4Fe="true"/>
+
+
+
+</mappings>

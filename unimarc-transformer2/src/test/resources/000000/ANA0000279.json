@@ -1,0 +1,249 @@
+{
+  "id" : "ANA0000279",
+  "filename" : "IE001_NAP_BN_00019690.mrc",
+  "isbd" : "<b>Onoranze a Giambattista Pergolesi e Antonio Sacchini a Pozzuoli, 21 settembre 1890</b>. - Jesi : Tip. F. Flori, [1890?]. - 40 p. ; 24 cm. ((Il titolo dell'intitolazione))",
+  "created" : "2016-03-08 17:05:46",
+  "mapVersion" : "1.2.3",
+  "fields" : [ {
+    "name" : "Inventario",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "0000016735"
+    } ]
+  }, {
+    "name" : "Identificativo di versione",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "20151123104043.0"
+    } ]
+  }, {
+    "name" : "Titolo [sintetico]",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Onoranze a Giambattista Pergolesi e Antonio Sacchini a Pozzuoli, 21 settembre 1890"
+    } ]
+  }, {
+    "name" : "Luogo",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Jesi"
+    } ]
+  }, {
+    "name" : "Data pubblicazione",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "[1890?]"
+    } ]
+  }, {
+    "name" : "Orgine del record",
+    "group" : "Dati gestionali",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "html" : "<div><div class='label'>Paese</div><div class='value'>italia</div></div>\n<div><div class='label'>Agenzia</div><div class='value'>Biblioteca nazionale Vittorio Emanuele III - Napoli - it - it-na0079</div></div>\n<div><div class='label'>Data di produzione</div><div class='value'>20150710</div></div>",
+      "plain" : "italia | Biblioteca nazionale Vittorio Emanuele III - Napoli - it - it-na0079 | 20150710"
+    } ]
+  }, {
+    "name" : "Istituzione",
+    "group" : "Dati gestionali",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Fondazione Biblioteca Benedetto Croce - Napoli - IT - IT-NA0581"
+    } ]
+  }, {
+    "name" : "Localizzazione",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Fondazione Biblioteca Benedetto Croce"
+    } ]
+  }, {
+    "name" : "Inventari e collocazioni delle copie (BE)",
+    "group" : "Dati gestionali",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "html" : "<div><div class='label'>Biblioteca</div><div class='value'>Fondazione Biblioteca Benedetto Croce</div></div>\n<div class='group' title='950.BE'><div><div class='label'>Sezione</div><div class='value'>BIBL CROCE</div></div>\n<div><div class='label'>Collocazione</div><div class='value'>24a 5</div></div>\n<div><div class='label'>Specificazione</div><div class='value'>FCBIBL CROCE24a 5                   14</div></div>\n<div><div class='label'>Sequenza</div><div class='value'>(16</div></div>\n<div><div class='label'>Precisazione di inventario</div><div class='value'>1 op. in misc. Errori nella sequenza delle p.</div></div>\n<div><div class='label'>Inventario</div><div class='value'>000001673</div></div>\n<div><div class='label'>Stato di conservazione</div><div class='value'>B</div></div>\n<div><div class='label'>Categoria di fruizione</div><div class='value'>consultazione e</div></div></div>",
+      "plain" : "Fondazione Biblioteca Benedetto Croce | BIBL CROCE | 24a 5 | FCBIBL CROCE24a 5                   14 | (16 | 1 op. in misc. Errori nella sequenza delle p. | 000001673 | B | consultazione e"
+    } ]
+  }, {
+    "name" : "Unimarc",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "LEADER 00885nam0 22002293i 450 \n001 ANA0000279\n005 20151123104043.0\n100   $a20150710d1890    ||||0itac50      ba\n101 | $aita\n102   $ait\n181  0$601$ai$b|||e||\n182  0$601$an\n200 1 $aOnoranze a Giambattista Pergolesi e Antonio Sacchini a Pozzuoli, 21 settembre 1890\n210   $aJesi$cTip. F. Flori$d[1890?]\n215   $a40 p.$d24 cm\n300   $aIl titolo dell'intitolazione\n312   $aTit. della cop.: Jesi, Pozzuoli$9ANA0000280\n517 1 $aJesi, Pozzuoli$9ANA0000280\n801  3$aIT$bIT-NA0079$c20150710\n850   $aIT-NA0581\n950  0$aFondazione Biblioteca Benedetto Croce$d FCBIBL CROCE24a 5                   14$e FC   0000016735    B   (16                 1 op. in misc. Errori nella sequenza delle p.$fC $h20150710$i20150710$lErrori nella sequenza delle p.$mImperfezioni\n977   $a FC",
+      "binary" : "MDA4ODVuYW0wIDIyMDAyMjkzaSA0NTAgMDAxMDAxMTAwMDAwMDA1MDAxNzAwMDExMTAwMDA0MTAwMDI4MTAxMDAwODAwMDY5MTAyMDAwNzAwMDc3MTgxMDAxODAwMDg0MTgyMDAxMDAwMTAyMjAwMDA4NzAwMTEyMjEwMDAzMzAwMTk5MjE1MDAxNzAwMjMyMzAwMDAzMzAwMjQ5MzEyMDA0ODAwMjgyNTE3MDAzMTAwMzMwODAxMDAyODAwMzYxODUwMDAxNDAwMzg5OTUwMDI0NDAwNDAzOTc3MDAwODAwNjQ3HkFOQTAwMDAyNzkeMjAxNTExMjMxMDQwNDMuMB4gIB9hMjAxNTA3MTBkMTg5MCAgICB8fHx8MGl0YWM1MCAgICAgIGJhHnwgH2FpdGEeICAfYWl0HiAwHzYwMR9haR9ifHx8ZXx8HiAwHzYwMR9hbh4xIB9hT25vcmFuemUgYSBHaWFtYmF0dGlzdGEgUGVyZ29sZXNpIGUgQW50b25pbyBTYWNjaGluaSBhIFBvenp1b2xpLCAyMSBzZXR0ZW1icmUgMTg5MB4gIB9hSmVzaR9jVGlwLiBGLiBGbG9yaR9kWzE4OTA/XR4gIB9hNDAgcC4fZDI0IGNtHiAgH2FJbCB0aXRvbG8gZGVsbCdpbnRpdG9sYXppb25lHiAgH2FUaXQuIGRlbGxhIGNvcC46IEplc2ksIFBvenp1b2xpHzlBTkEwMDAwMjgwHjEgH2FKZXNpLCBQb3p6dW9saR85QU5BMDAwMDI4MB4gMx9hSVQfYklULU5BMDA3OR9jMjAxNTA3MTAeICAfYUlULU5BMDU4MR4gMB9hRm9uZGF6aW9uZSBCaWJsaW90ZWNhIEJlbmVkZXR0byBDcm9jZR9kIEZDQklCTCBDUk9DRTI0YSA1ICAgICAgICAgICAgICAgICAgIDE0H2UgRkMgICAwMDAwMDE2NzM1ICAgIEIgICAoMTYgICAgICAgICAgICAgICAgIDEgb3AuIGluIG1pc2MuIEVycm9yaSBuZWxsYSBzZXF1ZW56YSBkZWxsZSBwLh9mQyAfaDIwMTUwNzEwH2kyMDE1MDcxMB9sRXJyb3JpIG5lbGxhIHNlcXVlbnphIGRlbGxlIHAuH21JbXBlcmZlemlvbmkeICAfYSBGQx4d"
+    } ]
+  }, {
+    "name" : "Data",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "1890"
+    } ]
+  }, {
+    "name" : "Nota informativa",
+    "isbd" : false,
+    "hidden" : true,
+    "order" : 0.0,
+    "values" : [ {
+      "plain" : "Il titolo dell'intitolazione"
+    } ]
+  }, {
+    "name" : "Livello bibliografico",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 100.1,
+    "values" : [ {
+      "plain" : "Monografia"
+    } ]
+  }, {
+    "name" : "Tipo documento",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 100.2,
+    "values" : [ {
+      "plain" : "Testo a stampa"
+    } ]
+  }, {
+    "name" : "Titolo",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 300.1,
+    "values" : [ {
+      "plain" : "Onoranze a Giambattista Pergolesi e Antonio Sacchini a Pozzuoli, 21 settembre 1890"
+    } ]
+  }, {
+    "name" : "Pubblicazione",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 300.6,
+    "values" : [ {
+      "plain" : "Jesi : Tip. F. Flori, [1890?]"
+    } ]
+  }, {
+    "name" : "Descrizione fisica",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 300.7,
+    "values" : [ {
+      "plain" : "40 p. ; 24 cm"
+    } ]
+  }, {
+    "name" : "Note generali",
+    "group" : "Informazioni descrittive",
+    "isbd" : true,
+    "hidden" : false,
+    "order" : 301.0,
+    "values" : [ {
+      "plain" : "Il titolo dell'intitolazione"
+    } ]
+  }, {
+    "name" : "Note tra titoli",
+    "group" : "Informazioni descrittive",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 301.2,
+    "values" : [ {
+      "plain" : "Tit. della cop.: Jesi, Pozzuoli"
+    } ]
+  }, {
+    "name" : "Titolo alternativo",
+    "group" : "Altri titoli",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 500.3,
+    "values" : [ {
+      "plain" : "Jesi, Pozzuoli"
+    } ]
+  }, {
+    "name" : "Codice identificativo",
+    "group" : "Guida e identificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 750.1,
+    "values" : [ {
+      "plain" : "ANA0000279"
+    } ]
+  }, {
+    "name" : "Dati per la elaborazione",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 760.1,
+    "values" : [ {
+      "html" : "<div><div class='label'>Data di immissione nella base dati</div><div class='value'>20150710</div></div>\n<div><div class='label'>Tipo data di pubblicazione</div><div class='value'>data semplice</div></div>\n<div><div class='label'>Data pubblicazione 1</div><div class='value'>1890</div></div>\n<div><div class='label'>Destinazione del documento</div><div class='value'>|||</div></div>\n<div><div class='label'>Codice record modificato</div><div class='value'>0</div></div>\n<div><div class='label'>Lingua della catalogazione</div><div class='value'>italiano</div></div>\n<div><div class='label'>Codice di traslitterazione</div><div class='value'>c</div></div>\n<div><div class='label'>Character set</div><div class='value'>50</div></div>\n<div><div class='label'>Alfabeto del titolo</div><div class='value'>ba</div></div>",
+      "plain" : "20150710 | data semplice | 1890 | ||| | 0 | italiano | c | 50 | ba"
+    } ]
+  }, {
+    "name" : "Lingua",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 760.2,
+    "values" : [ {
+      "plain" : "italiano"
+    } ]
+  }, {
+    "name" : "Paese",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 760.3,
+    "values" : [ {
+      "plain" : "italia"
+    } ]
+  }, {
+    "name" : "Dati codificati: contenuto caratteristico dell'espressione",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 761.4,
+    "values" : [ {
+      "html" : "<div><div class='label'>Forma del contenuto</div><div class='value'>testo</div></div>\n<div><div class='label'>Sensorialita'</div><div class='value'>visivo</div></div>",
+      "plain" : "testo | visivo"
+    } ]
+  }, {
+    "name" : "Dati codificati: tipo di supporto",
+    "group" : "Qualificazione",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 761.5,
+    "values" : [ {
+      "html" : "<div><div class='label'>Tipo di mediazione</div><div class='value'>senza mediazione</div></div>",
+      "plain" : "senza mediazione"
+    } ]
+  }, {
+    "name" : "Inventari e collocazioni delle copie",
+    "isbd" : false,
+    "hidden" : false,
+    "order" : 1000.0,
+    "values" : [ {
+      "html" : "<div><div class='label'>Biblioteca</div><div class='value'>Fondazione Biblioteca Benedetto Croce</div></div>\n<div class='group' title='950.FE'><div><div class='label'>Sezione</div><div class='value'>BIBL CROCE</div></div>\n<div><div class='label'>Collocazione</div><div class='value'>24a 5 FCBIBL CROCE24a 5                   14 (16</div></div>\n<div><div class='label'>Precisazione di inventario</div><div class='value'>1 op. in misc. Errori nella sequenza delle p.</div></div>\n<div><div class='label'>Inventario</div><div class='value'>000001673</div></div>\n<div><div class='label'>Categoria di fruizione</div><div class='value'>consultazione e</div></div></div>",
+      "plain" : "Fondazione Biblioteca Benedetto Croce | BIBL CROCE | 24a 5 FCBIBL CROCE24a 5                   14 (16 | 1 op. in misc. Errori nella sequenza delle p. | 000001673 | consultazione e"
+    } ]
+  } ]
+}

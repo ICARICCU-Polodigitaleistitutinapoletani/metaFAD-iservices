@@ -1,0 +1,132 @@
+LETA 005 Attore 005
+LETA 010 Adattatore 010
+LETA 018 Animatore, cartoonist 018
+LETA 020 Annotatore 020
+LETA 030 Arrangiatore 030
+LETA 040 Artista (Pittore, etc.) 040
+LETA 050 Assegnatario della licenza di pubblicazione 050
+LETA 060 Nome associato 060
+LETA 065 Banditore 065
+LETA 070 Autore 070
+LETA 072 Autore citato 072
+LETA 075 Autore della postfazione, colophon, etc. 075
+LETA 080 Autore dell'introduzione, etc. 080
+LETA 090 Autore del dialogo 090
+LETA 100 Antecedente bibliografico 100
+LETA 110 Legatore 110
+LETA 120 Designer della legatura 120
+LETA 130 Designer del libro 130
+LETA 140 Designer della sovraccoperta 140
+LETA 150 Designer dell'ex-libris 150
+LETA 160 Libraio 160
+LETA 170 Calligrafo 170
+LETA 180 Cartografo 180
+LETA 190 Censore 190
+LETA 195 Direttore di coro 195
+LETA 200 Coreografo 200
+LETA 202 Artista circense 202
+LETA 206 Raccoglitore di materiali sul campo 206
+LETA 207 Comico 207
+LETA 210 Commentatore di audiovisivi 210
+LETA 212 Commentatore di testo scritto 212
+LETA 220 Compilatore 220
+LETA 230 Compositore 230
+LETA 235 Compositore della musica parafrasata 235
+LETA 236 Autore dell'opera in cui è inserito il brano 236
+LETA 240 Compositore tipografico 240
+LETA 245 Ideatore 245
+LETA 250 Direttore d'orchestra 250
+LETA 255 Consulente di progetto 255
+LETA 257 Continuatore 257
+LETA 260 Titolare dei diritti d'autore 260
+LETA 270 Correttore 270
+LETA 273 Curatore di mostra 273
+LETA 275 Ballerino 275
+LETA 280 Dedicatario 280
+LETA 290 Dedicante 290
+LETA 295 Conferitore di titolo accademico 295
+LETA 300 Regista 300
+LETA 305 Autore della dissertazione 305
+LETA 310 Distributore 310
+LETA 320 Donatore 320
+LETA 330 Autore incerto 330
+LETA 340 Curatore 340
+LETA 350 Incisore 350
+LETA 360 Acquafortista 360
+LETA 365 Perito 365
+LETA 370 Montatore di film 370
+LETA 380 Falsificatore 380
+LETA 390 Possessore precedente 390
+LETA 395 Fondatore 395
+LETA 400 Finanziatore 400
+LETA 410 Grafico 410
+LETA 420 Onorato 420
+LETA 430 Miniatore 430
+LETA 440 Illustratore 440
+LETA 445 Impresario 445
+LETA 450 Firmatario del dono 450
+LETA 460 Intervistato 460
+LETA 470 Intervistatore 470
+LETA 480 Librettista 480
+LETA 490 Licenziatario 490
+LETA 500 Licenziatore 500
+LETA 510 Litografo 510
+LETA 520 Paroliere, autore della lirica 520
+LETA 530 Incisore su metallo 530
+LETA 535 Mimo 535
+LETA 540 Garante 540
+LETA 550 Narratore 550
+LETA 555 Controrelatore 555
+LETA 557 Organizzatore di meeting 557
+LETA 560 Autore dell'inchiesta 560
+LETA 570 Altro 570
+LETA 580 Cartaro 580
+LETA 582 Richiedente del brevetto 582
+LETA 584 Inventore del brevetto 584
+LETA 587 Detentore del brevetto 587
+LETA 590 Interprete 590
+LETA 595 Ente di ricerca 595
+LETA 600 Fotografo 600
+LETA 605 Presentatore 605
+LETA 610 Stampatore 610
+LETA 620 Stampatore delle tavole 620
+LETA 630 Produttore 630
+LETA 632 Scenografo 632
+LETA 633 Personale di produzione 633
+LETA 635 Programmatore 635
+LETA 637 Project manager 637
+LETA 640 Correttore di bozze 640
+LETA 650 Editore 650
+LETA 651 Direttore editoriale 651
+LETA 655 Burattinaio 655
+LETA 660 Destinatario 660
+LETA 670 Tecnico della registrazione 670
+LETA 673 Direttore della ricerca 673
+LETA 675 Recensore 675
+LETA 677 Membro del gruppo di ricerca 677
+LETA 680 Rubricatore 680
+LETA 690 Sceneggiatore 690
+LETA 695 Consulente scientifico 695
+LETA 700 Copista 700
+LETA 705 Scultore 705
+LETA 710 Segretario, portavoce 710
+LETA 720 Firmatario 720
+LETA 721 Cantante 721
+LETA 723 Committente 723
+LETA 725 Ente di standardizzazione 725
+LETA 726 Cascatore 726
+LETA 727 Relatore di tesi 727
+LETA 730 Traduttore 730
+LETA 740 Disegnatore dei caratteri 740
+LETA 750 Tipografo 750
+LETA 753 Venditore 753
+LETA 755 Vocalist 755
+LETA 760 Xilografo 760
+LETA 770 Autore dell'allegato 770
+LETA 900 Inventore 900
+LETA 901 Disegnatore 901
+LETA 904 Costumista 904
+LETA 906 Strumentista 906
+LETA 908 Direttore del doppiaggio 908
+LETA 909 Doppiatore 909
+LETA 910 Telecineoperatore 910

@@ -1,0 +1,2 @@
+BIDI	2	bidimensionale	2
+BIDI	3	tridimensionale	3

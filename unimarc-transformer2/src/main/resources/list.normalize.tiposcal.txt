@@ -1,0 +1,5 @@
+TIPOSCAL	0	Scale indeterminable	0
+TIPOSCAL	1	Single scale	1
+TIPOSCAL	2	Multiple scales	2
+TIPOSCAL	3	Range of scales	3
+TIPOSCAL	4	Approximate scale	4

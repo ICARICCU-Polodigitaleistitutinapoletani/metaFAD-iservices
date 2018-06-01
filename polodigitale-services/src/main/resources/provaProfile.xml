@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mappings xmlns="http://gruppometa.it/metafad"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+    >
+    <version>1.3.7</version>
+
+    <mapping destination="lemon:canonicalForm EN" vistaEtichette="1" multiple="true" facet="" vistaShort="1"/>
+    <mapping destination="metasem:synsetType" vistaEtichette="1" multiple="true" facet="" vistaShort="2"/>
+    <mapping destination="lexinfo:partOfSpeech" vistaEtichette="1" multiple="true" facet="" vistaShort="3"/>
+    <mapping destination="metasem:gloss EN" vistaEtichette="1" multiple="true" facet="" vistaShort="-1"/>
+    <mapping destination="skos:narrower" vistaEtichette="1" multiple="true" facet="" vistaShort="-1"/>
+    <mapping destination="skos:boarder" vistaEtichette="1" multiple="true" facet="" vistaShort="-1"/>
+    <mapping destination="dc:source" vistaEtichette="1" multiple="true" facet="" vistaShort="4"/>
+
+</mappings>

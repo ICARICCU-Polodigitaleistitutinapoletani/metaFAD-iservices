@@ -1,0 +1,44 @@
+TONO	1	1. modo	1
+TONO	2	2. modo	2
+TONO	3	3. modo	3
+TONO	4	4. modo	4
+TONO	5	5. modo	5
+TONO	6	6. modo	6
+TONO	7	7. modo	7
+TONO	8	8. modo	8
+TONO	9	9. modo	9
+TONO	10	10. modo	10
+TONO	11	11. modo	11
+TONO	12	12. modo	12
+TONO	13	tonus peregrinus	13
+TONO	A	la maggiore	A
+TONO	Ab	la bemolle maggiore	Ab
+TONO	B	si maggiore	B
+TONO	Bb	si bemolle maggiore	Bb
+TONO	C	do maggiore	C
+TONO	Cb	do bemolle maggiore	Cb
+TONO	Cx	do diesis maggiore	Cx
+TONO	D	re maggiore	D
+TONO	Db	re bemolle maggiore	Db
+TONO	E	mi maggiore	E
+TONO	Eb	mi bemolle maggiore	Eb
+TONO	F	fa maggiore	F
+TONO	Fx	fa diesis maggiore	Fx
+TONO	G	sol maggiore	G
+TONO	Gb	sol bemolle maggiore	Gb
+TONO	a	la minore	a
+TONO	ab	la bemolle minore	ab
+TONO	ax	la diesis minore	ax
+TONO	b	si minore	b
+TONO	bb	si bemolle minore	bb
+TONO	c	do minore	c
+TONO	cx	do diesis minore	cx
+TONO	d	re minore	d
+TONO	dx	re diesis minore	dx
+TONO	e	mi minore	e
+TONO	eb	mi bemolle minore	eb
+TONO	f	fa minore	f
+TONO	fx	fa diesis minore	fx
+TONO	g	sol minore	g
+TONO	gx	sol diesis minore	gx
+TONO	zz	altro	zz

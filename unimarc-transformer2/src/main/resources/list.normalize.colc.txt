@@ -1,0 +1,2 @@
+COLC a un colore a
+COLC b multi colore b
