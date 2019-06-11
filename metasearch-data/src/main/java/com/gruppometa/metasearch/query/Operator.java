@@ -7,6 +7,7 @@ public class Operator {
 	public static final Operator OPERATOR_NOT = new Operator("NOT");
 	public static final Operator OPERATOR_CONTAINS_ALL = new Operator("contains all");
 	public static final Operator OPERATOR_CONTAINS_ONE = new Operator("contains one");
+	public static final Operator OPERATOR_STARTS_WITH = new Operator("starts with");
 	public static final Operator OPERATOR_BETWEEN = new Operator("between");
 	public static final Operator OPERATOR_EQUAL = new Operator("=");
 	public static final Operator OPERATOR_GREATER_THAN = new Operator(">");

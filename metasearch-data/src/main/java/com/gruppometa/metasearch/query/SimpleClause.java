@@ -31,7 +31,16 @@ public class SimpleClause implements Clause{
 	protected String field;
 	protected Operator innerOperator = Operator.OPERATOR_AND;
 	protected List<String> values;
-	
+	protected double boost = 1;
+
+	public double getBoost() {
+		return boost;
+	}
+
+	public void setBoost(double boost) {
+		this.boost = boost;
+	}
+
 	@Override
 	public String toString(){
 		if(values!=null && values.size()>0)

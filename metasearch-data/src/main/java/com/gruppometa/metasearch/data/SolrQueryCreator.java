@@ -12,17 +12,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SolrQueryCreator {
-	public SolrQuery createQuery4Id(String id, String profileName){
-		String query =  "id:"+ ClientUtils.escapeQueryChars(id);
-		SolrQuery solrQuery = new SolrQuery();
-		solrQuery.setQuery(query);
-		solrQuery.addField("id");
-		solrQuery.addField("score");
-		solrQuery.setRows(1);
-		solrQuery.setStart(0);
-		return solrQuery;
-	}
-
 	public SolrQuery createQuery(Query query, String profileName) throws FieldException {
 		SolrQuery querySolr = new SolrQuery();
 		querySolr.setRows(query.getRows());

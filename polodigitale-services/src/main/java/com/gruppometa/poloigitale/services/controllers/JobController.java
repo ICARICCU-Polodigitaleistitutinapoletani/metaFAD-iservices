@@ -26,10 +26,11 @@ public class JobController {
     		@RequestParam(value="offset", defaultValue="0") int offset,
     		@RequestParam(value="profile",defaultValue="na") String profile,
             @RequestParam(value="clear",defaultValue="true") boolean clear,
-            @RequestParam(value="id",required = false) String id
+            @RequestParam(value="id",required = false) String id,
+            @RequestParam(value="nature",required = false) String nature
     		) {
 	    logger.info("Start job "+filename+" ->"+directory);
-		unimarcJob.run(filename,directory,rows,offset,profile, clear,id);
+		unimarcJob.run(filename,directory,rows,offset,profile, clear,id,nature);
         Message mess = new Message();
         mess.setMessage(filename+"->"+directory);
         return mess;

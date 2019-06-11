@@ -38,6 +38,16 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 
 	protected HashMap<String, String> filterQueries;
 
+	protected boolean boosting = true;
+
+	public boolean isBoosting() {
+		return boosting;
+	}
+
+	public void setBoosting(boolean boosting) {
+		this.boosting = boosting;
+	}
+
 	public HashMap<String, String> getFilterQueries() {
 		return filterQueries;
 	}
@@ -65,7 +75,50 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 		else{
 			SolrQuery solrQuery = super.createQuery(query, profileName);
 			StringBuffer buf = new StringBuffer();
-			makeClause(buf, query.getClause(), profileName);
+			Clause clause = query.getClause();
+			/**
+			 * ricerca semplice con boosting di campi indicati nel XML
+			 */
+			boolean isBoostedQuery = false;
+			if(isBoosting() &&
+					((query.getClause() instanceof SimpleClause
+					&& ((SimpleClause)query.getClause()).getField().equals("Tutto"))
+							||
+							(query.getClause() instanceof ComposedClause
+									&& ((ComposedClause)query.getClause()).getClauses()!=null
+									&&((ComposedClause)query.getClause()).getClauses().size()==1
+									&& ((SimpleClause)((ComposedClause)query.getClause()).getClauses().get(0)).getField().equalsIgnoreCase("tutto")
+							)
+					)
+					){
+				SimpleClause queryClause = null;
+				if(query.getClause() instanceof SimpleClause)
+					queryClause = (SimpleClause) query.getClause();
+				else{
+					queryClause = ((SimpleClause)((ComposedClause)query.getClause()).getClauses().get(0));
+				}
+				ComposedClause composedClause = new ComposedClause();
+				composedClause.setInnerOperator(Operator.OPERATOR_OR);
+				composedClause.setClauses(new ArrayList<Clause>());
+				composedClause.getClauses().add(clause);
+				List<MappingDefinition> defs =  mappedResponseCreator.getDefinitions("all", profileName);
+				for(MappingDefinition def: defs) {
+					if(def.getBoost()>1) {
+						SimpleClause simpleClause = new SimpleClause();
+						simpleClause.setField(def.getDestination());
+						simpleClause.setOperator(queryClause.getOperator());
+						simpleClause.setInnerOperator(queryClause.getInnerOperator());
+						simpleClause.setValues(queryClause.getValues());
+						simpleClause.setBoost(def.getBoost());
+						composedClause.getClauses().add(simpleClause);
+					}
+				}
+				if(composedClause.getClauses().size()>1) {
+					clause = composedClause;
+					isBoostedQuery = true;
+				}
+			}
+			makeClause(buf,clause , profileName, isBoostedQuery);
 			if(buf.toString().length()==0){
 				throw new FieldException("No query found.");
 			}
@@ -155,7 +208,7 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 			}
 		}
 	}
-	protected void makeClause(StringBuffer buf,Clause clause, String profileName) throws FieldException {
+	protected void makeClause(StringBuffer buf,Clause clause, String profileName, boolean isBoostedQuery) throws FieldException {
 		if(clause  instanceof SimpleClause) {
 			SimpleClause c = (SimpleClause)clause;
 			if(mappedResponseCreator==null)
@@ -173,6 +226,13 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 			if(c.getInnerOperator()!=null && c.getInnerOperator().getOperator().startsWith("contains")) {
 				fieldName = mappedResponseCreator.getSolrTxtName(def);
 				isContains = true;
+			}
+			if(c.getInnerOperator()!=null && c.getInnerOperator().getOperator().startsWith("starts with")) {
+				fieldName = mappedResponseCreator.getSolrStartsWithField(def);
+				if(fieldName.endsWith("_txt"))
+					fieldName = fieldName.substring(0, fieldName.length()-4)+"_lows";
+				if(fieldName.endsWith("_t"))
+					fieldName = fieldName.substring(0, fieldName.length()-2)+"_low";
 			}
 			if(fieldName==null){
 				throw new FieldException("Cannot create solrField for "+clause);
@@ -200,6 +260,15 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 					logger.error("In correct query between size: "+ c.getValues().size());
 				}
 			}
+			else if(c.getInnerOperator().equals(Operator.OPERATOR_STARTS_WITH)){
+                for (String v : c.getValues()) {
+                    if (i > 0)
+                        buf.append(" " + getConjunction(c.getInnerOperator()) + " ");
+                    buf.append(fieldName);
+                    buf.append(":");
+                    buf.append(ClientUtils.escapeQueryChars(v) + "*");
+                }
+			}
 			else {
 				for (String v : c.getValues()) {
 					if (i > 0)
@@ -218,6 +287,8 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 							buf.append(fieldName);
 							buf.append(":");
 							buf.append(token);
+							if(isBoosting() && isBoostedQuery && c.getBoost()>1)
+								buf.append("^"+c.getBoost());
 							j++;
 						}
 						buf.append(")");
@@ -225,6 +296,8 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 						buf.append(fieldName);
 						buf.append(":");
 						buf.append("\"" + ClientUtils.escapeQueryChars(v) + "\"");
+						if(isBoosting() && isBoostedQuery && c.getBoost()>1)
+							buf.append("^"+c.getBoost());
 					}
 					i++;
 				}
@@ -238,7 +311,7 @@ public class MappedSolrQueryCreator extends SolrQueryCreator{
 			for (Clause c1 : c.getClauses()) {
 				if(i>0)
 					buf.append(" "+c.getInnerOperator().getOperator()+" ");
-				makeClause(buf, c1, profileName);
+				makeClause(buf, c1, profileName, isBoostedQuery);
 				i++;
 			}
 			buf.append(")");

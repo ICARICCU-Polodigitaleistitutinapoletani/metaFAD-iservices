@@ -20,10 +20,16 @@ public class SolrSearchResponse  implements SearchResponse{
 	public SolrSearchResponse(){
 		
 	}
-	public SolrSearchResponse(QueryResponse resp,ResponseCreator responseCreator, List<String> views, String profileName){
+
+
+	public SolrSearchResponse(QueryResponse resp,ResponseCreator responseCreator, List<String> views, String profileName) {
+		this(resp, responseCreator, views, profileName, null);
+	}
+	public SolrSearchResponse(QueryResponse resp,ResponseCreator responseCreator, List<String> views, String profileName, List<String>
+							  	biblioteca){
 		this.resp = resp; 		
 		this.views = views;
-		response = new SolrResponse(resp,responseCreator,views, profileName);
+		response = new SolrResponse(resp,responseCreator,views, profileName, biblioteca);
 		this.responseCreator= responseCreator; 
 	}
 	

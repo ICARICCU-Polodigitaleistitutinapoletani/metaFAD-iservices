@@ -119,8 +119,8 @@ public class SbnWebController {
 	
 	/**
 	 * trasformazione unimarc in sbnweb/sbnmarc
-	 * @param bid
-	 * @return
+	 * @param bid numero bid
+	 * @return stringa
 	 */
 	@RequestMapping(value="/unimarc/sbnmarc",
 			produces={MediaType.APPLICATION_XML_VALUE})
@@ -158,8 +158,8 @@ public class SbnWebController {
 
 	/**
 	 * trasformazione unimarc in sbnweb/sbnmarc
-	 * @param bid
-	 * @return
+	 * @param bid numero bid
+	 * @return stringa
 	 */
 	@RequestMapping(value="/unimarc/mag",
 			produces={MediaType.APPLICATION_XML_VALUE})
@@ -247,8 +247,8 @@ public class SbnWebController {
 
 	/**
 	 * trasformazione unimarc in sbnweb/sbnmarc
-	 * @param bid
-	 * @return
+	 * @param bid numero bid
+	 * @return stringa
 	 */
 	@RequestMapping(value="/unimarc/iccd",
 			produces={MediaType.APPLICATION_XML_VALUE})

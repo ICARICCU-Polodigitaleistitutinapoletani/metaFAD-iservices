@@ -76,6 +76,7 @@ public class MappedProfileDefinitor implements  ProfileDefinitor {
                     f.setListType("closed");
                 }
                 f.setRange(mappingDefinition.getRangeEnd()!=null);
+                f.setStartsWith(mappingDefinition.isStartsWith());
                 list.getFields().add(f);
             }
             if(mappingDefinition.isFacets()){

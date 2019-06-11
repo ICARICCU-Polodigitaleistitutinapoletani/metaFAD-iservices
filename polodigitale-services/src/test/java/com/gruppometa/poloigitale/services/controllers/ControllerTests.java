@@ -52,7 +52,7 @@ import com.gruppometa.poloigitale.services.components.MappedProfileDefinitor;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-@ActiveProfiles("desktop")
+@ActiveProfiles("dev")
 public class ControllerTests {
  
 	@Rule
@@ -256,19 +256,43 @@ public class ControllerTests {
 		q.setFacetMinimum(1);
 		q.setRows(3);
 		OrderClause order = new OrderClause();
-		order.setFieldname("istituzione");
+		//order.setFieldname("istituzione");
+		order.setFieldname("Titolo ordinamento");
 		q.setOrderClauses(new ArrayList<OrderClause>());
-		q.getOrderClauses().add(order);
+		//q.getOrderClauses().add(order);
 		request.setQuery(q);
-		SimpleClause clause = new SimpleClause();
-		//clause.setField("Codice identificativo");
-		clause.setField("Tutto");
-		clause.setInnerOperator(Operator.OPERATOR_CONTAINS_ONE);
-		List<String> values = new ArrayList<String>();
-		//values.add("MOD1367650");
-		values.add("opera tacendo"); // quello è proprio una serie mongrafica
-		clause.setValues(values);
-		q.setClause(clause);
+
+		String index = "metaindice";
+		boolean boostTest =  true;
+		if(boostTest) {
+			SimpleClause clause = new SimpleClause();
+			//clause.setField("Codice identificativo");
+			clause.setField("Tutto");
+			clause.setInnerOperator(Operator.OPERATOR_CONTAINS_ONE);
+			List<String> values = new ArrayList<String>();
+			//values.add("MOD1367650");
+			//values.add("opera tacendo"); // quello è proprio una serie mongrafica
+			values.add("giornale critico della filosofia italiana ");
+			//values.add("Croce e Gentile");
+			clause.setValues(values);
+			q.setClause(clause);
+		}
+		boolean startsWithTest = false;
+		if(startsWithTest) {
+			index = "opac";
+			SimpleClause clause2 = new SimpleClause();
+			//clause.setField("Codice identificativo");
+			//clause2.setField("denominazione/titolo");
+			clause2.setField("Titoli tutti");
+			clause2.setInnerOperator(Operator.OPERATOR_STARTS_WITH);
+			List<String> values2 = new ArrayList<String>();
+			//values.add("MOD1367650");
+			//values.add("opera tacendo"); // quello è proprio una serie mongrafica
+			//values2.add("vent'anni ");
+			values2.add("L'");
+			clause2.setValues(values2);
+			q.setClause(clause2);
+		}
 
 
 		SimpleClause filter = new SimpleClause();
@@ -282,7 +306,7 @@ public class ControllerTests {
 		//ObjectMapper mapper = new ObjectMapper();
 		String content = objectMapper.writeValueAsString(request);
 		this.mockMvc.perform(
-				RestDocumentationRequestBuilders.post("/opac/search")
+				RestDocumentationRequestBuilders.post("/"+index+"/search")
 						.content(content)
 						.contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
 						.accept(MediaType.APPLICATION_JSON)

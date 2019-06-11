@@ -11,12 +11,18 @@ public class SolrResponse implements Response{
 	protected List<String> views;
 	protected List<FacetField> facetFields;
 	protected List<Document> docs;
+	protected List<String> biblioteca;
 	public SolrResponse(QueryResponse resp,ResponseCreator responseCreator, List<String> views, String profileName){
+
+	}
+	public SolrResponse(QueryResponse resp,ResponseCreator responseCreator, List<String> views, String profileName,
+						List<String> biblioteca){
 		this.resp = resp; 
 		this.views = views;
+		this.biblioteca = biblioteca;
 		this.responseCreator = responseCreator;
 		this.facetFields = responseCreator.createFacets(resp,views, profileName);
-		this.docs = responseCreator.createDocs(resp,views, profileName);
+		this.docs = responseCreator.createDocs(resp,views, profileName, biblioteca);
 	}
 	public long getNumFound(){
 		return resp.getResults().getNumFound();

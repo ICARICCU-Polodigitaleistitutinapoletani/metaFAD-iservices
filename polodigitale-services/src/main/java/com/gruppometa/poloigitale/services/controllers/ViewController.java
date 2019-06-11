@@ -40,7 +40,7 @@ public class ViewController {
         SearchResponse result = solrSearchController.getDoc(
                 id,
                 "full",
-                "opac");
+                "opac",null);
         model.addAttribute("result", result);
         return "dettaglio";
     }

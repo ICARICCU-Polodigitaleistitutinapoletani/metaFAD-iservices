@@ -11,6 +11,16 @@ public class Field implements ViewItem{
 	protected String searchType = null;
 	protected String parentLabel = null;
 	protected String parentId = null;
+	protected boolean startsWith = false;
+
+	public boolean isStartsWith() {
+		return startsWith;
+	}
+
+	public void setStartsWith(boolean startsWith) {
+		this.startsWith = startsWith;
+	}
+
 	public String getParentLabel() {
 		return parentLabel;
 	}

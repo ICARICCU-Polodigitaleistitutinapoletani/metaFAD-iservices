@@ -7,14 +7,14 @@
 
 buildscript {
 	ext {
-        springBootVersion = '1.5.10.RELEASE'
+        springBootVersion = '1.5.14.RELEASE'
         springRestDocsVersion = '1.1.1.RELEASE'
     }
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath('io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE')
         classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.8'
     }
@@ -30,9 +30,11 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'org.asciidoctor.convert'
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
-version = '1.0.1'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0.2'
+group = "com.gruppometa"
 
 springBoot{
 	executable = true

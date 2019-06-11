@@ -6,18 +6,19 @@ spring:
       indent_output: true
 
 serviceUsername: pmdigi
-devSwitch: _dev
+devSwitch: ""
 servicePassword: pmdigi16
+
 solrBase: http://127.0.0.1:8983/solr
-solrFeUrl: ${solrBase}/polodigitale_fe${devSwitch}
-solrFeAuUrl: ${solrBase}/polodigitale_fe_aut${devSwitch}
-solrBeUrl: ${solrBase}/polodigitale${devSwitch}
-solrIccdUrl: ${solrBase}/polofe${devSwitch}
-solrIccdAuUrl: ${solrBase}/polofe_aut${devSwitch}
-solrArchivioCAUrl: ${solrBase}/archive_polofe${devSwitch}
-solrArchivioUDUrl: ${solrBase}/archive_polofe${devSwitch}
-solrArchivioUAUrl: ${solrBase}/archive_polofe${devSwitch}
-solrArchivioAUUrl: ${solrBase}/archive_polofe_aut${devSwitch}
+solrFeUrl: ${solrBase}/metafad_fe_sbn${devSwitch}
+solrFeAuUrl: ${solrBase}/metafad_fe_sbn_aut${devSwitch}
+solrBeUrl: ${solrBase}/metafad_be${devSwitch}
+solrIccdUrl: ${solrBase}/metafad_fe_iccd${devSwitch}
+solrIccdAuUrl: ${solrBase}/metafad_fe_iccd_aut${devSwitch}
+solrArchivioCAUrl: ${solrBase}/metafad_fe_archive${devSwitch}
+solrArchivioUDUrl: ${solrBase}/metafad_fe_archive${devSwitch}
+solrArchivioUAUrl: ${solrBase}/metafad_fe_archive${devSwitch}
+solrArchivioAUUrl: ${solrBase}/metafad_fe_archive_aut${devSwitch}
 solrUrlMetaindice: ${solrBase}/metaindice${devSwitch}
 solrUrlMetaindiceAu: ${solrBase}/metaindice_aut${devSwitch}
 
@@ -39,6 +40,7 @@ sbnWebController:
 #  passwordPosseduti: polodigitale15
   
 solrSearchController:
+  enableLocationFilter: false
   solrUrl: ${solrFeUrl}
   solrUrls:
       "opac": ${solrFeUrl}
@@ -78,6 +80,7 @@ unimarcImportJob:
   solrUrlMetaindice: ${solrUrlMetaindice}
   solrUrlMetaindiceAu: ${solrUrlMetaindiceAu}
   bufferSize: 3000
+  showI4Vid: true
 
 recordCollegatiController:
   solrUrl: ${solrFeUrl}
@@ -94,7 +97,11 @@ recordCollegatiIccdController:
 test:
   test
 
+reformattor:
+  writeInventoryHeader: true
+
 mappedSolrQueryCreator:
+  boosting: false
   filterQueries:
       "metaindice": "-tipo_seriale_s:serie\\ monografica"
       "opac": "-tipo_seriale_s:serie\\ monografica"
@@ -109,6 +116,7 @@ mappedSolrQueryCreator:
       "archivio-ca": "type_nxs:archiveCA"
 
 mappedResponseCreator:
+  useReformattor: false
   profilesNames:
       "opac": "/naProfile.xml"
       "opac-au": "/auProfile.xml"
@@ -130,6 +138,7 @@ mappedResponseCreator:
      record_collegati: "Titoli collegati"
      guida_e_identificazione: "Identificativi"
      qualificazione: "Informazioni codificate"
+     copie: "Copie"
   whiteLists4Facets:
      "livello_bibliografico_s": "spoglio|monografia|periodico"
   label4CustomFacetMap:
@@ -153,17 +162,18 @@ logging:
       INFO
     com:
       gruppometa:
-        DEBUG
+        INFO
         
 ---
+
 spring:
   profiles: desktop
 
 #solrBase: http://127.0.0.1:9999/solr
 solrBase: http://127.0.0.1:8983/solr
 
-#devSwitch: "_dev"
-devSwitch: ""
+devSwitch: "_dev"
+#devSwitch: ""
 
 ---
 
@@ -177,25 +187,25 @@ devSwitch: ""
 
 ---
 
-
 spring:
-  profiles: metafad
+  profiles: polonapoli
 
-devSwitch: ""
+mappedResponseCreator:
+  useReformattor: true
+  labelmap:
+     copie: "Collocazione"
 
-solrFeUrl: ${solrBase}/metafad_fe_sbn${devSwitch}
-solrFeAuUrl: ${solrBase}/metafad_fe_sbn_aut${devSwitch}
-solrBeUrl: ${solrBase}/metafad_be${devSwitch}
-solrIccdUrl: ${solrBase}/metafad_fe_iccd${devSwitch}
-solrIccdAuUrl: ${solrBase}/metafad_fe_iccd_aut${devSwitch}
-solrArchivioCAUrl: ${solrBase}/metafad_fe_archive${devSwitch}
-solrArchivioUDUrl: ${solrBase}/metafad_fe_archive${devSwitch}
-solrArchivioUAUrl: ${solrBase}/metafad_fe_archive${devSwitch}
-solrArchivioAUUrl: ${solrBase}/metafad_fe_archive_aut${devSwitch}
-solrUrlMetaindice: ${solrBase}/metaindice${devSwitch}
-solrUrlMetaindiceAu: ${solrBase}/metaindice_aut${devSwitch}
+mappedSolrQueryCreator:
+  boosting: true
 
+unimarcImportJob:
+  showI4Vid: false
 
+reformattor:
+  writeInventoryHeader: false
+
+solrSearchController:
+  enableLocationFilter: true
 
 ---
 
@@ -206,3 +216,52 @@ solrFeUrl: http://127.0.0.1:8983/solr/mycore
 mappedResponseCreator:
   profilesNames:
       "opac": "/provaProfile.xml"
+
+---
+
+spring:
+  profiles: dev
+
+
+devSwitch: "_dev"
+
+######################################
+# nomi vecchi dei core
+######################################
+solrBase: http://127.0.0.1:8983/solr
+solrFeUrl: ${solrBase}/polodigitale_fe${devSwitch}
+solrFeAuUrl: ${solrBase}/polodigitale_fe_aut${devSwitch}
+solrBeUrl: ${solrBase}/polodigitale${devSwitch}
+solrIccdUrl: ${solrBase}/polofe${devSwitch}
+solrIccdAuUrl: ${solrBase}/polofe_aut${devSwitch}
+solrArchivioCAUrl: ${solrBase}/archive_polofe${devSwitch}
+solrArchivioUDUrl: ${solrBase}/archive_polofe${devSwitch}
+solrArchivioUAUrl: ${solrBase}/archive_polofe${devSwitch}
+solrArchivioAUUrl: ${solrBase}/archive_polofe_aut${devSwitch}
+solrUrlMetaindice: ${solrBase}/metaindice${devSwitch}
+solrUrlMetaindiceAu: ${solrBase}/metaindice_aut${devSwitch}
+
+mappedResponseCreator:
+  useReformattor: true
+  labelmap:
+     copie: "Collocazione"
+
+mappedSolrQueryCreator:
+  boosting: true
+
+unimarcImportJob:
+  showI4Vid: false
+
+reformattor:
+  writeInventoryHeader: false
+
+solrSearchController:
+  enableLocationFilter: true
+
+logging:
+  level:
+    root:
+      INFO
+    com:
+      gruppometa:
+        DEBUG

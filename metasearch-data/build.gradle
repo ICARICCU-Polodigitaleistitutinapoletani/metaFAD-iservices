@@ -20,7 +20,7 @@ apply plugin: 'com.bmuschko.nexus'
 
 group = "com.gruppometa"
 sourceCompatibility = 1.7
-version = '1.0'
+version = '1.0.2'
 jar {
     manifest {
         attributes 'Implementation-Title': 'metasearch-data',

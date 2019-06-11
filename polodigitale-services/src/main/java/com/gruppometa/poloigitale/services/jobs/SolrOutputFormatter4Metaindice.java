@@ -96,6 +96,9 @@ public class SolrOutputFormatter4Metaindice extends SolrOutputFormatter{
 
         copy(doc,doc2,"localizzazione_ss","localizzazione");
         copy(doc,doc2,"titoli_tutti_txt","denominazione_titolo");
+        //
+        // copyToStartsWithField(doc,doc2,"titoli_tutti_txt","denominazione_titolo");
+        copy(doc,doc2,"titolo_proprio_txt","titolo_proprio");
         copy(doc,doc2,"collezione_sintetica__ss","collezione");
         copy(doc,doc2,"legame_al_livello_piu_elevato_set__ss","fa_parte_di");
         copy(doc,doc2,"responsabilita_tutte_txt","responsabilita");
@@ -162,6 +165,19 @@ public class SolrOutputFormatter4Metaindice extends SolrOutputFormatter{
             v = getMappedValue(fieldname2,v);
             doc2.addField(fieldname2+suf,v);
             doc2.addField(fieldname2+suf2,v);
+        }
+    }
+
+    protected void copyToStartsWithField(SolrInputDocument doc, SolrInputDocument doc2, String fieldname, String fieldname2){
+        if(doc.getFieldValues(fieldname)==null)
+            return;
+        for (Object v: doc.getFieldValues(fieldname)){
+            String suf = "_low";
+            if(fieldname.endsWith("_ss")||fieldname.endsWith("_txt")){
+                suf = "_lows";
+            }
+            v = getMappedValue(fieldname2,v);
+            doc2.addField(fieldname2+suf,v);
         }
     }
 

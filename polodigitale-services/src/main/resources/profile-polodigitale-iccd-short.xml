@@ -13,7 +13,7 @@
     <mapping destination="Soggetto: identificazione" searchType="text" vistaShort="4" is4Fe="true" searchField="true" multiple="true"/>
     <!-- anche in sintetica POLOBEDUG-217 -->
     <mapping destination="Soggetto: titolo"  searchType="text" searchField="true" is4Fe="true" multiple="true" vistaShort="6"/>
-    <mapping destination="Level"  searchField="false" is4Fe="true" multiple="false" vistaShort="7"/>
+    <mapping destination="Level"  searchField="false" is4Fe="true" multiple="false" vistaShort="7" sortField="true" sortFieldName="level_sort_s"/>
     <mapping destination="Titolo sintetica" searchType="text" vistaShort="5" searchField="true" is4Fe="true" multiple="true"/>
     <mapping destination="Titolo ordinamento" is4Fe="true" multiple="false" sortField="true" sortFieldName="titolo_ordinamento_s"/>
     <mapping destination="Autore ordinamento" is4Fe="true" multiple="false" sortField="true"  sortFieldName="autore_ordinamento_s"/>

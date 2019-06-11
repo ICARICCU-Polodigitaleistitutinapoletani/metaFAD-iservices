@@ -9,7 +9,8 @@
     <mapping destination="tipoSpecificoDoc" label="Tipologia" searchField="true" is4Fe='true' multiple="false" facet="" facetOrder="2"/>
     <mapping destination="localizzazione" facetLabel="Localizzazione" searchField="true" is4Fe='true' multiple="true" facet="" vistaEtichette="1" facetOrder="9" vistaShort="10"/>
     <mapping destination="digitale" facetLabel="Digitale" searchField="true" is4Fe='true' multiple="false" facet="" facetOrder="3"/>
-    <mapping destination="denominazione/titolo" searchField="true" is4Fe='true' multiple="true" vistaShort="2"  vistaEtichette="2"/>
+    <mapping destination="denominazione/titolo" searchField="true" is4Fe='true' multiple="true" vistaShort="2"  vistaEtichette="2" boost="1"/>
+    <mapping destination="titolo_proprio" searchField="true" is4Fe='true' multiple="true" boost="10"/>
     <mapping destination="collezione" searchField="true" is4Fe='true' multiple="true" vistaShort="2.3"  vistaEtichette="2.3"/>
     <mapping destination="fa parte di" searchField="true" is4Fe='true' multiple="true" vistaShort="2.2"  vistaEtichette="2.2"/>
     <!--

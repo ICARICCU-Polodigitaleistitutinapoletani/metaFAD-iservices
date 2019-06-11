@@ -8,6 +8,9 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 
 public class SolrResponseCreator implements ResponseCreator{
 	public List<Document> createDocs(QueryResponse resp, List<String> views,String profileName){
+		return createDocs(resp, views, profileName, null);
+	}
+	public List<Document> createDocs(QueryResponse resp, List<String> views,String profileName, List<String> biblioteca){
 		List<Document> docs = new ArrayList<Document>();
 		for(org.apache.solr.common.SolrDocument doc: resp.getResults()){
 			Document doc2 = new Document();

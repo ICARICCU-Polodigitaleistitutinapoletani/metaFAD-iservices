@@ -1,16 +1,13 @@
 package com.gruppometa.poloigitale.services.jobs;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.sql.Time;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
+import com.gruppometa.poloigitale.services.objects.Message;
+import com.gruppometa.unimarc.MarcConvertor;
+import com.gruppometa.unimarc.object.DefaultOutput;
+import com.gruppometa.unimarc.object.Output;
 import com.gruppometa.unimarc.output.DefaultLinkCreator;
+import com.gruppometa.unimarc.output.JsonOutputFormatter;
+import com.gruppometa.unimarc.output.OutputFormatter;
+import com.gruppometa.unimarc.output.SolrOutputFormatter;
 import com.gruppometa.unimarc.profile.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,13 +15,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
-import com.gruppometa.poloigitale.services.objects.Message;
-import com.gruppometa.unimarc.MarcConvertor;
-import com.gruppometa.unimarc.object.DefaultOutput;
-import com.gruppometa.unimarc.object.Output;
-import com.gruppometa.unimarc.output.JsonOutputFormatter;
-import com.gruppometa.unimarc.output.OutputFormatter;
-import com.gruppometa.unimarc.output.SolrOutputFormatter;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import java.io.File;
+import java.io.FileInputStream;
 
 @Component
 @ConfigurationProperties(prefix="unimarcImportJob")
@@ -39,6 +33,16 @@ public class UnimarcImportJob {
 	protected MarcConvertor convertor = new MarcConvertor();
 	protected String status;
 	protected int bufferSize = 5000;
+
+	public boolean isShowI4Vid() {
+		return showI4Vid;
+	}
+
+	public void setShowI4Vid(boolean showI4Vid) {
+		this.showI4Vid = showI4Vid;
+	}
+
+	protected boolean showI4Vid = true;
 
 	public int getBufferSize() {
 		return bufferSize;
@@ -109,7 +113,8 @@ public class UnimarcImportJob {
 		proAu.init();
 	}
 	@Async
-	public void run(String filename,String directory, int rows, int offset, String profile, boolean clear, String id){
+	public void run(String filename,String directory, int rows, int offset, String profile, boolean clear, String id,
+					String nature){
 		try {
 
 			long time = System.currentTimeMillis();
@@ -134,7 +139,9 @@ public class UnimarcImportJob {
 			OutputFormatter formatter = null;
 			if(directory.equals("toSolr")){
 				formatter = new SolrOutputFormatter(out);
-				((SolrOutputFormatter)formatter).setLinkCreator(new DefaultLinkCreator());
+				DefaultLinkCreator defaultLinkCreator = new DefaultLinkCreator();
+				defaultLinkCreator.setShowI4Vid(isShowI4Vid());
+				((SolrOutputFormatter)formatter).setLinkCreator(defaultLinkCreator);
 				((SolrOutputFormatter)formatter).setSolrUrl(profile.equals("au")?getSolrUrlAu():getSolrUrl());
 				/**
 				 * ATTENZIONE: implicite: toSolr è FE!
@@ -160,6 +167,8 @@ public class UnimarcImportJob {
 			Profile pro = convertor.getProfile();
 			if(pro instanceof XmlProfile)
 				((XmlProfile)pro).setFilterId(id);
+			if(pro instanceof XmlProfile)
+				((XmlProfile)pro).setFilterNature(nature);
 			convertor.convert(fin, formatter);
 			if(id==null && ((formatter instanceof  SolrOutputFormatter4Metaindice) ||
 					(formatter instanceof  SolrOutputFormatter4MetaindiceAu)) && clear){

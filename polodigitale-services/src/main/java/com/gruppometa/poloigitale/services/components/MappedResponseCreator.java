@@ -11,6 +11,7 @@ import org.apache.solr.common.SolrDocument;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -23,6 +24,19 @@ import com.gruppometa.unimarc.profile.XmlProfile;
 @Component
 @ConfigurationProperties(prefix = "mappedResponseCreator")
 public class MappedResponseCreator extends SolrResponseCreator implements InitializingBean{
+	@Autowired
+	protected Reformattor reformattor;
+
+	protected boolean useReformattor = true;
+
+	public boolean isUseReformattor() {
+		return useReformattor;
+	}
+
+	public void setUseReformattor(boolean useReformattor) {
+		this.useReformattor = useReformattor;
+	}
+
 	protected HashMap<String,XmlProfile> profiles = new HashMap<String,XmlProfile>();
 
 	public HashMap<String, String> getProfilesNames() {
@@ -192,6 +206,8 @@ public class MappedResponseCreator extends SolrResponseCreator implements Initia
 		for (int i = 0; i < defs.length; i++) {
 			if(fatti.contains(defs[i].getDestination()))
 				continue;
+			if(viewName.equals("all"))
+				mappings.add(defs[i]);
 			if(viewName.equals("short") && defs[i].getVistaShort()!=-1)
 				mappings.add(defs[i]);
 			if(viewName.equals("full") && defs[i].getVistaEtichette()>0)
@@ -262,6 +278,13 @@ public class MappedResponseCreator extends SolrResponseCreator implements Initia
 		return getSolrName(def,false);
 	}
 
+	public String getSolrStartsWithField(MappingDefinition def){
+		if(def!=null)
+			return solrOutputFormatter.getSolrFieldName(def.getDestination(),"low","lows","", def);
+		else
+			return null;
+	}
+
 	public String getSolrName(MappingDefinition def, boolean yearable){
 		String fieldName = solrOutputFormatter.getSolrFieldName(def.getDestination(),"", def);
 		if(yearable && def!=null && def.getType()!=null && def.getType().equals("year")){
@@ -293,7 +316,7 @@ public class MappedResponseCreator extends SolrResponseCreator implements Initia
 		return ret;
 	}
 
-	public List<Document> createDocs(QueryResponse resp, List<String> views, String profileName){
+	public List<Document> createDocs(QueryResponse resp, List<String> views, String profileName, List<String> biblioteca){
 		List<Document> docs = new ArrayList<Document>();
 		for(org.apache.solr.common.SolrDocument doc: resp.getResults()){
 			Document doc2 = new Document();
@@ -350,10 +373,15 @@ public class MappedResponseCreator extends SolrResponseCreator implements Initia
 								f.getValues().add(temp);
 							}
 							else {
+								int pos = 1;
 								for (Object ob : doc.getFieldValues(n)) {
-									f.getValues().add(f.isHideLabel() ? filterBiblioteca(ob) : ob);
-									if (f.isHideLabel())
-										f.getValues().add("<div class='parent-archive-end'></div>");
+									Object val = f.isHideLabel() ? filterBiblioteca(ob,pos,doc2, biblioteca) : ob;
+									if(val!=null && (!(val instanceof String) || ((String)val).length()>0)) {
+										f.getValues().add(val);
+										if (f.isHideLabel())
+											f.getValues().add("<div class='parent-archive-end'></div>");
+									}
+									pos++;
 								}
 							}
 
@@ -367,26 +395,55 @@ public class MappedResponseCreator extends SolrResponseCreator implements Initia
 								lastGroup = theGroup;
 								FieldGroup group = new FieldGroup();
 								group.setLabel(filterGroupLabel(lastGroup));
+								group.setId(lastGroup);
 								viewPanel.getNodes().add(group);
 								thePanel = group;
 							}
-							thePanel.getNodes().add(f);
+							if(f.getValues().size()>0)
+								thePanel.getNodes().add(f);
 						}
 					}
 				}
 			}
+			filterVoidGroups(doc2);
 			docs.add(doc2);
 		}
 		return docs;
 	}
 
-	private Object filterBiblioteca(Object ob) {
+	private void deleteVoidNodes(FieldGroup fieldGroup) {
+		for (int i = fieldGroup.getNodes().size(); i > 0; i--) {
+			if(fieldGroup.getNodes().get(i-1) instanceof FieldGroup){
+				if(((FieldGroup)fieldGroup.getNodes().get(i-1)).getNodes().size()==0){
+					fieldGroup.getNodes().remove(i-1);
+				}
+				else
+					deleteVoidNodes((FieldGroup) fieldGroup.getNodes().get(i-1));
+			}
+		}
+	}
+	private void filterVoidGroups(Document doc2) {
+		for(int i = doc2.getNodes().size(); i>0; i--){
+			if(doc2.getNodes().get(i-1) instanceof FieldGroup){
+				if(((FieldGroup)doc2.getNodes().get(i-1)).getNodes().size()==0){
+					doc2.getNodes().remove(i-1);
+				}
+				else
+					deleteVoidNodes((FieldGroup) doc2.getNodes().get(i-1));
+			}
+		}
+	}
+
+	private Object filterBiblioteca(Object ob,int pos, Document document, List<String> biblioteca) {
 		if(!(ob instanceof String))
 			return ob;
 		else{
 			String str = (String)ob;
 			if(str.contains("<div class='label'>Biblioteca</div>")){
-				str = str.replaceFirst("\n", "\n<div class='parent-archive'>Collocazioni e inventari</div>");
+				if(reformattor!=null && isUseReformattor())
+					str = reformattor.reformat(str,pos, document, biblioteca);
+				else if(reformattor==null || reformattor.isWriteInventoryHeader())
+					str = str.replaceFirst("\n", "\n<div class='parent-archive'>Collocazioni e inventari</div>");
 			}
 			return str;
 		}

@@ -34,6 +34,17 @@ public class SolrSearchController {
 	@Autowired
 	protected SolrResponseCreator responseCreator;
 
+	public boolean isEnableLocationFilter() {
+		return enableLocationFilter;
+	}
+
+	public void setEnableLocationFilter(boolean enableLocationFilter) {
+		this.enableLocationFilter = enableLocationFilter;
+	}
+
+	protected boolean enableLocationFilter = true;
+
+
 	@Autowired
 	protected ProfileDefinitor mappedProfileDefinitor;
 
@@ -118,7 +129,8 @@ public class SolrSearchController {
 	public SearchResponse getDoc(
 			@RequestParam(value="id") String id,
 			@RequestParam(value="view",defaultValue="full",required=false) String view,
-			@PathVariable(value="profileName") String profileName
+			@PathVariable(value="profileName") String profileName,
+			@RequestParam(value="biblioteca", required = false) List<String> biblioteca
 			){
 		try {
 			String subProfile = getSubProfileFromId(id, profileName);
@@ -133,7 +145,8 @@ public class SolrSearchController {
 			}
 			//logger.debug("Query:"+solrQuery);
 			QueryResponse rsp = httpSolrClient.query(solrQuery,METHOD.POST);
-			SolrSearchResponse ret =  new SolrSearchResponse(rsp, responseCreator, views, subProfile);
+			SolrSearchResponse ret =  new SolrSearchResponse(rsp, responseCreator, views, subProfile,
+					isEnableLocationFilter()?biblioteca:null);
 			httpSolrClient.close();
 			return ret;
 		} catch (Exception e) {
